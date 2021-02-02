@@ -1,186 +1,187 @@
-Bienvenue dans la documentation de AndroidAPS
+Welcome to the AndroidAPS documentation
 ==================================================
 
-AndroidAPS est une application open source pour les personnes vivant avec un diabète insulino-dépendant et qui agit comme un pancréas artificiel (APS) sur les smartphones Google Android. Les principaux composants sont différents algorithmes logiciels de openAPS qui visent à reproduire ce que fait un pancréas vivant : maintenir la glycémie dans des limites de santé en utilisant un dosage automatisé d'insuline. De plus, il vous faut une pompe à insuline compatible approuvée FDA/CE et un capteur de Mesure de Glycémies en Continu (MGC). 
+AndroidAPS is an open source app for people living with insulin-dependent diabetes that acts as an artificial pancreas system (APS) on Google Android smartphones. The main components are different openAPS software algorithms which aim to do what a living pancreas does: keeping blood sugar levels within healthy limits by using automated insulin dosing (AID). Additionally, you need at least a supported and FDA/CE approved insulin pump and continuous glucose meter. 
 
-L'application n'utilise PAS d'auto-apprentissage par de l'intelligence artificielle. A la place, les calculs d'AndroidAPS sont basés sur un algorithme de dosage individuel et les apports en glucides que l'utilisateur renseigne manuellement dans son profil de traitement, mais ces informations sont vérifiés par le système pour des raisons de sécurité. 
+The app does NOT use self-learning artificial intelligence. Instead, the calculations of AndroidAPS are based on the individual dosage algorithm and carbohydrate intake the user manually puts into their treatments profile, but they are verified by the system for safety reasons. 
 
-L'application n'est pas fournie dans Google Play - vous devez la compiler vous même à partir du code source pour des raisons juridiques.
+The app is not provided in Google Play - you have to build it from source code by yourself for legal reasons.
 
-Les principaux composants sont :
+The main components are:
 
 .. image:: images/modules-female.png
   :alt: Components
 
-Pour plus de détails, lisez la suite ici.
+For more details, please read on here.
 
-Pour commencer
+Getting started
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Sécurité avant tout <./Getting-Started/Safety-first.rst>
-   Qu'est-ce qu'un système en boucle fermée <./Getting-Started/ClosedLoop.rst>
-   Qu'est-ce qu'une boucle fermée avec AndroidAPS <./Getting-Started/WhatisAndroidAPS.rst>  
-   Wiki mises à jour et modifications <./Getting-Started/WikiUpdate.rst>
+   Safety first <./Getting-Started/Safety-first.rst>
+   What is a closed loop system <./Getting-Started/ClosedLoop.rst>
+   What is a closed loop system with AndroidAPS <./Getting-Started/WhatisAndroidAPS.rst>  
+   Docs updates & changes <./Getting-Started/WikiUpdate.rst>
    
    
-De quoi ai-je besoin ? 
+What do I need? 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Composants <./Module/module.rst>
-   Exemple de configuration <./Getting-Started/Sample-Setup.md>
+   Module <./Module/module.rst>
+   Sample Setup <./Getting-Started/Sample-Setup.md>
 
    
-Comment installer AndroidAPS
+How to Install AndroidAPS
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Construire l'APK <./Installing-AndroidAPS/Building-APK.md>
-   Télécharger la nouvelle version ou branche <./Installing-AndroidAPS/Update-to-new-version.md>
-   Vérifications à faire après la mise à jour vers AAPS 2.7 <./Installing-AndroidAPS/update2_7.rst>
-   Installer git <./Installing-AndroidAPS/git-install.rst>
-   Dépannage d'Android Studio <./Installing-AndroidAPS/troubleshooting_androidstudio.rst>
-   Notes de versions <./Installing-AndroidAPS/Releasenotes.rst>
-   Branches de développement <./Installing-AndroidAPS/Dev_branch.md>
+   Building the APK <./Installing-AndroidAPS/Building-APK.md>
+   Update to a new version or branch <./Installing-AndroidAPS/Update-to-new-version.md>
+   Checks after update to AAPS 2.7 <./Installing-AndroidAPS/update2_7.rst>
+   Install git <./Installing-AndroidAPS/git-install.rst>
+   Troubleshooting Android Studio <./Installing-AndroidAPS/troubleshooting_androidstudio.rst>
+   Release notes <./Installing-AndroidAPS/Releasenotes.rst>
+   Dev branch <./Installing-AndroidAPS/Dev_branch.md>
    
    
-Configuration des composants
+Component Setup
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   MGC/MGF <./Configuration/BG-Source.rst>
-   Paramètres xDrip <./Configuration/xdrip.md>
-   Pompes à insuline <./Hardware/pumps.rst>
-   Smartphones <./Hardware/Phoneconfig.rst>
-   Paramètres Nightscout <./Installing-AndroidAPS/Nightscout.md>
-   Montres connectées  <./Hardware/Smartwatch.rst>
+   CGM/FGM <./Configuration/BG-Source.rst>
+   xDrip Settings <./Configuration/xdrip.md>
+   Pumps <./Hardware/pumps.rst>
+   Phones <./Hardware/Phoneconfig.rst>
+   Nightscout setup <./Installing-AndroidAPS/Nightscout.md>
+   Smartwatch  <./Hardware/Smartwatch.rst>
    
 
-Générateur de configuration 
+Configuration 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Générateur de configuration <./Configuration/Config-Builder.md>
-   Préférences <./Configuration/Preferences.rst>
+   Config builder <./Configuration/Config-Builder.md>
+   Preferences <./Configuration/Preferences.rst>
    
    
-Utilisation d'AndroidAPS
+AndroidAPS Usage
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
     
-   Les écrans d'AndroidAPS <./Getting-Started/Screenshots.md>
-   Objectifs <./Usage/Objectives.rst>
-   Fonctionnalités d'OpenAPS <./Usage/Open-APS-features.md>   
-   Calcul des GA <./Usage/COB-calculation.rst>
-   Estimation de la Sensibilité <./Configuration/Sensitivity-detection-and-COB.md>
-   Changement de profil <./Usage/Profiles.md>
-   Cibles Temporaires <./Usage/temptarget.md>   
-   Glucides étendus <./Usage/Extended-Carbs.rst>
-   Automatisation <./Usage/Automation.rst>
-   Careportal (supprimé) <./Usage/CPbefore26.rst>
-   Téléversement Open Humans <./Configuration/OpenHumans.rst>
-   Automatisation avec des applications tierces <./Usage/automationwithapp.md>
+   AndroidAPS screens <./Getting-Started/Screenshots.md>
+   Objectives <./Usage/Objectives.rst>
+   OpenAPS features <./Usage/Open-APS-features.md>   
+   COB calculation <./Usage/COB-calculation.rst>
+   Sensitivity detection <./Configuration/Sensitivity-detection-and-COB.md>
+   Profile switch <./Usage/Profiles.md>
+   Temp-targets <./Usage/temptarget.md>   
+   Extended carbs <./Usage/Extended-Carbs.rst>
+   Automation <./Usage/Automation.rst>
+   Careportal (discontinued) <./Usage/CPbefore26.rst>
+   Open Humans Uploader <./Configuration/OpenHumans.rst>
+   Automation with 3rd party apps <./Usage/automationwithapp.md>
    Android auto <./Usage/Android-auto.md>  
  
-Conseils généraux 
+General Hints 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Fuseaux horaires <./Usage/Timezone-traveling.md>
-   Acces aux fichiers journaux <./Usage/Accessing-logfiles.md>
-   Conseils d'utilisation de l'Accu-Chek Combo <./Usage/Accu-Chek-Combo-Tips-for-Basic-usage.md> 
-   Export/Import des paramètres <./Usage/ExportImportSettings.rst>
+   Crossing timezones with pumps <./Usage/Timezone-traveling.md>
+   Accessing logfiles <./Usage/Accessing-logfiles.md>
+   Accu-Chek Combo tips for basic usage <./Usage/Accu-Chek-Combo-Tips-for-Basic-usage.md> 
+   Export/Import Settings <./Usage/ExportImportSettings.rst>
    
 
-AndroidAPS pour les enfants
+AndroidAPS for children
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Surveillance à distance <./Children/Children.rst>
-   Commandes SMS <./Children/SMS-Commands.rst>
+   Remote monitoring <./Children/Children.rst>
+   SMS commands <./Children/SMS-Commands.rst>
+   Profile helper <./Configuration/profilehelper.rst>
    
 
-Dépannage
---------------------------------------------------
-.. toctree::
-   :maxdepth: 1
-   :glob:
-  
-   Dépannage <./Usage/troubleshooting.rst>
-   
-
-Questions fréquentes 
+Troubleshooting
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
   
-   Questions fréquentes <./Getting-Started/FAQ.md>
+   Troubleshooting <./Usage/troubleshooting.rst>
+   
+
+FAQ 
+--------------------------------------------------
+.. toctree::
+   :maxdepth: 1
+   :glob:
+  
+   FAQ <./Getting-Started/FAQ.md>
 
    
-Glossaire
+Glossary
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
   
-   Glossaire <./Getting-Started/Glossary.md>
+   Glossary <./Getting-Started/Glossary.md>
   
 
-Où chercher de l'aide 
+Where to go for help 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Ressources utiles à lire avant de commencer <./Where-To-Go-For-Help/Background-reading.md>
-   Où chercher de l'aide <./Where-To-Go-For-Help/Connect-with-other-users.md>
-   Wiki mises à jour et modifications <./Getting-Started/WikiUpdate.rst>
+   Useful resources to read before you start <./Where-To-Go-For-Help/Background-reading.md>
+   Where to go for help <./Where-To-Go-For-Help/Connect-with-other-users.md>
+   Docs updates & changes <./Getting-Started/WikiUpdate.rst>
 
-Pour les professionnels de santé
+For Clinicians
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
             
-   Pour les professionnels de santé <./Resources/clinician-guide-to-AndroidAPS>
+   For Clinicians <./Resources/clinician-guide-to-AndroidAPS>
 
 
-Comment aider
+How to help
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Comment aider <./Getting-Started/How-can-I-help.md>
-   Comment traduire l'application et la documentation wiki <./translations.md>
-   Comment éditer le wiki <./make-a-PR>
+   How to help <./Getting-Started/How-can-I-help.md>
+   How to translate the app and docs <./translations.md>
+   How to edit the docs <./make-a-PR>
 
 
 .. note:: 
-	**Avertissement**
+	**Disclaimer And Warning**
 
-	* Toutes les informations, pensées et codes décrits ici sont destinés à des fins d'information et d'éducation uniquement. Nightscout ne fait actuellement aucune tentative de conformité à la confidentialité HIPAA. Utilisez Nightscout et AndroidAPS à vos propres risques et n'utilisez pas les informations ni le code pour prendre des décisions médicales.
+	* All information, thought, and code described here is intended for informational and educational purposes only. Nightscout currently makes no attempt at HIPAA privacy compliance. Use Nightscout and AndroidAPS at your own risk, and do not use the information or code to make medical decisions.
 
-	* L'utilisation du code de github.com est sans garantie ni support formel d'aucune sorte. Veuillez consulter la LICENCE de ce référentiel pour plus de détails.
+	* Use of code from github.com is without warranty or formal support of any kind. Please review this repository's LICENSE for details.
 
-	* Tous les noms de produits et de sociétés, marques commerciales, marques de service, marques déposées,  sont la propriété de leurs détenteurs respectifs. Leur utilisation est à titre informatif et n'implique aucune affiliation avec eux ni aucune approbation de leur part.
+	* All product and company names, trademarks, servicemarks, registered trademarks, and registered servicemarks are the property of their respective holders. Their use is for information purposes and does not imply any affiliation with or endorsement by them.
 
-	A noter - ce projet n'a aucun lien avec, et n'est pas approuvé par : `SOOIL <http://www.sooil.com/eng/>`_, `Dexcom <http://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <http://www.accu-chek.com/>`_ ou `Medtronic <http://www.medtronic.com/>`_
+	Please note - this project has no association with and is not endorsed by: `SOOIL <http://www.sooil.com/eng/>`_, `Dexcom <http://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <http://www.accu-chek.com/>`_ or `Medtronic <http://www.medtronic.com/>`_
