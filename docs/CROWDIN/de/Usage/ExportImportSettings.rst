@@ -1,89 +1,89 @@
-Export & import settings
+Einstellungen exportieren & importieren
 **************************************************
 
-When should I export settings?
+Wann sollte man die Einstellungen exportieren?
 ==================================================
-Be prepared for the unforeseen. You might change important settings by accident and have problems to undo the changes. Your phone might break or get stolen. To easily return to status you've been at, settings should be exported on a regular basis.
+Sei bereit für das Unvorhergesehene. Vielleicht änderst Du versehentlich wichtige Einstellungen und hast Schwierigkeiten, die Änderungen rückgängig zu machen. Dein Smartphone könnte defekt oder gestohlen werden. Um einfach auf den Stand zurückkehren zu können, an dem Du warst, sollten die Einstellungen regelmäßig exportiert werden.
 
-Best practice is to export after change of settings or completing an objective. 
+Die Empfehlung ist, den Export nach einer Änderung der Einstellungen oder dem Abschluss eines Ziels (Objective) durchzuführen. 
 
-Exported settings should be copied to a cloud storage or your computer. So you are prepared for loss or damage of your AAPS phone and do not have to start from zero.
+Die exportierten Einstellungen sollten in einen Cloud-Speicher oder auf Deinen Computer kopiert werden. Dann ist Du für den Verlust oder die Beschädigung Deines AAPS-Smartphones vorbereitet und musst nicht wieder bei Null anfangen.
 
-On a Windows 10 computer it looks like this:
+Auf einem Windows 10 PC sieht es in etwa so aus:
   
 .. image:: ../images/AAPS_ExImportSettingsWin.png
-  :alt: AndroidAPS Preferences phone connected to computer
+  :alt: AndroidAPS Preferences Datei - Smartphone mit PC verbunden
 
-Exported information
+Exportierte Einstellungen
 ==================================================
-Among others the following information is part of the settings export:
+Neben anderen werden folgende Einstellungen exportiert:
 
-* `Automation <../Usage/Automation.html>`_ events
-* `Config builder <../Configuration/Config-Builder.html>`_ settings
-* `Local profile <../Configuration/Config-Builder.html#local-profile-recommended>`_ settings
-* `Objectives <../Usage/Objectives.html>`_ status incl. `exam results <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_
-* `Preferences <../Configuration/Preferences.html>`_ incl. `NS Client settings <../Configuration/Preferences.html#nsclient>`_
+* `Automation <../Usage/Automation.html>`_ Regeln
+* Einstellungen des `Konfigurations-Generators <../Configuration/Config-Builder.html>`_
+* Einstellungen der `lokalen Profile <../Configuration/Config-Builder.html#lokales-profil-empfohlen>`_
+* Status der `Ziele (Objectives) <../Usage/Objectives.html>`_ inkl. `exam results <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_
+* `Einstellungen im 3-Punkte-Menü <../Configuration/Preferences.html>`_ inkl. `NS Client settings <../Configuration/Preferences.html#nsclient>`_
 
-Encrypted backup format
+Verschlüsseltes Backup-Format
 ==================================================
-Settings backup is encrypted by a master password that can be set in `Preferences <../Configuration/Preferences.html#master-password>`_ .
+Die Sicherung der Einstellungen wird mit einem Master-Passwort verschlüsselt, das in den `Einstellungen <../Configuration/Preferences.html#master-passwort>`_ festgelegt wird.
 
 
-Export settings
+Exportiere die Einstellungen
 ==================================================
-* Hamburger menu (top left corner of screen)
-* Maintenance
-* Export settings
+* Hamburger Menü (drei Striche oben links am Bildschirm)
+* Wartung
+* Einstellungen exportieren
 
 .. image:: ../images/AAPS_ExportSettings1.png
-  :alt: AndroidAPS export settings 1
+  :alt: AndroidAPS Export der Einstellungen 1
 
-* Date and time of export will be added to the file name automatically and displayed together with the path.
-* Click 'OK'.
-* Enter `master password <../Configuration/Preferences.html#master-password>`_ and click 'OK'.
-* Successful export will be prompted at bottom of the screen.
+* Datum und Zeit des Exports werden automatisch an den Dateinamen angehängt und zusammen mit dem Pfad angezeigt.
+* Klicke auf "OK'.
+* Gib das `Master-Passwort <../Configuration/Preferences.html#master-passwort>`_ ein und klicke 'OK'.
+* Der erfolgreiche Export wird am unteren Rand des Bildschirms angezeigt.
 
 .. image:: ../images/AAPS_ExportSettings2.png
-  :alt: AndroidAPS export settings 2
+  :alt: AndroidAPS Export der Einstellungen 2
   
-Import settings
+Importiere die Einstellungen
 ==================================================
 **Do not import settings while on an active Pod session** - see `Omnipod page for details <../Configuration/OmnipodEros.html#import-settings-from-previous-aaps>`_.
 
-* Hamburger menu (top left corner of screen)
-* Maintenance
-* Import settings
+* Hamburger Menü (drei Striche oben links am Bildschirm)
+* Wartung
+* Einstellungen importieren
 
 .. image:: ../images/AAPS_ImportSettings1.png
-  :alt: AndroidAPS import settings 1
+  :alt: AndroidAPS Import der Einstellungen 1
 
-* All files from folder AAPS/preferences/ on your phone will be shown in the list.
-* Select file.
-* Confirm import by clicking 'OK'.
-* Enter `master password <../Configuration/Preferences.html#master-password>`_ and click 'OK'.
+* Alle Dateien im Verzeichnis AAPS/preferences/ auf Deinem Smartphone werden in der Liste angezeigt.
+* Datei auswählen.
+* Bestätige den Import durch Klick auf 'OK'.
+* Gib das `Master-Passwort <../Configuration/Preferences.html#master-passwort>`_ ein und klicke 'OK'.
 
 .. image:: ../images/AAPS_ImportSettings2.png
-  :alt: AndroidAPS import settings 2
+  :alt: AndroidAPS Import der Einstellungen 2
 
-* Details on the preference file will be shown.
-* Last option to cancel import.
-* Click 'Import'.
-* Confirm message by clicking 'OK'.
-* AAPS will be restarted in order to activate imported preferences.
+* Details zu der gewählten Datei werden angezeigt.
+* Letzte Option zum Abbrechen des Imports.
+* Klicke auf 'Importieren'.
+* Bestätige die Meldung durch Klick auf 'OK'.
+* AAPS wird neu gestartet, um importierte Einstellungen zu aktivieren.
 
-Note for Dana RS users
+Hinweis für Dana RS Nutzer
 ------------------------------------------------------------
-* As pump connection settings are also imported AAPS on your new phone will already "know" the pump and therefore not start a bluetooth scan. 
-* Please pair new phone and pump manually.
+* Da die Verbindungseinstellungen zusammen mit den anderen Einstellungen in AAPS importiert werden, "kennt" AAPS deine Pumpe bereits und startet daher keinen Bluetooth-Scan. 
+* Bitte stelle die Bluetooth-Verbindung zwischen Smartphone und Pumpe manuell her.
 
-Import settings from previous versions (before AAPS 2.7)
+Einstellungen aus früheren Versionen importieren (vor AAPS 2.7)
 ------------------------------------------------------------
-* The "old" settings file (called 'AndroidAPSPreferences' - without file extension) must be in root folder of your smartphone (/storage/emulated/0).
-* Do not put the "old" file in the same folder as the new exported settings (AAPS/preferences).
-* You will find the "old" file on the bottom of the list in the import dialogue.
+* Die “alte” Datei mit den Einstellung (der Dateiname ist 'AndroidAPSPreferences' - ohne Dateiendung) muss sich im Stammordner (root folder) des Smartphones befinden (/storage/emulated/0).
+* Lege die "alte" Datei nicht in den gleichen Ordner wie die neuen exportierten Einstellungen (AAPS/Einstellungen).
+* Die "alte" Einstellungs-Datei findest Du am Ende der Liste im Import-Dialog.
 
-Transfer settings file
+Einstellungs-Datei übertragen
 ==================================================
-* Best way to transfer settings file to a new phone is via USB cable or cloud service (i.e. Google Drive).
-* Manuals can be found on the web, i.e. `Android help pages <https://support.google.com/android/answer/9064445?hl=en>`_.
-* If you experience problems with the transferred file try another way to transfer file.
+* Der beste Weg, um Einstellungs-Datei auf ein neues Telefon zu übertragen, ist über ein USB-Kabel oder einen Cloud-Service (z.B.
+* Anleitungen dazu findest Du im Netz, z.B. `Android-Hilfe <https://support.google.com/android/answer/9064445?hl=de>`_.
+* Wenn Probleme mit der übertragenen Datei auftreten, versuche eine andere Methode, um die Datei zu übertragen.
