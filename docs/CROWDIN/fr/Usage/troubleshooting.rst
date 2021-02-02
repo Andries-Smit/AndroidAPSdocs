@@ -1,55 +1,55 @@
-Troubleshooting
+Résolution de problèmes
 **************************************************
-You can find troubleshooting info on many pages in the wiki. This page is a collection of links to help you find the information to solve your problem.
+Vous pouvez trouver des informations de dépannage sur de nombreuses pages dans le wiki. Cette page est une collection de liens pour vous aider à trouver les informations nécessaires pour résoudre votre problème.
 
-Additional useful information might also be available in the `FAQ <../Getting-Started/FAQ.html>`_.
+D'autres informations utiles peuvent également être disponibles dans la rubrique `FAQ <../Getting-Started/FAQ.html>`_.
 
-AndroidAPS app
+Application AndroidAPS
 ==================================================
 
-Building & updating
--------------------
-* `Lost keystore <../Installing-AndroidAPS/troubleshooting_androidstudio.html#lost-keystore>`_
-* `Troubleshooting AndroidStudio <../Installing-AndroidAPS/troubleshooting_androidstudio.html>`_
+Génération et mise à jour
+-----
+* `Certificats perdus <../Installing-AndroidAPS/troubleshooting_androidstudio.html#fichier-de-cles-perdu>`_
+* `Dépannage AndroidStudio <../Installing-AndroidAPS/troubleshooting_androidstudio.html>`_
 
-Settings
+Paramètres
 --------------------------------------------------
-* `Profile <../Usage/Profiles.html#troubleshooting-profile-errors>`_
+* `Profils <../Usage/Profiles.html#depannage-des-erreurs-de-profil>`_
 
   .. image:: ../images/BasalNotAlignedToHours2.png
-    :alt: Error: Basal not aligned to hours
+    :alt: Error: Débits de Basal non alignés sur les heures
 
-* `Nightscout Client <../Usage/Troubleshooting-NSClient.html>`_
+* `Client Nightscout <../Usage/Troubleshooting-NSClient.html>`_
 
-Usage
+Utilisation
 --------------------------------------------------
-* `Wrong carb values <../Usage/COB-calculation.html#detection-of-wrong-cob-values>`_
+* `Valeur de glucides incorrectes <../Usage/COB-calculation.html#detection-de-ga-errones>`_
 
   .. image:: ../images/Calculator_SlowCarbAbsorbtion.png
-    :alt: Error: Slow carb absorbtion
+    :alt: Error: Absorption lente des glucides
 
-* `SMS commands <../Children/SMS-Commands.html#troubleshooting>`_
+* `Commandes SMS <../Children/SMS-Commands.html#depannage>`_
 
-CGM
+MGC
 ==================================================
-* `General <../Hardware/GeneralCGMRecommendation.html#troubleshooting>`_
-* `Dexcom G6 <../Hardware/DexcomG6.html#troubleshooting-g6>`_
-* `Libre 2 <../Hardware/Libre2.html#experiences-and-troubleshooting>`_
-* `xDrip - no CGM data <../Configuration/xdrip.html#identify-receiver>`_
-* `xDrip - Dexcom troubleshooting <../Configuration/xdrip.html#troubleshooting-dexcom-g5-g6-and-xdrip>`_
+* `Généralités <../Hardware/GeneralCGMRecommendation.html#depannage>`_
+* `Dexcom G6 <../Hardware/DexcomG6.html#depannage-g6>`_
+* `Libre 2 <../Hardware/Libre2.html#astuces-et-depannages>`_
+* `xDrip - pas de données MGC <../Configuration/xdrip.html#identifier-le-recepteur>`_
+* `Dépannage xDrip - Dexcom <../Configuration/xdrip.html#depannage-dexcom-g5-g6-et-xdrip>`_
 
-Pumps
+Pompes
 ==================================================
-* `DanaRS <../Configuration/DanaRS-Insulin-Pump.html#dana-rs-specific-errors>`_
-* `Accu-Chek Combo general <../Usage/Accu-Chek-Combo-Tips-for-Basic-usage.html>`_
-* `Accu-Chek Combo + Ruffy <../Configuration/Accu-Chek-Combo-Pump.html#why-does-pairing-with-the-pump-not-work-with-the-app-ruffy>`_
-* `Accu-Chek Insight <../Configuration/Accu-Chek-Insight-Pump.html#insight-specific-errors>`_
-* `Medtronic + RileyLink <../Configuration/MedtronicPump.html#what-to-do-if-i-loose-connection-to-rileylink-and-or-pump>`_
+* `DanaRS <../Configuration/DanaRS-Insulin-Pump.html#erreurs-specifiques-a-danars`_
+* `Accu-Chek Combo généralités <../Usage/Accu-Chek-Combo-Tips-for-Basic-usage.html>`_
+* `Accu-Chek Combo + Ruffy <../Configuration/Accu-Chek-Combo-Pump.html#pourquoi-l-appairage-avec-la-pompe-ne-fonctionne-pas-avec-l-application-ruffy>`_
+* `Accu-Chek Insight <../Configuration/Accu-Chek-Insight-Pump.html#erreurs-specifiques-a-insight>`_
+* `Medtronic + RileyLink <../Configuration/MedtronicPump.html#que-faire-si-je-perds-la-connexion-a-rileylink-et-ou-a-la-pompe>`_
 
-Phones
+Téléphones
 ==================================================
 * `Jelly <../Usage/jelly.html>`_
-* `Huawei bluetooth & battery optimization <../Usage/huawei.html>`_
+* `Huawei optimisation bluetooth & batterie <../Usage/huawei.html>`_
 
 Smartwaches
 ==================================================
