@@ -3,94 +3,94 @@ Dexcom G6
 Basics first
 ==================================================
 
-* Follow general CGM hygiene and setting sensor recommendation `here <../Hardware/GeneralCGMRecommendation.html>`__.
-* For G6 transmitters manufactured after fall/end of 2018 please make sure to use one of the `latest nightly built xDrip+ versions <https://github.com/NightscoutFoundation/xDrip/releases>`_. Those transmitters have a new firmware and latest stable version of xDrip+ (2019/01/10) cannot deal with it.
+* Volg de algemene CGM tips en sensor plaatsings aanbevelingen `hier <../Hardware/GeneralCGMRecommendation.html>`_.
+* Voor G6 zenders die na het najaar van 2018 zijn geproduceerd, zorg ervoor dat je een van de `nieuwste xDrip+ 'Nightly Build' versies <https://github.com/NightscoutFoundation/xDrip/releases>`_ gebruikt. Deze zenders hebben een nieuwe firmware en de nieuwste stabiele versie van xDrip+ (2019/01/10) werkt daar niet mee.
 
-General hints for looping with G6
+Algemene tips voor loopen met G6
 ==================================================
 
-What’s clear is that using the G6 is perhaps a little more complex than it as first suggests. To use it safely, there are a few points to be aware of: 
+Het gebruik van de is G6 misschien wat complexer dan het op het eerste gezicht lijkt. To use it safely, there are a few points to be aware of: 
 
-* If you are using the native data with the calibration code in xDrip+ or Spike, the safest thing to do is not allow preemptive restarts of the sensor.
-* If you must use preemptive restarts, then make sure you insert at a time of day where you can observe the change and calibrate if necessary. 
-* If you are restarting sensors, either do it without the factory calibration for safest results on days 11 and 12, or ensure you are ready to calibrate and keep an eye on variation.
-* Pre-soaking of the G6 with factory calibration is likely to give variation in results. If you do pre-soak, then to get best results, you will probably need to calibrate the sensor.
-* If you aren’t being observant about the changes that may be taking place, it may be better to revert to non-factory-calibrated mode and use the system like a G5.
+* Wanneer je het "Native" algoritme gebruikt in combinatie met de kalibratiecode in xDrip of Spike, is het veiligste om de optie "Pre-emptive restart" (voortijdige herstart) niet te gebruiken.
+Als je er wel voor kiest om Pre-emptive restarts te gebruiken, zorg dan dat je de sensor start op een moment van de dag dat je tijd kunt vrijmaken om te zien wat er gebeurt tijdens de herstart. 
+* Als je jouw sensoren herstart, dan zul je dat moeten doen A) zonder gebruik te maken van de kalibratiecode voor de veiligste resultaten op dagen 11 en 12, of B) ervoor te zorgen dat je jouw sensorgrafiek in de gaten kunt houden en bereid bent om te kalibreren.
+* Het zogenaamde "Pre-soaking" (de sensor alvast inbrengen, waarna je nog wacht met starten) van de G6 met kalibratiecode zal hoogstwaarschijnlijk leiden tot onnauwkeurigheden in je glucosewaardes na starten. Wanneer je Pre-soakt is het waarschijnlijk het beste om de sensor te kalibreren.
+* Als je om welke reden ook niet in staat bent om op te letten wat er gebeurt tijdens een herstart / na een Pre-soak, dan kun je beter de kalibratiecode niet gebruiken, en jouw sensor gebruiken met kalibraties, net als bij de G5.
 
-To learn more about the details and reasons for these recommendations read the `complete article <http://www.diabettech.com/artificial-pancreas/diy-looping-and-cgm/>`_ published by Tim Street at `www.diabettech.com <http://www.diabettech.com>`_.
+Lees het `volledige artikel (Engelstalig) <http://www.diabettech.com/artificial-pancreas/diy-looping-and-cgm/>`_ van Tim Street voor meer achtergrondinformatie en de redenen achter deze aanbevelingen.
 
-If using G6 with xDrip+
+Dexcom G6 met xDrip+
 ==================================================
-* The Dexcom G6 transmitter can simultaneously be connected to the Dexcom receiver (or alternatively the t:slim pump) and one app on your phone.
-* When using xDrip+ as receiver uninstall Dexcom app first. **You cannot connect xDrip+ and Dexcom app with the transmitter at the same time!**
-* If you need Clarity and want to profit from xDrip+ alarms use the `patched Dexcom app <../Hardware/DexcomG6.html#if-using-g6-with-patched-dexcom-app>`_ with local broadcast to xDrip+.
-* If not already set up then download `xdrip <https://github.com/NightscoutFoundation/xDrip>`_ and follow instructions on nightscout (`G5 <http://www.nightscout.info/wiki/welcome/nightscout-with-xdrip-and-dexcom-share-wireless/xdrip-with-g5-support>`_).
-* Select xDrip+ in ConfigBuilder (setting in AndroidAPS).
-* Adjust settings in xDrip+ according to `xDrip+ settings page <../Configuration/xdrip.html>`_
-* If AAPS does not receive BG values when phone is in airplane mode use 'Identify receiver' as describe on `xDrip+ settings page <../Configuration/xdrip.html>`_.
+* De Dexcom G6 zender kan gelijktijdig worden gekoppeld aan de Dexcom ontvanger (of als alternatief de t:slim pomp) en een app op je telefoon.
+* Verwijder de originele Dexcom app van je telefoon. * xDrip+ en Dexcom app kunnen niet tegelijkertijd met de zender worden verbonden.
+* Als je Clarity wilt gebruiken maar je wilt ook de uitgebreidere alarm-opties van xDrip+ gebruiken, dan kun je de `Aangepaste Dexcom app </Hardware/DexcomG6.html#g6-met-aangepaste-dexcom-app>`_ op je telefoon zetten (en die verbinden met de zender) en ook de xDrip+ app op je telefoon zetten (kies als hardware data source voor 640G/Eversense).
+* Als dat nog niet is ingesteld, download dan `xDrip+ <https://github.com/NightscoutFoundation/xDrip>`_ en volg de instructies voor Nightscout `G5 <http://www.nightscout.info/wiki/welcome/nightscout-with-xdrip-and-dexcom-share-wireless/xdrip-with-g5-support>`_.
+* Selecteer xdrip in Configurator (instellingen in AndroidAPS).
+* Instellingen in xDrip + aanpassen volgens `xDrip+ instellingen pagina <../Configuration/xdrip.html>`_
+* Als AAPS geen BG-waarden ontvangt wanneer de telefoon in vliegtuigmodus staat, gebruik dan 'Identify receiver' (Identificeer ontvanger) zoals beschreven op de `xDrip+ instellingen pagina <../Configuration/xdrip.html>`_.
 
-If using G6 with patched Dexcom app
+Wanneer je de G6 gebruikt met de Bouw Je Eigen Dexcom App
 ==================================================
-* Download the apk from `https://github.com/dexcomapp/dexcomapp <https://github.com/dexcomapp/dexcomapp>`_, and choose the version that fits your needs (mg/dl or mmol/l version, G6).
+* Download de apk van `https://github.com/dexcomapp/dexcomapp <https://github.com/dexcomapp/dexcomapp>`_, en kies de versie die je nodig hebt (mg/dl of mmol/l versie, voor G6).
 
-  * Folder 2.4 for users of the current version, folder 2.3 is only for the outdated AndroidAPS 2.3.
-  * Open https://play.google.com/store/search?q=dexcom%20g6 on your computer. 
-  * Click the link to the Dexcom G6 app on the search results page that is displayed.
-  * Region will be visible in URL.
+  De app uit de map 2.3 moet je niet hebben, die was nog van (inmiddels verouderde) AndroidAPS 2.3.
+  * Open https://play.google.com/store/search?q=dexcom%20g6 op jouw computer. 
+  * Klik op de link naar de app Dexcom G6 op de pagina met zoekresultaten die wordt afgebeeld.
+  * Regio wordt weergegeven in URL.
 
    .. image:: ../images/DexcomG6regionURL.PNG
-     :alt: Region in Dexcom G6 URL
+     :alt: Regio in Dexcom G6 URL
 
-* Uninstall the original Dexcom app.
-* Install downloaded apk
-* Enter sensor code and transmitter serial no. in patched app.
-* After short time patched app should pick-up transmitter signal. (If not you will have to stop sensor and start new one.)
-* Select Dexcom App (patched) in ConfigBuilder (setting in AndroidAPS).
-* If you want to use xDrip+ alarms via local broadcast: in xDrip+ hamburger menu > settings > hardware data source > 640G /EverSense.
-* There is no local broadcast from patched Dexcom app directly to xDrip+. Broadcast has to go through AAPS as described above.
+* Als je eerder de originele Dexcom app of de aangepaste Dexcom app hebt gebruikt, moet je die eerst van je telefoon verwijderen voordat je de Bouw Je Eigen Dexcom App erop zet.
+* Installeer de gedownloade apk
+* Voer de sensorcode en het serienummer van de zender in in de aangepaste app. in patched app.
+* Na korte tijd zal de aangepaste app het signaal van de zender oppikken. (Zo niet, dan moet je de sensor stoppen en een nieuwe starten.)
+* Selecteer Dexcom App (aangepast) in ConfigBuilder (instelling in AndroidAPS).
+* Als je de Dexcom app wilt gebruiken om aan de zender te koppelen, maar ook gebruik wilt maken van xDrip alarmen zet dan óók de xDrip+ app op je telefoon en kies in xDrip hamburger menu > instellingen > hardware gegevensbron > 640G /EverSense.
+**Je kunt de xDrip+ app en de Dexcom app niet gelijktijdig koppelen aan een zender.** Broadcast has to go through AAPS as described above.
 
-If using G6 with Build Your Own Dexcom App
+G6 met aangepaste Dexcom app
 ==================================================
-* As of December 2020 `Build Your Own Dexcom App <https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform?fbzx=2196386787609383750&fbclid=IwAR2aL8Cps1s6W8apUVK-gOqgGpA-McMPJj9Y8emf_P0-_gAsmJs6QwAY-o0>`_ (BYODA)also supports local broadcast to AAPS and/or xDrip+ (not for G5 sensors!)
-* This app lets you use your Dexcom G6 with any Android smartphone.
+* Sinds december 2020 ondersteunt de `Bouw Je Eigen Dexcom App <https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform?fbzx=2196386787609383750&fbclid=IwAR2aL8Cps1s6W8apUVK-gOqgGpA-McMPJj9Y8emf_P0-_gAsmJs6QwAY-o0>`_ (Build Your Own Dexcom App, BYODA) ook het lokaal delen (local broadcast) van BG gegevens met AAPS en/of xDrip+ (Let op: niet voor G5 sensors!).
+* Met deze app kun je jouw Dexcom G6 gebruiken met elke Android smartphone.
 * Uninstall the original Dexcom app or patched Dexcom app if you used one of those previously.
-* Install downloaded apk
-* Enter sensor code and transmitter serial no. in patched app.
-* In phone settings go to apps > Dexcom G6 > permissions > additional permissions and press 'Access Dexcom app'.
-* After short time patched app should pick-up transmitter signal. (If not you will have to stop sensor and start new one.)
+* Installeer de gedownloade apk
+* Voer de sensorcode en het serienummer van de zender in in de aangepaste app. in patched app.
+* Ga in de telefoon instellingen naar apps > Dexcom G6 > machtigingen > extra rechten en druk op 'Toegang tot Dexcom app'.
+* Na korte tijd zal de aangepaste app het signaal van de zender oppikken. (Zo niet, dan moet je de sensor stoppen en een nieuwe starten.)
 
-Settings for AndroidAPS
+Instellingen voor AndroidAPS
 --------------------------------------------------
-* Select 'Dexcom App (patched)' in config builder.
-* If you don't recieve any values select any other data source, then re-select 'Dexcom App (patched)' to trigger the demand for permissions to establish the connection between AAPS and BYODA-broadcast.
+* Selecteer 'Dexcom App (aangepast)' in de configurator.
+* Als je geen waarden ontvangt, selecteer dan een andere gegevensbron, en selecteer daarna 'Dexcom App (aangepast) opnieuw om te zorgen dat de app opnieuw om een machtiging vraagt en daarmee de AAPS app de BG waardes zal ontvangen van de de Bouw Je Eigen Dexcom app.
 
-Settings for xDrip+
+Instellingen voor xDrip+
 --------------------------------------------------
-* Select '640G/Eversense' as data source.
-* Command 'start sensor' must be performed in xDrip+ in order to receive values. This will not affect your current sensor controlled by Build Your Own Dexcom App.
+* Selecteer '640G/Eversense' als gegevensbron.
+* Druk op 'start sensor' in xDrip+ om waarden te kunnen ontvangen. Dit zal geen invloed hebben op jouw lopende sensor sessie, aangezien die alleen gekoppeld is met de Bouw Je Eigen Dexcom App.
    
-Troubleshooting G6
+Dexcom G6 specifieke probleemoplossing
 ==================================================
 Dexcom G6 specific troubleshooting
 --------------------------------------------------
-* Transmitters with serial no. starting with 80 or 81 need at least last stable xDrip+ version from May 2019 or a newer nightly build.
-* Transmitters with serial no. starting with 8G need at least nightly build from July 25th, 2019 or newer.
-* xDrip+ and Dexcom app cannot be connected with the transmitter at the same time.
-* Wait at least 15 min. between stopping and starting a sensor.
-* Do not rewind back time of insertion. Answer question "Did you insert it today?" always with "Yes, today".
-* Do not enable "restart sensors" while setting a new sensor
-* Do not start new sensor before the following information is shown in Classic Status Page -> G5/G6 status -> PhoneServiceState:
+* Transmitters with serial no. * Zenders met serienummer beginnend met 80 of 81 hebben ten minste de laatste stabiele versie van xDrip van mei 2019 of een nieuwere 'Nightly Build' versie nodig.
+* Transmitters with serial no. * Zenders met serienummer beginnend met 8G, 8H of 8J hebben ten minste een 'Nightly Build' versie vanaf 25 juli 2019 of nieuwer nodig.
+Als je jouw Dexcom wilt koppelen aan de xDrip+ app dan zul je dus eerst de Dexcom app moeten verwijderen (of: pas het zender-nummer in de Dexcom app aan naar een onzingetal zodat Dexcom niet probeert aan de zender te koppelen).
+* Wacht minstens 15 min. tussen het stoppen en starten van een sensor.
+* Zet het tijdstip van inbrengen niet terug in de tijd. Bentwoord de vraag: "Did you insert it today?" altijd met "Yes, today".
+* Schakel de optie "restart sensors" niet in tijdens het zetten van een nieuwe sensor
+* Start geen nieuwe sensor voordat de volgende informatie wordt weergegeven in Classic Status Page-> G5/G6 status-> PhoneServiceState:
 
-  * Transmitter serial starting with 80 or 81: "Got data hh:mm" (i.e. "Got data 19:04")
-  * Transmitter serial starting with 8G or 8H: "Got glucose hh:mm" (i.e. "Got glucose 19:04") or "Got no raw hh:mm" (i.e. "Got now raw 19:04")
+  * Zendernummer beginnend met 80 of 81: "Got data hh:mm" (bijvoorbeeld "Got data 19:04") "Got glucose 19:04") of "Got no raw hh:mm" (d.w.z.
+  * Transmitter serie vanaf 8G of 8H: "Got glucose hh:mm" (d.w.z. "Got glucose 19:04") or "Got no raw hh:mm" (i.e. "Got now raw 19:04")
 
 .. image:: ../images/xDrip_Dexcom_PhoneServiceState.png
   :alt: xDrip+ PhoneServiceState
 
-General troubleshoothing
+Algemene probleemoplossing
 --------------------------------------------------
-General Troubleshoothing for CGMs can be found `here <./GeneralCGMRecommendation.html#troubleshooting>`__.
+Voor het oplossen van problemen met jouw CGM klik `hier <./GeneralCGMRecommendation.html#problemen-oplossen>`_.
 
-New transmitter with running sensor
+Nieuwe zender met lopende sensor
 --------------------------------------------------
-If you happen to change transmitter during a running sensor session you might try to remove the transmitter without damaging the sensor mount. A video can be found at `https://youtu.be/AAhBVsc6NZo <https://youtu.be/AAhBVsc6NZo>`_.
+Als je toevallig de zender wilt veranderen tijdens een lopende sensor sessie, dan kun je proberen de zender te verwijderen terwijl je de sensor gewoon laat zitten. Zie deze video `https://youtu.be/AAhBVsc6NZo <https://youtu.be/AAhBVsc6NZo>`_.
