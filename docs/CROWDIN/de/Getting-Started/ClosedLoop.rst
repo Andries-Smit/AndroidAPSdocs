@@ -1,56 +1,56 @@
-What is a Closed Loop System?
+Was ist ein Closed Loop-System?
 **************************************************
 
 .. image:: ../images/autopilot.png
-  :alt: AAPS is like an autopilot
+  :alt: AAPS ist wie ein Autopilot
 
-An artificial pancreas closed loop system combines different components in order to make diabetes management easier for you. 
-In her great book `Automated Insulin Delivery <https://www.artificialpancreasbook.com/>`_ Dana M. Lewis, one of the founders of the open source closed loop movement, calls it an `"autopilot for your diabetes" <https://www.artificialpancreasbook.com/3.-getting-started-with-your-aps>`_. But what does that mean?
+Ein Closed Loop System für eine künstliche Bauchspeicheldrüse kombiniert verschiedene Komponenten, um Dein Diabetes Management zu vereinfachen. 
+In ihrem großartigen Buch `Automated Insulin Delivery <https://www.artificialpancreasbook.com/>`_ bezeichnet Dana M. Lewis, eine der Gründerinnen der Open Source Closed Loop Bewegung, es als `"Autopilot für Deinen Diabetes" <https://www.artificialpancreasbook.com/3.-getting-started-with-your-aps>`_. Aber was bedeutet das?
 
-**Autopilot in an aircraft**
+**Autopilot in einem Flugzeug**
 
-The autopilot does not do the complete job and does not give the possibility to the pilot to sleep throughout the entire flight. It facilitates the work of the pilots. It relieves them of the burden of permanently monitoring the aircraft and the flight attitude. This allows the pilot to concentrate on monitoring the airspace and controlling the autopilot's functions.
+Der Autopilot erledigt nicht den kompletten Job und gibt dem Piloten daher nicht die Möglichkeit, während des gesamten Fluges zu schlafen. Er erleichtert die Arbeit der Piloten. Er entlastet sie von der permanenten Überwachung des Flugzeugs und der Fluglage. Dadurch kann sich der Pilot auf die Überwachung des Luftraums und die Kontrolle der Funktionen des Autopiloten konzentrieren.
 
-The autopilot receives signals from various sensors, a computer evaluates them together with the pilot's specifications and then makes the necessary adjustments. The pilot no longer has to worry about the constant adjustments.
+Der Autopilot empfängt Signale von verschiedenen Sensoren, ein Computer wertet diese zusammen mit den Vorgaben der Piloten aus und nimmt dann die notwendigen Anpassungen vor. Der Pilot muss sich nicht mehr um die dauernden Justierungen kümmern.
 
 **Closed Loop System**
 
-The same applies to an artificial pancreas closed loop system. It does not do the whole job, you still have to take care of your diabetes. A closed loop system combines the sensor data from a CGM/FGM with your diabetes management specifications such as basal rate, insulin sensitivity factor and carb ratio. From this it calculates treatment suggestions and implements these permanent small adjustments in order to keep your diabetes within the target range and to relieve you. This leaves more time for your life "next to" diabetes.
+Gleiches gilt für ein Closed Loop System für eine künstliche Bauchspeicheldrüse. Es macht nicht den kompletten Job für Dich, Du musst Dich weiter um Deinen Diabetes kümmern. Ein Closed Loop System kombiniert die Sensordaten aus einem CGM/FGM mit Deinen Vorgaben zum Diabetes Management wie Basalrate, Korrektur- und BE-Faktoren. Daraus errechnet es Behandlungsvorschläge und setzt diese permanenten kleinen Anpassungen um, um Deinen Diabetes im Zielbereich zu halten und Dich zu entlasten. So bleibt mehr Zeit für das Leben "neben" dem Diabetes.
 
-Just as you don't want to get on a plane where only the autopilot flies without human supervision, a closed loop system helps you with your diabetes management, but always needs your support! **Even with a closed loop you can't just forget your diabetes!**
+Genauso wenig wie Du in ein Flugzeug steigen willst, in dem nur noch der Autopilot ohne menschliche Überwachung fliegt, hilft Dir ein Closed Loop System bei Deinem Diabetes Management, benötigt aber immer Deine Unterstützung! **Auch mit einem Closed Loop kannst Du Deinen Diabetes nicht einfach vergessen!**
 
-Just as the autopilot depends on the sensor values as well as the pilot's specifications, a closed loop system needs appropriate input such as basal rates, ISF and carb ratio to support you successfully.
+So wie der Autopilot neben den Sensorwerten auf die Vorgaben der Piloten angewiesen ist, so braucht ein Closed Loop System passende Basalraten, Korrektur- und BE-Faktoren, um Dich erfolgreich unterstützen zu können.
 
 
-Open Source Artificial Pancreas Closed Loop Systems
-===================================================
-At present there are three major open source closed loop systems available:
+Open Source Closed Loop System für eine künstliche Bauchspeicheldrüse
+==================================================
+Aktuell sind drei große Open Source Closed Loop Systeme verfügbar:
 
 AndroidAPS (AAPS)
 --------------------------------------------------
-AndroidAPS is described in detail in `this documentation <./WhatisAndroidAPS.html>`_. It uses an Android Smartphone for calculation and control of your insulin pump. It is in strong collaboration with OpenAPS (i.e. they share algorithms).
+AndroidAPS wird in `dieser Dokumentation <./WhatisAndroidAPS.html>`_ ausführlich beschrieben. AAPS verwendet ein Android Smartphone für die Berechnungen und die Steuerung Deiner Insulinpumpe. AAPS steht in enger Verbindung mit OpenAPS, sie nutzen beide z.B. die gleichen Algorithmen.
 
-Compatible `pumps <../Hardware/pumps.html>`_ are:
+Kompatible `Insulinpumpen <../Hardware/pumps.html>`_ sind:
 
 * `DanaR <../Configuration/DanaR-Insulin-Pump.html>`_ / `DanaRS <../Configuration/DanaRS-Insulin-Pump.html>`_
 * `Accu-Chek Combo <../Configuration/Accu-Chek-Combo-Pump.html>`_
 * `Accu-Chek Insight <../Configuration/Accu-Chek-Insight-Pump.html>`_
 * `Omnipod Eros <../Configuration/OmnipodEros.html>`_
-* some old `Medtronic pumps <../Configuration/MedtronicPump.html>`_
+* einige alte `Medtronic Pumpen <../Configuration/MedtronicPump.html>`_
 
 OpenAPS
 --------------------------------------------------
-`OpenAPS <https://openaps.readthedocs.io>`_ was the first Open Source Closed Loop System. It uses a small computer such as Raspberry Pi or Intel Edison.
+`OpenAPS <https://openaps.readthedocs.io>`_ war das erste Open Source Closed Loop System. OpenAPS verwendet einen kleinen Computer wie Raspberry Pi oder Intel Edison.
 
-Compatible pumps are:
+Kompatible Insulinpumpen sind:
 
-* some old Medtronic pumps
+* einige alte Medtronic Pumpen
 
-Loop for iOS
+Loop für iOS
 --------------------------------------------------
-`Loop for iOS <https://loopkit.github.io/loopdocs/>`_ is the Open Source Closed Loop System to be used with Apple iPhones.
+`Loop for iOS <https://loopkit.github.io/loopdocs/>`_ ist ein Open Source Closed Loop System für iPhones von Apple.
 
-Compatible pumps are:
+Kompatible Insulinpumpen sind:
 
 * Omnipod Eros
-* some old Medtronic pumps
+* einige alte Medtronic Pumpen
