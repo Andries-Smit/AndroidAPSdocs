@@ -1,6 +1,6 @@
-# Accessing logfiles
+# Logbestanden uitlezen
 
-* Connect phone to a computer in file transfer mode
+* Verbind je telefoon met een computer in bestandsoverdrachtsmodus
 * Locate the log files in the AndroidAPS data directory
 
    * The folder will be at a location similar to ***Internal storage(1) / Android / data / info.nightscout.androidaps / files***
