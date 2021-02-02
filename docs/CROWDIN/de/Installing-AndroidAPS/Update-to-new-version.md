@@ -1,107 +1,107 @@
-# Update to a new version or branch
+# Update auf eine neue Version oder branch
 
-## Build yourself instead of download
+## Kein Download möglich - APK muss selbst erstellt werden
 
-**AndroidAPS is not available as download due to regulation for medial devices. It is legal to build the app for your own use but you must not give a copy to others! See [FAQ page](../Getting-Started/FAQ.md) for details.**
+**Aufgrund der gesetzlichen Regelungen für Medizinprodukte ist AndroidAPS nicht als Download verfügbar. Du kannst die App legal für Dich selbst erstellen, darfst aber keine Kopie an andere weitergeben! Weitere Informationen findest Du auf der [FAQ Seite](../Getting-Started/FAQ.md).**
 
-## Important notes
+## Wichtige Hinweise
 
-* Please update as soon as possible after a new release is available. You will receive an [information on the AndroidAPS home screen](../Installing-AndroidAPS/Releasenotes#release-notes) about the new version.
-* As of version 2.3 you have to use git to update. Updating via zip file does not work anymore.
-* As of version 2.7 repository location changed to [https://github.com/nightscout/AndroidAPS](https://github.com/nightscout/AndroidAPS). If you are not familiar with git the easiest way for update is remove directory with AndroidAPS and do a [new clone](../Installing-AndroidAPS/Building-APK.md).
-* Please use [Android Studio Version 4.1.1](https://developer.android.com/studio/) or newer to build the apk.
-* [Windows 10 32-bit systems](../Installing-AndroidAPS/troubleshooting_androidstudio#unable-to-start-daemon-process) are not supported by Android Studio 4.1.1.
-* If you are using xDrip make sure to [identify the receiver](../Configuration/xdrip#identify-receiver).
-* If you are using Dexcom G6 with the [patched Dexcom app](../Hardware/DexcomG6#if-using-g6-with-patched-dexcom-app) you will need the version from the [2.4 folder](https://github.com/dexcomapp/dexcomapp/tree/master/2.4).
+* Wenn eine neue Version erscheint, führe bitte so bald als möglich ein Update durch. Ein [Hinweis auf dem AndroidAPS Startbildschirm](../Installing-AndroidAPS/Releasenotes#release-notes) informiert über die neue Version.
+* Ab Version 2.3 muss für das Update git genutzt werden. Ein Update mittels ZIP-File ist nicht mehr möglich.
+* Ab Version 2.7 wurde der Speicherort des Repositories auf <https://github.com/nightscout/AndroidAPS> geändert. Wenn Du Dich mit git nicht auskennst, ist es am einfachsten, wenn Du das vorhandene AndroidAPS-Verzeichnis entfernst und die [App-Erstellung von vorne](../Installing-AndroidAPS/Building-APK.md) beginnst.
+* Nutze bitte [Android Studio Version 4.1.1](https://developer.android.com/studio/) oder neuer, um die APK-Datei zu erstellen.
+* [Windows 10 32-bit Systeme](../Installing-AndroidAPS/troubleshooting_androidstudio#unable-to-start-daemon-process) werden bei Android Studio 4.1.1 nicht unterstützt.
+* Wenn Du xDrip verdwendet, stelle sicher, dass [identifiziere Empfänger](../Configuration/xdrip#identifiziere-empfanger) gesetzt ist.
+* Wenn Du den Dexcom G6 mit der [gepatchted Dexcom app](../Hardware/DexcomG6#if-using-g6-with-patched-dexcom-app) verwendest, dann musst Du die Version aus dem [2.4 Verzeichnis](https://github.com/dexcomapp/dexcomapp/tree/master/2.4) installiert haben.
 
-## Quick walk-through for experienced users
+## Kurzanleitung für erfahrene Anwender
 
-Please skip this paragraph if you update for the first time. The quick walk-through is for experienced users. Your next step would be to [install git](../Installing-AndroidAPS/git-install.rst) if you do not have it already.
+Bitte überspringe diesen Absatz, wenn Du zum ersten Mal aktualisierst. Die Kurzanleitung ist für erfahrene Anwender. Dein nächster Schritt ist, [git zu installieren](../Installing-AndroidAPS/git-install.rst) wenn das Programm bisher nicht auf Deinem Computer installiert ist.
 
-If you already updated AAPS in previous versions and use a Windows PC you can update in four simple steps:
+Wenn Du AAPS bereits in früheren Versionen aktualisiert hast und einen Windows-PC verwendest, kannst Du in vier einfachen Schritten aktualisieren:
 
-1. [Export your settings](../Usage/ExportImportSettings#how-to-export-settings) from the existing AAPS version on your phone to be on the save side
-2. [Update local copy](../Installing-AndroidAPS/Update-to-new-version#update-your-local-copy) (VCS->Git->Pull)
-3. [Generate signed APK](../Installing-AndroidAPS/Update-to-new-version#generate-signed-apk) (Select 'app' instead of 'wear' on your way!)
-4. Depending on your [BG source](../Configuration/BG-Source.rst) make sure to [identify receiver](../Configuration/xdrip#identify-receiver) in xDrip or use the patched Dexcom app from the [2.4 folder](https://github.com/dexcomapp/dexcomapp/tree/master/2.4).
+1. [Exportiere Deine Einstellungen](../Usage/ExportImportSettings#exportiere-die-einstellungen) von der "alten" AAPS Version auf Deinem Smartphone, um auf der sicheren Seite zu sein.
+2. [Aktualisiere Deine lokale Kopie](../Installing-AndroidAPS/Update-to-new-version#fuhre-ein-update-deiner-lokalen-version-durch) (VCS->Git->Pull)
+3. [Erstelle die signierte APK-Datei](../Installing-AndroidAPS/Update-to-new-version#signierte-apk-erstellen-generate-signed-apk) (Generate signed APK - Wähle dabei 'app' statt 'wear' im Dialogfeld!)
+4. Je nach [BZ-Quelle](../Configuration/BG-Source.rst) stelle sicher, dass [identifiziere Empfänger](../Configuration/xdrip#identifiziere-empfanger) in xDrip gesetzt ist or verwende die gepatchte Dexcom App aus dem [2.4 Ordner](https://github.com/dexcomapp/dexcomapp/tree/master/2.4).
 
-## Install git (if you don't have it)
+## Installiere git (falls du es noch nicht hast)
 
-Follow the manual on the [git installation page](../Installing-AndroidAPS/git-install.rst).
+Die Schritt-für-Schritt-Anleitung findest Du auf der Seite zur [git Installation](../Installing-AndroidAPS/git-install.rst).
 
-## Update your local copy
+## Führe ein Update deiner lokalen Version durch
 
-* As of version 2.7 repository location changed to [https://github.com/nightscout/AndroidAPS](https://github.com/nightscout/AndroidAPS). If you are not familiar with git the easiest way for update is remove directory with AndroidAPS and do a [new clone](../Installing-AndroidAPS/Building-APK.md).
-* Click: VCS -> Git -> Pull
+* Ab Version 2.7 wurde der Speicherort des Repositories auf <https://github.com/nightscout/AndroidAPS> geändert. Wenn Du Dich mit git nicht auskennst, ist es am einfachsten, wenn Du das vorhandene AndroidAPS-Verzeichnis entfernst und die [App-Erstellung von vorne](../Installing-AndroidAPS/Building-APK.md) beginnst.
+* Klicke: VCS -> Git -> Pull
 
    ![Android Studio - GIT - Pull](../images/AndroidStudio361_Update01.png)
 
-* Click Pull (no changes in dialog field)
+* Klicke auf Pull (keine Änderungen im Dialogfeld erforderlich)
 
    ![Android Studio - GIT - Pull 2](../images/AndroidStudio361_Update02a.png)
 
-* Wait while download is in progress.
+* Warte während der Download läuft.
 
-   ![Android Studio - Pull in progress](../images/AndroidStudio361_Update03.png)
+   ![Android Studio - Pull in Bearbeitung](../images/AndroidStudio361_Update03.png)
 
-* When done Android Studio will inform you that "all files are up-to-date".
+* Nach erfolgreichem Update der lokalen Dateien zeigt Android Studio "all files are up-to-date" an.
 
-   ![All files up to date](../images/AndroidStudio361_Update04.png)
+   ![Alle Dateien sind auf dem neuesten Stand.](../images/AndroidStudio361_Update04.png)
 
 
-## Generate signed APK
+## Signierte APK erstellen (Generate signed APK)
 <!--- Text is maintained in page building-apk.md --->
-* Click "Build" in the menu bar and select "Generate Signed Bundle / APK...".
+* Klicke in der Menüzeile auf "Build" und wähle "Generate Signed Bundle / APK...".
 
-![Build apk](../images/AndroidStudio361_27.png)
+![Apk erstellen](../images/AndroidStudio361_27.png)
 
-* Select "APK" (1.) instead of "Android App Bundle" and click "Next" (2.).
+* Wähle "APK" (1.) statt "Android App Bundle" aus und klicke auf "Next" (2.).
 
-![APK instead of bundle](../images/AndroidStudio361_28.png)
+![APK statt Bundle](../images/AndroidStudio361_28.png)
 
-* Make sure that module is set to "app".
-* Select your key store path by clicking on "Choose existing...".
-* Enter your passwords for key store and key.
-* If the box to remember passwords is checked you don't have to enter them. In case the box was not checked during last build and you cannot remember the passwords refer to the [troubleshooting section](../Installing-AndroidAPS/troubleshooting_androidstudio#lost-keystore).
-* Click "Next".
+* Bei Modul muss "app" ausgewählt werden.
+* Klicke auf "Choose existing..." um Deine Keystore-Datei auszuwählen.
+* Gib Deine Passwörter für Keystore und Key ein.
+* Wenn das Kästchen "remember passwords" aktiviert ist, musst Du diese nicht eingeben. Falls die Box beim letzten Erstellen der apk-Datei nicht aktiviert war und Du Dich nicht mehr an Deine Passwörter erinnern kannst, findest Du eine Lösung im Bereich [Fehlerbehebung](../Installing-AndroidAPS/troubleshooting_androidstudio#verlorener-keystore).
+* Klicke auf “Next”.
 
 ![Key store](../images/AndroidStudio361_Update05.png)
 
-* Select build variant "fullRelease" (1.).
-* Check boxes V1 and V2 for signature versions (2.).
-* Click "Finish". (3.)
+* Wählen Sie die Build-Variante "fullRelease" (1.) aus.
+* Klicke die Checkboxen V1 und V2 für signature versions an (2.).
+* Klicke auf "Finish". (3.)
 
-![Finish build](../images/AndroidStudio361_32.png)
+![Build beenden](../images/AndroidStudio361_32.png)
 
-* Android Studio will display the information "APK(s) generated successfully..." after build is finished.
-* In case build was not successful refer to the [troubleshooting section](../Installing-AndroidAPS/troubleshooting_androidstudio.rst).
-* Easiest way to find the apk is to click on "Event log".
+* Android Studio wird die Information "APK(s) generated successfully..." anzeigen, sobald die APK-Datei vollständig erstellt wurde.
+* Falls beim Erstellen Fehler auftreten, findest Du Lösungsansätze auf den Seiten zur [Fehlerbehebung](../Installing-AndroidAPS/troubleshooting_androidstudio.rst).
+* Der einfachste Weg, die fertige APK-Datei zu finden, ist ein Klick auf "Event log".
 
-![Build successfully - event log](../images/AndroidStudio361_33.png)
+![Build erfolgreich - Ereignisprotokoll](../images/AndroidStudio361_33.png)
 
-* In the event log section click "locate".
+* Klicke im Event Log auf "locate".
 
-![Event log - locate apk](../images/AndroidStudio361_34.png)
+![Ereignisprotokoll-apk suchen](../images/AndroidStudio361_34.png)
 
-* app-full-release.apk is the file you are looking for.
+* app-full-release.apk ist die von Dir gesuchte Datei.
 
-![File location apk](../images/AndroidStudio361_35.png)
-
-
-## Transfer APK to smartphone
-
-Easiest way to transfer app-full-release.apk to your phone is via [USB cable or Google Drive](https://support.google.com/android/answer/9064445?hl=en). Please note that transfer by mail might cause difficulties and is not the preferred way.
-
-On your phone you have to allow installation from unknown sources. Manuals how to do this can be found on the internet (i.e. [here](https://www.expressvpn.com/de/support/vpn-setup/enable-apk-installs-android/) or [here](https://www.androidcentral.com/unknown-sources)).
+![Datei-Speicherort apk](../images/AndroidStudio361_35.png)
 
 
-## Check AAPS version on phone
+## Übertrage die APK-Datei auf das Smartphone
 
-You can check the AAPS version on your phone by clicking the three dots menu on the top right and then about.
+Der einfachste Weg, die Datei app-full-release.apk auf Dein Smartphone zu übertragen ist mittels [USB-Kabel oder Google Drive](https://support.google.com/android/answer/9064445?hl=de). Bitte beachte, dass die Übertragung per Mail zu Schwierigkeiten führen kann und daher nicht empfohlen wird.
 
-![AAPS version installed](../images/Update_VersionCheck.png)
+Auf dem Smartphone musst Du die Installation aus unbekannten Quellen zulassen. Anleitungen dazu findest Du im Internet (z.B. [hier](https://mobilsicher.de/ratgeber/apps-aus-apk-datei-installieren-mit-android-8) oder [hier](https://www.tutonaut.de/anleitung-android-apps-unbekannten-quellen-installieren/)).
 
 
-## Troubleshooting
+## AAPS-Version auf dem Smartphone überprüfen
 
-See separate page [troubleshooting Android Studio](../Installing-AndroidAPS/troubleshooting_androidstudio.rst).
+Klicke oben rechts auf das Drei-Punkte-Menü und dann den Menüpunkt Über, um auf Deinem Smartphone die installierte AAPS-Version anzuzeigen.
+
+![Installierte AAPS version](../images/Update_VersionCheck.png)
+
+
+## Problembehandlung
+
+Siehe die separate Seite zur [Problembehandlung bei Android Studio](../Installing-AndroidAPS/troubleshooting_androidstudio.rst).
