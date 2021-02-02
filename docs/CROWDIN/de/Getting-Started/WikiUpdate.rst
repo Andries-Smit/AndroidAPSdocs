@@ -1,124 +1,124 @@
-Docs updates & changes
+Docs Updates & Änderungen
 **************************************************
 
-January 2021
+Januar 2021
 ==================================================
-* `Action tab <../Getting-Started/Screenshots.html#action-tab>`_ - more details on page 'AndroidAPS screens'
-* Dexcom G6 with `Build Your Own Dexcom App <../Hardware/DexcomG6.html#if-using-g6-with-build-your-own-dexcom-app>`_
-* Libre smart reader `battery level <../Getting-Started/Screenshots.html#sensor-level-battery>`_
-* `Objectives <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_ - new questions
-* Other `new AndroidAPS 2.8.0 functions <../Installing-AndroidAPS/Releasenotes.html#version-2-8-0>`_
+* `Aktionen-Tab <../Getting-Started/Screenshots.html#aktionen-tab>`_ - zusätzliche Informationen auf der Seite 'AndroidAPS Bildschirme'
+* Dexcom G6 mit `Build Your Own Dexcom App <../Hardware/DexcomG6.html#g6-mit-build-your-own-dexcom-app>`_ ("Erstelle dir deine eigene Dexcom App")
+* Libre Smart Reader `Batteriestand <../Getting-Started/Screenshots.html#sensor-level-batterie>`_
+* `Objectives (Ziele) <../Usage/Objectives.html#ziel-3-belege-dein-wissen>`_ - neue Fragen
+* Weitere `neue AndroidAPS 2.8.0 Funktionen <../Installing-AndroidAPS/Releasenotes.html#version-2-8-0>`_
 
-December 2020
+Dezember 2020
 ==================================================
-* `Libre 2 <../Hardware/Libre2.html>`_ - patched app does not work with US sensors
-* `OpenAPS hard-coded limits <../Usage/Open-APS-features.html#overview-of-hard-coded-limits>`_
-* Sony Smartwatch 3 `Manual Installation of Google Play Service <../Usage/SonySW3.html>`_
+* `Libre 2 <../Hardware/Libre2.html>`_ - gepatche App funktioniert nicht mit US-Sensoren
+* `OpenAPS Übersicht der fest programmierten Limits <../Usage/Open-APS-features.html#ubersicht-der-fest-programmierten-limits>`_
+* Sony Smartwatch 3 ` Manuelle Installation des Google Play Service <../Usage/SonySW3.html>`_
 
-October 2020
+Oktober 2020
 ==================================================
-* Accu-Chek Combo - update `time adjustment daylight savings time <../Usage/Timezone-traveling.html#time-adjustment-daylight-savings-time-dst>`_
-* Accu-Chek Insight - Option to `upload absolute values <../Configuration/Accu-Chek-Insight-Pump.html#settings-in-aaps>`_
-* Logs - more details about `folder location <../Usage/Accessing-logfiles.html>`_
-* Omnipod Eros - status update
-* `SMS commands - time sync <../Children/SMS-Commands.html>`_
+* Accu-Chek Combo - Update `Zeitumstellung (Sommer-/Winterzeit) <../Usage/Timezone-traveling.html#zeitumstellung-sommer-winterzeit>`_
+* Accu-Chek Insight - Option `Verwende absolute statt prozentuale Basalwerte beim Upload zu Nightscout <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_
+* Logs - weitere Details zum `Speicherort <../Usage/Accessing-logfiles.html>`_
+* Omnipod Eros - `status update <../Getting-Started/Future-possible-Pump-Drivers.html#pumps-that-are-loopable>`_
+* `SMS Kommandos - Zeitsynchronisation aller Smartphones <../Children/SMS-Commands.html>`_
 
 September 2020
 ==================================================
-* Major update for new AAPS version 2.7
-* For details see `release notes <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`
+* Großes Update für die neue AAPS Version 2.7
+* Details findest Du in den `Release Notes <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`_
 
-June 2020
+Juni 2020
 ==================================================
-* `Libre 2 <../Hardware/Libre2.html>`_ - more details patched Libre Link app & use of bluetooth transmitters
-* `Time zone travelling <../Usage/Timezone-traveling.html>`_ with Libre 2
+* `Libre 2 <../Hardware/Libre2.html>`_ - weitere Details zu gepatchten Libre Link App und zu Bluetooth Transmittern
+* `Reisen über Zeitzonen hinweg <../Usage/Timezone-traveling.html>`_ mit Libre 2
 
-May 2020
+Mai 2020
 ==================================================
 * `Extended bolus only for Dana + Insight pumps <../Usage/Extended-Carbs.html#extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only>`_
-* `Insight deactivate vibration <../Configuration/Accu-Chek-Insight-Pump.html#vibration>`_ (firmware 3.x only)
+* `Insight Vibration deaktivieren <../Configuration/Accu-Chek-Insight-Pump.html#vibration>`_ (nur Firmware 3.x)
 * `Minimal request rate <../Configuration/Preferences.html#minimal-request-change>`_ to reduce number of notifications in open loop mode
-* `Patched Libre Link app <../Hardware/Libre2.html#step-1-build-your-own-patched-librelink-app>`_ - check if correctly patched
-* `Prediction lines <../Getting-Started/Screenshots.html#prediction-lines>`_ - more details
+* `Patched Libre Link App <../Hardware/Libre2.html#schritt-1-erstelle-deine-eigene-gepatchte-librelink-app>`_ - Prüfen, ob die gepatchte App korrekt erstellt wurde
+* `Vorhersagelinien <../Getting-Started/Screenshots.html#vorhersage-kurven>`_ - zusätzliche Details
 
 April 2020
 ==================================================
-* `Backdate insulin <../Usage/CPbefore26.html#carbs--bolus>`_ (i.e. given by syringe)
-* `Android 6 support will be discontinued in next master version <../Module/module.html#phone>`_
+* `Insulin nachträglich erfassen <../Usage/CPbefore26.html#id1>`_ (z.B. bei Abgabe mit Spritze)
+* `Android 6 Unterstützung wird mit der nächsten Master Version eingestellt <../Module/module.html#smartphone>`_
 
-March 2020
+März 2020
 ==================================================
-* `Build apk with Android Studio 3.6.1 <../Installing-AndroidAPS/Building-APK.html>`_
-* `DanaRS with firmware v3 <../Configuration/DanaRS-Insulin-Pump.html>`_ **cannot currently be used with AndroidAPS!**
+* `AndroidAPS mit Android Studio 3.6.1 erstellen <../Installing-AndroidAPS/Building-APK.html>`_
+* `DanaRS mit Firmware v3 <../Configuration/DanaRS-Insulin-Pump.html>`_ **kann momentan nicht mit AndroidAPS genutzt werden!**
 * `Extended bolus and switch to open loop <../Usage/Extended-Carbs.html#extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only>`_
-* `Update apk with Android Studio 3.6.1 <../Installing-AndroidAPS/Update-to-new-version.html>`_
+* `Update mit Android Studio 3.6.1 <../Installing-AndroidAPS/Update-to-new-version.html>`_
 
-February 2020
+Februar 2020
 ==================================================
 * `Automation caveats <../Usage/Automation.html#good-practice-caveats>`_
-* `Autosens <../Usage/Open-APS-features.html#autosens>`_ - short explanation
-* `Careportal alternatives <../Usage/CPbefore26.html>`_
-* `Extended bolus <../Usage/Extended-Carbs.html#id1>`_ feature - closed loop will be disabled
-* New `Local Profile plugin <../Configuration/Config-Builder.html#local-profile-recommended>`_
-* `Sample Setup <../Getting-Started/Sample-Setup.html>`_ - update Dexcom G6
-* `Version 2.6.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-6-0>`_ - major new features
-* `Wear complications <../Configuration/Watchfaces.html>`_
+* `Autosens <../Usage/Open-APS-features.html#autosens>`_ - kurze Erklärung
+* ` Careportal Alternativen <../Usage/CPbefore26.html>`_
+* `Verzögerter Bolus <../Usage/Extended-Carbs.html#id1>`_ - der Closed Loop wird unterbrochen
+* Neues `Plugin Lokales Profil <../Configuration/Config-Builder.html#lokales-profil-empfohlen>`_
+* `Konfigurationsbeispiel <../Getting-Started/Sample-Setup.html>`_ - Update Dexcom G6
+* `Version 2.6.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-6-0>`_ - wichtige neue Funktionen
+* `Wear Komplikationen <../Configuration/Watchfaces.html>`_ für Smartwatches
 
-January 2020
+Januar 2020
 ==================================================
-* `Manual carb correction <../Getting-Started/Screenshots.html#carb-correction>`_ for faulty carb entries
-* `Image size <../make-a-PR.html#image-size>`_ when editing docs
+* `Kohlenhydrate manuell korrigieren <../Getting-Started/Screenshots.html#kohlenhydrat-korrektur>`_, falls diese falsch eingegeben wurden
+* `Bildgröße <../make-a-PR.html#bildgrosze>`_ beim Bearbeiten des Docs
 
-December 2019
+Dezember 2019
 ==================================================
-* `Android auto <../Usage/Android-auto.html>`_ - setup with screenshots
-* `Accu-Chek Insight & Autotune <../Configuration/Accu-Chek-Insight-Pump.html#settings-in-aaps>`_ - workaround for usage
-* `Glimp <../Configuration/Config-Builder.html#bg-source>`_ - version 4.15.57 and newer supported
-* `Watchfaces <../Configuration/Watchfaces.html>`_ - major update, way more details
-* `Watchface complications <../Configuration/Watchfaces.html#complications>`_ - use your favorite watchface with AAPS data
+* `Android Auto <../Usage/Android-auto.html>`_ - Setup mit Bildschirmfotos
+* `Accu-Chek Insight & Autotune <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_ - Workaround
+* `Glimp <../Configuration/Config-Builder.html#bz-quelle>`_ - Version 4.15.57 und neuer wird unterstützt
+* `Watchfaces <../Configuration/Watchfaces.html>`_ - große Überarbeitung mit zahlreichen Details
+* `Watchface Komplikationen <../Configuration/Watchfaces.html#komplikationen>`_ - Dein Lieblings-Watchface mit AAPS-Daten
 
 November 2019
 ==================================================
-* `Automation - deactivate when disabling loop <../Usage/Automation.html#important-note>`_
-* `Dexcom G6 replace transmitter update <../Configuration/xdrip.html#replace-transmitter>`_
-* `Extended bolus - why they do not work in a loop context <../Usage/Extended-Carbs.html#id1>`_
-* `FAQ - sports <../Getting-Started/FAQ.html#sports>`_
+* `Automation - bei deaktiviertem Loop ausschalten <../Usage/Automation.html#wichtiger-hinweis>`_
+* `Dexcom G6 Update zum Transmitter-Wechsel <../Configuration/xdrip.html#transmitter-ersetzen>`_
+* `Warum ein verzögerter Bolus beim Loopen nicht funktioniert <../Usage/Extended-Carbs.html#id1>`_
+* `FAQ - Sport <../Getting-Started/FAQ.html#sport>`_
 * `Homescreen - lines on graph <../Getting-Started/Screenshots.html#section-f-main-graph>`_
-* `Insight - Disable absolut values in NS Client <../Configuration/Accu-Chek-Insight-Pump.html#settings-in-aaps>`_
-* `Medtronic pump - possible double entries <../Configuration/MedtronicPump.html>`_
-* `New Freestyle Libre 2 tutorial <../Hardware/Libre2.html>`_
-* `Profile switch with percentage - example <../Usage/Profiles.html>`_
-* `SMS commands update <../Children/SMS-Commands.html>`_
-* `Troubleshooting Android Studio <../Installing-AndroidAPS/troubleshooting_androidstudio.html>`_
-* `Troubleshooting - link collection <../Usage/troubleshooting.html>`_
-* `Update - quick walk-through for experienced users <../Installing-AndroidAPS/Update-to-new-version.html#quick-walk-through-for-experienced-users>`_
+* `Insight - Absolute Werte im NS Client deaktivieren <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_
+* `Medtronic Pumpe - mögliche Doppeleinträge <../Configuration/MedtronicPump.html>`_
+* `Neue Anleitung zum Freestyle Libre 2 <../Hardware/Libre2.html>`_
+* `Profilwechsel mit Prozentsatz - Beispiel <../Usage/Profiles.html>`_
+* `Update SMS-Befehle <../Children/SMS-Commands.html>`_
+* `Fehlerbehebung Android Studio <../Installing-AndroidAPS/troubleshooting_androidstudio.html>`_
+* `Fehlerbehebungen - Linksammlung <../Usage/troubleshooting.html>`_
+* `Update AAPS - Kurzanleitung für erfahrene Anwender <../Installing-AndroidAPS/Update-to-new-version.html#kurzanleitung-fur-erfahrene-anwender>`_
 * Docs - update `edit <../make-a-PR.html#code-syntax>`_ and `translation <../translations.html#translate-docs-pages>`_.
 
-October 2019
+Oktober 2019
 ==================================================
-* `AAPS version 2.5 <../Installing-AndroidAPS/Releasenotes.html#id16>`_ updates (especially on `update page <../Installing-AndroidAPS/Update-to-new-version.html>`_)
-* `AccuChek Insight - log options <../Configuration/Accu-Chek-Insight-Pump.html#settings-in-aaps>`_
-* `COB calculation on separate page <../Usage/COB-calculation.html>`_
-* `COB - wrong COB value detection <../Usage/COB-calculation.html#detection-of-wrong-cob-values>`_
-* `Dexcom G6 specific troubleshooting <../Hardware/DexcomG6.html#dexcom-g6-specific-troubleshooting>`_
-* `Objectives update version 2.5 <../Usage/Objectives.html>`_
-* `Preferences update <../Configuration/Preferences.html>`_
-* `SGLT-2 inhibitors - do not use when looping <../Module/module.html#no-use-of-sglt-2-inhibitors>`_
-* `SMS Commands Troubleshooting <../Children/SMS-Commands.html#troubleshooting>`_
-* `xDrip - update G6 transmitter replacement <../Configuration/xdrip.html#replace-transmitter>`_
+* `AAPS Version 2.5 <../Installing-AndroidAPS/Releasenotes.html#id16>`_ - Seitenaktuallisierungen (vor allem auf der Seite `Update auf eine neue Version <../Installing-AndroidAPS/Update-to-new-version.html>`_)
+* `AccuChek Insight-Log-Optionen <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_
+* `Aktiven Kohlenhydrate (COB) - eigene Seite <../Usage/COB-calculation.html>`_
+*  `Aktiven Kohlenhydrate (COB) - Fehlerhafte Ermittlung <../Usage/COB-calculation.html#erkennung-fehlerhafter-cob-werte>`_
+* `Dexcom G6-spezifische Problembehandlung <../Hardware/DexcomG6.html#dexcom-g6-spezifische-problembehandlung>`_
+* `Ziele (objectives) Update AAPS Version 2.5 <../Usage/Objectives.html>`_
+* `Update Einstellungen <../Configuration/Preferences.html>`_
+* `SGLT-2 Inhibitoren - beim Loopen nicht verwenden <../Module/module.html#keine-verwendung-von-sglt-2-hemmern>`_
+* `SMS-Befehle Problembehandlung <../Children/SMS-Commands.html#problembehandlung>`_
+* `xDrip - Update G6 Transmitter ersetzen <../Configuration/xdrip.html#transmitter-ersetzen>`_
 
 September 2019
 ==================================================
 * `Automate <../Usage/Automation.html>`_
 * `Bolus calculator <../Getting-Started/Screenshots.html#wrong-cob-detection>`_ - slow carb absorbtion
-* `Nightscout security <../Installing-AndroidAPS/Nightscout.html#security-considerations>`_
+* `Nightscout Sicherheit <../Installing-AndroidAPS/Nightscout.html#sicherheitsuberlegungen>`_
 * `Profile timeshift <../Usage/Profiles.html#time-shift>`_ (more details)
-* `Remote monitoring <../Children/Children.html>`_
-* `What is a closed loop system? <../Getting-Started/ClosedLoop.html>`_
+* `Kontrolle aus der Ferne <../Children/Children.html>`_
+* `Was ist ein Closed Loop System? <../Getting-Started/ClosedLoop.html>`_
 
 August 2019
 ==================================================
-* `Dexcom G6 patched app region <../Hardware/DexcomG6.html#if-using-g6-with-patched-dexcom-app>`_
-* `Dexcom G6 new transmitter <../Configuration/xdrip.html#connect-g6-transmitter-for-the-first-time>`_ ("firefly" / 8G...)
-* `What do I need? <../index.html#what-do-i-need>`_ - new structure & additional information
-* New structure
+* `Dexcom G6 patched App Region <../Hardware/DexcomG6.html#g6-mit-der-gepatchten-dexcom-app>`_
+* `Dexcom G6 neue Transmitter <../Configuration/xdrip.html#g6-transmitter-das-erste-mal-verbinden>`_ ("firefly" / 8G...)
+* `Was brauche ich? <../index.html#was-brauche-ich>`_ - neue Struktur & zusätzliche Infos
+* Neue Struktur
