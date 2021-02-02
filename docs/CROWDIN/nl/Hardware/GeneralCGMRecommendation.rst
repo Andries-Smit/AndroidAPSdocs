@@ -1,45 +1,45 @@
-General CGM recommendations
+Algemene CGM aanbevelingen
 **************************************************
 
 CGM hygiene
 ==================================================
 
-Whichever CGM system you are using, if you are going to use blood based calibration, then there are some very clear rules you should apply, whether or not you are using DIY CGM software or the official apps. 
+Los van het CGM systeem dat je gebruikt, gelden een aantal hele heldere regels voor het gebruiken van een vingerprik om mee te kalibreren. 
 
-* Make sure hands and kit are clean.
-* Try to calibrate when you have a series of dots with a flat arrow (15-30 minutes is usually enough)
-* Avoid calibrating when glucose levels are moving up or down. 
-* Do “enough” calibrations – on official apps, you will be prompted for once or twice per day checks. On DIY systems you may not be, and should be careful about continuing without calibrations.
-* If it all possible, calibrate with some of your readings in a lower range (4-5mmol/l or 72-90mg/dl) and some at a slightly higher level (7-9mmol/l or 126-160mg/dl) as this provides a better range for the point/slope calibration.
+* Zorg dat je handen (wassen met water en zeep) en je meetbenodigdheden schoon en droog zijn.
+* Kalibreer alleen wanneer jouw CGM een reeks metingen met een platte pijl geeft (15-30 minuten is meestal genoeg)
+* Doe geen kalibraties wanneer je glucosewaardes stijgen of dalen. 
+* Kalibreer ‘voldoende’– de officiële apps vragen één of twee kalibraties per dag. On DIY systems you may not be, and should be careful about continuing without calibrations.
+* Kalibreer als het enigszins kan zowel met glucosewaardes in een lager bereik (4-5mmol/l of 72-90mg/dl) als met waardes in een hoger bereik (7-9mmol/l of 126-160mg/dl) omdat dit een betrouwbaardere ijklijn geeft.
 
-Setting sensor (G6)
+Sensor inbrengen (G6)
 ==================================================
 
-When setting sensor, it is recommended not to press the inserter too firmly in order to avoid bleeding. The sensor thread should not come into contact with blood.
+Bij het inbrengen van de sensor wordt aanbevolen om niet te hard op de inserter te duwen om bloeden te voorkomen. De sensordraad zou niet in contact moeten komen met bloed.
 
-After setting the sensor, the transmitter can be clicked into the sensor holder. Caution! First click in the square side and then press down the round side.
+Na het inbrengen van de sensor moet de zender erop worden geklikt. Caution! Let op dat je eerst het rechte uiteinde erin klikt, en druk vervolgens op het ronde uiteinde.
 
-Troubleshooting 
+Problemen oplossen 
 ==================================================
 
-Connection problems
+Verbindingsproblemen
 --------------------------------------------------
 
-Bluetooth connection may be disturbed by other nearby Bluetooth devices such as blood glucose meters, headsets, tablets or kitchen devices such as microwave ovens or ceramic hobs. In this case xdrip does not display any BG values. When bluetooth connection is reestablished the data is backfilled.
+De Bluetooth-verbinding kan worden verstoord door andere Bluetooth-apparaten zoals bloedglucose meters, koptelefoons, tablets of keukenapparatuur zoals magnetrons (microgolven) of keramische kookplaten. In dat geval toont xDrip+ geen BG-waarden. Wanneer de Bluetooth-verbinding opnieuw is hersteld, worden de ontbrekende glucosegegevens aangevuld (met een maximum van 3 uur).
 
-Sensor Errors
+Sensor Fout
 --------------------------------------------------
-If recurring sensor errors occur try selecting a different body site to set your sensor. The sensor thread should not come into contact with blood. 
+Als je last hebt van terugkerende sensor fouten, kies dan een andere plaats op je lichaam om de sensor in te brengen. De sensordraad zou niet in contact moeten komen met bloed. 
 
 Often a "Sensor Error" can be corrected by immediate drinking and massage around the sensor!
 
-Jumpy values
+'Springende' waardes
 --------------------------------------------------
-You might try to change settings for noise blocking in xdrip (Settings - Inter-App Settings - Noise Blocking) i.e. "Block Very High noise and worse".  See also `Smoothing BG data <../Usage/Smoothing-Blood-Glucose-Data-in-xDrip.html>`_.
+Wanneer jouw waardes alle kanten op springen, zou je kunnen proberen om de instellingen voor Noise Blocking in xDrip+ te wijzigen (Settings - Inter-App Settings - Noise Blocking) d.w.z. "Block Very High noise and worse".  Zie ook `Filteren van glucosewaardes <../Usage/Smoothing-Blood-Glucose-Data-in-xDrip.html>`_.
 
-Negative Sensor Age
+Negatieve sensorleeftijd
 --------------------------------------------------
 .. image:: ../images/Troubleshooting_SensorAge.png
-  :alt: Negative sensor age
+  :alt: Negatieve sensorleeftijd
 
-This occurs if there is either a double "CGM Sensor Insert" entry in `actions tab / menu <../Configuration/Config-Builder.html#actions>`_ or a sensor insert with wrong date. Go to treatments tab > careportal and delete the wrong entry.
+Dit gebeurt als er een dubbel "CGM Sensor Ingebracht"-item aanwezig is in de `Acties tab/menu <../Configuration/Config-Builder.html#acties>`_ of er staat ergens een "CGM Sensor Ingebracht"-item met verkeerde datum. Ga naar de Behandelingen tab > careportal en verwijder het foutieve item.
