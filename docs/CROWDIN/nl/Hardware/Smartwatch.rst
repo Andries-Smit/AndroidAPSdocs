@@ -1,16 +1,16 @@
-Smartwatch
+Smartwatches
 *************
 
-Het gebruik van een smartwatch is optioneel, kies voor jezelf of jij het handig vindt.
-Meer details vind je hier:
+Smartwatches are optional, but very useful for some users.
+More details are here:
 
 
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Lijst van geteste smartwatches <../Getting-Started/Phones.md>
-   Telefoonachtergrond <../Getting-Started/Phones.md#phone-background>
-   Smartwatch instellingen <../Configuration/Watchfaces.md>
-   Problemen oplossen voor Sony Smartwatch SW 3 <../Usage/SonySW3.rst>
-   Pebble <../Configuration/Watchfaces.md#pebble>
+   List of tested phones and smartwatches <../Getting-Started/Phones.md>
+   Phone background <../Getting-Started/Phones.html#phone-background>
+   Watchfaces Wear OS <../Configuration/Watchfaces.md>
+   Troubleshooting Sony Smartwatch SW 3 <../Usage/SonySW3.rst>
+   Pebble <../Configuration/Watchfaces.html#pebble>
