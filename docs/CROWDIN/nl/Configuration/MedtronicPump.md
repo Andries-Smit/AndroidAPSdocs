@@ -1,10 +1,10 @@
-# Medtronic Pumps
+# Medtronic Pompen
 
-**>>>> Medtronic pump driver is from 2.5 version part of AndroidAPS (master). While this is the case, Medtronic driver should still be considered beta software. Please install only if you are expirenced user. At the moment we are still fighting with double Bolus issue (We get 2 boluses in treatments, which throws IOB calculation (if you experience this bug, please enable Double Bolus Logging in Medtronic configuration and provide your logs)), this should be fixed with upcomming release. <<<<**
+**> > > De Medtronic pomp driver is vanaf AAPS versie 2.5 onderdeel van AndroidAPS (master). Toch moet de Medtronic driver nog steeds als bètasoftware worden beschouwd. Please install only if you are expirenced user. Op dit moment zijn er nog steeds problemen met dubbele registraties van bolussen (Er worden 2 bolussen in de behandelingen geregistreerd, die de IOB-berekening in de war gooit (als je deze bug ondervindt, schakel Double Bolus Logging in in Medtronic configuratie en stuur ons jouw logfiles)). <<<<**
 
 ***
 
-Works only with older Medtronic pumps (details see below). Does not work with Medtronic 640G or 670G.
+Werkt alleen met oudere Medtronic pompen (zie hieronder welke). Werkt niet met Medtronic 640G of 670G.
 
 ***
 
@@ -12,8 +12,8 @@ If you started using Medtronic driver please add yourself to this [list](https:/
 
 ***
 
-## Hardware and software requirements
-- **Phone:** Medtronic driver should work with any phone supporting BLE. **IMPORTANT: While driver works correctly on all phones, enabling/disabling Bluetooth doesn't (this is required when you loose connection to RileyLink and system can't recover automatically - happens from time to time). So you need to get device with Android 7.0 - 8.1, in worst case scenario you can  install LinegaeOS 15.1 (required 15.1 or lower) on your phone. We are looking into problem with Android 9, but so far we haven't found resolution (it seems to work on some models and not on others, and on also works sometimes on some models).**
+## Benodigde hardware en software
+- **Phone:** Medtronic driver should work with any phone supporting BLE. **IMPORTANT: While driver works correctly on all phones, enabling/disabling Bluetooth doesn't (this is required when you loose connection to RileyLink and system can't recover automatically - happens from time to time). So you need to get device with Android 7.0 - 8.1, in worst case scenario you can install LinegaeOS 15.1 (required 15.1 or lower) on your phone. We are looking into problem with Android 9, but so far we haven't found resolution (it seems to work on some models and not on others, and on also works sometimes on some models).**
 - **RileyLink/Gnarl:** For communication with Pump you need device that converts BT commands from Phone into RF commands that Pump understands. Device that does is called RileyLink (you can get it here [getrileylink.org](https://getrileylink.org/)). You need stable version of device, which is for older models firmware 0.9 (older versions might not work correctly) or for newer models 2.2 (there are options to upgrade available on RL site). If you are feeling adventurous you can also try Gnarl ([here](https://github.com/ecc1/gnarl)), which is sort-of RileyLink-clone.
 - **Pump:** Driver works only with following models and firmware versions:
     - 512/712
@@ -90,9 +90,9 @@ Dialog has two tabs:
 - **Settings**: Shows settings about RileyLink: Configured Address, Connected Device, Connection Status, Connection Error and RileyLink Firmware versions. Device Type is always Medtronic Pump, Model would be your model, Serial number is configured serial number, Pump Frequency shows which frequency you use, Last Frequency is last frequency used.
 - **History**: Shows communication history, items with RileyLink shows state changes for RileyLink and Medtronic shows which commands were sent to pump.
 
-## Actions
+## Acties
 When Medtronic driver is selected, 3 possible actions can be added to Actions Tab:
-- **Wake and Tune Up** - If you see that your AndroidAPS hasn't contacted your pump in a while (it should contact it every 5 minutes), you can force Tune Up. This will try to contact your pump, by searching all sub frequencies on which Pump can be contacted. If it finds one it will set it as your default frequency.
+- **Wake and Tune Up** - If you see that your AndroidAPS hasn't contacted your pump in a while (it should contact it every 5 minutes), you can force Tune Up. This will try to contact your pump, by searching all sub frequencies on which Pump can be contacted. This will try to contact your pump, by searching all sub frequencies on which Pump can be contacted. If it finds one it will set it as your default frequency.
 - **Reset RileyLink Config** - If you reset your RileyLink/GNARL, you need to use this action, so that device can be reconfigured (frequency set, frequency type set, encoding configured).
 - **Clear Bolus Block** - When you start bolus, we set Bolus Block, which prevents any commands to be issued to pump. If you suspend your pump and resume (to cancel bolus), you can then remove that block. Option is only there when bolus is running...
 
@@ -126,7 +126,7 @@ We are aware of this problem, and we are already looking into possible solution 
 ## FAQ
 
 ### Can I see the power of RileyLink/GNARL?
-No. At the moment none of this devices support this and it probably won't even in the future.
+Nee. At the moment none of this devices support this and it probably won't even in the future.
 
 ### Is GNARL full replacement for RileyLink?
 Yes. Author of GNARL added all functions used by Medtronic driver. All Medtronic communication is supported (at time of the writing (June/2019). GNARL can't be used for Omnipod communication. Downside of GNARL is that you have to build it yourself, and you have to have compatible version of hardware.
