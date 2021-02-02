@@ -1,186 +1,187 @@
-Welkom bij de Android APS documentatie
+Welcome to the AndroidAPS documentation
 ==================================================
 
-AndroidAPS is een open source app voor mensen met insuline-afhankelijke diabetes. De app fungeert als een kunstmatig alvleesklier systeem (APS, Artificial Pancreas System) op Android smartphones. Belangrijkste componenten zijn verschillende OpenAPS software algoritmen die doen wat een levende alvleesklier doet: de bloedsuiker binnen gezonde grenzen houden. Het algoritme doet dit door het gebruik van geautomatiseerde insulinedosering (AID, Automated Insulin Dosing). Daarnaast is een door de app ondersteunde en FDA/CE goedgekeurde insulinepomp en een continue glucosesensor nodig. 
+AndroidAPS is an open source app for people living with insulin-dependent diabetes that acts as an artificial pancreas system (APS) on Google Android smartphones. The main components are different openAPS software algorithms which aim to do what a living pancreas does: keeping blood sugar levels within healthy limits by using automated insulin dosing (AID). Additionally, you need at least a supported and FDA/CE approved insulin pump and continuous glucose meter. 
 
-De app gebruikt GEEN zelflerende kunstmatige intelligentie. In plaats daarvan zijn de berekeningen van AndroidAPS gebaseerd op de individuele insulinebehoefte en de inname van koolhydraten die de gebruiker handmatig invoert, maar ze worden om veiligheidsredenen door het systeem gecontroleerd. 
+The app does NOT use self-learning artificial intelligence. Instead, the calculations of AndroidAPS are based on the individual dosage algorithm and carbohydrate intake the user manually puts into their treatments profile, but they are verified by the system for safety reasons. 
 
-De app is niet verkrijgbaar in de Google Play store - om juridische redenen moet iedere gebruiker de app zelf vanuit de broncode bouwen.
+The app is not provided in Google Play - you have to build it from source code by yourself for legal reasons.
 
-De belangrijkste onderdelen zijn:
+The main components are:
 
 .. image:: images/modules-female.png
-  :alt: Onderdelen
+  :alt: Components
 
-Hieronder volgt de inhoudsopgave.
+For more details, please read on here.
 
-Aan de slag
+Getting started
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Allereerst de veiligheid <./Getting-Started/Safety-first.rst>
-   Wat is een closed loop systeem <./Getting-Started/ClosedLoop.rst>
-   Wat is een closed loop systeem met AndroidAPS <./Getting-Started/WhatisAndroidAPS.rst>  
-   Wiki-updates & wijzigingen <./Getting-Started/WikiUpdate.rst>
+   Safety first <./Getting-Started/Safety-first.rst>
+   What is a closed loop system <./Getting-Started/ClosedLoop.rst>
+   What is a closed loop system with AndroidAPS <./Getting-Started/WhatisAndroidAPS.rst>  
+   Docs updates & changes <./Getting-Started/WikiUpdate.rst>
    
    
-Wat heb ik nodig? 
+What do I need? 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Onderdelen <./Module/module.rst>
-   Gebruiksvoorbeeld <./Getting-Started/Sample-Setup.md>
+   Module <./Module/module.rst>
+   Sample Setup <./Getting-Started/Sample-Setup.md>
 
    
-AndroidAPS installeren
+How to Install AndroidAPS
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Bouwen van de app <./Installing-AndroidAPS/Building-APK.md>
-   Bijwerken naar een nieuwe versie <./Installing-AndroidAPS/Update-to-new-version.md>
-   Controles na bijwerken naar AAPS 2.7 <./Installing-AndroidAPS/update2_7.rst>
-   Git installeren <./Installing-AndroidAPS/git-install.rst>
-   Problemen in Android Studio oplossen <./Installing-AndroidAPS/troubleshooting_androidstudio.rst>
+   Building the APK <./Installing-AndroidAPS/Building-APK.md>
+   Update to a new version or branch <./Installing-AndroidAPS/Update-to-new-version.md>
+   Checks after update to AAPS 2.7 <./Installing-AndroidAPS/update2_7.rst>
+   Install git <./Installing-AndroidAPS/git-install.rst>
+   Troubleshooting Android Studio <./Installing-AndroidAPS/troubleshooting_androidstudio.rst>
    Release notes <./Installing-AndroidAPS/Releasenotes.rst>
-   Dev branch (voor ontwikkelaars) <./Installing-AndroidAPS/Dev_branch.md>
+   Dev branch <./Installing-AndroidAPS/Dev_branch.md>
    
    
-Onderdelen instellen
+Component Setup
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   BG bron <./Configuration/BG-Source.rst>
-   xDrip+ instellingen <./Configuration/xdrip.md>
-   Pompen <./Hardware/pumps.rst>
-   Telefoons <./Hardware/Phoneconfig.rst>
-   Nightscout instellen <./Installing-AndroidAPS/Nightscout.md>
-   Smartwatch <./Hardware/Smartwatch.rst>
+   CGM/FGM <./Configuration/BG-Source.rst>
+   xDrip Settings <./Configuration/xdrip.md>
+   Pumps <./Hardware/pumps.rst>
+   Phones <./Hardware/Phoneconfig.rst>
+   Nightscout setup <./Installing-AndroidAPS/Nightscout.md>
+   Smartwatch  <./Hardware/Smartwatch.rst>
    
 
-AndroidAPS instellingen 
+Configuration 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Configurator <./Configuration/Config-Builder.md>
-   Instellingen <./Configuration/Preferences.rst>
+   Config builder <./Configuration/Config-Builder.md>
+   Preferences <./Configuration/Preferences.rst>
    
    
-AndroidAPS gebruik
+AndroidAPS Usage
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
     
-   AndroidAPS Screenshots <./Getting-Started/Screenshots.md>
-   Doelen <./Usage/Objectives.rst>
-   OpenAPS functies <./Usage/Open-APS-features.md>   
-   COB Berekening <./Usage/COB-calculation.rst>
-   Gevoeligheidsdetectie <./Configuration/Sensitivity-detection-and-COB.md>
-   Profiel wissel <./Usage/Profiles.md>
-   Tijdelijk streefdoel <./Usage/temptarget.md>   
-   Vertraagde koolhydraten (eCarbs) <./Usage/Extended-Carbs.rst>
-   Automatisering <./Usage/Automation.rst>
-   Careportal (bestaat niet meer) <./Usage/CPbefore26.rst>
+   AndroidAPS screens <./Getting-Started/Screenshots.md>
+   Objectives <./Usage/Objectives.rst>
+   OpenAPS features <./Usage/Open-APS-features.md>   
+   COB calculation <./Usage/COB-calculation.rst>
+   Sensitivity detection <./Configuration/Sensitivity-detection-and-COB.md>
+   Profile switch <./Usage/Profiles.md>
+   Temp-targets <./Usage/temptarget.md>   
+   Extended carbs <./Usage/Extended-Carbs.rst>
+   Automation <./Usage/Automation.rst>
+   Careportal (discontinued) <./Usage/CPbefore26.rst>
    Open Humans Uploader <./Configuration/OpenHumans.rst>
-   Automatisering met andere apps <./Usage/automationwithapp.md>
+   Automation with 3rd party apps <./Usage/automationwithapp.md>
    Android auto <./Usage/Android-auto.md>  
  
-Algemene Tips 
+General Hints 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Wisselen van tijdzone <./Usage/Timezone-traveling.md>
-   Toegang tot logbestanden <./Usage/Accessing-logfiles.md>
-   AccuChek Combo - tips <./Usage/Accu-Chek-Combo-Tips-for-Basic-usage.md> 
-   Instellingen exporteren/importeren <./Usage/ExportImportSettings.rst>
+   Crossing timezones with pumps <./Usage/Timezone-traveling.md>
+   Accessing logfiles <./Usage/Accessing-logfiles.md>
+   Accu-Chek Combo tips for basic usage <./Usage/Accu-Chek-Combo-Tips-for-Basic-usage.md> 
+   Export/Import Settings <./Usage/ExportImportSettings.rst>
    
 
-AndroidAPS voor kinderen
+AndroidAPS for children
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Volgen op afstand <./Children/Children.rst>
-   SMS Comando's <./Children/SMS-Commands.rst>
+   Remote monitoring <./Children/Children.rst>
+   SMS commands <./Children/SMS-Commands.rst>
+   Profile helper <./Configuration/profilehelper.rst>
    
 
-Problemen oplossen
---------------------------------------------------
-.. toctree::
-   :maxdepth: 1
-   :glob:
-  
-   Problemen oplossen <./Usage/troubleshooting.rst>
-   
-
-Veelgestelde vragen 
+Troubleshooting
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
   
-   Veelgestelde vragen <./Getting-Started/FAQ.md>
+   Troubleshooting <./Usage/troubleshooting.rst>
+   
+
+FAQ 
+--------------------------------------------------
+.. toctree::
+   :maxdepth: 1
+   :glob:
+  
+   FAQ <./Getting-Started/FAQ.md>
 
    
-Veelgebruikte woordenlijst
+Glossary
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
   
-   Veelgebruikte woordenlijst <./Getting-Started/Glossary.md>
+   Glossary <./Getting-Started/Glossary.md>
   
 
-Waar je hulp kunt vinden 
+Where to go for help 
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Leestips voordat je begint <./Where-To-Go-For-Help/Background-reading.md>
-   Contact met anderen <./Where-To-Go-For-Help/Connect-with-other-users.md>
-   Wiki-updates & wijzigingen <./Getting-Started/WikiUpdate.rst>
+   Useful resources to read before you start <./Where-To-Go-For-Help/Background-reading.md>
+   Where to go for help <./Where-To-Go-For-Help/Connect-with-other-users.md>
+   Docs updates & changes <./Getting-Started/WikiUpdate.rst>
 
-Zorgprofessionals
+For Clinicians
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
             
-   Voor zorgprofessionals <./Resources/clinician-guide-to-AndroidAPS>
+   For Clinicians <./Resources/clinician-guide-to-AndroidAPS>
 
 
-Hoe je zelf kunt helpen
+How to help
 --------------------------------------------------
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   Hoe kan je helpen <./Getting-Started/How-can-I-help.md>
-   De app of wiki vertalen <./translations.md>
-   De wiki verbeteren <./make-a-PR>
+   How to help <./Getting-Started/How-can-I-help.md>
+   How to translate the app and docs <./translations.md>
+   How to edit the docs <./make-a-PR>
 
 
 .. note:: 
-	**Disclaimer en waarschuwing**
+	**Disclaimer And Warning**
 
-	* Alle informatie, gedachten, en de code die hier beschreven staan zijn alleen voor informatieve en educatieve doeleinden. Nightscout probeert zich op geen enkele wijze te houden aan gegevensbewaking van medische gegevens. Gebruik van Nightscout en AndroidAPS is op eigen risico, en gebruik de informatie of code niet om behandelbeslissingen te nemen.
+	* All information, thought, and code described here is intended for informational and educational purposes only. Nightscout currently makes no attempt at HIPAA privacy compliance. Use Nightscout and AndroidAPS at your own risk, and do not use the information or code to make medical decisions.
 
-	* Het gebruik van code van github.com is zonder enige garantie of formele ondersteuning. Verdere details zijn te vinden in de licentie, die te vinden is in de Repository op github.
+	* Use of code from github.com is without warranty or formal support of any kind. Please review this repository's LICENSE for details.
 
-	* Alle product-en bedrijfsnamen, handelsmerken, servicemerken, geregistreerde handelsmerken en geregistreerde dienstmerken zijn eigendom van hun respectievelijke houders. Hun gebruik is voor informatieve doeleinden en impliceert op geen enkele wijze een samenwerking met of goedkeuring van hen.
+	* All product and company names, trademarks, servicemarks, registered trademarks, and registered servicemarks are the property of their respective holders. Their use is for information purposes and does not imply any affiliation with or endorsement by them.
 
-	NB: - dit project is niet gekoppeld aan en wordt niet ondersteund door: `SOOIL <http://www.sooil.com/eng/>`_, `Dexcom <http://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <http://www.accu-chek.com/>`_ of `Medtronic <http://www.medtronic.com/>`_.
+	Please note - this project has no association with and is not endorsed by: `SOOIL <http://www.sooil.com/eng/>`_, `Dexcom <http://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <http://www.accu-chek.com/>`_ or `Medtronic <http://www.medtronic.com/>`_
