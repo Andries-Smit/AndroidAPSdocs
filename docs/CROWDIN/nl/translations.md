@@ -1,6 +1,6 @@
-# How to translate AndroidAPS and the documentation
+# De app of wiki vertalen
 
-* Go to [https://crowdin.com/project/androidaps](https://crowdin.com/project/androidaps) or [https://crowdin.com/project/androidapsdocs](https://crowdin.com/project/androidapsdocs) and login using your Github account
+* Go to <https://crowdin.com/project/androidaps> or <https://crowdin.com/project/androidapsdocs> and login using your Github account
 
 * Send a join request to the docs team. To do so click on the flag of the desired language and then the button "Join" on the top right corner of the next page. Please specify language, give some information about you and your AAPS experience and if you want to be a translator or proofreader (only people skilled in translating + advanced AndroidAPS users).
 
@@ -58,9 +58,9 @@ When a proofreader approves a translation it will be added to the next version o
 * If you translate a headline you can transform this into the anchor link (part after # - i.e. #percentage) by turning all letters to lower case, transforming special characters to standard characters, replacing spaces by - (minus sign) and skipping punctuation marks.
 
    Here are some examples:
-   * Was ist ein Closed Loop System mit AndroidAPS?  --->   #was-ist-ein-closed-loop-system-mit-androidaps
-   * Docs Updates & Änderungen   --->   #docs-updates-anderungen
-   * AAPS-.apk Datei   --->   #aaps-apk-datei
+   * Was ist ein Closed Loop System mit AndroidAPS?  \---> #was-ist-ein-closed-loop-system-mit-androidaps
+   * Docs Updates & Änderungen \---> #docs-updates-anderungen
+   * AAPS-.apk Datei \---> #aaps-apk-datei
 
 * Check your link if it is working as intended. If it is linking to a new translated headline you may have to wait until next build to be able to check correct link syntax. In this case do not forget to make a reminder in your calendar / todo app.
 
