@@ -5,4 +5,4 @@ Resources
    :maxdepth: 4
    :glob:
 
-   clinician-guide-to-AndroidAPS
+   Voor zorgprofessionals <./clinician-guide-to-AndroidAPS.md>
