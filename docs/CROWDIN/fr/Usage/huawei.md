@@ -1,34 +1,34 @@
-# How-to configure a Huawei phone
+# Comment configurer un téléphone Huawei
 
-There are different options, some Android specific, some Huawei specific:
+Il y a différentes options, certaines spécifiques à Android, d'autres spécifiques à Huawei :
 
-* Add AndroidAPS and xdrip+ to apps list which ignore battery optimisations:
-  * Settings / App / Settings / Special autorisations / Ignore battery optimisation / Select "All applications" / Set app to allowed
+* Ajouter AndroidAPS et xdrip + à la liste d'applications qui ignorent les optimisations de batterie :
+  * Paramètres / Applications / Paramètres / Accès spécial / Ignorer l'optimisation de la batterie / Sélectionner "Tout" / Sélectionnez les applications à autoriser
 
     ![Huawei - ignore battery optimization](../images/Huawei_BatteryOptimization.png)
 
 
-* Set battery option settings:
-  * Settings / App / Select AndroidAPS/xdrip+ / Under Battery / App launch
-   * Make sure to remove "automatic management"
-    * Allow:
-     * Automatic launch
-     * Secondary launch (can be launched from other apps)
-     * Background run
+* Définir les paramètres des options de batterie:
+  * Paramètres / Applications / Sélectionnez AndroidAPS/xdrip+ / Sous Batterie / Application
+   * Assurez-vous de supprimer la "gestion automatique"
+    * Autoriser :
+     * Démarrage automatique
+     * Lancement secondaire (peut être lancé depuis d’autres applications)
+     * Exécution en arrière plan
 
        ![Huawei - battery options](../images/Huawei_BatteryOptions.png)
 
 
-* Lock App
-  * Go into App recent list and select the lock icon
+* Verrouiller l'application
+  * Allez dans la liste des applications récentes et sélectionnez l'icône de verrouillage
 
     ![Huawei - lock app](../images/Huawei_LockApp.png)
 
 
-For xdrip+, you can also enable persitent notifications (within xdrip+ app):
-* Setttings / less common settings / other misc options / Run Collector in foreground
+Pour xdrip+, vous pouvez également activer les notifications persistantes (dans l'application xdrip+) :
+* Paramères / Paramètres moins courants / other misc options / Exécutez Collector au premier plan
 
    ![xdrip+ settings - collector in foreground](../images/xdrip_collector_foreground.png)
 
 
-Depending on Android version, these settings are somewhere else. These explanations are for Android 8.1.
+En fonction de la version Android, ces paramètres peuvent être ailleurs. Ces explications concernent Android 8.1.
