@@ -1,106 +1,106 @@
-Troubleshooting Android Studio
+Fehlerbehebung für Android Studio
 **************************************************
-Lost keystore
+Verlorener Keystore
 ==================================================
-If you use the same keystore when updating AndroidAPS you do not have to uninstall the previous version on your smartphone. That's why it is recommended to store the keystore in a save place.
+Wenn Du beim Update von AndroidAPS den selben keystore verwendest, musst Du die Vorgängerversion von AAPS auf Deinem Smartphone nicht deinstallieren. Daher wird empfohlen, den keystore an einem sicheren Platz zu speichern.
 
-In case you cannot find your old keystore anymore, proceed as follows:
+Falls Du Deinen bisherigen keystore nicht mehr findest, kannst Du wie folgt vorgehen:
 
-1. `Export settings <../Usage/ExportImportSettings.html#export-settings>`__ on your phone.
-2. Copy settings from your phone to an external location (i.e. your computer, cloud storage service...).
-3. Make sure settings file "AndroidAPS Preferences" is stored safely.
-4. Generate signed apk of new version as described on the `update page <../Installing-AndroidAPS/Update-to-new-version.html>`_.
-5. Uninstall previous AAPS version on your phone.
-6. Install new AAPS version on your phone.
+1. `Export settings <../Usage/ExportImportSettings.html#export-settings>`_ on your phone.
+2. Kopiere die Datei mit den Einstellungen von Deinem Smartphone auf einen externen Speicherort (z.B. Dein Computer, einen Cloud-Speicher-Dienst...).
+3. Stelle sicher, dass die Datei "AndroidAPS Preferences" sicher gespeichert ist.
+4. Erstelle die signierte apk-Datei der neuen Version wie auf der `Update Seite <../Installing-AndroidAPS/Update-to-new-version.html>`_ beschrieben.
+5. Deinstallieren die Vorgängerversion von AAPS auf Deinem Smartphone.
+6. Installiere die neue AAPS-Version auf Deinem Smartphone.
 7. `Import settings <../Usage/ExportImportSettings.html#export-settings>`_ - if you can't find them on your phone copy them from the external storage.
-8. Keep on looping.
+8. Loope weiter!
 
-Kotlin compiler warning
+Kotlin Compiler Warnung
 ==================================================
-If build completed successfully but you get Kotlin compiler warnings then just ignore these warnings. 
+Wenn der Build erfolgreich abgeschlossen wurde, Du aber eine Warnung des 'Kotlin Compilers' erhältst, so kannst Du diese ignorieren. 
 
-App was build successfully and can be transferred to phone.
+Die App wurde erfolgreich erstellt und kann auf das Smartphone übertragen werden.
 
 .. image:: ../images/GIT_WarningIgnore.PNG
-  :alt: ignore Kotline compiler warning
+  :alt: Kotlin compiler warning ignorieren
 
 Key was created with errors
 ==================================================
-When creating a new keystore for building the signed APK, on Windows the following error message might appear
+Beim Erstellen eines neuen Keystores zum Erstellen der signierten APK wird unter Windows möglicherweise die folgende Fehlermeldung angezeigt:
 
 .. image:: ../images/AndroidStudio35SigningKeys.png
   :alt: Key was created with errors
 
-This seems to be a bug with Android Studio 3.5.1 and its shipped Java environment in Windows. The key is created correctly but a recommendation is falsely displayed as an error. This can currently be ignored.
+Dies scheint ein Fehler in Android Studio 3.5.1 und seiner Java-Umgebung in Windows zu sein. Der Schlüssel wird korrekt erstellt, aber eine Empfehlung wird fälschlicherweise als Fehler angezeigt. Dies kann momentan ignoriert werden.
 
 Could not download… / Offline Work
 ==================================================
-If you get a failure message like this
+Falls Du eine Fehlermeldung bekommst, die wie folgt oder ähnlich aussieht
 
 .. image:: ../images/GIT_Offline1.jpg
-  :alt: Warning could not download
+  :alt: Warnung Download nicht möglich
 
-make sure that ‘Offline work’ is disabled.
+stelle sicher, dass 'offline work' deaktiviert ist.
 
 File -> Settings
 
 .. image:: ../images/GIT_Offline2.jpg
   :alt: Settings offline work
 
-Error: buildOutput.apkData must not be null
+Fehler: buildOutput.apkData must not be null
 ==================================================
-Sometimes you might get an error message when building the apk saying
+Manchmal kann es sein, dass Du beim Erstellen der APK-Datei folgende Fehlermeldung bekommst:
 
   `Errors while building APK.`
    
   `Cause: buildOutput.apkData must not be null`
 
-This is a known bug in Android Studio 3.5 and will probably not be fixed before Android Studio 3.6. Three options:
+Dies ist ein bekannter Fehler in Android Studio 3.5 und wird wahrscheinlich erst in Android Studio 3.6 behoben. Drei mögliche Vorgehensweisen:
 
-1. Manually delete the three build folders (normal "build", build folder in "app" and build folder in "wear") and generate signed apk again.
-2. Set destination folder to project folder instead of app folder as described in `this video <https://www.youtube.com/watch?v=BWUFWzG-kag>`_.
-3. Change apk destination folder (different location).
+1. Lösche manuell die drei Build-Ordner (normalen "Build"-Ordner, Build-Ordner in "app" und Build-Ordner in "wear") und generiere die signierte APK-Datei erneut.
+2. Definiere als Zielordner (destination folder) den Projekt-Ordner anstelle des App-Ordner - siehe `dieses Video <https://www.youtube.com/watch?v=BWUFWzG-kag>`_.
+3. Ändere den Pfad des Zielordners (destination folder) auf ein neues Verzeichnis.
 
 Unable to start daemon process
 ==================================================
-If you see an error message like the one below you probably use a Windows 10 32-bit system. This is not supported by Android Studio 3.5.1 and above. I you are using Windows 10 you must use a 64-bit operating system.
+Wenn Du eine Fehlermeldung wie die unten siehst, verwendest Du wahrscheinlich ein Windows 10 32-Bit-Betriebssystem. Dieses wird von Android Studio 3.5.1 und höher nicht unterstützt. Wenn Du Windows 10 zum Erstellen der App verwendest, musst Du ein 64-bit Betriebssystem einsetzen.
 
-There are a lot of manuals on the internet how to determine wether you have a 32-bit or 64-bit OS - i.e. `this one <https://www.howtogeek.com/howto/21726/how-do-i-know-if-im-running-32-bit-or-64-bit-windows-answers/>`_.
+Im Internet findest Du viele Anleitungen, wie Du herausfinden kannst, ob Du ein 32-bit- oder ein 64-bit-System einsetzt - z.B. `hier <https://www.howtogeek.com/howto/21726/how-do-i-know-if-im-running-32-bit-or-64-bit-windows-answers/>`_.
 
 .. image:: ../images/AndroidStudioWin10_32bitError.png
   :alt: Screenshot Unable to start daemon process
   
 
-No CGM data
+Fehlende CGM-Daten
 ==================================================
-* In case you are using xDrip+: Identify receiver as described on `xDrip+ settings page <../Configuration/xdrip.html#identify-receiver>`_.
-* In case you are using `patched Dexcom G6 app <../Hardware/DexcomG6.html#if-using-g6-with-patched-dexcom-app>`_: Make sure you are using the correct version from the `2.4 folder <https://github.com/dexcomapp/dexcomapp/tree/master/2.4>`_.
+* Falls Du xDrip+ verwendest: Identifiziere den Empfänger wie in den `xDrip+ Einstellungen <../Configuration/xdrip.html#identifiziere-empfanger>`_ beschrieben.
+* Falls Du die `gepatchte Dexcom G6 App <../Hardware/DexcomG6.html#g6-mit-der-gepatchten-dexcom-app>`_ verwendest: Stelle sicher, dass Du die korrekte Version aus dem `2.4 Ordner <https://github.com/dexcomapp/dexcomapp/tree/master/2.4>`_ verwendest.
 
 Uncommitted changes
 ==================================================
-If you receive failure message like
+Falls Du eine Fehlermeldung bekommst, die wie folgt oder ähnlich aussieht
 
 .. image:: ../images/GIT_TerminalCheckOut0.PNG
-  :alt: Failure uncommitted changes
+  :alt: Fehler uncommitted changes
 
-Option 1 - Check git installation
+Option 1 - Prüfe die git Installation
 --------------------------------------------------
-* git might be not installed correctly (must be globally available)
-* when on Windows and git was just installed, you should restart your computer or at least log out and re-login once, to make git globally available after the installation
-* `Check git installation <../Installing-AndroidAPS/git-install.html#check-git-settings-in-android-studio>`_
-* If no git version is shown in check but git is installed on your computer, make sure Android Studio knows where `git is located <../Installing-AndroidAPS/git-install.html#set-git-path-in-android-studio>`_ on your computer.
+ist git nicht korrekt installiert.
+* Falls Du einen Windows-PC nutzt und git gerade installiert hast, solltest Du Deinen PC einmal neu starten oder Dich zumindest einmal von Deinem Benutzerkonto an- und wieder abmelden, um git nach der Installation allgemein verfügbar zu machen.
+* `Prüfe die git Installation <../Installing-AndroidAPS/git-install.html#prufe-die-einstellungen-in-android-studio>`_
+* Wenn keine git Version angezeigt wird, Du aber sicher bist, dass git auf Deinem Computer installiert ist, stelle sicher, dass Android Studio `den Pfad zu git <../Installing-AndroidAPS/git-install.html#pfad-zu-git-in-android-studio-festlegen>`_ kennt.
 
-Option 2 - Reload source code
+Option 2 - Quellcode erneut laden
 --------------------------------------------------
-* In Android Studio select VCS -> GIT -> Reset HEAD
+* Wähle in Android Studio den Menüeintrag VCS -> GIT -> Reset HEAD.
 
 .. image:: ../images/GIT_TerminalCheckOut3.PNG
   :alt: Reset HEAD
    
-Option 3 - Check for updates
+Option 3 - Prüfe den Code auf Aktualisierungen
 --------------------------------------------------
-* Copy ‘git checkout --’ to clipboard (without quote signs)
-* Switch to Terminal in Android Studio (lower left side of Android Studio window)
+* Kopiere 'git checkout --' in die Zwischenablage (ohne die Anführungszeichen)
+* Wechsle zum Terminal in Android Studio (linke untere Seite des Android Studio-Fensters)
 
   .. image:: ../images/GIT_TerminalCheckOut1.PNG
     :alt: Android Studio Terminal
@@ -108,41 +108,41 @@ Option 3 - Check for updates
 * Paste copied text and press return
 
   .. image:: ../images/GIT_TerminalCheckOut2.jpg
-    :alt: GIT checkout success
+    :alt: GIT checkout erfolgreich
 
-App not installed
+App not installed / Installation fehlgeschlagen
 ==================================================
 .. image:: ../images/Update_AppNotInstalled.png
-  :alt: phone app note installed
+  :alt: App wird auf dem Smartphone nicht installiert
 
-* Make sure you have transferred the “app-full-release.apk” file to your phone.
-* If "App not installed" is displayed on your phone follow these steps:
+* Stelle sicher, dass Du die “app-full-release.apk” auf Dein Smartphone übertragen hast.
+* Falls "App not installed" auf dem Smartphone angezeigt wird, gehe wie folgt vor:
   
-1. `Export settings <../Usage/ExportImportSettings.html>`__ (in AAPS version already installed on your phone)
-2. Uninstall AAPS on your phone.
-3. Enable airplane mode & turn off bluetooth.
-4. Install new version (“app-full-release.apk”)
-5. `Import settings <../Usage/ExportImportSettings.html>`__
-6. Turn bluetooth back on and disable airplane mode
+1. `Exportiere Deine Einstellungen <../Usage/ExportImportSettings.html>`_ (in der AAPS Version, die bereits auf Deinem Smartphone installiert ist)
+2. Deinstalliere AAPS auf Deinem Smartphone.
+3. Aktiviere den Flugmodus & schalte Bluetooth aus.
+4. Installiere die neue Version ("app-full-release.apk").
+5. `Export/Import von Einstellungen <../Usage/ExportImportSettings.html>`_
+6. Aktiviere Bluetooth wieder und schalte den Flugmodus aus.
 
-App installed but old version
+App installiert, aber weiter die alte Version auf dem Smartphone
 ==================================================
-If you build the app successfully, transferred it to your phone and installed it successfully but the version number stays the same then you might have missed to `update your local copy <../Update-to-new-version.html#update-your-local-copy>`_.
+Wenn Du die App erfolgreich erstellt, sie auf Dein Smartphone übertragen und dort erfolgreich installiert hast jedoch weiter die alte Versionsnummer angezeigt wird, so hast Du wahrscheinlich versäumt, Deine `lokale Kopie zu aktualisieren <../Update-to-new-version.html#fuhre-ein-update-deiner-lokalen-version-durch>`_.
 
-None of the above worked
+Keiner der oben genannten Lösungsvorschläge funktioniert
 ==================================================
-If non of the above tips helped you might consider building the app from scratch:
+Falls die oben genannten Tipps Dich nicht weiter bringen, kannst Du überlegen, die App von Grund auf neu zu erstellen.
 
-1. `Export settings <../Usage/ExportImportSettings.html>`__ (in AAPS version already installed on your phone)
-2. Have your key password and key store password ready. In case you have forgotten passwords you can try to find them in project files as described `here <https://youtu.be/nS3wxnLgZOo>`__. Or you just use a new keystore. 
-3. Build app from scratch as described `here <../Installing-AndroidAPS/Building-APK.html#download-androidaps-code>`__.
-4. When you have build the APK successfully delete the exiting app on your phone, transfer the new apk to your phone and install.
-5. `Import settings <../Usage/ExportImportSettings.html>`__
+1. `Exportiere Deine Einstellungen <../Usage/ExportImportSettings.html>`_ (in der AAPS Version, die bereits auf Deinem Smartphone installiert ist)
+2. Halte Dein key Passwort und Dein key store Passwort bereit. Falls Du die Passwörter vergessen hast, kannst Du versuchen, sie  wie `hier <https://youtu.be/nS3wxnLgZOo>`_ beschrieben in den Projektdateien zu finden. Oder verwende einfach einen neuen keystore. 
+3. Build app from scratch as described `here <../Installing-AndroidAPS/Building-APK.html#download-androidaps-code>`_.
+4. Nachdem Du die APK erfolgreich erstellt hast, kannst Du die App auf Deinem Smartphone deinstallieren.
+5. `Export/Import von Einstellungen <../Usage/ExportImportSettings.html>`_
 
 Worst case scenario
 ==================================================
-In case even building the app from scratch does not solve your problem you might want to try to uninstall Android Studio completely. Some Users reported that this solved their problem.
+**Stelle sicher, dass Du beim Deinstallieren von Android Studio alle damit in Verbindung stehenden Dateien entfernst.** Wenn Du Android Studio und seine versteckten Dateien nicht komplett entfernt werden, kann die Deinstallation neue Schwierigkeiten verursachen statt Deine bestehenden Probleme zu lösen. Einige Benutzer berichteten, dass dies ihr Problem gelöst hat.
 
-**Make sure to uninstall all files associated with Android Studio.** If you do not completely remove Android Studio with all hidden files, uninstalling may cause new problems instead of solving your existing one(s). Manuals for complete uninstall can be found online i.e. `https://stackoverflow.com/questions/39953495/how-to-completely-uninstall-android-studio-from-windowsv10 <https://stackoverflow.com/questions/39953495/how-to-completely-uninstall-android-studio-from-windowsv10>`_.
+Falls auch die Neuerstellung der App von Grund auf Dein Problem nicht löst, könntest Du versuchen, Android Studio komplett neu zu installieren. Anleitungen zur kompletten Deinstallation findest Du online z.B. `https://stackoverflow.com/questions/39953495/how-to-completely-uninstall-android-studio-from-windowsv10 <https://stackoverflow.com/questions/39953495/how-to-completely-uninstall-android-studio-from-windowsv10>`_.
 
-Install Android Studio from scratch as described `here <../Installing-AndroidAPS/Building-APK.html#install-android-studio>`_ and **do not update gradle**.
+Installiere Android Studio von Grund auf wie `hier <../Installing-AndroidAPS/Building-APK.html#android-studio-installieren>`_ beschrieben und **führe kein gradle Update durch**.
