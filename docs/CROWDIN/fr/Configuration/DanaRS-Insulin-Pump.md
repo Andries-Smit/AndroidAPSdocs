@@ -1,100 +1,95 @@
-# Pompe DanaRS
+# DanaRS Pump
 
-*Ces instructions décrivent la configuration de l’application et de votre pompe si vous avez une DanaRS commercialisée depuis 2017. Visitez la [pompe à insuline Dana R](./DanaR-Insulin-Pump) si vous avez plutôt la pompe initiale DanaR.*
+_These instructions are for configuring the app and your pump if you have a DanaRS from 2017 onwards. Visit [DanaR Insulin Pump](./DanaR-Insulin-Pump) if you have the original DanaR instead._
 
-**Le nouveau firmware Dana RS v3 peut être utilisé depuis la version 2.7 d'AndroidAPS.**
+**New Dana RS firmware v3 can be used from AndroidAPS version 2.7 onwards.**
 
-* Sur la pompe DanaRS, « BASAL A » est utilisé par l'application. Les données existantes sont écrasé.
+* In DanaRS pump "BASAL A" is used by the app. Existing data gets overwritten.
 
-## Appairage de la pompe
+## Pairing pump
 
-* Dans AndroidAPS, allez dans Générateur de configuration et sélectionnez « DanaRS »
+* In AndroidAPS go to Config Builder and select 'DanaRS'
 
-* Sélectionnez le Menu en appuyant sur les 3 points en haut à droite. Sélectionnez le menu Préférences.
+* Select Menu by tapping the 3 dots in the top right. Select Preferences.
 
-* Sélectionnez Appairer une nouvelle pompe DanaRS, puis cliquez sur le numéro de série de votre DanaRS.
-    
-    ![Appairage DanaRS avec AAPS](../images/AAPS_DanaRSPairing.png)
+* Select DanaRS Pair New Pump, and click your DanaRS serial number.
 
-* Sélectionnez Mot de passe de la pompe et saisissez votre mot de passe.
+  ![AAPS pair Dana RS](../images/AAPS_DanaRSPairing.png)
 
-### Mot de passe par défaut
+* Select Pump password and input your password.
 
-* Pour les DanaRS avec le firmware v1 et v2, le mot de passe par défaut est 1234.
-* Pour les DanaRS avec le firmware v3, le mot de passe par défaut est une combinaison du mois de production et de la date de production (par ex. mois 01 et jour 24). Sur votre pompe ouvrez le menu principal -> Rapport -> Info produit. Le numéro 3 est la date de production.
+### Default password
 
-* **Vous devez confirmer l'appairage sur la pompe !** C'est juste la façon dont vous êtes habitués à faire d'autres appairages bluetooth (par ex. le smartphone et l'audio de la voiture).
-    
-    ![Confirmation d'appairage DanaRS](../images/DanaRS_Pairing.png)
+* For DanaRS with firmware v1 and v2 the default password is 1234.
+* For DanaRS with firmware v3 the default password is a combination of production month and production date (i.e. month 01 and day 24). Open main menu on pump > review > information. Number 3 is production date.
 
-* Sélectionner la vitesse de Bolus pour changer la vitesse de Bolus par défaut souhaitée (12 sec par 1 U, 30 sec par 1 U ou 60 sec par 1 U).
+* **You have to confirm the pairing on the pump!** That's just the way you are used to from other bluetooth pairings (i.e. smartphone and car audio).
 
-* Redémarrez votre téléphone.
-* Régler l'incrément Basale sur pompe à 0,01 U/h en utilisant le menu de Médecins (voir le guide de l’utilisateur de la pompe)
-* Activez les Bolus Étendus sur la pompe
+  ![Dana RS confirmation pairing](../images/DanaRS_Pairing.png)
 
-## Changer de mot de passe sur la pompe
+* Select Bolus Speed to change the default bolus speed used (12sec per 1u, 30sec per 1u or 60sec per 1u).
+* Restart your phone.
+* Set basal step on pump to 0.01 U/h using Doctors menu (see pump user guide)
+* Enable extended boluses on pump
 
-* Appuyez sur le bouton OK de la pompe
-* Dans le menu principal, sélectionnez "OPTION" (déplacer à droite en appuyant sur le bouton flèche plusieurs fois)
-    
-    ![Menu principal DanaRS](../images/DanaRSPW_01_MainMenu.png)
+## Change password on pump
 
-* Dans le menu Options, sélectionnez "OPTION UTILISATEUR"
-    
-    ![Menu Option DanaRS](../images/DanaRSPW_02_OptionMenu.png)
+* Press OK button on pump
+* In main menu select "OPTION" (move right by pressing arrow button several times)
 
-* Utilisez le bouton flèche pour faire défiler vers le bas jusqu'à " 11. Mot de passe "
-    
-    ![DanaRS 11. Mot de passe](../images/DanaRSPW_03_11PW.png)
+  ![DanaRS Main Menu](../images/DanaRSPW_01_MainMenu.png)
 
-* Appuyez sur OK pour saisir l'ancien mot de passe.
+* In options menu select "USER OPTION"
 
-* Entrez **l'ancien mot de passe** (mot de passe par défaut voir [au-dessus](#mot-de-passe-par-defaut)) et appuyez sur OK
-    
-    ![DanaRS Entrez l"ancien mot de passe](../images/DanaRSPW_04_11PWenter.png)
+  ![DanaRS Option Menu](../images/DanaRSPW_02_OptionMenu.png)
 
-* Si un mauvais mot de passe est entré ici, il n'y aura pas de message indiquant l'échec !
+* Use arrow button to scroll down to "11. password"
 
-* Définissez un **nouveau mot de passe** (Modifiez les numéros avec les boutons + & - / Déplacez vers la droite avec le bouton flèche).
-    
-    ![DanaRS Nouveau mot de passe](../images/DanaRSPW_05_PWnew.png)
+  ![DanaRS 11. Password](../images/DanaRSPW_03_11PW.png)
 
-* Confirmez avec le bouton OK.
+* Press OK to enter old password.
 
-* Sauvegardez en appuyant à nouveau sur le bouton OK.
-    
-    ![DanaRS Sauvegarder le nouveau mot de passe](../images/DanaRSPW_06_PWnewSave.png)
+* Enter **old password** (Default password see [above](#default-password)) and press OK
 
-* Déplacer vers le bas jusqu'à " 14. QUITTEZ " et appuyez sur le bouton OK.
-    
-    ![DanaRS Quitter](../images/DanaRSPW_07_Exit.png)
+  ![DanaRS Enter old password](../images/DanaRSPW_04_11PWenter.png)
 
-## Erreurs spécifiques à DanaRS
+* If wrong password is entered here there will be no message indicating failure!
+* Set **new password** (Change numbers with + & - buttons / Move right with arrow button).
 
-### Erreur lors de la distribution de l'insuline
+  ![DanaRS New password](../images/DanaRSPW_05_PWnew.png)
 
-Dans le cas où la connexion entre AAPS et DanaRS est perdue pendant un bolus d'insuline (par ex. vous vous éloignez de votre téléphone alors que la DanaRS est en train de délivrer de l'insuline), vous verrez le message suivant et vous entendrez une alarme sonore.
+* Confirm with OK button.
+* Save by pressing OK button again.
 
-![Alarme d'administration de l'insuline](../images/DanaRS_Error_bolus.png)
+  ![DanaRS Save new password](../images/DanaRSPW_06_PWnewSave.png)
 
-* Dans la plupart des cas c'est juste un problème de communication et la quantité d'insuline délivrée est correcte.
-* Vérifiez dans l'historique de la pompe (à la pompe ou à l'aide de l'onglet Dana > historique de la pompe > bolus) si le bolus est correct.
-* Supprimer l'entrée en erreur dans l'onglet [Traitements](../Getting-Started/Screenshots#correction-de-glucides) si vous le souhaitez.
-* Le montant réel est lu et enregistré lors de la prochaine connexion. Pour forcer cette mise à jour, appuyez sur l'icône BT dans l'onglet dana ou attendez juste la prochaine connexion.
+* Move down to "14. EXIT" and press OK button.
 
-## Remarque spéciale lors du changement de téléphone
+  ![DanaRS Exit](../images/DanaRSPW_07_Exit.png)
 
-Lors du passage à un nouveau téléphone, les étapes suivantes sont nécessaires :
+## Dana RS specific errors
 
-* [Exportez les paramètres](../Usage/ExportImportSettings#export-settings) sur votre ancien téléphone
-* Transférez les paramètres de l'ancien au nouveau téléphone
-* **Appairer manuellement** DanaRS avec le nouveau téléphone
-    
-    * Comme les paramètres de connexion de la pompe sont également importés dans AAPS sur votre nouveau téléphone, il va déjà "connaître" la pompe et donc ne démarrera pas une analyse bluetooth. Par conséquent, le nouveau téléphone et la pompe doivent être appairés manuellement.
-* Installez AndroidAPS sur le nouveau téléphone.
-* [Importer les paramètres](../Usage/ExportImportSettings#importer-les-parametres) sur votre nouveau téléphone
+### Error during insulin delivery
+In case the connection between AAPS and Dana RS is lost during bolus insulin delivery (i.e. you walk away from phone while Dana RS is pumping insulin) you will see the following message and hear an alarm sound.
 
-## Voyager avec différents fuseaux horaires avec la pompe DanaR
+![Alarm insulin delivery](../images/DanaRS_Error_bolus.png)
 
-Pour plus d'informations sur les voyages dans différents fuseaux horaires, voir la section [Voyager avec différents fuseaux horaires avec une pompe](../Usage/Timezone-traveling#danarv2-danars).
+* In most cases this is just a communication issue and the correct amount of insulin is delivered.
+* Check in pump history (either on the pump or through Dana tab > pump history > boluses) if correct bolus is given.
+* Delete error entry in [treatments tab](../Getting-Started/Screenshots#carb-correction) if you wish.
+* Real amount is read and recorded on next connect. To force this press BT icon on dana tab or just wait for next connect.
+
+## Special note when switching phone
+
+When switching to a new phone the following steps are neccessary:
+* [Export settings](../Usage/ExportImportSettings#export-settings) on your old phone
+* Transfer settings from old to new phone
+* **Manually pair** Dana RS with the new phone
+
+  * As pump connection settings are also imported AAPS on your new phone will already "know" the pump and therefore not start a bluetooth scan. Therefore new phone and pump must be paired manually.
+* Install AndroidAPS on the new phone.
+* [Import settings](../Usage/ExportImportSettings#import-settings) on your new phone
+
+## Timezone traveling with Dana RS pump
+
+For information on traveling accross time zones see section [Timezone traveling with pumps](../Usage/Timezone-traveling#danarv2-danars).
