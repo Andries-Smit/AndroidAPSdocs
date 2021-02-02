@@ -1,10 +1,10 @@
-# Making your first PR (pull request)
+# Maak je eerste PR (pull request)
 
-**This description is just for editing the English documentation. All new information must be added in English first. If you want to translate to other languages (thank you), please use [crowdin](https://crowdin.com/project/androidapsdocs).**
+**** Deze beschrijving is alleen bedoeld om de Engelstalige versie van de wiki te verbeteren. All new information must be added in English first. If you want to translate to other languages (thank you), please use [crowdin](https://crowdin.com/project/androidapsdocs).****
 
-For hints how to format text (headline, bold...) and set links please see the ["code syntax"](./make-a-PR#code-syntax) section of this page.
+Voor hints hoe tekst te formatteren (kop, vet ...) en links instellen, zie de ["code syntax"](./make-a-PR#code-syntax) sectie van deze pagina.
 
-## General
+## Algemeen
 For any questions, feedback or new ideas you can contact the documentation team via [gitter](https://gitter.im/AndroidAPSwiki/Lobby). Doing a PR isn't difficult, but we can help you editing the documentation.
 
 At some point it will be suggested that you make a PR. PR is short for pull request, and it is a way of adding or editing information stored in GitHub.  It's actually not too hard to do one and it is a great way to contribute. This documentation is here because people like you made PRs.  Don't worry about making a mistake or somehow editing the wrong documents.  There is always a review process before changes are merged into the "formal" AndroidAPS documentation repository.  You can't mess up the originals through any accidents in the PR process.  The general process is:
@@ -15,7 +15,7 @@ At some point it will be suggested that you make a PR. PR is short for pull requ
 * Create a pull request, which asks the administrators to use your changes.
 * They will do a review and either (1)merge your changes, (2)comment back to you about your changes, or (3)start a new document with your changes.
 
-(Side note:  If you are a visual learner, there is a YouTube video [here](https://youtu.be/4b6tsL0_kzg) showing the PR workflow.)
+(Side note: If you are a visual learner, there is a YouTube video [here](https://youtu.be/4b6tsL0_kzg) showing the PR workflow.)
 
 For our example we are going to make an edit to AndroidAPSdocs.  This does NOT need to be done in the linux environment on your rig.  This can be done on any Windows PC, Mac, etc. (any computer with Internet access).
 
@@ -37,11 +37,11 @@ For our example we are going to make an edit to AndroidAPSdocs.  This does NOT n
 
 ![Edit branch](./images/PR3.png)
 
-4. You have been working in the "<>Edit file" tab. Select the "Preview changes" tab for a fresh look to make sure everything you changed looks like you meant it to (typpos sic.). If you see a needed improvement, go back to the edit tab to make more improvements.
+4. You have been working in the "<>Edit file" tab. You have been working in the "<>Edit file" tab. Select the "Preview changes" tab for a fresh look to make sure everything you changed looks like you meant it to (typpos sic.). If you see a needed improvement, go back to the edit tab to make more improvements.
 
 ![preview mode](./images/PR5.png)
 
-5. When you have finished your edits, scroll to the bottom of the page.  In the box at the bottom, provide your comments in the text field that reads, "Add an optional extended description...". The default title has the file name. Try to include a sentence explaining the __reason__ for the change. Relating the reason helps reviewers understand what you are attempting to do with the PR.
+5. When you have finished your edits, scroll to the bottom of the page.  In the box at the bottom, provide your comments in the text field that reads, "Add an optional extended description...". The default title has the file name. Try to include a sentence explaining the **reason** for the change. Relating the reason helps reviewers understand what you are attempting to do with the PR.
 
 ![commit comments](./images/PR4.png)
 
@@ -77,9 +77,9 @@ If using images please use reasonable sizes. Screenshot images should be **250 p
 * images: `![alt text](../images/file.png)`
 #### Links
 * external link: `[alt text](www.url.tld)`
-* internal link to .md page: `[alt text](../folder/file.md)`
-* internal link to .rst page: `[alt text](../folder/file.rst)`
-* internal link to headline: `[alt text](../folder/file#headline)`
+* internal link to .md page: `[alt text](.../folder/file.md)`
+* internal link to .rst page: `[alt text](.../folder/file.rst)`
+* internal link to headline: `[alt text](.../folder/file#headline)`
 
 ### .rst files
 #### Text format
@@ -97,7 +97,8 @@ If using images please use reasonable sizes. Screenshot images should be **250 p
 #### Images
 * images:
 
-   `.. image:: ../images/modules.png`<br>`:alt: alt text`
+   `.. image:: ../images/modules.png`  
+  `:alt: alt text`
 #### Links
 * external link: `` `alt text <www.url.tld>_` ``
 * internal link to .md page: `` `alt text <../folder/file.html>_` ``
@@ -115,9 +116,9 @@ If you want to set an internal link within the AndroidAPS documentation, please 
   * `[text](../Usage/Test#anchor)` instead of `[text](../Usage/Test.md#anchor)`
 
 #### In files with **.rst** ending:
-* `` `Text <../Usage/Test.hmtl>`_ ``  will set a hyperlink one directory up from where you are and then into the subdirectory /Usage. Ending of the target file must be .html.
+* `` `Text <../Usage/Test.hmtl>`_ `` will set a hyperlink one directory up from where you are and then into the subdirectory /Usage. Ending of the target file must be .html.
 
-   Except you are in a toctree. Then you have to write it like this:  `Text <../Usage/Test.md>` with .md or .rst (not .html).
+   Except you are in a toctree. Then you have to write it like this: `Text <../Usage/Test.md>` with .md or .rst (not .html).
 * `Text <./Usage/Test.md>` will set a hyperlink from where you are into /Usage.
 * To set the link to an **anchor** (i.e. a headline) you have to add the anchor to the link
   * `[text](../Usage/Test.html#anchor)` instead of `[text](../Usage/Test#anchor)`
@@ -142,7 +143,8 @@ If you are planning to make a lot of edits, including adding images to help illu
 
  6. To see examples of how to add the images, you can look at the "raw" code of a page to see an example from a page that already has the images embedded successfully. Make sure you use the [correct code](./make-a-PR#code-syntax) for the page type you are on (.md or .rst). The main thing is to have a plain text description, followed by a link with a relative path to the image, like this:
     * For .md pages: `![Example of uploading images in batches](../images/Example_batch_images_upload.png)` (That code is exactly how the image below is embedded to be displayed.)
-    * For .rst pages: `.. image:: ../images/Example_batch_images_upload.png`<br>`:alt: Example of uploading images in batches`
+    * For .rst pages: `.. image:: ../images/Example_batch_images_upload.png`  
+      `:alt: Example of uploading images in batches`
 
 ![Example of uploading images in batches](./images/Example_batch_images_upload.png)
 
