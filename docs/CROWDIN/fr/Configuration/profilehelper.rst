@@ -1,69 +1,69 @@
-Assistant Profil
+Profile helper
 ****************************************
 
-L'assistant profil a deux fonctions :
+Profile helper offers two functions:
 
-1. Trouver un profil pour les enfants
-2. Comparer deux profils ou changements de profil pour dupliquer un nouveau profil
+1. Find a profile for kids
+2. Compare two profiles or profile switches in order to clone a new profile
 
-Profil pour les enfants (jusqu'à 18 ans)
+Profile for kids (up to 18 years)
 =======================================
 
-**Remarques importantes :**
+**Important note:**
 
-**L'assistant profil a pour but de vous aider à trouver le profil initial de votre enfant. Même s'il est basée sur un ensemble de données de deux hôpitaux différents, discutez toujours avec votre équipe médicale avant d'utiliser un nouveau profil !**
+**Profile helper is intended to support you finding the initial profile for your kid. Even though it is based on data sets of two different hospitals always discuss with your medical team before using a new profile!**
 
-L'assistant de profil propose un ensemble de données d'enfants provenant de deux hôpitaux différents pour vous permettre de trouver un profil initial pour votre enfant jusqu'à 18 ans.
+Profile helper offers data sets from two different hospitals for children to find initial profile for your kid up to 18 years.
 
 .. image:: ../images/ProfileHelperKids1.png
-  :alt: Assistant Profil Enfant 1
+  :alt: Profile Helper Kids 1
 
-1. Sélectionnez 'Assistant profil' dans le menu trois points en haut à droite de l'écran.
-2. Ajustez le profil par défaut (basé sur le jeu de données de l'hôpital) en entrant l'âge de l'enfant et le DTI total **ou** le poids.
-3. Changez l'écran en cliquant sur la barre grise « 2 » à droite.
-4. Appuyez sur 'Profil actuel' et sélectionnez 'Profil par défaut DPV'.
+1. Select 'Profile helper' from three-dot-menu on the top right side of the screen.
+2. Adjust Default profile (based on hospital data set) by entering kids age and either TDD Total **or** weight.
+3. Change screen by clicking on the grey bar labeled 2 on the right.
+4. Long-press 'Current profile' and select DPV Default profile.
 
 .. image:: ../images/ProfileHelperKids2.png
-  :alt: Assistant Profil Enfant 2
+  :alt: Profile Helper Kids 2
 
-5. Ajustez le Profil par défaut DPV (basé sur le jeu de données d'un autre hôpital) en entrant l'âge, le pourcentage de basal et aussi le DTI Total **ou** le poids.
-6. Appuyez sur le bouton 'COMPARER LES PROFILS' en haut de l'écran.
-7. La comparaison des deux profils sélectionnés sera affichée.
+5. Adjust DPV Default profile (based on another hospital data set) by entering kids age, percentage of basal and either TDD Total **or** weight.
+6. Press button 'COMPARE PROFILES' on top of screen.
+7. Comparison of the two adjusted profiles will be displayed.
 
-Une fois que vous êtes d'accord avec les réglages du profil, vous pouvez `dupliquer le profil <../Configuration/profilehelper.html#id1>`_ comme décrit ci-dessous.
+Once you are fine with the profile adjustments you can `clone the profile <../Configuration/profilehelper.html#clone-profile>`_ as described below.
 
-Comparer deux profils
+Compare two profiles
 =======================================
 
-Vous pouvez également utiliser l'assistant de profil pour comparer à différents profils ou changements de profil (pourcentage d'activation de vos profils utilisés dans un précédent `changement de profil <../Usage/Profiles.html>`_).
+You can use profile helper also to compare to different profiles or profile switches (percentage of on of your profiles used in a `profile switch <../Usage/Profiles.html>`_ before).
 
 .. image:: ../images/ProfileHelper1.png
-  :alt: Assistant Profil 1
+  :alt: Profile Helper 1
 
-1. Sélectionnez 'Assistant profil' dans le menu trois points en haut à droite de l'écran.
-2. Appuyez sur « Profil par défaut » et sélectionnez « Profils disponibles » pour la liste de vos profils existants ou « Changement de profil » pour avoir la liste des derniers changements de profil effectués.
-3. Appuyez sur le nom du profil ('Aktuell_LP' dans la capture d'écran ci-dessus) et sélectionnez un Profil /Changement de profil dans la liste.
-4. Changez l'écran en cliquant sur la barre grise « 2 » à droite.
+1. Select 'Profile helper' from three-dot-menu on the top right side of the screen.
+2. Long-press 'Default profile' and select 'Available profile' for a list of your existing profiles or 'Profile switch' for a list of latest profile switches used.
+3. Long-Press the name of the profile / profile switch ('Aktuell_LP' in screenshot above) and select a profile / profile switch from the list.
+4. Change screen by clicking on the grey bar labeled 2 on the right.
 
 .. image:: ../images/ProfileHelper2.png
-  :alt: Assistant Profil 2
+  :alt: Profile Helper 2
 
-5. Par défaut, le « Profil actuel » est proposé pour faire la comparaison. 
-6. Si vous voulez sélectionner un autre, appuyez sur « Profil actuel » et sélectionnez « Profils disponibles » ou « Changement de profil ».
-7. Appuyez sur le nom du profil ('Aktuell_LP' dans la capture d'écran ci-dessus) et sélectionnez un Profil /Changement de profil dans la liste.
-8. Appuyez sur le bouton 'COMPARER LES PROFILS' en haut de l'écran.
-9. La comparaison des deux profils sélectionnés sera affichée.
+5. As a standard 'Current profile' is offered as comparison candidate. 
+6. If you want a different profile / profile switch long-press 'Current profile' and select either 'Available profile' or 'Profile switch'.
+7. Long-press the name of the profile / profile switch ('Aktuell_LP' in screenshot above) and select a profile / profile switch from the list.
+8. Press button 'COMPARE PROFILES' on top of screen.
+9. Comparison of the two adjusted profiles will be displayed.
 
-Dupliquer le profil
+Clone profile
 =======================================
 
-Si vous utilisez des `profils locaux <../Configuration/Config-Builder.html#profil-local-recommande>`_, vous pouvez dupliquer un Profil / Changement de profil directement depuis l'assistant de profil.
+If you use `local profiles <../Configuration/Config-Builder.html#local-profile-recommended>`_ you can clone a profile / profile switch directly from profile helper.
 
 .. image:: ../images/ProfileHelperClone.png
-  :alt: Assistant profile Dupliquer le Profil / Changement de profil
+  :alt: Profile Helper Clone profile / profile switch
   
-1. Sélectionnez le Profil / Changement de profil désiré comme décrit ci-dessus.
-2. Si vous utilisez « Profil par défaut » ou « Profil par défaut DPV » (basé sur un ensemble de données d'hôpitaux pour enfants) assurez-vous que vous entrez les paramètres corrects pour l'âge, le pourcentage de basal et DTI / poids.
-3. Appuyez sur le bouton 'DUPLIQUER' en bas de l'écran.
-4. Confirmez avec 'OK'.
-5. Activez le nouveau profil dans l'onglet Profil Local.
+1. Select the desired profile / profile switch as described above.
+2. If you are using 'Default profile' or 'DPV Default profile' (based on data sets from hospitals for children) make sure you enter correct settings for age, percentage of basal and TDD / weight.
+3. Press button 'CLONE' on bottom of screen.
+4. Confirm with 'OK'.
+5. Activate new profile in local profile tab.
