@@ -26,7 +26,7 @@ Hardware and Software Requirements
 
   Component that will operate AndroidAPS and send control commands to the Pod communication device.
 
-      +  Supported `Omnipod driver Android phone <https://docs.google.com/spreadsheets/d/1eNtXAWwrdVtDvsvXaR_72wgT9ICjZPNEBq8DbitCv_4/edit#gid=0>`__ with a version of AAPS 2.8 and related `components setup <../index.html#component-setup>`__
+      +  Supported `Omnipod driver Android phone <https://docs.google.com/spreadsheets/d/1eNtXAWwrdVtDvsvXaR_72wgT9ICjZPNEBq8DbitCv_4/edit#gid=0>`__ with a version of AAPS 2.8 and related `components setup <https://androidaps.readthedocs.io/en/latest/EN/index.html#component-setup>`__
 
 *  |Omnipod_Pod|  **Insulin Delivery Device** 
 
@@ -132,7 +132,7 @@ Activating a Pod
 
 Before you can activate a pod please ensure you have properly configured and connected your RileyLink connection in the Omnipod settings
 
-*REMINDER: Pod communication occurs at limited ranges for pod activation pairing due to security safety measures. Before pairing the Pod's radio signal is weaker, however after it has been paired it will operate at full signal power. During these procedures, make sure that your pod is* `within close proximity <#optimal-omnipod-and-rileylink-positioning>`__ (~30 cm away or less) but not on top of or right next to the RileyLink.*
+*REMINDER: Pod communication occurs at limited ranges for pod activation pairing due to security safety measures. Before pairing the Pod's radio signal is weaker, however after it has been paired it will operate at full signal power. During these procedures, make sure that your pod is* `within close proximity <#optimal-omnipod-and-rileylink-positioning>`__ (~30 cm away or less) but not on top of or right next to the RileyLink.
 
 1. Navigate to the **Omnipod (POD)** tab and click on the **POD MGMT (1)** button, and then click on **Activate Pod (2)**.
 
@@ -440,35 +440,35 @@ Fields
 Icons
 -----
 
-.. list-table:: 
+.. table:: 
       
-    * - |refresh_pod_status|
-      - **REFRESH:** 
+    |refresh_pod_status|  **REFRESH:**
+      |resume| 		 **RESUME DELIVERY:** 
 			
 	Sends a refresh command to the active pod to update communication
 			 
 	* Use to refresh the pod status and dismiss status fields that contain the text (uncertain).
 	* See the `Troubleshooting section <#troubleshooting>`__ below for additional information.
-    * - |pod_management|  	 
+    |pod_management|   	 **POD MGMT:**  	 
       - **POD MGMT:**
 
 	Navigates to the Pod management menu   
-    * - |ack_alerts|		 
-      - **ACK ALERTS:**
+    |ack_alerts|		 **ACK ALERTS:**		 
+      |set_time|		 **SET TIME:**
    			 
 	When pressed this will disable the pod expiration beeps and notifications. 
 			 
 	* Button is displayed only when pod time is past expiration warning time
 	* Upon successful dismissal, this icon will no longer appear.			 
-    * - |set_time|	 
-      - **SET TIME:**
+    |suspend|  		 **SUSPEND:**	 
+      ====================  ===========================================
    
 	When pressed this will update the time on the pod with the current time on your phone.
-    * - |suspend|  		 
-      - **SUSPEND:**
+    |discard_pod|	      **Discard pod**  		 
+      ====================  ===========================================
    
 	Suspends the active pod
-    * - |resume|	 
+    |deactivate_pod|	      **Deactivate Pod**	 
       - **RESUME DELIVERY:**
    
 	Resumes the currently suspended, active pod
@@ -481,10 +481,10 @@ Below is an explanation of the layout and meaning of the icons on the **Pod Mana
 
 |Omnipod_Tab_Pod_Management|
 
-.. list-table:: 
+.. table:: 
 
-    * - |activate_pod|
-      - **Activate Pod**
+    |activate_pod|	      **Activate Pod**
+      |pod_history| 	      **Pod history**
    
         Primes and activates a new pod
     * - |deactivate_pod|
@@ -495,11 +495,11 @@ Below is an explanation of the layout and meaning of the icons on the **Pod Mana
 	*  A partially paired pod ignores this command.
 	*  Use this command to deactivate a screaming pod (error 49).
 	*  If the button is disabled (greyed out) use the Discard Pod button.
-    * - |play_test_beep|
+    |play_test_beep| 	      **Play test beep**
       - **Play test beep**
  
  	Plays a single test beep on the pod when pressed.
-    * - |discard_pod|
+    =========================  ===========================================
       - **Discard pod**
 
 	Deactivates and discards the pod state of an unresponsive pod when pressed.
@@ -513,8 +513,8 @@ Below is an explanation of the layout and meaning of the icons on the **Pod Mana
       - **Pod history** 
    
    	Displays the active pod activity history
-    * - |rileylink_stats|
-      - **RileyLink stats:**
+    |rileylink_stats| 	      **RileyLink stats:**
+      |reset_rileylink_config|   **Reset RileyLink Config**
    
         Navigates to the RileyLink Statistics screen displaying current settings and RileyLink Connection history
 
@@ -532,7 +532,7 @@ Below is an explanation of the layout and meaning of the icons on the **Pod Mana
 	    - Tuned Radio Frequency is set
 				
 	* See `addtional notes <#reset-rileylink-config-notes>`__ at the end of this table
-    * - |pulse_log|
+    |pulse_log|		      **Read pulse log:**
       - **Read pulse log:** 
     
     	Sends the active pod pulse log to the clipboard		    
@@ -609,7 +609,7 @@ Provides AAPS notifications and audible phone alerts when it is uncertain if TBR
 * **\*Sound for uncertain SMB notifications enabled:** Enable or disable this setting to trigger an audible alert and visual notification when AAPS is uncertain if an SMB was successfully delivered.
 * **\*Sound for uncertain bolus notifications enabled:** Enable or disable this setting to trigger an audible alert and visual notification when AAPS is uncertain if a bolus was successfully delivered.
    
-Other
+Andere
 -----
 
 Provides advanced settings to assist debugging.
@@ -705,7 +705,7 @@ Battery level reporting is a setting that can be enabled to return the current b
   * **Nightscout** - Battery level is reported when an actual level exists, value of n/a will not be reported
 
 
-Troubleshooting
+Problemen oplossen
 ===============
 
 Pod Failures
@@ -723,7 +723,7 @@ Pump Unreachable Alerts
 
 It is recommended that pump unreachable alerts be configured to **120 minutes** by going to the top right-hand side three-dot menu, selecting **Preferences**\ ➜\ **Local Alerts**\ ➜\ **Pump unreachable threshold [min]** and setting this to **120**.
 
-Import Settings from previous AAPS
+Importeer instellingen van vorige AAPS
 ----------------------------------
 
 Please note that importing settings has the possibility to import an outdated Pod status. As a result, you may lose an active Pod. It is therefore strongly recommended that you **do not import settings while on an active Pod session**.
@@ -750,7 +750,7 @@ Pod suspended
 Informational alert that Pod has been suspended.
 
 Setting basal profile failed. Delivery might be suspended! Please manually refresh the Pod status from the Omnipod tab and resume delivery if needed..
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Informational alert that the Pod basal profile setting has failed, and you will need to hit *Refresh* on the Omnipod tab.
 
