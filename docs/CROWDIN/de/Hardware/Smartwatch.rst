@@ -1,16 +1,16 @@
-Smartwatch
+Smartwatches
 *************
 
-Smartwaches sind nicht zwingend erforderlich, werden von einigen Anwendern aber als sehr hilfreich beschrieben.
-Mehr Infos hier
+Smartwatches are optional, but very useful for some users.
+More details are here:
 
 
 .. toctree::
    :maxdepth: 1
-       
+   :glob:
    
-   Liste der getesteten Telefone und Smartphones <../Getting-Started/Phones.md>
-   Hintergrundbild für das Samrtphone < ../Getting-Started/Phones.md#handy-hintergrundbild>
+   List of tested phones and smartwatches <../Getting-Started/Phones.md>
+   Phone background <../Getting-Started/Phones.html#phone-background>
    Watchfaces Wear OS <../Configuration/Watchfaces.md>
-   Problembehandlung Sony Smartwatch SW 3 <../Usage/SonySW3.rst>
-   Pebble <../Configuration/Watchfaces.md#pebble>
+   Troubleshooting Sony Smartwatch SW 3 <../Usage/SonySW3.rst>
+   Pebble <../Configuration/Watchfaces.html#pebble>
