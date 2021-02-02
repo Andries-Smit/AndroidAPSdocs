@@ -1,36 +1,34 @@
-# Een Huawei telefoon instellen
+# How-to configure a Huawei phone
 
-Er zijn verschillende opties, sommige Android specifiek, sommige Huawei specifiek:
+There are different options, some Android specific, some Huawei specific:
 
-* Voeg AndroidAPS en xdrip+ toe aan de lijst van apps die accuoptimalisatie negeren:
-  
-  * Instellingen / App / Instellingen / Speciale toestemmingen / Batterij optimalisering negeren / Selecteer "Alle toepassingen" / Stel app in op toestaan
-    
-    ![Huawei - negeer batterij optimalisatie](../images/Huawei_BatteryOptimization.png)
+* Add AndroidAPS and xdrip+ to apps list which ignore battery optimisations:
+  * Settings / App / Settings / Special autorisations / Ignore battery optimisation / Select "All applications" / Set app to allowed
 
-* Pas de batterij-instellingen aan:
-  
-  * Instellingen / App / Selecteer AndroidAPS/xDrip+ / onder Batterij / App launch
-    
-    * Zorg ervoor dat "automatisch beheer" verwijderd is
-    * Toestaan:
-      
-      * Automatisch starten
-      * Secundair starten (kan worden gestart vanuit andere apps)
-      * Op achtergrond uitvoeren
-        
-        ![Huawei - batterij opties](../images/Huawei_BatteryOptions.png)
+    ![Huawei - ignore battery optimization](../images/Huawei_BatteryOptimization.png)
 
-* App vergrendelen
-  
-  * Ga naar lijst van recente apps en selecteer het vergrendelingspictogram
-    
-    ![Huawei - app vergrendelen](../images/Huawei_LockApp.png)
 
-Voor xDrip+, kun je ook de 'hardnekkige melding' optie inschakelen (in xDrip+ app):
+* Set battery option settings:
+  * Settings / App / Select AndroidAPS/xdrip+ / Under Battery / App launch
+   * Make sure to remove "automatic management"
+    * Allow:
+     * Automatic launch
+     * Secondary launch (can be launched from other apps)
+     * Background run
 
-* Instellingen / minder vaak voorkomende instellingen / other misc options / Run Collector op voorgrond
-  
-  ![xdrip+ instellingen - collector in voorgrond](../images/xdrip_collector_foreground.png)
+       ![Huawei - battery options](../images/Huawei_BatteryOptions.png)
 
-Afhankelijk van jouw Android versie, staan deze instellingen ergens anders. Deze instellingen gelden voor Android 8.1.
+
+* Lock App
+  * Go into App recent list and select the lock icon
+
+    ![Huawei - lock app](../images/Huawei_LockApp.png)
+
+
+For xdrip+, you can also enable persitent notifications (within xdrip+ app):
+* Setttings / less common settings / other misc options / Run Collector in foreground
+
+   ![xdrip+ settings - collector in foreground](../images/xdrip_collector_foreground.png)
+
+
+Depending on Android version, these settings are somewhere else. These explanations are for Android 8.1.

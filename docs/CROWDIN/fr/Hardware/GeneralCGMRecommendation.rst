@@ -1,45 +1,45 @@
-Recommandations générales MGC
+General CGM recommendations
 **************************************************
 
-Hygiène de la MGC
+CGM hygiene
 ==================================================
 
-Quel que soit le système MGC que vous utilisez, si vous souhaitez faire un calibrage avec une glycémie capillaire, il existe des règles très claires à respecter, que vous utilisiez ou non un logiciel DIY MGC ou les applications officielles. 
+Whichever CGM system you are using, if you are going to use blood based calibration, then there are some very clear rules you should apply, whether or not you are using DIY CGM software or the official apps. 
 
-* Assurez-vous que vos mains et le kit sont propres.
-* Essayez de calibrer lorsque vous avez une série de mesures avec une flèche horizontale (15-30 minutes sont habituellement suffisantes)
-* Évitez de calibrer lorsque les glycémie montent ou descendent. 
-* Faites "assez" de calibrations - sur les applications officielles, vous serez invité à effectuer des vérifications une ou deux fois par jour. Sur les systèmes DIY, vous pouvez ne pas être sollicités pour calibrer, mais soyez prudents si vous continuez sans calibration.
-* Si c'est possible, calibrez avec certaines de vos lectures dans une plage basse (4-5mmol/l ou 72-90mg/dl) et d'autres à un niveau légèrement plus élevé (7-9mmol/l ou 126-160mg/dl) car cela offre une meilleure gamme pour le calibrage des points par rapport à la pente.
+* Make sure hands and kit are clean.
+* Try to calibrate when you have a series of dots with a flat arrow (15-30 minutes is usually enough)
+* Avoid calibrating when glucose levels are moving up or down. 
+* Do “enough” calibrations – on official apps, you will be prompted for once or twice per day checks. On DIY systems you may not be, and should be careful about continuing without calibrations.
+* If it all possible, calibrate with some of your readings in a lower range (4-5mmol/l or 72-90mg/dl) and some at a slightly higher level (7-9mmol/l or 126-160mg/dl) as this provides a better range for the point/slope calibration.
 
-Réglage du capteur (G6)
+Setting sensor (G6)
 ==================================================
 
-Lors de la mise en place du capteur, il est recommandé de ne pas appuyer trop fermement sur le serteur pour éviter les saignements. Le fil du capteur ne doit pas entrer en contact avec le sang.
+When setting sensor, it is recommended not to press the inserter too firmly in order to avoid bleeding. The sensor thread should not come into contact with blood.
 
-Après la mise en place du capteur, l'émetteur peut être cliqué dans son support. Attention ! Cliquez d'abord sur le côté carré, puis appuyez sur le côté rond.
+After setting the sensor, the transmitter can be clicked into the sensor holder. Caution! First click in the square side and then press down the round side.
 
-Dépannage 
+Troubleshooting 
 ==================================================
 
-Problèmes de connexion
+Connection problems
 --------------------------------------------------
 
-La connexion Bluetooth peut être perturbée par d'autres appareils Bluetooth voisins tels que des lecteurs de glycémie, des casques, des tablettes ou des appareils de cuisine tels que des fours à micro-ondes ou des plaques vitrocéramique. Dans ce cas, xdrip n'affiche aucune valeur de Gly. Lorsque la connexion bluetooth est rétablie les données sont comblées.
+Bluetooth connection may be disturbed by other nearby Bluetooth devices such as blood glucose meters, headsets, tablets or kitchen devices such as microwave ovens or ceramic hobs. In this case xdrip does not display any BG values. When bluetooth connection is reestablished the data is backfilled.
 
-Erreurs de capteur
+Sensor Errors
 --------------------------------------------------
-Si des erreurs de capteur récurrentes se produisent, essayez de positionner votre capteur ailleurs sur votre corps. Le fil du capteur ne doit pas entrer en contact avec le sang. 
+If recurring sensor errors occur try selecting a different body site to set your sensor. The sensor thread should not come into contact with blood. 
 
-Souvent une "erreur de capteur" peut être corrigée en buvant immédiatement et en massant autour du capteur !
+Often a "Sensor Error" can be corrected by immediate drinking and massage around the sensor!
 
-Saut de valeurs
+Jumpy values
 --------------------------------------------------
-Vous pouvez essayer de modifier les paramètres de blocage du bruit dans xdrip (Paramètres - Inter-app settings - Noise Blocking) par ex. "Block Very High noise and worse".  Voir également `Lissage des glycémies <../Usage/Smoothing-Blood-Glucose-Data-in-xDrip.html>`_.
+You might try to change settings for noise blocking in xdrip (Settings - Inter-App Settings - Noise Blocking) i.e. "Block Very High noise and worse".  See also `Smoothing BG data <../Usage/Smoothing-Blood-Glucose-Data-in-xDrip.html>`_.
 
-Âge du capteur négatif
+Negative Sensor Age
 --------------------------------------------------
 .. image:: ../images/Troubleshooting_SensorAge.png
   :alt: Negative sensor age
 
-Cela se produit s'il y a soit une double entrée "Insertion Capteur MGC" dans `l'onglet/menu Actions <../Configuration/Config-Builder.html#actions>`_, soit un capteur inséré avec une mauvaise date. Allez dans l'onglet Traitements > Careportal et supprimez la mauvaise entrée.
+This occurs if there is either a double "CGM Sensor Insert" entry in `actions tab / menu <../Configuration/Config-Builder.html#actions>`_ or a sensor insert with wrong date. Go to treatments tab > careportal and delete the wrong entry.

@@ -1,64 +1,64 @@
-Notwendige Überprüfungen nach einem Update von AndroidAPS 2.6
+Necessary checks after update coming from AndroidAPS 2.6
 ***********************************************************
 
-* Der Programmcode wurde bei der Umstellung auf AAPS 2.7 deutlich verändert. 
-* Daher ist es wichtig, dass Du einige Änderungen vornimmst oder Einstellungen nach der Aktualisierung überprüfst.
-* In den `Release Notes <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`_ findest Du Details zu allen neuen und verbesserten Funktionen.
+* The program code was changed significantly when switching to AAPS 2.7. 
+* Therefore it is important that you make some changes or check settings after the update.
+* Please see `release notes <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`_ for details on new and extended features.
 
-Prüfe die BZ-Quelle
+Check BG source
 -----------------------------------------------------------
-* Prüfe, ob Deine BZ-Quelle nach dem Update noch richtig eingestellt ist.
-* Wenn Du z.B. `xDrip+ <../Configuration/xdrip.html>`_ nutzt, kann es passieren, dass die BZ-Quelle auf die gepatchte Dexcom App geändert wird.
-* Öffne den `Konfigurations-Generator <../Configuration/Config-Builder.html#bz-quelle>`_ (Hamburger Menü oben links)
-* Scrolle nach unten zu "BZ-Quelle".
-* Ändere bei Bedarf die BZ-Quelle.
+* Check if BG source is correct after update.
+* Especially when using `xDrip+ <../Configuration/xdrip.html>`_ it might happen, that BG source is changed to Dexcom app (patched).
+* Open `Config builder <../Configuration/Config-Builder.html#bg-source>`_ (hamburger menu on top left side of home screen)
+* Scroll down to "BG source".
+* Select correct BG source if changes are necessary.
 
 .. image:: ../images/ConfBuild_BG.png
-  :alt: BZ-Quelle
+  :alt: BG source
 
-Prüfung abschließen
+Finish exam
 -----------------------------------------------------------
-* AAPS 2.7 hat ein neues Objective 11 für `Automatisierung <../Usage/Automation.html>`_ bekommen.
+* AAPS 2.7 contains new objective 11 for `automation <../Usage/Automation.html>`_.
 * You have to finish exam (`objective 3 and 4 <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_) in order to complete `objective 11 <../Usage/Objectives.html#objective-11-automation>`_.
 * If for example you did not finish the exam in `objective 3 <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_ yet, you will have to complete the exam before you can start `objective 11 <../Usage/Objectives.html#objective-11-automation>`_. 
-* Andere, von Dir bereits abgeschlossene Objectives werden dadurch nicht verändert. Du behälst alle Objectives, die Du bereits abgeschlossen hast!
+* This will not effect other objectives you have already finished. You will keep all finished objectives!
 
-Master-Passwort festlegen
+Set master password
 -----------------------------------------------------------
-* Die `exportierten Einstellungen <../Usage/ExportImportSettings.html>`_ sind ab Version 2.7 verschlüsselt.
-* Öffne die Einstellungen (Drei-Punkte-Menü oben rechts)
-* Klicke das Dreieck neben "Allgemein".
-* Klicke auf "Master-Passwort".
-* Gib ein Passwort ein, bestätige es und klicke auf OK.
+* Necessary to be able to `export settings <../Usage/ExportImportSettings.html>`_ as they are encrypted as of version 2.7.
+* Open Preferences (three-dot-menu on top right of home screen)
+* Click triangle below "General"
+* Click "Master-Password"
+* Enter password, confirm password and click ok.
 
 .. image:: ../images/MasterPW.png
-  :alt: Master-Password festlegen
+  :alt: Set master password
   
-Exportiere die Einstellungen
+Export settings
 -----------------------------------------------------------
-* AAPS 2.7 verwendet ein neues verschlüsseltes Backup-Format. 
-* Du musst daher nach dem Update auf Version 2.7 `Deine Einstellungen exportieren <../Usage/ExportImportSettings.html>`_.
-* Einstellungsdateien aus früheren Versionen können in AAPS 2.7 nur importiert werden. Der Export wird im neuen Format erfolgen.
-* Speichere Deine exportierten Einstellungen nicht nur auf Deinem Smartphone, sondern auch an mindestens einem sicheren Ort (PC, Cloud-Speicher ...).
-* Wenn Du die AAPS 2.7 APK mit dem gleichen keystore wie in früheren Versionen erstellst, kannst Du die neue Version installieren, ohne die vorherige Version zu deinstallieren. 
-* Alle Einstellungen sowie abgeschlossenen Objectives (Ziele) bleiben so, wie sie in der Vorgängerversion waren.
-* Falls Du Deinen keystore verloren hast, erstelle die Version 2.7 mit einem neuen keystore und importiere Deine Einstellungen von der Vorgängerversion wie auf der Seite `Problembehebung <../Installing-AndroidAPS/troubleshooting_androidstudio.html#verlorener-keystore>`_ beschrieben.
+* AAPS 2.7 uses a new encrypted backup format. 
+* You must `export your settings <../Usage/ExportImportSettings.html>`_ after updating to version 2.7.
+* Settings files from previous versions can only be imported in AAPS 2.7. Export will be in new format.
+* Make sure to store your exported settings not only on your phone but also in at least one safe place (your pc, cloud storage...).
+* If you build AAPS 2.7 apk with the same keystore than in previous versions you can install new version without deleting the previous version. 
+* All settings as well as finished objectives will remain as they were in the previous version.
+* In case you have lost your keystore build version 2.7 with new keystore and import settings from previous version as described in the `troubleshooting section <../Installing-AndroidAPS/troubleshooting_androidstudio.html#lost-keystore>`_.
 
-Autosens (Hinweis - keine Maßnahmen erforderlich)
+Autosens (Hint - no action necessary)
 -----------------------------------------------------------
-* Autosens wurde von einem statischen zu einem dynamischen Modell geändert. Dies entspricht auch dem Referenzdesign.
-* Autosens wechselt nun zwischen einem 8-stündigen und 24-stündigen Zeitfenster für die Berechnung der Sensitivität. Dabei wird das empfindlichere Ergebnis verwendet. 
-* Wenn Du bisher oref1 genutzt hast, wirst Du wahrscheinlich bemerken, dass das System weniger dynamisch auf Veränderungen reagiert, da zwischen 8 und 24 Stunden gewechselt wird.
+* Autosens is changed to a dynamic switching model which replicates the reference design.
+* Autosens will now switch between a 24 and 8 hours window for calculating sensitivity. It will pick which ever one is more sensitive. 
+* If users have come from oref1 they will probably notice the system may be less dynamic to changes, due to the varying of either 24 or 8 hours of sensitivity.
 
-Pumpen-Passwort für Dana RS setzen (wenn Dana RS verwendet wird)
+Set Pump Password for Dana RS (if using Dana RS)
 -----------------------------------------------------------
-* Das Pumpen-Passwort der `Dana RS <../Configuration/DanaRS-Insulin-Pump.html>`_ wurde in früheren Versionen nicht geprüft.
-* Öffne die Einstellungen (Drei-Punkte-Menü oben rechts)
-* Scrolle nach unten und klicke das Dreieck neben "Dana RS".
-* Klicke auf "Pumpen-Passwort (nur v1)".
-* Gib das Passwort der Pumpe ein (`Standard-Passwort <../Configuration/DanaRS-Insulin-Pump.html#standard-passwort>`_ unterscheidet sich je nach Firmware Version) und klicke OK.
+* Pump password for `Dana RS <../Configuration/DanaRS-Insulin-Pump.html>`_ was not checked in previous versions.
+* Open Preferences (three-dot-menu on top right of screen)
+* Scroll down and click triangle next to "Dana RS".
+* Click "Pump password (v1 only)"
+* Enter pump password (`Default password <../Configuration/DanaRS-Insulin-Pump.html#default-password>`_ is different depending on firmware version) and click OK.
 
 .. image:: ../images/DanaRSPW.png
-  :alt: Dana RS Passwort setzen
+  :alt: Set Dana RS password
   
-Wie Du das Passwort Deiner Pumpe ändern kannst, ist auf der `DanaRS Seite <../Configuration/DanaRS-Insulin-Pump.html#passwort-auf-pumpe-andern>`_ beschrieben.
+To change password on Dana RS follow instructions on `DanaRS page <../Configuration/DanaRS-Insulin-Pump.html#change-password-on-pump>`_.

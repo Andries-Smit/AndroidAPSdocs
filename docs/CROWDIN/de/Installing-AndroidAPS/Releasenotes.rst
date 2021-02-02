@@ -1,366 +1,381 @@
 Release notes
 **************************************************
-Eine Schritt-für-Schritt-Anleitung des Updates findest Du `hier <../Installing-AndroidAPS/Update-to-new-version.html>`_. Auf dieser Seite gibt es auch einen Abschnitt mit möglichen Schwierigkeiten und Lösungsansätzen.
+Please follow the instructions in the `update manual <../Installing-AndroidAPS/Update-to-new-version.html>`_. You can also find a troubleshooting section addressing the most common difficulties when updating on the update manual page.
 
-Folgende Information wird angezeigt, sobald ein neues Update zur Verfügung steht:
+You will receive the following information as soon as a new update is available:
 
 .. image:: ../images/AAPS_LoopDisable90days.png
   :alt: Update info
 
-Dann hast Du 60 Tage Zeit, das Update durchzuführen. Wenn Du nicht innerhalb dieser 60 Tage updatest, wird AndroidAPS in den LGS-Modus (Reduzierung der Basalrate bei niedrigen Glukosewerten, keine Korrektur zu hoher BZ-Werte - siehe `Glossar <../Getting-Started/Glossary.html>`_) wie im  `Ziel (objective) 6 <../Usage/Objectives.html>`_ beschrieben.
+Then you have 60 days to update. If you do not update within these 60 days AAPS will fall back to LGS (low glucose suspend - see `glossary <../Getting-Started/Glossary.html>`_) as in `objective 6 <../Usage/Objectives.html>`_.
 
-Wenn Du auch weitere 30 Tage (90 Tage ab dem neuen Release-Datum) nicht aktualisierst, wird AAPS auf Open Loop wechseln.
+If you do not update for another 30 days (90 days from new release date) AAPS will switch to Open Loop.
 
-Bitte verstehe, dass diese Änderung nicht dazu dient, die Anwender zu gängeln, sondern aus Sicherheitsgründen erfolgt. Neue Versionen von AndroidAPS bieten nicht nur neue Funktionen, sondern auch wichtige Sicherheitsfixes. Deshalb ist es notwendig, dass jeder Anwender so schnell wie möglich aktualisiert. Leider gibt es noch Fehlerberichte aus sehr alten Versionen, so dass dies ein Versuch ist, die Sicherheit für jeden einzelnen Benutzer und die gesamte DIY-Community zu verbessern. Danke für dein Verständnis.
+Please understand that this change is not intended to bug you but is due to safety reasons. New versions of AndroidAPS do not only provide new features but also important safety fixes. Therefore it is neccessary that every user updates a.s.a.p.. Unfortunately there are still bug reports from very old versions so this is a try to improve safety for every single user and the whole DIY community. Thanks for your understanding.
+
+Version 2.8.2
+================
+Release date: 23-01-2021
+
+* Please see also `important hints for version 2.8.1.1 <../Installing-AndroidAPS/Releasenotes.html#important-hints>`_ below.
+
+Changes
+----------------------
+* stability improvements
+* more tweaking for Android 8+
+* improved icons
+* watch improvements
+* NSClient fixes
+* Bolus advisor now works with Pumpcontrol and NSClient
 
 Version 2.8.1.1
 ================
-Erscheinungsdatum: 12.01.2021
+Release date: 12-01-2021
 
-Wichtige Hinweise
+Important hints
 ----------------------
-* Option **Zu Nightscout nur hochladen** ist verpflichtend für alle 2.8.1.1 Nutzer aktiviert. 
-* Falls du den NSClient zur Eingabe von temporären Zielen, Kohlenhydraten oder Profilwechseln verwendest, musst du diese Option in AAPS deaktivieren - **aber nur dann, wenn deine Synchronisierung gut funktioniert** (z.B. keine unerwünschten Änderungen wie selbstständige Änderungen der temporären Ziele, temporären Basalraten etc.). 
-* ACHTUNG: KEINESFALLS deaktivieren, wenn irgendeine andere App Behandlungen zu Nightscout hochlädt (z.B. xDrip+ broadcast/upload/sync).
-* Die Option kann nur deaktiviert werden, wenn der engineering mode aktiviert ist.
+* Option **NS_UPLOAD_ONLY** has been forced ON for all 2.8.1 users. 
+* If you use NSClient to enter TT, carbs or profile switches you must turn it off in AAPS but **only in case your synchronization is working well** (ie. you don't see unwanted data changes like self modification of TT, TBR etc). 
+* ATTENTION: DO NOT do this if you have any other app handle treatments ( like xDrip broadcast/upload/sync...).
+* NS_UPLOAD_ONLY can only be turned off if engineering mode is enabled.
 
-Wesentliche Änderungen
+Major changes
 ----------------------
-* Verbesserungen und Fehlerbehebungen für RileyLink, Omnipod und Medtronic Pumpen
-* 'Zu Nightscout nur hochladen' verpflichtend
-* Fehlerbehebung für SMB & Dexcom App
-* Watchface Korrekturen
-* Verbesserte Crash-Reports
-* Gradle zurückgesetzt, um direkte Installation des Watchfaces zu ermöglichen
-* Fehlerbehebung bei Automatisierungen
-* Verbesserung Dana RS Treiber
-* Verschiedene Absturzursachen behoben
-* Fehlerkorrekturen und Verbesserungen der Benutzeroberfläche
-* neue Übersetzungen
+* RileyLink, Omnipod and MDT pump improvements and fixes
+* forced NS_UPLOAD_ONLY
+* fix for SMB & Dexcom app
+* watchface fixes
+* crash reporting improved
+* gradle reverted to allow direct watchface instalation
+* automation fixes
+* RS driver improvement
+* various crashes fixed
+* UI fixes and improvements
+* new translations
 
 Version 2.8.0
 ================
-Erscheinungsdatum: 01.01.2021
+Release date: 01-01-2021
 
-Wichtige Hinweise
+Important hints
 ----------------------
-* **Mindestvoraussetzung ist nun Android 8.0.** Falls Du ein Smartphone mit einer älteren AndroidVersion verwendest, kannst Du immer noch die Version 2.6.1.4 aus dem alten Repository verwenden. 
-* `Objectives (Ziele) wurden geändert. <../Usage/Objectives.html#ziel-3-belege-dein-wissen>`_ **Wenn du dein aktuelles Ziel noch nicht abgeschlossen hast, so beende dieses vor dem Update.**
-* Repository weiterhin auf https://github.com/nightscout/AndroidAPS . Wenn Du Dich mit git nicht auskennst, ist es am einfachsten, wenn Du das vorhandene AndroidAPS-Verzeichnis entfernst und die App-Erstellung `von vorne beginnst <../Installing-AndroidAPS/Building-APK.html>`_.
-* Nutze bitte `Android Studio 4.1.1 <https://developer.android.com/studio/>`_ oder neuer um die apk zu erstellen.
+* **Minimum Android version is 8.0 now.** For older Android versions you can still use 2.6.1.4 from old repo. 
+* `Objectives have changed. <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_ **Finish not completed objectives before update.**
+* Repository location still on https://github.com/nightscout/AndroidAPS . If you are not familiar with git the easiest way for update is remove directory with AndroidAPS and do a `new clone <../Installing-AndroidAPS/Building-APK.html>`_.
+* Please use `Android Studio 4.1.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
-Wichtige neue Funktionen
+Major new features
 ----------------------
-* `Omnipod Eros Unterstützung <../Configuration/OmnipodEros.html>`_ @bartsopers @andyrozman @ktomy @samspycher @TeleRiddler @vanelsberg @eurenda und besonderer Dank an @ps2 @itsmojo, alle anderen am Loop-Treiber für Omnipod Beteiligten, sowie @jlucasvt von GetRileyLink.org 
-* `Bolus-Berater <../Configuration/Preferences.html#bolus-berater>`_ & `Essens-Erinnerung <../Getting-Started/Screenshots.html#essens-erinnerung>`_ @MilosKozak 
+* `Omnipod Eros support <../Configuration/OmnipodEros.html>`_ @bartsopers @andyrozman @ktomy @samspycher @TeleRiddler @vanelsberg @eurenda and special thanks to @ps2 @itsmojo, everybody else involved in the Loop driver for Omnipod and @jlucasvt from GetRileyLink.org 
+* `bolus advisor <../Configuration/Preferences.html#bolus-advisor>`_ & `eating reminder <../Getting-Started/Screenshots.html#eating-reminder>`_ @MilosKozak 
 * `New watchface <../Configuration/Watchfaces.html#new-watchface-as-of-androidaps-2-8>`_ @rICTx-T1D
-* Verbesserung der Verbindung zur Dana RS @MilosKozak 
-* Bei Verwendung der nativen Dexcom App werden über mehr als 45 Minuten unveränderte CGM-Werte in SMB weiter berücksichtigt.
-* Neues `Erscheinungsbild für niedrige Bildschirmauflösungen <../Configuration/Preferences.html#erscheinungsbild>`_
-* Neuer Patiententyp `"Schwanger" <../Usage/Open-APS-features.html#ubersicht-der-fest-programmierten-limits>`_ @Brian Quinion
-* Neues NSClient-Layout für Tablets @MilosKozak 
-* NSClient überträgt Insulin, Senstivität und Anzeige-Einstellungen direkt von AAPS @MilosKozak 
-* `Filter für Einstellungen im 3-Punkte-Menü <../Configuration/Preferences.html>`_ @Brian Quinion
-* Neue Pumpensymbole @Rig22 @@teleriddler @osodebailar
-* Neuer `Insulintyp Lyumjev <../Configuration/Config-Builder.html#lyumjev>`_
-* Verbesserungen im Einrichtungsassitenten @MilosKozak 
-* Verbesserung der Sicherheit @dlvoy 
-* Verschiedene Verbesserungen und Fehlerbehebungen @AdrianLxM @Philoul @swissalpine @MilosKozak @Brian Quinion 
+* Dana RS connection improvements @MilosKozak 
+* Removed "Unchanged CGM values" behavior in SMB for Dexcom native app
+* New `Low Ressolution Skin <../Configuration/Preferences.html#skin>`_
+* New `"Pregnant" patient type <../Usage/Open-APS-features.html#overview-of-hard-coded-limits>`_ @Brian Quinion
+* New NSClient tablet layout @MilosKozak 
+* NSClient transfer insulin, senstivity and display settings directly from main AAPS @MilosKozak 
+* `Preferences filter <../Configuration/Preferences.html>`_ @Brian Quinion
+* New pump icons @Rig22 @@teleriddler @osodebailar
+* New `insulin type Lyumjev <../Configuration/Config-Builder.html#lyumjev>`_
+* SetupWizard improvements @MilosKozak 
+* Security improvements @dlvoy 
+* Various improvements and fixes @AdrianLxM @Philoul @swissalpine  @MilosKozak @Brian Quinion 
 
 Version 2.7.0
 ================
-Erscheinungsdatum: 24.09.2020
+Release date: 24-09-2020
 
-**Prüfe nach dem Update auf jeden Fall Deine Einstellungen und passe sie ggf. an wie** `hier <../Installing-AndroidAPS/update2_7.html>`_ **beschrieben.**
+**Make sure to check and adjust settings after updating to 2.7 as described** `here <../Installing-AndroidAPS/update2_7.html>`__.
 
-Du musst `Objective 11 <../Usage/Objectives.html#ziel-11-automatisierung>`_ zumindest gestartet haben, um die `Automation <../Usage/Automation.html>`_ weiter nutzen zu können. Alle vorangegangenen Objectives müssen abgeschlossen sein, sonst kann Objective 11 nicht gestartet werden. If for example you did not finish the exam in `objective 3 <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_ yet, you will have to complete the exam before you can start `objective 11 <../Usage/Objectives.html#objective-11-automation>`_. Andere, von Dir bereits abgeschlossene Objectives werden dadurch nicht verändert. Du behälst alle Objectives, die Du bereits abgeschlossen hast!
+You need at least start `objective 11 <../Usage/Objectives.html#objective-11-automation>`_ in order to continue using `Automation feature <../Usage/Automation.html>`_ (all previous objectives must be completed otherwise starting Objective 11 is not possible). If for example you did not finish the exam in `objective 3 <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_ yet, you will have to complete the exam before you can start `objective 11 <../Usage/Objectives.html#objective-11-automation>`_. This will not effect other objectives you have already finished. You will keep all finished objectives!
 
-Wichtige neue Funktionen
+Major new features
 ----------------------
-* Zahlreiche Code- und Library-Änderungen, Code neu in Kotlin geschrieben @MilosKozak @AdrianLxM
-* Module für Dana Pumpen @MilosKozak
-* `Neues Layout und Layoutauswahl <../Getting-Started/Screenshots.html>`_ @MilosKozak
-* Neues `Status Lights Layout <../Configuration/Preferences.html#statusanzeige>`_ @MilosKozak
+* internal use of dependency injection, updates libraries, code rewritten to kotlin @MilosKozak @AdrianLxM
+* using modules for Dana pumps @MilosKozak
+* `new layout, layout selection <../Getting-Started/Screenshots.html>`_ @MilosKozak
+* new `status lights layout <../Configuration/Preferences.html#status-lights>`_ @MilosKozak
 * `multiple graphs support <../Getting-Started/Screenshots.html#section-f-main-graph>`_ @MilosKozak
-* `Profil Helfer <../Configuration/profilehelper.html>`_ @MilosKozak
-* Visualisierung der `dynamischen Ziel-Anpassung <../Getting-Started/Screenshots.html#anzeige-der -dynamischen-ziel-anpassung>`_ @Tornado-Tim
-* Neues `Layout für die Einstellungen <../Configuration/Preferences.html>`_ @MilosKozak
-* Update des SMB Algorithmus @Tornado-Tim
-* `Low glucose Suspend (Reduzierung der Baslarate bei niedrigen Glukosewerten) Modus <../Configuration/Preferences.html#aps-modus>`_ @Tornado-Tim
-* `Benachrichtigung Kohlenhydrate benötigt <../Configuration/Preferences.html#kohlenhydrat-vorschlag>`_ @twain47 @Tornado-Tim
-* Careportal entfernt (jetzt im Aktionen-Tab/Menü) @MilosKozak
-* `Neues, verschlüsseltes Exportformat <../Usage/ExportImportSettings.html>`_ @dlvoy
-* `Neue SMS Authentifikation mit Einmalpasswort <../Children/SMS-Commands.html>`_ @dlvoy
-* `Neue SMS Befehle zum Verbinden und Trennen der Pumpe <../Children/SMS-Commands.html#id1>`_ @Lexsus
-* Bessere Unterstützung niedriger Basalraten bei Dana Pumpen @Mackwe
-* Small Fehlerbehebungen für Insight Pumpen @TebbeUbben @MilosKozak
-* `Option "Standardsprache" <../Configuration/Preferences.html#allgemein>`_ @MilosKozak
-* Vector Icons @Philoul
+* `Profile helper <../Configuration/profilehelper.html>`_ @MilosKozak
+* visualization of `dynamic target adjustment <../Getting-Started/Screenshots.html#visualization-of-dynamic-target-adjustment>`_ @Tornado-Tim
+* new `preferences layout <../Configuration/Preferences.html>`_ @MilosKozak
+* SMB algorithm update @Tornado-Tim
+* `Low glucose suspend mode <../Configuration/Preferences.html#aps-mode>`_ @Tornado-Tim
+* `carbs required notifications <../Configuration/Preferences.html#carb-required-notification>`_ @twain47 @Tornado-Tim
+* removed Careportal (moved to Actions) @MilosKozak
+* `new encrypted backup format <../Usage/ExportImportSettings.html>`_ @dlvoy
+* `new SMS TOTP authentication <../Children/SMS-Commands.html>`_ @dlvoy
+* `new SMS PUMP CONNECT, DISCONNECT <../Children/SMS-Commands.html#commands>`_ commands @Lexsus
+* better support for tiny basals on Dana pumps @Mackwe
+* small Insight fixes @TebbeUbben @MilosKozak
+* `"Default language" option <../Configuration/Preferences.html#general>`_ @MilosKozak
+* vector icons @Philoul
 * `set neutral temps for MDT pump <../Configuration/MedtronicPump.html#configuration-of-phone-androidaps>`_ @Tornado-Tim
-* Verbesserung Historie @MilosKozak
-* OpenAPS MA Algorithmus entfernt @Tornado-Tim
-* Oref0 Sensitivität entfernt @Tornado-Tim
-* `Biometrischer oder Password-Schutz <../Configuration/Preferences.html#schutz>`_ für Einstellungen und Bolus @MilosKozak
-* `Neuer Automation Trigger <../Usage/Automation.html>`_ @PoweRGbg
-* `Open Humans Uploader <../Configuration/OpenHumans.html>`_ @TebbeUbben @AdrianLxM
-* Neue Dokumentation @Achim
+* History browser improvements @MilosKozak
+* removed OpenAPS MA algorithm @Tornado-Tim
+* removed Oref0 sensitivity @Tornado-Tim
+* `Biometric or password protection <../Configuration/Preferences.html#protection>`_ for settings, bolus @MilosKozak
+* `new automation trigger <../Usage/Automation.html>`_ @PoweRGbg
+* `Open Humans uploader <../Configuration/OpenHumans.html>`_ @TebbeUbben @AdrianLxM
+* New documentation @Achim
 
 Version 2.6.1.4
 ================
-Erscheinungsdatum: 04.05.2020
+Release date: 04-05-2020
 
-Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder neuer um die apk zu erstellen.
+Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
-Wichtige neue Funktionen
+Major new features
 ----------------------
-* Insight: Vibration bei Bolus deaktivieren (Nur Firmware Version 3.x) - zweiter Versuch
-* Sonst identisch mit 2.6.1.3. Update ist optional. 
+* Insight: Disable vibration on bolus for firmware version 3 - second attempt
+* Otherwise is equal to 2.6.1.3. Update is optional. 
 
 Version 2.6.1.3
 ================
-Erscheinungsdatum: 03.05.2020
+Release date: 03-05-2020
 
-Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder neuer um die apk zu erstellen.
+Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
-Wichtige neue Funktionen
------
-* Insight: Vibration bei Bolus deaktivieren (Nur Firmware Version 3.x)
-* Sonst identisch mit 2.6.1.2. Update ist optional. 
+Major new features
+------------------
+* Insight: Disable vibration on bolus for firmware version 3
+* Otherwise is equal to 2.6.1.2. Update is optional. 
 
 Version 2.6.1.2
 ================
-Erscheinungsdatum: 19.04.2020
+Release date: 19-04-2020
 
-Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder neuer um die apk zu erstellen.
+Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
-Wichtige neue Funktionen
------
-* Fehlerbehebung Insight Service
-* Sonst identisch mit 2.6.1.1. Wenn Dich der Fehler nicht betrifft, musst Du nicht updaten.
+Major new features
+------------------
+* Fix crashing in Insight service
+* Otherwise is equal to 2.6.1.1. If you are not affected by this bug you don't need to upgrade.
 
 Version 2.6.1.1
 ================
-Erscheinungsdatum: 06.04.2020
+Release date: 06-04-2020
 
-Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder neuer um die apk zu erstellen.
+Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
-Wichtige neue Funktionen
------
-* Fehlerbehebung SMS CARBS Kommando in Zusammenhang mit der Combo Pumpe
-* Sonst identisch mit 2.6.1. Wenn Dich der Fehler nicht betrifft, musst Du nicht updaten.
+Major new features
+------------------
+* Resolves SMS CARBS command issue while using Combo pump
+* Otherwise is equal to 2.6.1. If you are not affected by this bug you don't need to upgrade.
 
 Version 2.6.1
 ==============
-Erscheinungsdatum: 21.03.2020
+Release date: 21-03-2020
 
-Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder neuer um die apk zu erstellen.
+Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
-Wichtige neue Funktionen
------
-* Nur https:// in Nightscout-Client Einstellungen erlaubt
-* Fehlerbehebung `BGI <../Getting-Started/Glossary.html>`_ Anzeige auf der Smartwatch
-* Kleiner Anzeigefehler behoben
-* Fehlerbehebung Abstürze der Insight Pumpe
-* Fehlerbehebung zukünftige Kohlenhydrate bei der Combo Pumpe
-* Fehlerbehebung `Upload lokaler Profile <../Configuration/Config-Builder.html#lokale-profile-zu-nightscout-hochladen>`_ zu Nightscout
-* Verbesserung Alarme bei der Insight Pumpe
-* Verbesserte Erkennung der Boli aus der Pumpenhistorie
-* Fehlerbehebung Nightscout-Client Verbindungs-Einstellungen (WLAN, Laden)
-* Fehlerbeseitigung beim Senden der Kalibrierungen an xDrip+
+Major new features
+------------------
+* Allow to enter only https:// in NSClient settings
+* Fixed `BGI <../Getting-Started/Glossary.html>`_ displaying bug on watches
+* Fixed small UI bugs
+* Fixed Insight crashes
+* Fixed future carbs with Combo pump
+* Fixed `LocalProfile -> NS sync <../Configuration/Config-Builder.html#upload-local-profiles-to-nightscout>`_
+* Insight alerts improvements
+* Improved detection of boluses from pump history
+* Fixed NSClient connection settings (wifi, charging)
+* Fixed sending of calibrations to xDrip
 
 Version 2.6.0
 ==============
-Erscheinungsdatum: 29.02.2020
+Release date: 29-02-2020
 
-Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder neuer um die apk zu erstellen.
+Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
-Wichtige neue Funktionen
------
-* Kleinere Designänderungen (Startseite...)
-* Careportal Tab / Menü entfernt - weitere Details dazu `hier <../Usage/CPbefore26.html>`_
-* Neues `Plugin Lokales Profil <../Configuration/Config-Builder.html#lokales-profil-empfohlen>`_
+Major new features
+------------------
+* Small design changes (startpage...)
+* Careportal tab / menu removed - more details `here <../Usage/CPbefore26.html>`__
+* New `Local Profile plugin <../Configuration/Config-Builder.html#local-profile-recommended>`_
 
-  * Im lokalen Profil können mehrere Profile gespeichert werden.
-  * Profile können geklont und bearbeitet werden.
-  * Lokale Profile können zu Nightscout hochgeladen werden.
-  * Profilwechsel können in ein neues lokales Profil geklont werden (Zeitverschiebung und Prozentsatz werden berücksichtigt).
-  * Neue Eingabemöglichkeit für Zielwerte
-* Einfaches Profil wurde entfernt.
-* `Verzögerter Bolus <../Usage/Extended-Carbs.html#id1>`_ - der Closed Loop wird unterbrochen
-* Medtronic Pumpe: Fehler mit doppelten Einträgen behoben
-* Maßeinheiten (mmol / mg/dl) werden nicht mehr im Profil angegeben, sondern als globale Einstellung.
-* Neue Einstellungen zum Einrichtungsassistenten hinzugefügt.
-* Verbesserungen an der Benutzerschnittstelle und programmintern.
-* `Wear Komplikationen <../Configuration/Watchfaces.html>`_ für Smartwatches
-* Neue `SMS-Befehle <../Children/SMS-Commands.html>`_ BOLUS-MEAL, SMS, CARBS, TARGET, HELP
-* Korrektur Sprachauswahl
-* Objectives (Ziele) `neu starten <../Usage/Objectives.html#objective-ziel-neu-starten>`_
-* Automation: `Regeln sortieren <../Usage/Automation.html#automation-regeln-sortieren>`_
-* Automatisierung: Fehlerbeseitigung - Regeln wurden bei pausiertem Loop ausgeführt
-* Neue Statuszeile für Combo
-* Verbesserung des Glukosestatus
-* Fehlerbehebung: TempTarget NS-Synchronisation
-* Neue Aktivitätsstatistik
-* Verzögerter Bolus im Open Loop verfügbar
-* Android 10 Alarmunterstützung
-* Viele neue Übersetzungen
+  * Local profile can hold more than 1 profile
+  * Profiles can be cloned and edited
+  * Ability of upload profiles to NS
+  * Old profile switches can be cloned to new profile in LocalProfile (timeshift and percentage is applied)
+  * Veritical NumberPicker for targets
+* SimpleProfile is removed
+* `Extended bolus <../Usage/Extended-Carbs.html#id1>`_ feature - closed loop will be disabled
+* MDT plugin: Fixed bug with duplicated entries
+* Units are not specified in profile but it's global setting
+* Added new settings to startup wizard
+* Different UI and internal improvements
+* `Wear complications <../Configuration/Watchfaces.html>`_
+* New `SMS commands <../Children/SMS-Commands.html>`_ BOLUS-MEAL, SMS, CARBS, TARGET, HELP
+* Fixed language support
+* Objectives: `Allow to go back <../Usage/Objectives.html#go-back-in-objectives>`_, Time fetching dialog
+* Automation: `allow sorting <../Usage/Automation.html#sort-automation-rules>`_
+* Automation: fixed bug when automation was running with disabled loop
+* New status line for Combo
+* GlucoseStatus improvement
+* Fixed TempTarget NS sync
+* New statistics activity
+* Allow Extended bolus in open loop mode
+* Android 10 alarm support
+* Tons on new translations
 
 Version 2.5.1
 ==================================================
-Erscheinungsdatum: 31.10.2019
+Release date: 31-10-2019
 
-Bitte beachte die `wichtigen Hinweise <../Installing-AndroidAPS/Releasenotes.html#wichtige-hinweise>`_ und `Beschränkungen <../Installing-AndroidAPS/Releasenotes.html#kann-ich-dieses-update-nutzen-aktuell-werden-noch-nicht-unterstutzt>`_, die bei `Version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`_ aufgeführt sind. 
-* Es wurde ein Fehler im Netzwerk-Status-Empfänger behoben, der zu einigen Abstürzen geführt hat (nicht kritisch, würde aber viel Energie verbrauchen auf Grund der ständigen Neuberechnungen).
-* Eine neue Versionssteuerung, die es ermöglicht, kleinere Aktualisierungen durchzuführen, ohne die Aktualisierungsbenachrichtigung auszulösen.
+Please note the `important notes <../Installing-AndroidAPS/Releasenotes.html#important-notes>`_ and `limitations <../Installing-AndroidAPS/Releasenotes.html#is-this-update-for-me-currently-is-not-supported>`_ listed for `version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`_. 
+* Fixed a bug in the network state receiver that lead to crashes with many (not critical but would waste a lot of energy re-calculating things).
+* New versioning that will allow to do minor updates without triggering the update-notification.
 
 Version 2.5.0
 ==================================================
-Erscheinungsdatum: 26.10.2019
+Release date: 26-10-2019
 
-Wichtige Hinweise
+Important notes
 --------------------------------------------------
-* Verwende `Android Studio Version 3.5.1 <https://developer.android.com/studio/>`_ oder neuer `um die App zu erstellen <../Installing-AndroidAPS/Building-APK.html>`_ oder `ein Update durchzuführen <../Installing-AndroidAPS/Update-to-new-version.html>`_.
-* Wenn Du xDrip verwendest, muss `identify receiver <../Configuration/xdrip.html#identifiziere-empfanger>`_ gesetzt sein.
-* Falls Du den Dexcom G6 mit der `gepatchten Dexcom App <../Hardware/DexcomG6.html#g6-mit-der-gepatchten-dexcom-app>`_ verwendest, benötigst Du die Version aus dem `2.4 Ordner <https://github.com/dexcomapp/dexcomapp/tree/master/2.4>`_.
-* Glimp wird ab Version 4.15.57 und neuer unterstützt.
+* Please use `Android Studio Version 3.5.1 <https://developer.android.com/studio/>`_ or newer to `build the apk <../Installing-AndroidAPS/Building-APK.html>`_ or `update <../Installing-AndroidAPS/Update-to-new-version.html>`_.
+* If you are using xDrip `identify receiver <../Configuration/xdrip.html#identify-receiver>`_ must be set.
+* If you are using Dexcom G6 with the `patched Dexcom app <../Hardware/DexcomG6.html#if-using-g6-with-patched-dexcom-app>`_ you will need the version from the `2.4 folder <https://github.com/dexcomapp/dexcomapp/tree/master/2.4>`_.
+* Glimp is supported from version 4.15.57 and newer.
 
-Kann ich dieses Update nutzen? Aktuell werden NOCH NICHT unterstützt:
+Is this update for me? Currently is NOT supported
 --------------------------------------------------
-* Android 5 oder niedriger
+* Android 5 and lower
 * Poctech
 * 600SeriesUploader
-* Patched Dexcom App aus dem Verzeichnis 2.3
+* Patched Dexcom from 2.3 directory
 
-Wichtige neue Funktionen
+Major new features
 --------------------------------------------------
-* Interne Änderung des targetSDK auf 28 (Android 9), Jetpack-Unterstützung
+* Internal change of targetSDK to 28 (Android 9), jetpack support
 * RxJava2, Okhttp3, Retrofit support
-* Alte `Medtronic Pumpen <../Configuration/MedtronicPump.html>`_ werden unterstützt (RileyLink erforderlich)
-* Neues Plugin `Automation <../Usage/Automation.html>`_
+* Old `Medtronic pumps <../Configuration/MedtronicPump.html>`_ support (RileyLink need)
+* New `Automation plugin <../Usage/Automation.html>`_
 * Allow to `bolus only part <../Configuration/Preferences.html#advanced-settings-overview>`_ from bolus wizard calculation
-* Darstellung der Insulinaktivität
-* Anpassung der IOB-Vorhersagen auf Basis der Autosens Ergebnisse
-* Neue gepatchte Dexcom App (`2.4 Ordner <https://github.com/dexcomapp/dexcomapp/tree/master/2.4>`_)
-* Signaturprüfung
-* Möglichkeit für OpenAPS Anwender, die Ziele (Objectives) zu überspringen
-* Neue `Ziele (objectives) <../Usage/Objectives.html>`_ -  Wissens-Check & App-Bedienung
+* Rendering insulin activity
+* Adjusting IOB predictions by autosense result
+* New support for patched Dexcom apks (`2.4 folder <https://github.com/dexcomapp/dexcomapp/tree/master/2.4>`_)
+* Signature verifier
+* Allow to bypass objectives for OpenAPS users
+* New `objectives <../Usage/Objectives.html>`_ - exam, application handling
    
-   (Wenn Du mindestens mit dem Ziel "Starte den Open Loop" in einer vorhergehenden Version begonnen hast, ist der Wissens-Check optional.)
-* Fehlerbehebung Dana Treiber, bei dem eine falsche Zeitdifferenz angegeben wurde
-* Fehlerbehebung `SMS-Befehle <../Children/SMS-Commands.html>`_
+   (If you started at least objective "Starting on an open loop" in previous versions exam is optional.)
+* Fixed bug in Dana* drivers where false time difference was reported
+* Fixed bug in `SMS communicator <../Children/SMS-Commands.html>`_
 
 Version 2.3
 ==================================================
-Erscheinungsdatum: 25.04.2019
+Release date: 25-04-2019
 
-Wichtige neue Funktionen
+Major new features
 --------------------------------------------------
-* Wichtiger Sicherheitsfix für Insight (wirklich wichtig, wenn Du die Insight nutzt!)
-* Bugfix History-Browser
-* Bugfix Delta-Berechnungen
-* Sprach-Updates
-* Überprüfung git und Warnung bei gradle Upgrade
-* Zusätzliche automatische Tests
-* Bugfix eines potentiellen Absturzes des Alarm Sound Dienstes (Danke @lee-b!)
-* Bugfix BG-Broadcast (funktioniert nun unabhängig von den SMS-Berechtigungen!)
-* Neuer Versionscheck
+* Important safety fix for Insight (really important if you use Insight!)
+* Fix History-Browser
+* Fix delta calculations
+* Language updates
+* Check for GIT and warn on gradle upgrade
+* More automatic testing
+* Fixing potential crash in AlarmSound Service (thanks @lee-b !)
+* Fix broadcast of BG data (works independently of SMS permission now!)
+* New Version-Checker
 
 
 Version 2.2.2
 ==================================================
-Erscheinungsdatum: 07.04.2019
+Release date: 07-04-2019
 
-Wichtige neue Funktionen
+Major new features
 --------------------------------------------------
-* Korrektur Autosens: deaktiviert TT Anstiege / senkt Zielwert
-* Neue Übersetzungen
-* Korrekturen Insight Treiber
-* Korrektur SMS-Plugin
+* Autosens fix: deactivate TT raises/lowers target
+* New translations
+* Insight driver fixes
+* SMS plugin fix
 
 
 Version 2.2
 ==================================================
-Erscheinungsdatum: 29.03.2019
+Release date: 29-03-2019
 
-Wichtige neue Funktionen
+Major new features
 --------------------------------------------------
-* Anpassung Assistent für die `Zeitumstellung <../Usage/Timezone-traveling.html#zeitumstellung-sommer-winterzeit>`_
-* Wear Update für die Smartwatch
-* Update `SMS plugin <../Children/SMS-Commands.html>`_
-* Möglichkeit, bei den Objectives (Zielen) zurück zu gehen
-* Unterbrechung des Loop wenn Speicherplatz des Smartphones aufgebraucht ist.
+* `DST fix <../Usage/Timezone-traveling.html#time-adjustment-daylight-savings-time-dst>`_
+* Wear Update
+* `SMS plugin <../Children/SMS-Commands.html>`_ update
+* Go back in objectives.
+* Stop loop if phone disk is full
 
 
 Version 2.1
 ==================================================
-Erscheinungsdatum: 03.03.2019
+Release date: 03-03-2019
 
-Wichtige neue Funktionen
+Major new features
 --------------------------------------------------
-* Unterstützung für `Accu-Chek Insight <../Configuration/Accu-Chek-Insight-Pump.html>`_ (von Tebbe Ubben und JamOrHam)
-* Statusanzeige auf dem Hauptbildschirm (Nico Schmitz)
-* Assistent für die Zeitumstellung (Sommer-/Winterzeit - Roumen Georgiev)
-* Korrektur der Verarbeitung von Profilnamen, die von Nightscout übertragen werden (Johannes Mockenhaupt)
-* Sperre des User Interface behoben (Johannes Mockenhaupt)
-* Unterstützung für die aktualisierte G5-App (Tebbe Ubben und Milos Kozak)
-* G6, Poctech, Tomato, Eversense als BZ-Quelle (Tebbe Ubben und Milos Kozak)
-* Korrektur deaktivieren SMB Präferenzen (Johannes Mockenhaupt)
+* `Accu-Chek Insight <../Configuration/Accu-Chek-Insight-Pump.html>`_ support (by Tebbe Ubben and JamOrHam)
+* Status lights on main screen (Nico Schmitz)
+* Daylight saving time helper (Roumen Georgiev)
+* Fix processing profile names comming from NS (Johannes Mockenhaupt)
+* Fix UI blocking (Johannes Mockenhaupt)
+* Support for updated G5 app (Tebbe Ubben and Milos Kozak)
+* G6, Poctech, Tomato, Eversense BG source support (Tebbe Ubben and Milos Kozak)
+* Fixed disabling SMB from preferences (Johannes Mockenhaupt)
 
-Verschiedenes
+Misc
 --------------------------------------------------
-* Falls Du ein vom Standard abweichenden smbmaxminutes Wert nutzt, musst Du diesen erneut eingeben.
+* If you are using non default `smbmaxminutes` value you have to setup this value again
 
 
 Version 2.0
 ==================================================
-Erscheinungsdatum: 03.11.2018
+Release date: 03-11-2018
 
-Wichtige neue Funktionen
+Major new features
 --------------------------------------------------
-* Oref1/SMB wird unterstützt (`oref1 documentation <https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html>`_). Bitte lies zuerst die Dokumentation, damit du weißt was du davon erwarten kannst, wie es funktioniert, was der SMB erreichen kann und wie er zu benutzen ist, damit er gut arbeitet.
-* Unterstützung für `_Accu-Chek Combo <../Configuration/Accu-Chek-Combo-Pump.html>`_
-* Setup Wizard: Der neue Assistent führt dich durch die Einrichtung von AndroidAPS.
+* oref1/SMB support (`oref1 documentation <https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html>`_) Be sure to read the documentation to know what to expect of SMB, how it will behave, what it can achive and how to use it so it can operate smoothly.
+* `_Accu-Chek Combo <../Configuration/Accu-Chek-Combo-Pump.html>`_ pump support
+* Setup wizard: guides you through the process of setting up AndroidAPS
 
-Einstellungen, die bei Umstellung von AMA zu SMB erforderlich sind
+Settings to adjust when switching from AMA to SMB
 --------------------------------------------------
-* Objective 10 muss gestartet sein, damit die SMB-Funktion zur Verfügung steht (der SMB-Reiter zeigt dir, welche Beschränkungen bestehen).
-* maxIOB enthält nun das gesamte IOB, nicht nur das hinzugefügte Basalinsulin. Das bedeutet: Wenn du einen Bolus von 8 IE gegeben hast und maxIOB ist 7, dann wird kein SMB ausgelöst, solange das Gesamt-IOB nicht wieder auf unter 7 IE abgefallen ist.
-* Der Standardwert von min_5m_carbimpact erhöht sich von 3 bei AMA auf 8 beim SMB. Wenn du also von AMA auf SMB umstellst, dann musst du den Wert manuell auf 8 erhöhen.
-* Bitte beachte beim Erstellen einer AndroidAPS 2.0 apk: Configuration on demand wird in der aktuellen Version des Android Gradle Plugins nicht unterstützt! Wenn der Build-Prozess mit einem Fehler zu "on demand configuration" fehlschlägt, dann kannst du folgendes tun:
+* Objective 10 must be started for SMBs to be enabled (SMB tab generally shows what restrictions apply)
+* maxIOB now includes _all_ IOB, not just added basal. That is, if given a bolus of 8 U for a meal and maxIOB is 7 U, no SMBs will be delivered until IOB drops below 7 U.
+* min_5m_carbimpact default has changed from 3 to 8 going from AMA to SMB. If you are upgrading from AMA to SMB, you have to change it manualy
+* Note when building AndroidAPS 2.0 apk: Configuration on demand is not supported by the current version of the Android Gradle plugin! If your build fails with an error regarding "on demand configuration" you can do the following:
 
-   * Das Einstellungen-Fenster öffnen, indem du auf Datei > Einstellungen (auf dem Mac: Android Studio > Preferences) klickst.
-   * Klicke im linken Fensterbereich auf Build, Execution, Deployment > Compiler.
-   * Deaktiviere die "Configure on demand" Checkbox.
-   * Klicke Apply oder OK.
+  * Open the Preferences window by clicking File > Settings (on Mac, Android Studio > Preferences).
+  * In the left pane, click Build, Execution, Deployment > Compiler.
+  * Uncheck the Configure on demand checkbox.
+  * Click Apply or OK.
 
-Startseite
+Overview tab
 --------------------------------------------------
-* Im oberen Menüband (Abschnitt A) kannst du durch langen Fingerdruck den Loop pausieren oder deaktivieren, die Pumpe trennen, das aktuelle Profil anzeigen und einen Profilwechsel machen, sowie temporäre Ziele (temp targets - TT) einstellen. Die temporären Ziele verwenden Standardwerte, die du in den Einstellungen festlegen kannst. Das neue Standard-Ziel “HypoTT” löst ein temporäres Ziel im höheren BZ-Bereich aus, damit der Loop nicht überreagiert nachdem du Korrektur-Kohlenhydrate gegessen hast.
-* Neue Behandlungs-Schaltfläche: die alte Behandlungs-Schaltfläche ist weiterhin verfügbar, aber standardmäßig deaktiviert. Du kannst jetzt selbst einstellen, welche Schaltflächen du auf dem Home-Screen haben willst. Neue Buttons für Insulin und Kohlenhydrate (inkl. `eCarbs/extended carbs <../Usage/Extended-Carbs.html>`_)
+* Top ribbon gives access to suspend/disable loop, view/adjust profile and to start/stop temporary targets (TTs). TTs use defaults set in preferences. The new Hypo TT option is a high temp TT to prevent the loop from too aggressively overcorrection rescue carbs.
+* Treatment buttons: old treatment button still available, but hidden by default. Visibility of buttons can now be configured. New insulin button, new carbs button (including `eCarbs/extended carbs <../Usage/Extended-Carbs.html>`_)
 * `Colored prediction lines <../Getting-Started/Screenshots.html#prediction-lines>`_
-* Option in den Dialogen für Insulin, Kohlenhydrate, Rechner und Füllen/Vorfüllen ein Feld für Bemerkungen, die zu Nightscout hochgeladen werden, anzuzeigen.
-* Überarbeiteter Füllen/Vorfüllen-Dialog. Möglichkeit, gleichzeitig Careportal-Einträge für Katheter- und Reservoirwechsel zu erstellen.
+* Option to show a notes field in insulin/carbs/calculator/prime+fill dialogs, which are uploaded to NS
+* Updated prime/fill dialog allows priming and creating careportal entries for site change and cartridge change
 
-Smartwatch
+Watch
 --------------------------------------------------
-* Auf die separate Build Variante “wearcontrol” wird verzichtet, die Smartwatch-Steuerung ist jetzt in der full build Variante enthalten. Um die Bolus-Steuerung auf der Smartwatch zu verwenden, musst du dies in AAPS auf dem Smartphone aktivieren.
-* Der Rechner wird nur noch nach Kohlenhydraten (und - falls aktiviert - nach einem Prozentsatz) fragen. Du kannst in den Einstellungen auf dem Smartphone festlegen, welche Parameter bei einem Bolus, der von der Smartwatch aus gegeben wird, in die Berechnung einbezogen werden sollen.
-* Bestätigungen und Info-Dialoge funktionieren jetzt auch unter Android Wear 2.0 gut.
-* eCarbs Menüeintrag hinzugefügt
+* Separate build variant dropped, included in regular full build now. To use bolus controls from watch, enable this setting on the phone
+* Wizard now only asks for carbs (and percentage if enabled in watch settings). Which parameters are included in the calculation can be configured in the settings on the phone
+* confirmations and info dialogs now work on wear 2.0 as well
+* Added eCarbs menu entry
 
-Neue Plugins
+New plugins
 --------------------------------------------------
-* PocTech App als BZ-Quelle
-* Dexcom App (patched) als BZ-Quelle
-* Oref1 Empfindlichkeitserkennung
+* PocTech app as BG source
+* Dexcom patched app as BG source
+* oref1 sensitivity plugin
 
-Verschiedenes
+Misc
 --------------------------------------------------
-* Die App verwendet jetzt “drawer”, um alle Plugins zu zeigen. Alle Plugins, die im Konfigurations-Generator als sichtbar markiert sind, werden als Reiter im oberen Bereich (Abschnitt A) angezeigt (Favoriten).
-* Überarbeitung des Konfigurations-Generators und des Objectives-Reiters. Beschreibungen hinzugefügt.
-* Neues App-Icon
-* Viele weitere Verbesserungen und Fehlerbehebungen.
-* Von Nightscout unabhängige Alarme wenn die Pumpe über längere Zeit nicht erreichbar ist (z.B.  schwache Pumpenbatterie) und bei verpassten CGM-Werte (siehe lokale Alarme in den Einstellungen).
-* Option, das Display immer an zu lassen.
-* Option, die Hinweise als Systemmeldungen anzuzeigen.
-* Advanced filtering (das erlaubt die Nutzung von “SMB immer an” und “6 Stunden nach dem Essen”) wird unterstützt mit der gepatchten Dexcom App (nicht mit der originalen Dexcom App!) oder xDrip mit dem G5 native mode als BZ-Quelle.
+* App now uses drawer to show all plugins; plugins selected as visible in config builder are shown as tabs on top (favourites)
+* Overhaul for config builder and objectives tabs, adding descriptions
+* New app icon
+* Lots of improvements and bugfixes
+* Nightscout-independant alerts if pump is unreachable for a longer time (e.g. depleted pump battery) and missed BG readings (see *Local alerts* in settings)
+* Option to keep screen on
+* Option to show notification as Android notification
+* Advanced filtering (allowing to always enable SMB and 6h after meals) supported with patched Dexcom app or xDrip with G5 native mode as BG source.

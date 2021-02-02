@@ -1,16 +1,16 @@
-Montres connectées
+Smartwatches
 *************
 
-Les montrées connectées sont optionnelles, mais très utiles pour certains utilisateurs.
-Plus de détails ici :
+Smartwatches are optional, but very useful for some users.
+More details are here:
 
 
 .. toctree::
    :maxdepth: 1
    :glob:
    
-   Liste des smartphones testé et des montrées connectées <../Getting-Started/Phones.md>
-   Arrière plan du téléphone <../Getting-Started/Phones.md#phone-background>
-   AAPS sur montres Wear OS <../Configuration/Watchfaces.md>
-   Dépannage de Sony Smartwatch SW 3 <../Usage/SonySW3.rst>
-   Pebble <../Configuration/Watchfaces.md#pebble>
+   List of tested phones and smartwatches <../Getting-Started/Phones.md>
+   Phone background <../Getting-Started/Phones.html#phone-background>
+   Watchfaces Wear OS <../Configuration/Watchfaces.md>
+   Troubleshooting Sony Smartwatch SW 3 <../Usage/SonySW3.rst>
+   Pebble <../Configuration/Watchfaces.html#pebble>

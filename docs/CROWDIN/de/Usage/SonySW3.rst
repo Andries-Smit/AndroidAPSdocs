@@ -1,58 +1,58 @@
-Manuelle Installation der Google Play Service für Sony Smartwach 3
+Manual Installation of Google Play Service for  Sony Smartwatch 3
 #####################################################################
 
-Die Sony Smartwach 3 ist eine der beliebtesten Uhren zu Verwendung mit AAPS. Leider hat Google die Unterstützung für Wear OS 1.5 Geräte im Herbst 2020 eingestellt. Dies führt zu Problemen bei der Verwendung von Sony SW3 mit AndroidAPS 2.7 und höher. 
+The Sony Smartwatch 3 is one of the most popular watches to be used with AAPS. Unfortunately Google dropped support for wear OS 1.5 devices in fall 2020. This leads to problems when using Sony SW3 with AndroidAPS 2.7 and above. 
 
-Der nachfolgend beschriebene Workaround ermöglicht die Weiternutzung der Sony Smartwatch 3. Behalte aber im Hinterkopf, dass Du über kurz oder lang zu einer Smartwatch mit neuerem Betriebssystem wirst wechseln müssen.
+The following workaround should extend the time the Sony Smartwatch 3 can be used but keep in mind that the need to switch to a new smartwatch will come sooner or later.
 
-1. Lade die neueste Version der GService for Wear OS herunter.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* Auf der `apkmirror Website <https://www.apkmirror.com/apk/google-inc/google-play-services-android-wear/>`_ findest Du die letzte APK der "Google Play Services (Wear OS)".
+1. Download the latest GService for Wear OS
+--------------------------------------------------------
+* Using `apkmirror website <https://www.apkmirror.com/apk/google-inc/google-play-services-android-wear/>`_ you can find the latest apk for "Google Play Services (Wear OS)".
 
-   Architecture: armeabi-v7a, Minimum Version: Android 6.0+, Screen DPI: nodpi
+  Architecture: armeabi-v7a, Minimum Version: Android 6.0+, Screen DPI: nodpi
 
-* Du musst 2 Dinge sicherstellen:
+* You must ensure 2 things:
 
-   * Ist es die neueste Version?
-   * Ist es kompatibel mit Android 6.0+? Da es die Android Wear Version ist, werden Version 7.0 und neuer nicht funktionieren.
+  * Is it the latest version?
+  * Is it compatible with Android 6.0+ (as it's the wear android version, 7.0+ and above will not work)?
 
-* Früher oder später wird Google Android 6.0 nicht mehr unterstützen. Ab diesem Zeitpunkt wird die letzte Version nicht mehr für Android 6.0 zur Verfügung stehen und damit die Nutzung der Sony Smartwatch 3 nicht mehr möglich sein.
+* Sooner or later, Google will definitely drop Android 6.0. When this will happen, the latest version will not be available anymore for Android 6.0+, therefore it will be the end.
 
-2. Lade Dir das Adb-Debugging-Tool herunter und installiere sie auf Deinem PC.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* Es gibt verschiedene Möglichkeiten, das Adb-Debugging-Tool zu installieren.
-* Wir empfehlen, die  `SDK Platform Tools <https://developer.android.com/studio/releases/platform-tools>`_ zu verwenden: Einfach runterladen und in einem Verzeichnis Deiner Wahl extrahierten (entzippen).
+2. Download/Install adb debugging tools on your computer
+--------------------------------------------------------
+* There are multiple ways to install the adb debugging tool.
+* It is recommended to use `SDK Platform Tools <https://developer.android.com/studio/releases/platform-tools>`_: Just download zip file and unzip to a directory of your choice.
 
-3. Aktiviere die ADB Debugging Optionen auf Deiner Sony Smartwatch 3
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* Aktiviere den Entwicklermodus: Settings (Einstellungen) -> About (Über) -> Build number
-* Klicke 'build number' 7 mal an.
-* Gehe nun zu Settings (Einstellungen) --> Developer Options (Entwickleroptionen) --> ADB Debugging (enable)
+3. Enable ADB Debugging options on your watch
+--------------------------------------------------------
+* Enable developer mode by going to Settings --> About --> Build number
+* Click it 7 times.
+* Now go to Settings --> Developer Options --> ADB Debugging (enable)
 
-4. Verbinde Deine Smartwatch mit Deinem Computer
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* Schließe dann Deine Smartwatch an den PC an.
-* Benenne die heruntergeladenen Google Services APK um. Nimm am besten einen kurzen und einfachen Namen (z.B. SW3fix.apk).
-* Lege diese APK in das gleiche Verzeichnis wie das adb Tool (in Deinem Fall das Verzeichnis des entpackten SDK Platform Tools).
-* Öffne das Windows-Terminal mit dem Befehl "cmd" im Windows-Startmenü.
-*	Wechsle im Terminal in das Verzeichnis, das Dein adb Tool und die Google Services APK enthält (tippe „cd [Pfad zu Deinem Verzeichnis]“, z.B. „cd C:\Users\SWR50looper\sdktools“).
-* Gib dann "adb devices" ein.
-* Nach einem kurzen Moment kommt eine Eingabeaufforderung, ob die Debugging-Berechtigung für die Uhr erteilt werden soll. Gewähre diese.
-* Im Terminalfenster solltest Du nun etwas wie "14452D11F536B52 device" sehen, wenn Du erneut "adb devices" eingibst.
-* Falls Dir "unauthorized" oder eine ähnliche Meldung angezeigt wird, musst Du die vorherigen Schritte wiederholen.
-* Falls Du an dieser Stelle hängen bleibst, benötigst Du ggf. spezifische Treiber oder ähnliches für Deine Smartwatch. Die Google Suche hilft Dir hier weiter.
-* Warte dann ab, die Installation dauert mehrere Minuten. 
+4. Connect your watch to your computer
+--------------------------------------------------------
+* Then plug your smartwatch to PC.
+* Rename latest downloaded google services APK using some short and simple name (let's say SW3fix.apk).
+* Place this APK to the directory of your adb tool (in our case: the directory of unzipped SDK Platform Tools).
+*	Open Windows terminal using command „cmd“ in Windows start menu.
+*	In terminal, go to the directory that includes your adb tool and google services APK (type command „cd [your path]“, e.g. „cd C:\Users\SWR50looper\sdktools“).
+* Then type “adb devices”.
+* After a moment, you should get a prompt asking for debugging permission on your watch: accept.
+* In the terminal, you should now see something like "14452D11F536B52 device" when typing "adb devices" again.
+* If you see "unauthorized" or else, you're not ready for the next step, go back and try again.
+* If you struggle at this step, you may need specific drivers or else for your watch. Google will be your best friend at this point.
+* Then wait, the installation can take several minutes. 
 
-5. Sende die App an Deine Smartwatch
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* Gib im Terminalfenster das Kommando „adb install -r -g aplicationname.apk“ (Wenn Du die APK-Datei wie oben vorgeschlagen benannt hast, lautet das korrekte Kommando „adb install -r -g SW3fix.apk“).
+5. Send the app to your watch
+--------------------------------------------------------
+* In terminal enter this command „adb install -r -g aplicationname.apk“ (so in our case „adb install -r -g SW3fix.apk“).
 
-   .. image:: ../images/SonySW3_Terminal1.png
-     :alt: Terminal Befehl
+  .. image:: ../images/SonySW3_Terminal1.png
+    :alt: Terminal command
 
-* Warte 4 - 5 Minuten bis die Installation abgeschlossen ist. 
+* Wait for about 4–5 minutes for installation to complete. 
 
-.. image:: ../images/SonySW3_Terminal2.png
-     :alt: Terminal erfolgreiche Installation
+  .. image:: ../images/SonySW3_Terminal2.png
+    :alt: Terminal successful installation
 
-* Starte Deine Smartwatch neu nachdem die Installation abgeschlossen ist. Die Apps sollten sich dann direkt neu synchronisieren.
+* Once it's done, restart your watch and you should see the apps beginning to synchronize themself promptly.

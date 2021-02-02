@@ -1,64 +1,64 @@
-Vérifications nécessaires après la mise à jour vers AndroidAPS 2.6
+Necessary checks after update coming from AndroidAPS 2.6
 ***********************************************************
 
-* Le code du programme a été changé de façon significative lors du passage à AAPS 2.7. 
-* Par conséquent, il est important de faire des changements ou de vérifier les paramètres après la mise à jour.
-* Veuillez consulter les `notes de version <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`_ pour plus de détails sur les nouvelles fonctions et les améliorations.
+* The program code was changed significantly when switching to AAPS 2.7. 
+* Therefore it is important that you make some changes or check settings after the update.
+* Please see `release notes <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`_ for details on new and extended features.
 
-Vérifier la source de glycémie
+Check BG source
 -----------------------------------------------------------
-* Vérifiez si la source de glycémie est correcte après la mise à jour.
-* En particulier quand vous utilisez `xDrip+ <../Configuration/xdrip.html>`_ il peut arriver que la source soit remplacée par l'application Dexcom patchée.
-* Ouvrez le `Générateur de configuration <../Configuration/Config-Builder.html#source-gly>`_ (menu hamburger en haut à gauche de l'écran d'accueil)
-* Faites défiler vers le bas jusqu'à "Source des glycémies".
-* Sélectionnez la bonne source de glycémie si des changements sont nécessaires.
+* Check if BG source is correct after update.
+* Especially when using `xDrip+ <../Configuration/xdrip.html>`_ it might happen, that BG source is changed to Dexcom app (patched).
+* Open `Config builder <../Configuration/Config-Builder.html#bg-source>`_ (hamburger menu on top left side of home screen)
+* Scroll down to "BG source".
+* Select correct BG source if changes are necessary.
 
 .. image:: ../images/ConfBuild_BG.png
-  :alt: source Gly
+  :alt: BG source
 
-Terminer les objectifs
+Finish exam
 -----------------------------------------------------------
-* AAPS 2.7 contient un nouvel objectif 11 pour `l'automatisation <../Usage/Automation.html>`_.
-* Vous devez avoir fini les autres objectfs (`objectifs 3 et 4 <../Usage/Objectives.html#objectif-3-prouver-ses-connaissances>`_) pour pouvoir faire l'`objectif 11 <../Usage/Objectives.html#objectif-11-automatisation>`_.
-* Si par exemple vous n'avez pas encore terminé l'examen dans l'`objective 3 <../Usage/Objectives. tml#objectif-3-prouver-ses-connaissances>`_ , vous devrez terminer l'examen avant de pouvoir commencer l'`objective 11 <../Usage/Objectives.html#objectif-11-automatisation>`_. 
-* Cela n'affectera pas les autres objectifs que vous avez déjà terminés. Vous conserverez tous les objectifs terminés !
+* AAPS 2.7 contains new objective 11 for `automation <../Usage/Automation.html>`_.
+* You have to finish exam (`objective 3 and 4 <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_) in order to complete `objective 11 <../Usage/Objectives.html#objective-11-automation>`_.
+* If for example you did not finish the exam in `objective 3 <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_ yet, you will have to complete the exam before you can start `objective 11 <../Usage/Objectives.html#objective-11-automation>`_. 
+* This will not effect other objectives you have already finished. You will keep all finished objectives!
 
-Définir le mot de passe principal
+Set master password
 -----------------------------------------------------------
-* Nécessaire pour pouvoir `exporter les paramètres <../Usage/ExportImportSettings.html>`_ car ils sont chiffrés depuis la version 2.7.
-* Ouvrez les préférences (menu trois points en haut à droite de l'écran d'accueil)
-* Cliquez sur le triangle sous " Général "
-* Cliquez sur " Mot de passe principal "
-* Entrez le mot de passe, confirmez le et cliquez sur OK.
+* Necessary to be able to `export settings <../Usage/ExportImportSettings.html>`_ as they are encrypted as of version 2.7.
+* Open Preferences (three-dot-menu on top right of home screen)
+* Click triangle below "General"
+* Click "Master-Password"
+* Enter password, confirm password and click ok.
 
 .. image:: ../images/MasterPW.png
-  :alt: Définir le mot de passe principal
+  :alt: Set master password
   
-Exporter les paramètres
+Export settings
 -----------------------------------------------------------
-* AAPS 2.7 utilise un nouveau format de sauvegarde chiffré. 
-* Vous devez `exporter vos paramètres <../Usage/ExportImportSettings.html>`_ après la mise à jour vers la version 2.7.
-* Les fichiers de paramètres des versions précédentes ne peuvent être que importés dans AAPS 2.7. L'exportation sera dans le nouveau format.
-* Assurez-vous de stocker vos paramètres exportés non seulement sur votre téléphone, mais également dans au moins un autre endroit sûr (votre pc, stockage cloud...).
-* Si vous construisez l'apk AAPS 2.7 avec le même fichier de clés que dans les versions précédentes, vous pouvez installer la nouvelle version sans supprimer la version précédente. 
-* Tous les paramètres ainsi que les objectifs terminés resteront tels qu'ils étaient dans la version précédente.
-* Si vous avez perdu votre fichier de clés, construisez la version 2.7 avec un nouveau fichier de clés et importez les paramètres de la version précédente, comme c'est décrit dans la section `dépannage <../Installing-AndroidAPS/troubleshooting_androidstudio.html#fichier-de-cles-perdu>`_.
+* AAPS 2.7 uses a new encrypted backup format. 
+* You must `export your settings <../Usage/ExportImportSettings.html>`_ after updating to version 2.7.
+* Settings files from previous versions can only be imported in AAPS 2.7. Export will be in new format.
+* Make sure to store your exported settings not only on your phone but also in at least one safe place (your pc, cloud storage...).
+* If you build AAPS 2.7 apk with the same keystore than in previous versions you can install new version without deleting the previous version. 
+* All settings as well as finished objectives will remain as they were in the previous version.
+* In case you have lost your keystore build version 2.7 with new keystore and import settings from previous version as described in the `troubleshooting section <../Installing-AndroidAPS/troubleshooting_androidstudio.html#lost-keystore>`_.
 
-Autosens (un indice - aucune action nécessaire)
+Autosens (Hint - no action necessary)
 -----------------------------------------------------------
-* Autosens est changé pour un modèle qui reproduit la conception de référence avec une commutation dynamique.
-* Autosens bascule maintenant entre une fenêtre de 24 heures et une de 8 heures pour calculer la sensibilité. Il choisira celle qui est le plus sensible. 
-* Les utilisateurs qui utilisaient oref1 remarqueront probablement que le système peut être moins dynamique en raison de la variation de sensibilité entre 24 heures et 8 heures.
+* Autosens is changed to a dynamic switching model which replicates the reference design.
+* Autosens will now switch between a 24 and 8 hours window for calculating sensitivity. It will pick which ever one is more sensitive. 
+* If users have come from oref1 they will probably notice the system may be less dynamic to changes, due to the varying of either 24 or 8 hours of sensitivity.
 
-Définir le mot de passe de la pompe Dana RS (si vous utilisez une Dana RS)
+Set Pump Password for Dana RS (if using Dana RS)
 -----------------------------------------------------------
-* Le mot de passe Pump pour `Dana RS <../Configuration/DanaRS-Insulin-Pump.html>`_ n'était pas été vérifié dans les versions précédentes.
-* Ouvrez les préférences (menu trois points en haut à droite de l'écran d'accueil)
-* Faites défiler vers le bas et cliquez sur triangle à côté de " Dana RS ".
-* Cliquez sur " Mot de passe pompe (v1 uniquement) "
-* Entrez le mot de passe de la pompe (Le `mot de passe par défaut <../Configuration/DanaRS-Insulin-Pump.html#mot-de-passe-par-defaut>`_ est différent selon la version du firmware) et cliquez sur OK.
+* Pump password for `Dana RS <../Configuration/DanaRS-Insulin-Pump.html>`_ was not checked in previous versions.
+* Open Preferences (three-dot-menu on top right of screen)
+* Scroll down and click triangle next to "Dana RS".
+* Click "Pump password (v1 only)"
+* Enter pump password (`Default password <../Configuration/DanaRS-Insulin-Pump.html#default-password>`_ is different depending on firmware version) and click OK.
 
 .. image:: ../images/DanaRSPW.png
-  :alt: Définir le mot de passe Dana RS
+  :alt: Set Dana RS password
   
-Pour changer le mot de passe sur Dana RS, suivez les instructions sur la `page DanaRS <../Configuration/DanaRS-Insulin-Pump.html#changer-de-mot-de-passe-sur-la-pompe>`_.
+To change password on Dana RS follow instructions on `DanaRS page <../Configuration/DanaRS-Insulin-Pump.html#change-password-on-pump>`_.
