@@ -17,14 +17,14 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Change language
+   :caption: Dépannage
 
    Change language <./changelanguage.rst>
    
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Getting started
+   :caption: Pour commencer
 
    Sécurité avant tout <./Getting-Started/Safety-first.rst>
    Qu'est-ce qu'un système en boucle fermée <./Getting-Started/ClosedLoop.rst>
@@ -34,7 +34,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: What do I need? 
+   :caption: De quoi ai-je besoin ? 
 
    Composants <./Module/module.rst>
    Exemple de configuration <./Getting-Started/Sample-Setup.md>
@@ -42,7 +42,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: How to Install AndroidAPS
+   :caption: Comment installer AndroidAPS
 
    Construire l'APK <./Installing-AndroidAPS/Building-APK.md>
    Télécharger la nouvelle version ou branche <./Installing-AndroidAPS/Update-to-new-version.md>
@@ -55,7 +55,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Component Setup
+   :caption: Configuration des composants
 
    MGC/MGF <./Configuration/BG-Source.rst>
    Paramètres xDrip <./Configuration/xdrip.md>
@@ -67,7 +67,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Configuration
+   :caption: Générateur de configuration
 
    Générateur de configuration <./Configuration/Config-Builder.md>
    Préférences <./Configuration/Preferences.rst>
@@ -75,7 +75,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: AndroidAPS Usage
+   :caption: Utilisation d'AndroidAPS
 
    Les écrans d'AndroidAPS <./Getting-Started/Screenshots.md>
    Objectifs <./Usage/Objectives.rst>
@@ -94,7 +94,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: General Hints 
+   :caption: Conseils généraux 
 
    Fuseaux horaires <./Usage/Timezone-traveling.md>
    Acces aux fichiers journaux <./Usage/Accessing-logfiles.md>
@@ -104,7 +104,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: AndroidAPS for children
+   :caption: AndroidAPS pour les enfants
 
    Surveillance à distance <./Children/Children.rst>
    Commandes SMS <./Children/SMS-Commands.rst>
@@ -113,28 +113,28 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Troubleshooting
+   :caption: Comment aider
 
    Dépannage <./Usage/troubleshooting.rst>
 
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: FAQ
+   :caption: Questions fréquentes
 
    Questions fréquentes <./Getting-Started/FAQ.md>
 
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Glossary
+   :caption: Glossaire
 
    Glossaire <./Getting-Started/Glossary.md>
 
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Where to go for help 
+   :caption: Où chercher de l'aide 
 
    Ressources utiles à lire avant de commencer <./Where-To-Go-For-Help/Background-reading.md>
    Où chercher de l'aide <./Where-To-Go-For-Help/Connect-with-other-users.md>
@@ -143,7 +143,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: For Clinicians
+   :caption: Pour les professionnels de santé
 
    Pour les professionnels de santé <./Resources/clinician-guide-to-AndroidAPS>
 
