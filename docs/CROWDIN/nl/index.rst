@@ -17,14 +17,14 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Change language
+   :caption: Aan de slag
 
    Change language <./changelanguage.rst>
    
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Getting started
+   :caption: Veelgestelde vragen
 
    Allereerst de veiligheid <./Getting-Started/Safety-first.rst>
    Wat is een closed loop systeem <./Getting-Started/ClosedLoop.rst>
@@ -34,7 +34,7 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: What do I need? 
+   :caption: Wat heb ik nodig? 
 
    Onderdelen <./Module/module.rst>
    Gebruiksvoorbeeld <./Getting-Started/Sample-Setup.md>
@@ -42,7 +42,7 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: How to Install AndroidAPS
+   :caption: AndroidAPS installeren
 
    Bouwen van de app <./Installing-AndroidAPS/Building-APK.md>
    Bijwerken naar een nieuwe versie <./Installing-AndroidAPS/Update-to-new-version.md>
@@ -55,7 +55,7 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Component Setup
+   :caption: Onderdelen instellen
 
    BG bron <./Configuration/BG-Source.rst>
    xDrip+ instellingen <./Configuration/xdrip.md>
@@ -67,7 +67,7 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Configuration
+   :caption: AndroidAPS instellingen
 
    Instellingen <./Configuration/Preferences.rst>
    Instellingen exporteren/importeren <./Usage/ExportImportSettings.rst>
@@ -75,7 +75,7 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: AndroidAPS Usage
+   :caption: AndroidAPS gebruik
 
    AndroidAPS Screenshots <./Getting-Started/Screenshots.md>
    Doelen <./Usage/Objectives.rst>
@@ -94,17 +94,17 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: General Hints 
+   :caption: Algemene Tips 
 
    Wisselen van tijdzone <./Usage/Timezone-traveling.md>
    Toegang tot logbestanden <./Usage/Accessing-logfiles.md>
    AccuChek Combo - tips <./Usage/Accu-Chek-Combo-Tips-for-Basic-usage.md> 
-   Export/Import Settings <./Usage/ExportImportSettings.rst>
+   Instellingen exporteren/importeren <./Usage/ExportImportSettings.rst>
 
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: AndroidAPS for children
+   :caption: AndroidAPS voor kinderen
 
    Volgen op afstand <./Children/Children.rst>
    SMS Comando's <./Children/SMS-Commands.rst>
@@ -113,28 +113,28 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Troubleshooting
+   :caption: Problemen oplossen
 
    Problemen oplossen <./Usage/troubleshooting.rst>
 
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: FAQ
+   :caption: Zorgprofessionals
 
    Veelgestelde vragen <./Getting-Started/FAQ.md>
 
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Glossary
+   :caption: Veelgebruikte woordenlijst
 
    Veelgebruikte woordenlijst <./Getting-Started/Glossary.md>
 
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Where to go for help 
+   :caption: Waar je hulp kunt vinden 
 
    Leestips voordat je begint <./Where-To-Go-For-Help/Background-reading.md>
    Contact met anderen <./Where-To-Go-For-Help/Connect-with-other-users.md>
@@ -151,7 +151,7 @@ For more details, please read on here.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: How to help
+   :caption: Hoe je zelf kunt helpen
 
    Hoe kan je helpen <./Getting-Started/How-can-I-help.md>
    De app of wiki vertalen <./translations.md>
