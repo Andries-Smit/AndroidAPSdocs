@@ -7,7 +7,7 @@ Dexcom G5 met xDrip+
 * In xdrip go to Settings > Inter-app settings > Accept Treatments and select OFF.
 * Als je AndroidAPS wilt gebruiken om te kalibreren ga dan in xdrip naar Instellingen > Interapp settings > Accept Calibrations en selecteer ON.  Je kunt ook de opties aanpassen aan jouw behoefte in Instellingen > Minder vaak voorkomende instellingen > Advanced Calibration Settings.
 * Selecteer xdrip in Configurator (instellingen in AndroidAPS).
-* Als AAPS geen BG-waarden ontvangt wanneer de telefoon in vliegtuigmodus staat, gebruik dan 'Identify receiver' (Identificeer ontvanger) zoals beschreven op de `xDrip+ instellingen pagina <../Configuration/xdrip.html>`_.
+* If AAPS does not receive BG values when phone is in airplane mode use 'Identify receiver' as describe on `xDrip+ settings page <../Configuration/xdrip.html>`_ .
 
 G5 met aangepaste Dexcom G5 app
 ==================================================
@@ -16,8 +16,8 @@ G5 met aangepaste Dexcom G5 app
   * Map 2.3 is voor gebruikers van AndroidAPS 2.3, map 2.4 voor gebruikers van AAPS 2.5.1.
   * Open https://play.google.com/store/search?q=dexcom%20g5 op jouw computer. Regio wordt weergegeven in URL.
 
-   .. image:: ../images/DexcomG5regionURL.PNG
-     :alt: Regio in Dexcom G5 URL
+  .. image:: ../images/DexcomG5regionURL.PNG
+    :alt: Regio in Dexcom G5 URL
 
 * Stop sensor en verwijder de originele Dexcom app, als dat nog niet gedaan is.
 * Installeer de gedownloade apk
