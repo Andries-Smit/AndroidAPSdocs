@@ -8,7 +8,7 @@
 * Einen Smartpix oder Realtyme Adapter und die Accu-Chek 360°-Konfigurationssoftware um die Pumpe zu konfigurieren. (Kunden von Roche können die Software beim Kundendienst anfordern.)
 * Ein kompatibles Telefon: Ein Android Telefon mit LineageOS 14.1 (früher CyanogenMod) oder Android 8.1 (Oreo).
 * Das LineageOS muss neuer als Juni 2017 sein, da erst zu diesem Zeitpunkt die für die Combo-Unterstützung notwendige Änderung hinzugefügt wurde.
-* Eine Liste gestester Telefone findet sich in der [AAPS Phones](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit#gid=698881435) Liste.
+* A list of phones can be found in the [AAPS Phones](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit) document.
 * Die Liste ist nicht abschließend und spiegelt nur die persönliche Erfahrung der Benutzer wieder. You are encouraged to also enter your experience and thereby help others (these projects are all about paying it forward).
 * Vorsicht, obwohl man unter Android 8.1 mit der Combo Pumpe kommunizieren kann, gibt es noch Schwierigkeiten mit AAPS unter Android 8.1.
 * For advanced users, it is possible to perform the pairing on a rooted phone and transfer it to another rooted phone to use with ruffy/AAPS, which must also be rooted. Dieses Vorgehen erlaubt die Verwendung eines Android < 8.1; es ist aber nicht großartig getestet und auch kein sehr verbreitetes Verfahren. https://github.com/gregorybel/combo-pairing/blob/master/README.md
@@ -99,7 +99,7 @@ Es sind verschiedene Gründe möglich. Versuche die folgenden Schritte:
 
 * Wenn die Combo Pumpe einen 5s Timeout für die Anzeige hat, solltest Du es mit 40s ausprobieren (originale Einstellung). Erfahrungsgemäss beträgt die Zeit bis die Pumpe auf dem Smartphone angezeigt wird 5-10s. In vielen anderen Fällen läuft das Pairing ohne erfolgreiche Verbindung ab.
 * Später solltest Du es zurück auf 5s setzen, damit es den AAPS Combo Einstellungen entspricht.
-* Wenn die Pumpe das Smartphone nicht als Pairing Gerät anzeigt, ist das Bluetooth Protokoll des Smartphones eventuell nicht kompatibel mit dem der Pumpe. Stelle sicher, dass Du eine neue Version **lineageOS ≥ 14.1** oder **Android ≥ 8.1 (Oreo)** verwendest. Wenn möglich, versuche es mit einem anderen Smartphone. Eine Liste von bereits erfolgreich benutzten Smartphones befindet sich unter \[AAPS Phones\] (https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit#gid=698881435).
+* Wenn die Pumpe das Smartphone nicht als Pairing Gerät anzeigt, ist das Bluetooth Protokoll des Smartphones eventuell nicht kompatibel mit dem der Pumpe. Stelle sicher, dass Du eine neue Version **lineageOS ≥ 14.1** oder **Android ≥ 8.1 (Oreo)** verwendest. Wenn möglich, versuche es mit einem anderen Smartphone. You can find a list of already successfully used smartphones under \[AAPS Phones\] (https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit).
 
 9. Danach sollte die Pumpe einen 10-stelligen Sicherheitscode anzeigen. Und ruffy einen Dialog, um ihn einzugeben. Gib diesen Code in ruffy ein und Du solltest loslegen können.
 10. Starte das Smartphone neu.
@@ -110,7 +110,7 @@ Es sind verschiedene Gründe möglich. Versuche die folgenden Schritte:
 * Denke daran, dass es kein Produkt ist, der Benutzer muss besonders am Anfang das System überwachen und seine Beschränkungen verstehen, sowie erkennen, wie es versagen kann.
 * Es wird dringend empfohlen, dieses System NICHT zu verwenden, wenn die Person, die es benutzt nicht in der Lage ist, es vollständig zu verstehen.
 * Lies die Dokumentation von OpenAPS auf https://openaps.org, um den Loop Algorithmus zu verstehen, auf dem AndroidAPS basiert.
-* Lies die [AAPS Dokumentation](https://androidaps.readthedocs.io/en/latest/CROWDIN/de/index.html) um Dich über AndroidAPS zu informieren und es zu verstehen.
+* Read the [AAPS docs](../index.rst) to learn about and understand AndroidAPS.
 * Diese Implementierung verwendet die gleiche Funktionalität, die das Messgerät verwendet, das mit der Combo geliefert wird.
 * Diese Implementierung ermöglicht es, den Bildschirm der Pumpe zu spiegeln und die Betätigung der Vorwärts-Taste an die Pumpe zu senden.
 * Die ruffy App sorgt für die Verbindung zur Pumpe und ermöglicht diese Weiterleitung der Aktionen.
