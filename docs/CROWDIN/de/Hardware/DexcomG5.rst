@@ -7,7 +7,7 @@ Dexcom G5 mit xdrip+
 * In xDrip+ gehe zu Einstellungen > Inter-App Einstellungen > Behandlungen annehmen und wähle AUS.
 * Falls du mit AndroidAPS kalibrieren willst dann gehe in xdrip zu Einstellungen > Inter-App Einstellungen > Accept Calibrations und wähle AN.  Du solltest auch die Optionen in Einstellungen > Erweiterte Einstellungen > Erweiterte Kalibrierung kontrollieren.
 * Wähle gepatchte Dexcom App im Konfigurations-Generator (Konfiguration in AndroidAPS).
-* Falls AAPS im Flugmodus keine BZ-Werte von xdrip+ bekommt, nutze 'Identify receiver' wie auf der Seite `xDrip+ settings page <../Configuration/xdrip.md>`_ beschrieben.
+* If AAPS does not receive BG values when phone is in airplane mode use 'Identify receiver' as describe on `xDrip+ settings page <../Configuration/xdrip.html>`_ .
 
 G5 mit der gepatchten Dexcom App
 ==================================================
@@ -16,8 +16,8 @@ G5 mit der gepatchten Dexcom App
   * Im Ordner 2.3 befinden sich die APK für AndroidAPS 2.3 Anwender, entsprechend im Ordner 2.4 die für AAPS 2.5.
   *  Öffne https://play.google.com/store/search?q=dexcom%20g5 auf Deinem Computer. Die Region wird in der URL angezeigt.
 
-   .. image:: ../images/DexcomG5regionURL.PNG
-     :alt: Region in Dexcom G5 URL
+  .. image:: ../images/DexcomG5regionURL.PNG
+    :alt: Region in Dexcom G5 URL
 
 * Stoppe den Sensor und deinstalliere die originale Dexcom App, falls du das noch nicht gemacht hast.
 * Installiere die heruntergeladene apk
