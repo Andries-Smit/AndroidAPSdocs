@@ -20,7 +20,9 @@ Für weitere Details lies bitte hier weiter.
    :caption: Glossar
 
    Change language <./changelanguage.rst>
-   
+
+.. _getting-started:
+
 .. toctree::
    :maxdepth: 1
    :glob:
@@ -29,7 +31,10 @@ Für weitere Details lies bitte hier weiter.
    Sicherheitshinweise <./Getting-Started/Safety-first.rst>
    Was ist ein Closed Loop System <./Getting-Started/ClosedLoop.rst>
    Was ist ein Closed Loop System mit AndroidAPS <./Getting-Started/WhatisAndroidAPS.rst>  
+   Pump choices <./Getting-Started/Pump-Choices.md>
    Docs Updates & Änderungen <./Getting-Started/WikiUpdate.rst>
+
+.. _what-do-i-need:
 
 .. toctree::
    :maxdepth: 1
@@ -52,6 +57,8 @@ Für weitere Details lies bitte hier weiter.
    Release Notes <./Installing-AndroidAPS/Releasenotes.rst>
    Dev branch (nur für Entwickler) <./Installing-AndroidAPS/Dev_branch.md>
 
+.. _component-setup:
+
 .. toctree::
    :maxdepth: 1
    :glob:
@@ -63,6 +70,8 @@ Für weitere Details lies bitte hier weiter.
    Smartphones <./Hardware/Phoneconfig.rst>
    Nightscout Installation <./Installing-AndroidAPS/Nightscout.md>
    Smartwatch  <./Hardware/Smartwatch.rst>
+
+.. _configuration:
 
 .. toctree::
    :maxdepth: 1
@@ -100,6 +109,7 @@ Für weitere Details lies bitte hier weiter.
    Logfiles erhalten <./Usage/Accessing-logfiles.md>
    Accu Chek Combo - Tipps <./Usage/Accu-Chek-Combo-Tips-for-Basic-usage.md> 
    Export/Import von Einstellungen <./Usage/ExportImportSettings.rst>
+   xDrip engineering mode <./Usage/Enabling-Engineering-Mode-in-xDrip.md>
 
 .. toctree::
    :maxdepth: 1
@@ -116,6 +126,7 @@ Für weitere Details lies bitte hier weiter.
    :caption: Problembehandlung
 
    Problembehandlung <./Usage/troubleshooting.rst>
+   Nightscout client <./Usage/Troubleshooting-NSClient.md>
 
 .. toctree::
    :maxdepth: 1
@@ -167,4 +178,4 @@ Für weitere Details lies bitte hier weiter.
 
 	* Sämtliche Produkt- und Herstellernamen, Handelsmarken, Dienstleistungsmarken, Warenzeichen und eingetragene Dienstleistungsmarken sind Eigentum ihrer jeweiligen Inhaber und werden nur zu Informationszwecken genutzt und nicht für Werbung oder Marketing. Ihre Verwendung dient nur zur Information und bedeutet weder, dass AAPS zu ihnen gehört, noch dass sie unterstützt werden.
 
-	Bitte beachten: Dieses Projekt steht in keinerlei Verbindung mit `SOOIL <http://www.sooil.com/eng/>`_, `Dexcom <http://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <http://www.accu-chek.com/>`_ oder `Medtronic <http://www.medtronic.com/>`_
+	Please note - this project has no association with and is not endorsed by: `SOOIL <https://www.sooil.com/eng/>`_, `Dexcom <https://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <https://www.accu-chek.com/>`_ or `Medtronic <https://www.medtronic.com/>`_
