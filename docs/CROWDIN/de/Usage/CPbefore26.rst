@@ -16,7 +16,7 @@ Aktivität & Feedback
 * Der Profilwechsel wurde auf den Tab / in das Menü "Aktionen" verschoben.
 * Der Batteriewechsel wurde ebenfalls auf den Tab / in das Menü "Aktionen" verschoben.
 Das temporäres Ziel wurde auf den Tab / in das Menü "Aktionen" verschoben.
-Nutze das Notizfeld in der Dialogbox, die erscheint wenn eine Aktion wie z.B. (siehe Screenshot im Abschnitt `Kohlenhydrate & Bolus <#id1>`_ auf dieser Seite).
+Nutze das Notizfeld in der Dialogbox, die erscheint wenn eine Aktion wie z.B. Bolusabgabe durchgeführt wird (siehe Screenshot im Abschnitt `Kohlenhydrate & Bolus <#id1>`_ auf dieser Seite).
 
 Kohlenhydrate & Bolus
 ==============================
@@ -26,8 +26,8 @@ Kohlenhydrate & Bolus
 * Um einen Bolus - unabhängig ob für eine Mahlzeit, einen Snack oder zur Korrektur - als Notiz zu vermerken, nutze den Insulin-Button auf dem Startbildschirm **und achte darauf "Bolus nur erfassen" anzukreuzen.**
 * Die Option, Insulineinträge in der Vergangenheit zu machen - z.B. wenn Du vergessen hast, per Spritze injiziertes Insulin zu vermerken - ist nur verfügbar, wenn die Checkbox "Bolus nur erfassen" angehakt ist.
 
-   .. image:: ../images/Careportal_25_26_5.png
-     :alt: Insulin in der Vergangenheit erfassen
+  .. image:: ../images/Careportal_25_26_5.png
+    :alt: Insulin in der Vergangenheit erfassen
 
 * Für eine "Kohlenhydrat Korrektur" kannst Du den Button "Kohlenhydrate" auf dem Startbildschirm verwenden.
 * Temporäre Basalraten können über die Schaltfläche im Tab / Menü "Aktionen" gestartet und gestoppt werden. Beachte, dass sich die Bezeichnung der Schaltfläche von "TBR" zu "Abbrechen X%" ändert, wenn eine temporäre Basalrate abgegeben wird.
@@ -38,7 +38,7 @@ CGM & OpenAPS
   :alt: Careportal CGM & OpenAPS
   
 * Das Setzen des CGM-Sensors kannst Du jetzt im Tab / Menü "Aktionen" erfassen.
-* Alle anderen Funktionen aus diesem Abschnitt wurden entfernt. You can use the note field in the dialogue box when performing an action like giving bolus etc. Bolusabgabe durchgeführt wird (siehe Screenshot im Abschnitt `Kohlenhydrate & Bolus <#id1>`_ auf dieser Seite).
+* Alle anderen Funktionen aus diesem Abschnitt wurden entfernt. You can use the note field in the dialogue box when performing an action like giving bolus etc. (see screenshot in section `carbs & bolus <#carbs-bolus>`__ on this page).
 
 Pumpe
 ==============================
