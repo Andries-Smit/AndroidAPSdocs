@@ -172,7 +172,7 @@ Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder
 
 Wichtige neue Funktionen
 -----
-* Nur https:// in Nightscout-Client Einstellungen erlaubt
+* Allow to enter only ``https://`` in NSClient settings
 * Fehlerbehebung `BGI <../Getting-Started/Glossary.html>`_ Anzeige auf der Smartwatch
 * Kleiner Anzeigefehler behoben
 * Korrekturen Insight Treiber
@@ -201,7 +201,7 @@ Wichtige neue Funktionen
   * Profilwechsel können in ein neues lokales Profil geklont werden (Zeitverschiebung und Prozentsatz werden berücksichtigt).
   * Neue Eingabemöglichkeit für Zielwerte
 * Einfaches Profil wurde entfernt.
-* `Verzögerter Bolus <../Usage/Extended-Carbs.html#id1>`_ - der Closed Loop wird unterbrochen
+* `Extended bolus <../Usage/Extended-Carbs.html#extended-bolus>`_ feature - closed loop will be disabled
 * Medtronic Pumpe: Fehler mit doppelten Einträgen behoben
 * Maßeinheiten (mmol / mg/dl) werden nicht mehr im Profil angegeben, sondern als globale Einstellung.
 * Neue Einstellungen zum Einrichtungsassistenten hinzugefügt.
@@ -224,13 +224,15 @@ Version 2.5.1
 ==================================================
 Erscheinungsdatum: 31.10.2019
 
-* Verwende `Android Studio Version 3.5.1 <https://developer.android.com/studio/>`_ oder neuer `um die App zu erstellen <../Installing-AndroidAPS/Building-APK.html>`_ oder `ein Update durchzuführen <../Installing-AndroidAPS/Update-to-new-version.html>`_. 
+Please note the `important notes <../Installing-AndroidAPS/Releasenotes.html#important-notes-2-5-0>`_ and `limitations <../Installing-AndroidAPS/Releasenotes.html#is-this-update-for-me-currently-is-not-supported>`_ listed for `version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`__. 
 * Es wurde ein Fehler im Netzwerk-Status-Empfänger behoben, der zu einigen Abstürzen geführt hat (nicht kritisch, würde aber viel Energie verbrauchen auf Grund der ständigen Neuberechnungen).
 * Eine neue Versionssteuerung, die es ermöglicht, kleinere Aktualisierungen durchzuführen, ohne die Aktualisierungsbenachrichtigung auszulösen.
 
 Version 2.5.0
 ==================================================
 Erscheinungsdatum: 26.10.2019
+
+.. _important-notes-2-5-0:
 
 Wichtige Hinweise
 --------------------------------------------------
@@ -259,8 +261,7 @@ Wichtige neue Funktionen
 * Signaturprüfung
 * Möglichkeit für OpenAPS Anwender, die Ziele (Objectives) zu überspringen
 * Neue `Ziele (objectives) <../Usage/Objectives.html>`_ -  Wissens-Check & App-Bedienung
-   
-   (Wenn Du mindestens mit dem Ziel "Starte den Open Loop" in einer vorhergehenden Version begonnen hast, ist der Wissens-Check optional.)
+  (Wenn Du mindestens mit dem Ziel "Starte den Open Loop" in einer vorhergehenden Version begonnen hast, ist der Wissens-Check optional.)
 * Fehlerbehebung Dana Treiber, bei dem eine falsche Zeitdifferenz angegeben wurde
 * Fehlerbehebung `SMS-Befehle <../Children/SMS-Commands.html>`_
 
@@ -323,7 +324,7 @@ Wichtige neue Funktionen
 
 Misc
 --------------------------------------------------
-* Falls Du ein vom Standard abweichenden smbmaxminutes Wert nutzt, musst Du diesen erneut eingeben.
+* If you are using non default ``smbmaxminutes`` value you have to setup this value again
 
 
 Version 2.0
