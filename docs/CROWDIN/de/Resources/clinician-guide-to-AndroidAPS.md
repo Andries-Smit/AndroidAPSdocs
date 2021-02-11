@@ -7,7 +7,7 @@ Dieser Leitfaden enthält einige wichtige Informationen über DIY Closed Looping
 ### Die Schritte zum Aufbau eines DIY Closed Loop
 
 Um AndroidAPS nutzen zu können, müssen die folgenden Schritte unternommen werden:
-* Find a [compatible pump](https://androidaps.readthedocs.io/en/latest/EN/Getting-Started/Pump-Choices.html), a [compatible Android device](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit?usp=sharing), and a [compatible CGM source](https://androidaps.readthedocs.io/en/latest/EN/index.html#getting-started).
+* Find a [compatible pump](../Hardware/pumps.rst), a [compatible Android device](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit?usp=sharing), and a [compatible CGM source](../Configuration/BG-Source.rst).
 * [AndroidAPS Quellcode herunterladen und die Software "erstellen"](https://androidaps.readthedocs.io/en/latest/EN/Installing-AndroidAPS/Building-APK.html).
 * [Konfigurieren Sie die Software so, dass sie mit Ihren Diabetes-Geräten kommuniziert, richten Sie sie ein und nehmen Sie Sicherheitseinstellungen vor](https://androidaps.readthedocs.io/en/latest/EN/index.html#configuration).
 
@@ -75,11 +75,11 @@ In diesem Beispiel erkennt AndroidAPS, dass der BZ-Wert deutlich über den Zielw
 
 ### Optimierung von Einstellungen und Änderungen
 
-Als Arzt, der möglicherweise keine Erfahrung mit AndroidAPS oder DIY Closed Loop Systemen hat, kann es für Sie eine Herausforderung sein, Ihrem Patienten zu helfen, seine Einstellungen zu optimieren oder Änderungen vorzunehmen, um seine Ergebnisse zu verbessern. Wir verfügen in der Gemeinschaft über mehrere Tools und [Leitfäden](http://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/optimize-your-settings.html), die den Patienten helfen, kleine, getestete Anpassungen vorzunehmen, um ihre Einstellungen zu verbessern.
+Als Arzt, der möglicherweise keine Erfahrung mit AndroidAPS oder DIY Closed Loop Systemen hat, kann es für Sie eine Herausforderung sein, Ihrem Patienten zu helfen, seine Einstellungen zu optimieren oder Änderungen vorzunehmen, um seine Ergebnisse zu verbessern. We have multiple tools and [guides](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/optimize-your-settings.html) in the community that help patients make small, tested adjustments to improve their settings.
 
 Das Wichtigste für den Patienten ist, nur jeweils eine Änderung vorzunehmen und deren Auswirkungen 2 - 3 Tage lang zu beobachten, bevor er sich entscheidet, eine andere Einstellung zu ändern oder zu modifizieren. Wir Menschen tendieren dazu, alles auf einmal ändern zu wollen. Aber wenn man das tut kann es sein, dass daraus suboptimale Einstellungen entstehen, die nur schwer wieder in einen guten Status zurückgeführt werden können.
 
-Eines der leistungsfähigsten Werkzeuge zur Durchführung von Einstellungsänderungen ist ein automatisiertes Kalkulationstool für Basalraten, ISF und BE-Faktoren. Es heißt “[Autotune](http://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autotune.html)”. Es ist so konzipiert, dass es unabhängig/manuell ausgeführt werden kann und die Daten Sie oder Ihren Patienten dabei unterstützen, schrittweise Änderungen an den Einstellungen vorzunehmen. Es hat sich in der Community bewährt, Autotune-Berichte zuerst zu überprüfen bevor man versucht, manuelle Anpassungen an den Einstellungen vorzunehmen. Mit AndroidAPS wird Autotune als eigenständiges, separates System ausgeführt, obwohl es derzeit Bemühungen gibt, es auch direkt in AndroidAPS zu integrieren. Da diese Parameter sowohl für die Standardpumpentherapie als auch für den Closed Loop die Basis darstellen, wäre die Diskussion der Autotune-Ergebnisse und die Anpassung dieser Parameter die natürliche Verbindung zum Arzt.
+Eines der leistungsfähigsten Werkzeuge zur Durchführung von Einstellungsänderungen ist ein automatisiertes Kalkulationstool für Basalraten, ISF und BE-Faktoren. This is called “[Autotune](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autotune.html)”. Es ist so konzipiert, dass es unabhängig/manuell ausgeführt werden kann und die Daten Sie oder Ihren Patienten dabei unterstützen, schrittweise Änderungen an den Einstellungen vorzunehmen. Es hat sich in der Community bewährt, Autotune-Berichte zuerst zu überprüfen bevor man versucht, manuelle Anpassungen an den Einstellungen vorzunehmen. Mit AndroidAPS wird Autotune als eigenständiges, separates System ausgeführt, obwohl es derzeit Bemühungen gibt, es auch direkt in AndroidAPS zu integrieren. Da diese Parameter sowohl für die Standardpumpentherapie als auch für den Closed Loop die Basis darstellen, wäre die Diskussion der Autotune-Ergebnisse und die Anpassung dieser Parameter die natürliche Verbindung zum Arzt.
 
 Darüber hinaus beeinflusst das menschliche Verhalten, das in der manuellen Diabetes-Therapie erlernt wurde, oft die Ergebnisse - auch bei einem DIY Closed Loop. Wenn zum Beispiel ein niedriger BZ vorhergesagt wird und AndroidAPS das Insulin reduziert, kann eine geringe Menge an Kohlenhydraten (z.B. 3-4g Kohlenhydrate) ausreichen, um einen BZ von 70 mg/dl (3.9 mmol) zu erhöhen. However, in many cases, someone may choose to treat with many more carbs (e.g. sticking to the 15 rule), which will cause a resulting faster spike both from the extra glucose and because insulin had been reduced in the timeframe leading up to the low.
 ### OpenAPS
@@ -92,8 +92,8 @@ Darüber hinaus beeinflusst das menschliche Verhalten, das in der manuellen Diab
 Dies soll ein allgemeiner Überblick darüber sein, wie AndroidAPS funktioniert. Für weitere Informationen fragen Sie Ihren Patienten, kontaktieren Sie die Community oder lesen Sie die vollständige AndroidAPS-Dokumentation, die online verfügbar ist.
 
 Zusätzliche Literaturhinweise:
-* Die [vollständige AndroidAPS-Dokumentation](http://androidaps.readthedocs.io/en/latest/EN/index.html)
+* The [full AndroidAPS documentation](../index)
 * Das [OpenAPS Reference Design](https://OpenAPS.org/reference-design/) das erklärt, wie OpenAPS für die Sicherheit konzipiert ist: https://openaps.org/reference-design/
-* Die [vollständige OpenAPS-Dokumentation](http://openaps.readthedocs.io/en/latest/index.html)
-  * Weitere [Details zur OpenAPS Berechnungen](http://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html#understanding-the-determine-basal-logic)
+* The [full OpenAPS documentation](https://openaps.readthedocs.io/en/latest/index.html)
+  * More [details on OpenAPS calculations](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html#understanding-the-determine-basal-logic)
 
