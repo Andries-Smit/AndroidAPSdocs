@@ -29,7 +29,7 @@ So make sure to deactivate automation rules during these occasions if neccessary
 
 Automatisierung aufrufen
 --------------------------------------------------
-Abhängig von deinen `Einstellungen im Konfigurationsgenerator <../Configuration/Config-Builder.html#registerkarte-tab-oder-hamburger-menu>`_ findest du `Automatisierungen <../Configuration/Config-Builder.html#automatisierung>`_ entweder im Hamburger.Menü oder als Registerkarte (Tab).
+Depending on your `settings in config builder <../Configuration/Config-Builder.html#tab-or-hamburger-menu>`_ you will either find `Automation <../Configuration/Config-Builder.html#automation>`__ in hamburger menu or as a tab.
 
 Allgemein
 --------------------------------------------------
@@ -104,15 +104,15 @@ Klicke auf das Papierkorbsymbol, um eine Automatisierungsregel zu löschen.
 Good practice & caveats
 ==================================================
 * Wenn Du Automation zum ersten Mal nutzt oder eine neue Regel erstellst, solltest Du zusätzlich eine Benachrichtigung erstellen bis Du sicher bist, dass die Regel so funktioniert, wie beabsichtigt.
-* Beobachte die Resultate Deiner Regel.
+* Watch the rule results.
 WENN BZ > 80 mg/dl UND BZ < 180 mg/dl).
 
   **Doppelt wichtig, wenn die Aktion ein Profilwechsel ist!**
  
-* Verwende temporäre Ziele statt Profilwechseln. Temporäre Ziele setzen `Autosens <../Usage/Open-APS-features.html#autosens>`_ nicht auf 0 zurück.
+* Verwende temporäre Ziele statt Profilwechseln. Temp Targets do not reset `Autosens <../Usage/Open-APS-features.html#autosens>`__ back to 0.
 * Setze Profilwechsel sparsam und nur als letzte Möglichkeit ein.
 
-  * Durch einen Profilwechsel wird `Autosens <../Usage/Open-APS-features.html#autosens>`_ für mind.
+  * Profile switching renders `Autosens <../Usage/Open-APS-features.html#autosens>`__ useless for a min of 6 hours.
 
 * Profilwechsel setzen Dein Profil nicht automatisch auf das Standardprofil zurück.
 
