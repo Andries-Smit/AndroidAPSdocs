@@ -18,7 +18,7 @@ Néanmoins, les données sont automatiquement envoyées à Nightscout "in the cl
 ## Composants requis
 
 1. Samsung Galaxy S7
- * Alternatives: see [list of tested phones and watches](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit#gid=698881435) for AndroidAPS
+ * Alternatives: see [list of tested phones and watches](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit) for AndroidAPS
 
 2. [DanaRS](http://www.sooil.com/eng/product/)
  * Alternatives:
@@ -32,7 +32,7 @@ Néanmoins, les données sont automatiquement envoyées à Nightscout "in the cl
  * Alternatives: see list of possible [BG sources](../Configuration/BG-Source.rst)
 
 4. Optional: Sony Smartwatch 3 (SWR50)
- * Installez l'application "Android Wear" sur votre smartphone via le Google Play Store et connectez la smartwatch selon les instructions qui y sont données.
+ * Alternatives: All [watches with Google Wear OS](https://wearos.google.com/intl/de_de/#find-your-watch) should work fine, for details see [list of tested phones and watches](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit) for AndroidAPS (OS must be Android Wear)
 
 ## Configuration de Nightscout
 Voir la configuration détaillée [Nightscout](../Installing-AndroidAPS/Nightscout.md)
