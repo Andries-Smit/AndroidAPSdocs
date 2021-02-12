@@ -22,7 +22,7 @@ Tools and apps for remote monitoring
 * `xDrip+ <../Configuration/xdrip.html>`_ in 'follow'modus (voornamelijk BG waarden en **alarmen**)
 * `Sugarmate <https://sugarmate.io/>`_ of `Spike <https://spike-app.com/>`_ op iOS (voornamelijk voor BG waarden en **alarmen**)
 
-Things to consider
+Zaken om te overwegen
 ==================================================
 * Het instellen van de juiste `behandelingsfactoren <../Getting-Started/FAQ.html#hoe-begin-ik>`_ (basaal, DIA, ISF...) is moeilijk bij kinderen, vooral wanneer er groeihormonen in het spel zijn. 
 * De instellingen in zowel AndroidAPS en in NSClient moeten exact hetzelfde zijn.
