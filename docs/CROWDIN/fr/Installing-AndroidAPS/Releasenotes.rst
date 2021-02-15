@@ -22,11 +22,11 @@ Veuillez lire les `Remarques importantes <../Installing-AndroidAPS/Releasenotes.
 Changements majeurs
 ----------------------
 * Beaucoup d'améliorations et de correctifs
-* more tweaking for Android 8+
+* plus de réglages pour Android 8+
 * Nouvelle icône d'application
 * Amélioration des alertes Insight
 * Correction des paramètres de connexion NSClient (wifi, en charge)
-* Bolus advisor now works with Pumpcontrol and NSClient
+* Le conseiller Bolus fonctionne maintenant avec les versions Pumpcontrol et NSClient
 
 Version 2.8.1.1
 ================
@@ -39,7 +39,7 @@ Conseils importants
 * ATTENTION : NE PAS le faire si vous avez une autre application qui gère les traitements (comme xDrip broadcast/upload/sync...).
 * NS_UPLOAD_ONLY ne peut être désactivé que si le mode ingénierie est activé.
 
-Major changes
+Changements majeurs
 ----------------------
 * RileyLink, Omnipod et la pompe MDT améliorations et corrections
 * NS_UPLOAD_ONLY forcé
@@ -172,7 +172,7 @@ Utilisez `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ ou une 
 
 Nouvelles fonctionnalités majeures
 -----
-* Allow to enter only ``https://`` in NSClient settings
+* Permet de ne rentrer que https:// dans les paramètres NSClient
 * Correction bug d'affichage `Impact Glycémique <../Getting-Started/Glossary.html>`_ sur les montres
 * Correction de petits bugs de l'interface utilisateur
 * Correctifs du pilote Insight
@@ -180,7 +180,7 @@ Nouvelles fonctionnalités majeures
 * Correction `Profil Local -> NS sync <../Configuration/Config-Builder.html#remonter-les-profils-locaux-sur-nightscout>`_
 * Correction plantages Insight
 * Amélioration de la détection des bolus depuis l'historique de la pompe
-* Fixed NSClient connection settings (wifi, charging)
+* Correction des paramètres de connexion NSClient (wifi, en charge)
 * Correction de l'envoi des calibrations vers xDrip
 
 Version 2.6.0
@@ -201,7 +201,7 @@ Nouvelles fonctionnalités majeures
   * Les anciens changements de profil peuvent être dupliqués veres un nouveau profil local (décalage horaire et pourcentage appliqués)
   * Sélecteur pour les cibles temps
 * Le Profil Simple est supprimé
-* `Extended bolus <../Usage/Extended-Carbs.html#extended-bolus>`_ feature - closed loop will be disabled
+* La fonction `Bolus étendus <../Usage/Extended-Carbs.html#bolus-etendu>`_ désactive la boucle fermée
 * Plugin MDT : Correction du bug entrées dupliquées
 * Les unités ne sont pas définies dans le profil mais c'est un paramètre global
 * Ajout de nouveaux paramètres à l'assistant de démarrage
@@ -224,7 +224,7 @@ Version 2.5.1
 ==================================================
 Date de sortie : 31-10-2019
 
-Please note the `important notes <../Installing-AndroidAPS/Releasenotes.html#important-notes-2-5-0>`_ and `limitations <../Installing-AndroidAPS/Releasenotes.html#is-this-update-for-me-currently-is-not-supported>`_ listed for `version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`__. 
+Veuillez lire les `Remarques importantes <../Installing-AndroidAPS/Releasenotes.html#id16>`_ et`limitations <../Installing-AndroidAPS/Releasenotes.html#cette-mise-a-jour-est-elle-pour-moi-n-est-actuellement-pas-pris-en-charge>`_ listées pour la `version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#id15>`_. 
 * Correction d'un bug dans le statut du réseau qui entraînait des plantages fréquent (pas critique mais gaspillerait beaucoup d'énergie).
 * Nouvelle gestion des versions qui permettra de faire des mises à jour mineures sans déclencher la notification de mise à jour.
 
@@ -301,7 +301,7 @@ Date de sortie : 29-03-2019
 Nouvelles fonctionnalités majeures
 --------------------------------------------------
 * `Correctif changement d'heure <../Usage/Timezone-traveling.html#changements-d-heure>`_
-* Wear Update
+* Beaucoup d'améliorations et de correctifs
 * `Correctif plugin SMS <../Children/SMS-Commands.html>`_
 * Retour arrière dans les Objectifs.
 * Arrêt de la boucle si le téléphone est plein
@@ -324,12 +324,12 @@ Nouvelles fonctionnalités majeures
 
 Divers
 --------------------------------------------------
-* If you are using non default ``smbmaxminutes`` value you have to setup this value again
+* Si vous n'utilisez pas la valeur par défaut de `smbmaxminutes` vous devez configurer à nouveau cette valeur
 
 
 Version 2.0
 ==================================================
-Release date: 03-11-2018
+Date de sortie : 03-11-2018
 
 Nouvelles fonctionnalités majeures
 --------------------------------------------------
@@ -342,7 +342,7 @@ Paramètres à ajuster lors du passage d'AMA à SMB
 * L'objectif 10 doit être démarré pour pouvoir activer les SMB (l'onglet SMB montre généralement les restrictions appliquées)
 * maxIA inclu maintenant _tous_ les IA, plus seulement la basal ajoutée. En d'autres termes, s'il y a eu un bolus de 8 U pour un repas et maxIA est à 7 U, aucun SMB ne sera délivré jusqu'à ce que l'IA repasse en dessous de 7 U.
 * la valeur par défaut de min_5m_carbimpact est passée de 3 à 8 entre AMA et SMB. Si vous effectuez une mise à niveau depuis AMA vers SMB, vous devez la modifier manuellement
-* Note when building AndroidAPS 2.0 apk: Configuration on demand is not supported by the current version of the Android Gradle plugin! Si votre construction échoue avec une erreur concernant la "configuration sur demande", faites les actions suivantes :
+* Remarque lors de la construction de l'apk d'AndroidAPS 2.0 : Configuration on demand n'est pas supporté par la version actuelle du plugin Android Gradle ! Si votre construction échoue avec une erreur concernant la "configuration sur demande", faites les actions suivantes :
 
   * Ouvrez la fenêtre Préférences en cliquant sur File > Settings (sur Mac, Android Studio > Preferences).
   * Dans le panneau de gauche, cliquez sur Build, Execution, Deployment > Compiler.
@@ -351,7 +351,7 @@ Paramètres à ajuster lors du passage d'AMA à SMB
 
 Onglet Vue d'ensemble
 --------------------------------------------------
-* Le ruban du haut donne accès à Suspendre/Désactiver la boucle, consulter/changer le profil et démarrer/arrêter les cibles temp. Les CT utilisent des paramètres par défauts configurés dans les préférences. The new Hypo TT option is a high temp TT to prevent the loop from too aggressively overcorrection rescue carbs.
+* Le ruban du haut donne accès à Suspendre/Désactiver la boucle, consulter/changer le profil et démarrer/arrêter les cibles temp. Les CT utilisent des paramètres par défauts configurés dans les préférences. La nouvelle option CT Hypo est une cible temp. haute pour empêcher la boucle de corriger trop agressivement les glucides de secours.
 * Boutons de traitement : l'ancien bouton de traitement est encore disponible, mais masqué par défaut. La visibilité des boutons peut maintenant être configurée. Ajout de deux nouveaux boutons insuline et glucides (qui inclut `eGluc/glucides étendus <../Usage/Extended-Carbs.html>`_)
 * `Lignes de prédiction <../Getting-Started/Screenshots.html#lignes-de-prediction>`_ - plus de détails
 * Option pour afficher un champ de notes dans les boites de dialogue insuline/glucides/calculatrice et amorcer+remplir, qui sont téléchargées dans NS
@@ -374,7 +374,7 @@ Divers
 --------------------------------------------------
 * L'application utilise maintenant des tiroirs pour afficher tous les plugins; les plugins sélectionnés comme visibles dans le générateur de configuration sont affichés en tant qu'onglet en haut de l'écran (favoris)
 * Remplacement des onglets du générateur de configuration et des objectifs, ajout de descriptions
-* New app icon
+* Nouvelle icône d'application
 * Lots of improvements and bugfixes
 * Alerte indépendante de Nightscout si la pompe est injoignable pendant une durée longue (par ex. si la pile de la pompe est à plat) et pour des lectures de GLY manquées (voir _Alertes locales_ dans les paramètres)
 * Option pour garder l'écran allumé
