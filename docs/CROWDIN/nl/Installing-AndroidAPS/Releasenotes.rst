@@ -172,7 +172,7 @@ Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or ne
 
 Belangrijkste nieuwe functies
 -----
-* Allow to enter only ``https://`` in NSClient settings
+* Allow to enter only https:// in NSClient settings
 * Fixed `BGI <../Getting-Started/Glossary.html>`_ displaying bug on watches
 * Fixed small UI bugs
 * Fixed Insight crashes
@@ -201,7 +201,7 @@ Belangrijkste nieuwe functies
   * Old profile switches can be cloned to new profile in LocalProfile (timeshift and percentage is applied)
   * Veritical NumberPicker for targets
 * SimpleProfile is removed
-* `Extended bolus <../Usage/Extended-Carbs.html#extended-bolus>`_ feature - closed loop will be disabled
+* `Extended bolus <../Usage/Extended-Carbs.html#id1>`_ feature - closed loop will be disabled
 * MDT plugin: Fixed bug with duplicated entries
 * Units are not specified in profile but it's global setting
 * Added new settings to startup wizard
@@ -224,7 +224,7 @@ Versie 2.5.1
 ==================================================
 Release datum: 31-10-2019
 
-Please note the `important notes <../Installing-AndroidAPS/Releasenotes.html#important-notes-2-5-0>`_ and `limitations <../Installing-AndroidAPS/Releasenotes.html#is-this-update-for-me-currently-is-not-supported>`_ listed for `version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`__. 
+Please note the `important notes <../Installing-AndroidAPS/Releasenotes.html#important-notes>`_ and `limitations <../Installing-AndroidAPS/Releasenotes.html#is-this-update-for-me-currently-is-not-supported>`_ listed for `version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`_. 
 * Fixed a bug in the network state receiver that lead to crashes with many (not critical but would waste a lot of energy re-calculating things).
 * New versioning that will allow to do minor updates without triggering the update-notification.
 
@@ -289,7 +289,7 @@ Release datum: 03-03-2019
 Belangrijkste nieuwe functies
 --------------------------------------------------
 * Autosens fix: deactivate TT raises/lowers target
-* New translations
+* Nieuwe vertalingen
 * Verbetreringen aan Insight stuurprogramma
 * SMS plugin fix
 
@@ -324,12 +324,12 @@ Belangrijkste nieuwe functies
 
 Misc
 --------------------------------------------------
-* If you are using non default ``smbmaxminutes`` value you have to setup this value again
+* If you are using non default `smbmaxminutes` value you have to setup this value again
 
 
-Version 2.0
+Versie 2.0
 ==================================================
-Release date: 03-11-2018
+Release datum: 03-11-2018
 
 Belangrijkste nieuwe functies
 --------------------------------------------------
@@ -374,8 +374,8 @@ Misc
 --------------------------------------------------
 * App gebruikt nu een 'drawer' om alle plugins te tonen; geselecteerde plugins in de configurator worden weergegeven als tabs bovenaan het scherm (favorieten)
 * Configurator en doelen tabbladen gewijzigd waarbij beschrijvingen zijn toegevoegd
-* New app icon
-* Lots of improvements and bugfixes
+* Nieuw app icoon
+* Veel verbeteringen en bugfixes
 * Nightscout-independant alerts if pump is unreachable for a longer time (e.g. depleted pump battery) and missed BG readings (see *Local alerts* in settings)
 * Optie om het scherm aan te houden
 * Optie om meldingen als Android melding te tonen
