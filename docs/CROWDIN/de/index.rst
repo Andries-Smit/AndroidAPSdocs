@@ -17,9 +17,9 @@ Für weitere Details lies bitte hier weiter.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Glossar
+   :caption: Sprache wechseln
 
-   Change language <./changelanguage.rst>
+   Sprache wechseln <./changelanguage.rst>
 
 .. _getting-started:
 
@@ -31,7 +31,7 @@ Für weitere Details lies bitte hier weiter.
    Sicherheitshinweise <./Getting-Started/Safety-first.rst>
    Was ist ein Closed Loop System <./Getting-Started/ClosedLoop.rst>
    Was ist ein Closed Loop System mit AndroidAPS <./Getting-Started/WhatisAndroidAPS.rst>  
-   Pump choices <./Getting-Started/Pump-Choices.md>
+   Insulinpumpen <./Getting-Started/Pump-Choices.md>
    Docs Updates & Änderungen <./Getting-Started/WikiUpdate.rst>
 
 .. _what-do-i-need:
@@ -47,7 +47,7 @@ Für weitere Details lies bitte hier weiter.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: AndroidAPS installieren
+   :caption: Wie man AndroidAPS installiert
 
    App aus Quellcode erstellen <./Installing-AndroidAPS/Building-APK.md>
    Update auf neue Version oder Branch <./Installing-AndroidAPS/Update-to-new-version.md>
@@ -76,7 +76,7 @@ Für weitere Details lies bitte hier weiter.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: AndroidAPS einrichten
+   :caption: Glossar
 
    Konfigurations-Generator <./Configuration/Config-Builder.md>
    Einstellungen im Drei-Punkte-Menü <./Configuration/Preferences.rst>
@@ -109,7 +109,7 @@ Für weitere Details lies bitte hier weiter.
    Logfiles erhalten <./Usage/Accessing-logfiles.md>
    Accu Chek Combo - Tipps <./Usage/Accu-Chek-Combo-Tips-for-Basic-usage.md> 
    Export/Import von Einstellungen <./Usage/ExportImportSettings.rst>
-   xDrip engineering mode <./Usage/Enabling-Engineering-Mode-in-xDrip.md>
+   xDrip+ engineering mode <./Usage/Enabling-Engineering-Mode-in-xDrip.md>
 
 .. toctree::
    :maxdepth: 1
@@ -126,7 +126,7 @@ Für weitere Details lies bitte hier weiter.
    :caption: Problembehandlung
 
    Problembehandlung <./Usage/troubleshooting.rst>
-   Nightscout client <./Usage/Troubleshooting-NSClient.md>
+   Nightscout Client <./Usage/Troubleshooting-NSClient.html>
 
 .. toctree::
    :maxdepth: 1
@@ -178,4 +178,4 @@ Für weitere Details lies bitte hier weiter.
 
 	* Sämtliche Produkt- und Herstellernamen, Handelsmarken, Dienstleistungsmarken, Warenzeichen und eingetragene Dienstleistungsmarken sind Eigentum ihrer jeweiligen Inhaber und werden nur zu Informationszwecken genutzt und nicht für Werbung oder Marketing. Ihre Verwendung dient nur zur Information und bedeutet weder, dass AAPS zu ihnen gehört, noch dass sie unterstützt werden.
 
-	Please note - this project has no association with and is not endorsed by: `SOOIL <https://www.sooil.com/eng/>`_, `Dexcom <https://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <https://www.accu-chek.com/>`_ or `Medtronic <https://www.medtronic.com/>`_
+	Bitte beachten: Dieses Projekt steht in keinerlei Verbindung mit `SOOIL <https://www.sooil.com/eng/>`_, `Dexcom <https://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <https://www.accu-chek.com/>`_ oder `Medtronic <https://www.medtronic.com/>`_
