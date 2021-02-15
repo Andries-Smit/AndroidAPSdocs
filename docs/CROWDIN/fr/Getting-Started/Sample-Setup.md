@@ -18,7 +18,7 @@ Néanmoins, les données sont automatiquement envoyées à Nightscout "in the cl
 ## Composants requis
 
 1. Samsung Galaxy S7
- * Alternatives: see [list of tested phones and watches](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit) for AndroidAPS
+ * Alternatives : Toutes les [montres avec Google Wear OS](https://wearos.google.com/intl/de_de/#find-your-watch) devraient fonctionner correctement, pour plus de détails, voir la [liste des téléphones et montres testés](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit#gid=698881435) pour AndroidAPS (l'OS doit être Android Wear ou Wear OS)
 
 2. [DanaRS](http://www.sooil.com/eng/product/)
  * Alternatives:
@@ -29,7 +29,7 @@ Néanmoins, les données sont automatiquement envoyées à Nightscout "in the cl
    - D'autres pompes pourraient être disponibles à l'avenir, voir [futures pompes possibles](Future-possible-Pump-Drivers.md) pour plus de détails.
 
 3. [Dexcom G6](https://dexcom.com)
- * Alternatives: see list of possible [BG sources](../Configuration/BG-Source.rst)
+ * Alternatives : voir la liste des sources [contrôles glycémique possibles](../Configuration/BG-Source.rst)
 
 4. Optional: Sony Smartwatch 3 (SWR50)
  * Alternatives: All [watches with Google Wear OS](https://wearos.google.com/intl/de_de/#find-your-watch) should work fine, for details see [list of tested phones and watches](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit) for AndroidAPS (OS must be Android Wear)
