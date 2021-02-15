@@ -119,13 +119,13 @@ Doel 8: Pas basaalstanden en de ratio's aan indien nodig, activeer hierna de Aut
 * Je kunt `Autotune <https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autotune.html>`_ gebruiken om eenmalig te laten berekenen of jouw basaalstanden goed zijn ingesteld, of een traditionele basaaltest doen.
 * Schakel `Autosens <../Usage/Open-APS-features.html>`_ in gedurende een periode van 7 dagen en bekijk de witte lijn in de grafiek op het Overzichts-scherm. en houd op de OpenAPS tab in de gaten hoe AndroidAPS de basaalstanden en/of streefdoelen dienovereenkomstig aanpast.
 
-*Don’t forget to record your looping in `this form <https://bit.ly/nowlooping>`_ logging AndroidAPS as your type of DIY loop software, if you have not already done so.*
+*Vergeet niet om jezelf als nieuwe looper aan te melden via 'dit formulier <http://bit.ly/nowlooping>'_ en AndroidAPS als jouw type loop-software te kiezen, als je dat nog niet gedaan hebt.*
 
 
 Doel 9: Probeer extra functies voor gebruik overdag en krijg vertrouwen in jouw closed loop systeem
 ====================================================================================================
-* Before AAPS version 2.7 meal assist (MA) was the basic algorithm for AAPS and completing objective 8 was necessary to activate `advanced meal assist (AMA) <../Usage/Open-APS-features.html#advanced-meal-assist-ama>`__.
-* As `advanced meal assist (AMA) <../Usage/Open-APS-features.html#advanced-meal-assist-ama>`__ is the standard algorithm from AAPS version 2.7 onwards use the following 28 days to try features you haven't used yet and get more confident with you closed loop system.
+* Vóór de AAPS versie 2.7 was maaltijd assist (MA) het basisalgoritme voor AAPS en je moest doel 8 hebben afgerond om `advanced meal assist (AMA) <../Usage/Open-APS-features.html#geavanceeerde-maaltijdhulp-ama>`_ te activeren.
+* Omdat `advanced meal assist (AMA) <../Usage/Open-APS-features.html#geavanceerde-maaltijdhulp-ama>`_ inmiddels het standaard algoritme is bij AAPS versie 2.7, kun je de komende 28 dagen gebruiken om functies uit te proberen die je nog niet hebt gebruikt en om meer vertrouwen te krijgen in je gesloten loop systeem.
 
 
 Doel 10: Activeren van extra functies overdag zoals SMB (Super Micro Bolus)
