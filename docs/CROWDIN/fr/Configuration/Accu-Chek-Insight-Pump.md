@@ -86,7 +86,7 @@ Pendant les périodes où la pompe est débranchée, AAPS va enregistrer un déb
 
 * "Délai de déconnexion": indique combien de temps (en secondes) AndroidAPS attendra avant de se déconnecter de la pompe une fois l'opération terminée. La valeur par défaut est de 5 secondes.
 
-For periods when pump was stopped AAPS will log a temp. basal rate with 0%.
+For periods when pump was stopped AAPS will log a temp. de basal temporaire avec 0%.
 
 Configurez les alarmes dans la pompe comme suit :
 * Actualiser : Actualise l'état de la pompe
