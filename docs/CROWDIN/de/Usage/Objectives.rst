@@ -119,13 +119,13 @@ Ziel 8: Passe, falls notwendig, Basalraten und Faktoren an und aktiviere dann di
 * Du kannst  `Autotune <https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autotune.html>`_ verwenden, um dafür zu sorgen, dass Deine Basalraten korrekt bleiben oder einen traditionellen Basalratentest durchführen.
 * Schalte `Autosens <../Usage/Open-APS-features.html>`_ für einen Zeitraum von 7 Tagen ein und beobachte die weiße Linie auf der Grafik auf dem Hauptbildschirm, die anzeigt, dass deine Sensibilität gegenüber Insulin auf Grund von Aktivitäten oder Hormonen steigt oder fällt. Schaue auf dem OpenAPS-Tab nach, wie AndroidAPS die Basalraten und/oder Zielwerte entsprechend anpasst.
 
-*Don’t forget to record your looping in `this form <https://bit.ly/nowlooping>`_ logging AndroidAPS as your type of DIY loop software, if you have not already done so.*
+Gib AndroidAPS als Art deiner DIY Loop-Software an.*
 
 
 Ziel 9: Teste zusätzliche Funktionen für den Alltagsgebrauch und gewinne Vertrauen in Dein Closed Loop System
 ====================================================================================================
-* Before AAPS version 2.7 meal assist (MA) was the basic algorithm for AAPS and completing objective 8 was necessary to activate `advanced meal assist (AMA) <../Usage/Open-APS-features.html#advanced-meal-assist-ama>`__.
-* As `advanced meal assist (AMA) <../Usage/Open-APS-features.html#advanced-meal-assist-ama>`__ is the standard algorithm from AAPS version 2.7 onwards use the following 28 days to try features you haven't used yet and get more confident with you closed loop system.
+* In Versionen von 2.7 war der Meal Assist (MA) der Standard-Algorithmus für AAPS und das Ziel 8 war notwendig, um den  `advanced meal assist (AMA) <../Usage/Open-APS-features.html#erweiterter-mahlzeit-assistent-ama>`_ zu verwenden.
+* Da der `advanced meal assist (AMA) <../Usage/Open-APS-features.html#erweiterter-mahlzeit-assistent-ama>`_ ab Version 2.7 der neue Standard-Algorithmus in AAPS ist, kannst Du diese 28 Tage nutzen, um Funktionen zu testen, die Du bisher nicht verwendet hast, und mehr Vertrauen in Dein Closed Loop System zu gewinnen.
 
 
 Ziel 10: Aktiviere zusätzliche oref1 Funktionen zum täglichen Gebrauch, wie z.
