@@ -17,7 +17,7 @@ Die Nutzung des G6 kann vielleicht etwas komplexer sein, als zunächst vermutet.
 * Pre-soaking of the G6 with factory calibration is likely to give variation in results. Falls Du mit "pre-soaking" arbeitest, wirst Du wahrscheinlich besser Ergebnisse erzielen, wenn Du den Sensor kalibrierst.
 besser bei der Verlängerung auf die Werkskalibrierung zu verzichten und das System wie den G5 (mit "Pflichtkalibrierung") zu nutzen.
 
-To learn more about the details and reasons for these recommendations read the `complete article <https://www.diabettech.com/artificial-pancreas/diy-looping-and-cgm/>`_ published by Tim Street at `www.diabettech.com <https://www.diabettech.com>`_.
+Mehr zu den Details und Gründen für diese Empfehlungen findest Du im `kompletten Artikel (englisch) <http://www.diabettech.com/artificial-pancreas/diy-looping-and-cgm/>`_ von Tim Street auf seiner Seite `www.diabettech.com <http://www.diabettech.com>`_.
 
 Dexcom G6 mit xDrip+
 ==================================================
@@ -26,8 +26,8 @@ Dexcom G6 mit xDrip+
 * Falls Du Clarity benötigst und trotzdem von den xDrip+ Alarmen profitieren willst, musst Du die <./Hardware/DexcomG6.html#g6-mit-der-gepatchten-dexcom-app>gepatchte Dexcom App</a> mit lokaler Datenübertragung zu xDrip+ verwenden.
 * Lade `xdrip <https://github.com/NightscoutFoundation/xDrip>`_ herunter und folge den Anleitungen auf Nightscout (`G5 <http://www.nightscout.info/wiki/welcome/nightscout-with-xdrip-and-dexcom-share-wireless/xdrip-with-g5-support>`_).
 * Wähle in AndroidAPS > Konfigurations-Generator > BZ-Quelle > xDrip+.
-* Adjust settings in xDrip+ according to `xDrip+ settings page <../Configuration/xdrip.html>`__
-* If AAPS does not receive BG values when phone is in airplane mode use 'Identify receiver' as describe on `xDrip+ settings page <../Configuration/xdrip.html>`__.
+* Passe die Einstellungen von xDrip+ entsprechend den Angaben auf der `Seite xDrip+ Einstellungen  <../Configuration/xdrip.html>`_ an.
+* Falls AAPS im Flugmodus keine BZ-Werte von xdrip+ bekommt, nutze `identify receiver` wie auf der Seite `xDrip+ Einstellungen <../Configuration/xdrip.html>`__ beschrieben.
 
 G6 mit der gepatchten Dexcom App
 ==================================================
