@@ -12,12 +12,12 @@ Funktionen
 * Die Eltern können aus der Ferne alle relevanten Daten wie Glukosewerte, aktive Kohlenhydrate, aktives Insulin usw. Dazu können sie die **NSClient App** auf ihrem Smartphone verwenden. Du musst in AndroidAPS und NSClient die gleichen Einstellungen verwenden.
 * Alarme auf den Smartphones der Eltern sind durch Einsatz **xDrip+ im Follower Modus** möglich.
 * Die Fernsteuerung von AndroidAPS mittels `SMS-Befehlen <../Children/SMS-Commands.html>`_ ist durch eine Zwei-Faktor-Authentifizierung abgesichert.
-* Remote control through NSClient app is only recommended if your synchronization is working well (ie. you don’t see unwanted data changes like self modification of TT, TBR etc) see `release notes for Version 2.8.1.1 <../Installing-AndroidAPS/Releasenotes.html#important-hints>`_ for further details.
+* Remote control through NSClient app is only recommended if your synchronization is working well (ie. Siehe `Release Notes für Version 2.8.1.1 <https://androidaps.readthedocs.io/en/latest/EN/Installing-AndroidAPS/Releasenotes.html#wichtige-hinweise>`_ für weitere Details.
 
 Tools und Apps für die Fernüberwachung
 ==================================================
 * `Nightscout <http://www.nightscout.info/>`_ im Webbrowser (vor allem Datenanzeige)
-*	NSClient App There are 2 apps:  `NSClient & NSClient2 to download <https://github.com/nightscout/AndroidAPS/releases/>`_. The only difference is the app name. This way you can install the app twice on the same phone, to be able to follow 2 different persons/nightscouts with it.
+*	NSClient App Die beiden Apps NSClient & NSClient2 können `direkt heruntergeladen <https://github.com/nightscout/AndroidAPS/releases/>`_ werden. Einziger Unterschied ist der App-Name. Dadurch kannst du die App zwei Mal auf dem gleichen Smartphone installieren, wenn du zwei verschiedenen Personen bzw.
 * Dexcom Follow App zusammen mit der originalen Dexcom App (nur BZ-Werte)
 *	`xDrip+ <../Configuration/xdrip.html>`_ im Follower Modus (vor allem Datenanzeige und **Alarme**)
 *	`Sugarmate <https://sugarmate.io/>`_ oder `Spike <https://spike-app.com/>`_ für iOS (vor allem BZ-Werte und **Alarme**)
