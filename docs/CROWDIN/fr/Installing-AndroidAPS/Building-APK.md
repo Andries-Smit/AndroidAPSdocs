@@ -68,7 +68,7 @@ Sélectionnez l'installation "Standard" et cliquez sur "Next".
 
    ![Installation standard](../images/AndroidStudio361_04.png)
 
-Sélectionnez le thème de l'interface utilisateur que vous souhaitez (dans ce manuel, nous avons utilisé "Light"). (In this manual we used "Light".) Cliquez ensuite sur "Next". C'est juste le jeu de couleurs. Vous pouvez choisir n'importe quel type (par ex. "Darcula" pour le mode sombre). Cette sélection n'a aucune influence sur la construction de l'APK.
+Sélectionnez le thème de l'interface utilisateur que vous souhaitez (dans ce manuel, nous avons utilisé "Light"). (dans ce manuel, nous avons utilisé "Light"). Cliquez ensuite sur "Next". C'est juste le jeu de couleurs. Vous pouvez choisir n'importe quel type (par ex. "Darcula" pour le mode sombre). Cette sélection n'a aucune influence sur la construction de l'APK.
 
    ![Couleur de l'interface](../images/AndroidStudio361_05.png)
 
