@@ -19,7 +19,7 @@ For more details, please read on here.
    :glob:
    :caption: Aan de slag
 
-   Change language <./changelanguage.rst>
+   Change language <changelanguage.rst>
 
 .. _getting-started:
 
@@ -118,7 +118,7 @@ For more details, please read on here.
 
    Volgen op afstand <./Children/Children.rst>
    SMS Comando's <./Children/SMS-Commands.rst>
-   Profile helper <./Configuration/profilehelper.rst>
+   Profielhelper <./Configuration/profilehelper.rst>
    
 .. toctree::
    :maxdepth: 1
@@ -178,4 +178,4 @@ For more details, please read on here.
 
 	* Alle product-en bedrijfsnamen, handelsmerken, servicemerken, geregistreerde handelsmerken en geregistreerde dienstmerken zijn eigendom van hun respectievelijke houders. Hun gebruik is voor informatieve doeleinden en impliceert op geen enkele wijze een samenwerking met of goedkeuring van hen.
 
-	Please note - this project has no association with and is not endorsed by: `SOOIL <https://www.sooil.com/eng/>`_, `Dexcom <https://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <https://www.accu-chek.com/>`_ or `Medtronic <https://www.medtronic.com/>`_
+	NB: - dit project is niet gekoppeld aan en wordt niet ondersteund door: `SOOIL <http://www.sooil.com/eng/>`_, `Dexcom <http://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <http://www.accu-chek.com/>`_ of `Medtronic <http://www.medtronic.com/>`_.
