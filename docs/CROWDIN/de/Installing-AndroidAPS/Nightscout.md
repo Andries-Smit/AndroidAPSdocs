@@ -58,4 +58,4 @@ Dieser Service wird von Looper Martin Schiftan derzeit kostenlos angeboten. If y
 * Eine automatisierte Basalratenüberprüfung mit Autotune ist ebenfalls enthalten.
 * Der Server steht in Deutschland.
 
-<https://ns.10be.de/en/index.html>
+[http://ns.10be.de](https://ns.10be.de/en/index.html)
