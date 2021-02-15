@@ -204,10 +204,10 @@ Deliver this part of bolus wizard result
 
 Bolus-Berater
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* If you run `Bolus wizard <../Getting-Started/Screenshots.html#bolus-wizard>`__ and your glucose value is above 10 mmol (180 mg/dl) a correction bolus will be offered.
+* Wenn du den `Bolus-Rechner <../Getting-Started/Screenshots.html#bolus-rechner>`_ verwendest und dein Glukosewert über 180 mg/dl (10 mmol ) liegt, wird ein Korrekturbolus vorgeschlagen.
 * Wenn Du den Vorschlag akzeptierst, werden **keine Kohlenhydrate** aufgezeichnet.
 * Wenn den Glukosewert auf einem guten Level für das Essen liegt, wirst Du benachrichtigt.
-* You have to enter `Bolus wizard <../Getting-Started/Screenshots.html#bolus-wizard>`__ again and enter the amount of carbs you want to eat.
+* Du musst erneut den Bolus-Rechner <../Getting-Started/Screenshots.html#bolus-rechner>`_ aufrufen und die Menge der Kohlenhydrate, die du essen möchtest, eingeben.
 
   .. image:: ../images/Home2021_BolusWizard_CorrectionOffer.png
     :alt: Nachricht des Bolus-Beraters
@@ -264,7 +264,7 @@ Abhängig von Deinen Einstellungen im `Konfigurations-Generator <../Configuratio
 OpenAPS AMA-Einstellungen
 -----------------------------------------------------------
 * Erlaubt AAPS nach einem Essen schneller mit einer Erhöhung der Basalrate zu reagieren - WENN Du die Kohlenhydrate zuverlässig eingibst. 
-* More details about the settings and Autosens can be found in the `OpenAPS docs <https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html>`__.
+* Mehr Details zu den Einstellungen und Autosens findest Du in den `OpenAPS Docs <http://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html>`__.
 
 Maximale IE/h, die als TBR gesetzt werden können
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
