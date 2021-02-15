@@ -19,7 +19,7 @@ Pour plus de détails, lisez la suite ici.
    :glob:
    :caption: Dépannage
 
-   Change language <./changelanguage.rst>
+   Changer de langue <changelanguage.rst>
 
 .. _getting-started:
 
@@ -39,7 +39,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: De quoi ai-je besoin ? 
+   :caption: De quoi ai-je besoin 
 
    Composants <./Module/module.rst>
    Exemple de configuration <./Getting-Started/Sample-Setup.md>
@@ -118,7 +118,7 @@ Pour plus de détails, lisez la suite ici.
 
    Surveillance à distance <./Children/Children.rst>
    Commandes SMS <./Children/SMS-Commands.rst>
-   Profile helper <./Configuration/profilehelper.rst>
+   Assistant Profil <./Configuration/profilehelper.rst>
    
 .. toctree::
    :maxdepth: 1
@@ -162,7 +162,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: How to help
+   :caption: Comment aider
 
    Comment aider <./Getting-Started/How-can-I-help.md>
    Comment traduire l'application et la documentation wiki <./translations.md>
@@ -178,4 +178,4 @@ Pour plus de détails, lisez la suite ici.
 
 	* Tous les noms de produits et de sociétés, marques commerciales, marques de service, marques déposées,  sont la propriété de leurs détenteurs respectifs. Leur utilisation est à titre informatif et n'implique aucune affiliation avec eux ni aucune approbation de leur part.
 
-	Please note - this project has no association with and is not endorsed by: `SOOIL <https://www.sooil.com/eng/>`_, `Dexcom <https://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <https://www.accu-chek.com/>`_ or `Medtronic <https://www.medtronic.com/>`_
+	A noter - ce projet n'a aucun lien avec, et n'est pas approuvé par : `SOOIL <http://www.sooil.com/eng/>`_, `Dexcom <http://www.dexcom.com/>`_, `Accu-Chek, Roche Diabetes Care <http://www.accu-chek.com/>`_ ou `Medtronic <http://www.medtronic.com/>`_
