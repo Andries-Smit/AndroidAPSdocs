@@ -9,7 +9,7 @@ Dans son grand livre `Automated Insulin Delivery <https://www.artificialpancreas
 
 **Pilot automatique dans un avion**
 
-Le pilote automatique ne fait pas le travail complet et ne donne pas la possibilité au pilote de dormir pendant tout le vol. Il facilite le travail des pilotes. It facilitates the work of the pilots. Il les soulage de la charge de la surveillance permanente de l'avion et de l'attitude de vol. Cela permet au pilote de se concentrer sur la surveillance de l'espace aérien et le contrôle des fonctions du pilote automatique. This allows the pilot to concentrate on monitoring the airspace and controlling the autopilot's functions.
+Le pilote automatique ne fait pas le travail complet et ne donne pas la possibilité au pilote de dormir pendant tout le vol. Il facilite le travail des pilotes. Il facilite le travail des pilotes. Il les soulage de la charge de la surveillance permanente de l'avion et de l'attitude de vol. Cela permet au pilote de se concentrer sur la surveillance de l'espace aérien et le contrôle des fonctions du pilote automatique. Cela permet au pilote de se concentrer sur la surveillance de l'espace aérien et le contrôle des fonctions du pilote automatique.
 
 Le pilote automatique reçoit des signaux de différents capteurs, un ordinateur les évalue avec les spécifications du pilote et effectue ensuite les ajustements nécessaires. Le pilote n'a plus à s'inquiéter des ajustements constants.
 
