@@ -217,7 +217,7 @@ Deine tatsächliche BZ-Kurve wird normalerweise in der Mitte dieser Prognoselini
 
 ![Insulin-Button](../images/Home2020_ButtonInsulin.png)
 
-* To give a certain amount of insulin without using [bolus calculator](#bolus-wizard).
+* Um eine bestimmte Menge Insulin zu geben, ohne den [Bolus Rechner](../Getting-Started/Screenshots#bolus-rechner) zu verwenden.
 * Durch Aktivieren des Kästchens können Sie automatisch Ihr [temporäres Ziel für bald Essen](../Configuration/Preferences#vordefinierte-temporare-ziele) starten.
 * Wenn das Insulin nicht durch die Pumpe abgegeben werden soll, sondern Du die Insulinmenge nur erfassen willst (z.B. Insulin mit Spritze gegeben), aktiviere das entsprechende Kästchen.
 
@@ -230,10 +230,10 @@ Deine tatsächliche BZ-Kurve wird normalerweise in der Mitte dieser Prognoselini
 * Zeitverschiebung: Wann wirst Du/hast Du Kohlenhydrate gegessen (in Minuten).
 * Dauer: Wird für ["eCarbs" verwendet](../Usage/Extended-Carbs.rst).
 * Mit den Buttons können Sie schnell die Menge der Kohlenhydrate erhöhen.
-* Notes will be uploaded to Nightscout - depending on your settings for [NS client](../Configuration/Preferences#nsclient).
+* Notizen werden in Nightscout hochgeladen - abhängig von Deinen Einstellungen für den [NS-Client](../Configuration/Preferences#nightscout-client).
 
 #### Bolus-Rechner
-* See Bolus Wizard [section below](#bolus-wizard)
+* Siehe Bolus-Rechner [weiter unten](../Configuration/Screenhots#bolus-rechner).
 
 #### Kalibrierungen
 * Sendet eine Kalibrierung an xDrip + oder öffnet den Dexcom Kalibrierungsdialog.
@@ -273,7 +273,7 @@ Ein Mahlzeiten-Bolus wird normalerweise über den Bolus-Rechner abgegeben.
 ### Abschnitt K
 * Zeigt den errechneten Bolus.
 * Falls IOB (Insulin on board) den berechneten Bolus bereits übersteigt, wird nur die Menge der fehlenden Kohlenhydrate angezeigt.
-* Notes will be uploaded to Nightscout - depending on your settings for [NS client](../Configuration/Preferences#nsclient).
+* Notizen werden in Nightscout hochgeladen - abhängig von Deinen Einstellungen für den [NS-Client](../Configuration/Preferences#nightscout-client).
 
 ### Abschnitt L
 * Details zum Bolus-Rechner.
@@ -302,11 +302,11 @@ Ein Mahlzeiten-Bolus wird normalerweise über den Bolus-Rechner abgegeben.
 * Button [Profilwechsel](../Usage/Profiles#profilwechsel) als Alternative zum Klicken des [aktuellen Profils](../Getting-Started/Screenshots#abschnitt-b-profil-ziel) auf dem Startbildschirm.
 * Button [Temporäres Ziel](../Usage/temptarget#temporare-ziele) als Alternative zum Klicken des [aktuellen Zielwerts](../Getting-Started/Screenshots#abschnitt-b-profil-ziel) auf dem Startbildschirm.
 * Button zum Starten oder Abbrechen einer temporären Basalrate. Beachte, dass sich die Bezeichnung der Schaltfläche von "TBR" zu "Abbrechen X%" ändert, wenn eine temporäre Basalrate abgegeben wird.
-* Even though \[extended boluses\](../Usage/Extended-Carbs#extended boluses) do not really work in a closed loop environment some people were asking for an option to use extended bolus anyway.
+* Auch wenn [verzögerte Boli](../Usage/Extended-Carbs#id1) im Closed Loop nicht wirklich funktionieren, haben einige Nutzer nach einer Option gefragt, um verzögerte Boli dennoch verwenden zu können.
 
    * Diese Option ist nur für Dana RS und Insight Pumpen verfügbar.
    * Der Closed Loop wird automatisch gestoppt und für die Laufzeit des verzögerten Bolus zum Open Loop gewechselt.
-   * Make sure to read the \[details\](../Usage/Extended-Carbs#extended boluses) before using this option.
+   * Lies vor Verwendung dieser Option unbedingt die [-Details](../Usage/Extended-Carbs#id1).
 
 ### Careportal - section N
 
@@ -359,9 +359,9 @@ Ein Mahlzeiten-Bolus wird normalerweise über den Bolus-Rechner abgegeben.
 
 Weitere Informationen zu den verschiedenen Insulintypen, ihren Aktivitätsprofilen und warum dies alles eine Rolle spielt findest du in diesem Artikel: [Understanding the New IOB Curves Based on Exponential Activity Curves](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/understanding-insulin-on-board-calculations.html#understanding-the-new-iob-curves-based-on-exponential-activity-curves)
 
-And you can read an excellent blog article about it here: [Why we are regularly wrong in the duration of insulin action (DIA) times we use, and why it matters…](https://www.diabettech.com/insulin/why-we-are-regularly-wrong-in-the-duration-of-insulin-action-dia-times-we-use-and-why-it-matters/)
+Du solltest auch einen Blick in diesen exzellenten Blog-Artikel werfen: [Why we are regularly wrong in the duration of insulin action (DIA) times we use, and why it matters…](http://www.diabettech.com/insulin/why-we-are-regularly-wrong-in-the-duration-of-insulin-action-dia-times-we-use-and-why-it-matters/)
 
-And even more at: [Exponential Insulin Curves + Fiasp](https://seemycgm.com/2017/10/21/exponential-insulin-curves-fiasp/)
+Und noch mehr bei: [Exponential Insulin Curves + Fiasp](http://seemycgm.com/2017/10/21/exponential-insulin-curves-fiasp/)
 
 ## Status der Pumpe
 ![Status der Pumpe](../images/Screenshot_PumpStatus.png)
