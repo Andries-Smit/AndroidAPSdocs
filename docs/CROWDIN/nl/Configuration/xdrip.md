@@ -92,12 +92,12 @@ Het gebruik van de is G6 misschien wat complexer dan het op het eerste gezicht l
 * Pre-soaking of the G6 with factory calibration is likely to give variation in results. Wanneer je Pre-soakt is het waarschijnlijk het beste om de sensor te kalibreren.
 * Als je om welke reden ook niet in staat bent om op te letten wat er gebeurt tijdens een herstart / na een Pre-soak, dan kun je beter de kalibratiecode niet gebruiken, en jouw sensor gebruiken met kalibraties, net als bij de G5.
 
-To learn more about the details and reasons for these recommendations read the [complete article](https://www.diabettech.com/artificial-pancreas/diy-looping-and-cgm/) published by Tim Street at [www.diabettech.com](https://www.diabettech.com).
+Lees het [volledige artikel](http://www.diabettech.com/artificial-pancreas/diy-looping-and-cgm/) (Engelstalig) van Tim Street voor meer achtergrondinformatie en de redenen achter deze aanbevelingen.
 
 
 ### G6-zender voor de eerste keer verbinden
 
-**For second and following transmitters see [Extend transmitter life](#extend-transmitter-life) below.**
+**Voor de tweede en volgende zender zie [Zender resetten](../Configuration/xdrip#extend-transmitter-life) hieronder.**
 
 Voor G6-zenders met een productie datum na het najaar van 2018 (d.w.z. serie nr. beginnend met 80 of 81) kun je de [master](https://jamorham.github.io/#xdrip-plus) versie gebruiken.
 
@@ -156,7 +156,7 @@ Als je een Dexcom G6 gebruikt en het serienummer van jouw sensor begint met 8G, 
 
 * Tot nu toe kan een zender niet gereset worden waarvan het serienummer begint met 8G, 8H of 8J. Onderstaande instructies werken dus helaas niet voor deze zenders, wel voor oudere modellen. Hetzelfde geldt voor zenders met serienummer beginnend met 81 en firmware 1.6.5.**27** (zie xDrip + System Status-G5/G6 status zoals weergegeven in [screenshot hierboven](../Configuration/xdrip#transmitter-battery-status)).
 * Het wordt aangeraden om de zender te resetten vóórdat hij 100 dagen in gebruik is. Dit om problemen met het starten van sensoren te voorkomen.
-* Use of transmitters serial no. starting with 81 and firmware 1.6.5.**27** beyond day 100 is only possible if [engineering mode](../Usage/Enabling-Engineering-Mode-in-xDrip) is turned on and 'native mode' is deactivated (hamburger menu -> settings -> G5/G6 debug settings -> native algorithm) because a transmitter hard reset is NOT possible.
+* Het gebruik van de zenders waarvan het serienummer begint met 81 en firmware 1.6.5.**27** na dag 100 is alleen mogelijk als 'engineering mode' is ingeschakeld en 'native modus' uitgeschakeld is (hamburger menu-> instellingen-> G5/G6 foutopsporingsinstellingen-> native algoritme) omdat een zender hard reset NIET mogelijk is.
 * De actieve sensor sessie zal worden gestopt bij het resetten van de zender. So, extend before sensor change or be aware that there will be a new 2 h warm-up phase.
 * Stop de sensor handmatig via het hamburger menu.
 * Schakel de `engineering mode` in:
