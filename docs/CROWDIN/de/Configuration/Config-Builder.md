@@ -87,7 +87,7 @@ Nachteile:
 ![Insulintyp](../images/ConfBuild_Insulin.png)
 
 * Hier musst du auswählen, welchen Insulintyp du verwendest.
-* Die Oref Optionen 'Rapid-Acting Oref', Ultra-Rapid Oref', 'Lyumjev' und 'Free-Peak Oref' haben einen exponentiellen Verlauf. More information is listed in the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/understanding-insulin-on-board-calculations.html#understanding-the-new-iob-curves-based-on-exponential-activity-curves).
+* Die Oref Optionen 'Rapid-Acting Oref', Ultra-Rapid Oref', 'Lyumjev' und 'Free-Peak Oref' haben einen exponentiellen Verlauf. Mehr Informationen dazu finden sich in den [OpenAPS docs](http://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/understanding-insulin-on-board-calculations.html#understanding-the-new-iob-curves-based-on-exponential-activity-curves).
 * Diese Kurven variieren basierend auf der DIA (Insulinwirkdauer) und dem zeitlichen Abstand zum Wirkmaximum.
 
    * Die LILA Line zeigt, wie viel **Insulin nach einer Injektion verbleibt** und wie es im Zeitverlauf abgebaut wird.
@@ -157,7 +157,7 @@ Wenn Du eine Dana-Pumpe nutzt, kannst Du in den **erweiterten Einstellungen** de
 Das [Passwort für die Dana RS Pumpe](../Configuration/DanaRS-Insulin-Pump.md) muss korrekt eingegeben werden. Das Passwort wurde in früheren Versionen nicht überprüft.
 
 ## Empfindlichkeitserkennung
-Hier kannst du auswählen, nach welchem Algorithmus AAPS die Insulinempfindlichkeit berechnen soll. Die Details der verschiedenen Modelle sind [hier](../Configuration/Sensitivity-detection-and-COB.md) näher beschrieben. Bei der Empfindlichkeitserkennung werden historische Daten "on the go" analysiert und Anpassungen vorgenommen, falls der Algorithmus feststellt, dass du sensibler oder weniger empfindlich auf das Insulin reagierst als üblich.  More details about the Sensitivity algorithm can be read in the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/walkthrough/phase-4/advanced-features.html#auto-sensitivity-mode).
+Hier kannst du auswählen, nach welchem Algorithmus AAPS die Insulinempfindlichkeit berechnen soll. Die Details der verschiedenen Modelle sind [hier](../Configuration/Sensitivity-detection-and-COB.md) näher beschrieben. Bei der Empfindlichkeitserkennung werden historische Daten "on the go" analysiert und Anpassungen vorgenommen, falls der Algorithmus feststellt, dass du sensibler oder weniger empfindlich auf das Insulin reagierst als üblich.  Mehr Details zum Sensitivitäts-Algorithmus findest du in den [OpenAPS Docs](http://openaps.readthedocs.io/en/latest/docs/walkthrough/phase-4/advanced-features.html#auto-sensitivity-mode).
 
 You can view your sensitivity on the homescreen by selecting SEN and watching the white line.  Die [Empfindlichkeitserkennung Autosens](../Usage/Open-APS-features#autosens) ist erst freigeschaltet, wenn du [Ziel (objective) 8](../Usage/Objectives#ziel-8-passe-falls-notwendig-basalraten-und-faktoren-an-und-aktiviere-dann-die-autosens-funktion) erreicht hast. Before reaching that objective, the Autosens percentage / the line in your graph is displayed for information only.
 
@@ -166,7 +166,8 @@ Wenn Du Oref1 mit SMB musst du **min_5m_carbimpact** auf 8 ändern. Dieser Wert 
 
 ## APS
 Wähle den gewünschten APS-Algorithmus für Therapie-Anpassungen. Die Details zum ausgewählten Algorithmus findest du im Reiter OpenAPS (OPAS).
-- OpenAPS AMA (advanced meal assist, state of the algorithm in 2017) More detail about OpenAPS AMA can be found in the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html#advanced-meal-assist-or-ama). Kurz gesagt: Der Vorteil ist, dass das System schneller mit einer Erhöhung der Basalrate reagieren kann, nachdem Du einen Mahlzeitenbolus abgegeben hast.
+- OpenAPS AMA (advanced meal assist, Algorithmus aus 2017)  
+  Details zu OpenAPS AMA findest Du in der [OpenAPS Dokumentation](http://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html#advanced-meal-assist-or-ama). Kurz gesagt: Der Vorteil ist, dass das System schneller mit einer Erhöhung der Basalrate reagieren kann, nachdem Du einen Mahlzeitenbolus abgegeben hast.
 - [OpenAPS SMB](../Usage/Open-APS-features.md) (super micro bolus, aktuellster Algorithmus für erfahrene Anwender  
   Hinweis: OpenAPS SMB steht ab dem [10. Ziel](../Usage/Objectives#objective-10-enabling-additional-oref1-features-for-daytime-use-such-as-super-micro-bolus-smb) (objective 10) zur Verfügung und min_5m_carbimpact muss auf 8 eingestellt werden (Konfigurations-Generator > Sensitivitätserkennung > Sensitivität Oref1 Einstellungen).
 
