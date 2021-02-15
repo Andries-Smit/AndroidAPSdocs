@@ -43,7 +43,7 @@ Mai 2020
 
 April 2020
 ==================================================
-* `Backdate insulin <../Usage/CPbefore26.html#carbs-bolus>`_ (i.e. bei Abgabe mit Spritze)
+* `Insulin nachträglich erfassen <../Usage/CPbefore26.html#id1>`_ (z.B. bei Abgabe mit Spritze)
 * `Android 6 Unterstützung wird mit der nächsten Master Version eingestellt <../Module/module.html#smartphone>`_
 
 März 2020
@@ -58,7 +58,7 @@ Februar 2020
 * `Automation caveats <../Usage/Automation.html#good-practice-caveats>`_
 * `Autosens <../Usage/Open-APS-features.html#autosens>`_ - kurze Erklärung
 * ` Careportal Alternativen <../Usage/CPbefore26.html>`_
-* `Extended bolus <../Usage/Extended-Carbs.html#extended-bolus>`_ feature - closed loop will be disabled
+* `Verzögerter Bolus <../Usage/Extended-Carbs.html#id1>`_ - der Closed Loop wird unterbrochen
 * Neues `Plugin Lokales Profil <../Configuration/Config-Builder.html#lokales-profil-empfohlen>`_
 * `Konfigurationsbeispiel <../Getting-Started/Sample-Setup.html>`_ - Update Dexcom G6
 * `Version 2.6.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-6-0>`_ - wichtige neue Funktionen
@@ -81,7 +81,7 @@ November 2019
 ==================================================
 * `Automation - bei deaktiviertem Loop ausschalten <../Usage/Automation.html#wichtiger-hinweis>`_
 * `Dexcom G6 Update zum Transmitter-Wechsel <../Configuration/xdrip.html#transmitter-ersetzen>`_
-* `Extended bolus - why they do not work in a loop context <../Usage/Extended-Carbs.html#extended-bolus>`_
+* `Warum ein verzögerter Bolus beim Loopen nicht funktioniert <../Usage/Extended-Carbs.html#id1>`_
 * `FAQ - Sport <../Getting-Started/FAQ.html#sport>`_
 * `Homescreen - lines on graph <../Getting-Started/Screenshots.html#section-f-main-graph>`_
 * `Insight - Absolute Werte im NS Client deaktivieren <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_
@@ -96,7 +96,7 @@ November 2019
 
 Oktober 2019
 ==================================================
-* `AAPS version 2.5 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`_ updates (especially on `update page <../Installing-AndroidAPS/Update-to-new-version.html>`_)
+* `AAPS Version 2.5 <../Installing-AndroidAPS/Releasenotes.html#id16>`_ - Seitenaktuallisierungen (vor allem auf der Seite `Update auf eine neue Version <../Installing-AndroidAPS/Update-to-new-version.html>`_)
 * `AccuChek Insight-Log-Optionen <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_
 * `Aktiven Kohlenhydrate (COB) - eigene Seite <../Usage/COB-calculation.html>`_
 *  `Aktiven Kohlenhydrate (COB) - Fehlerhafte Ermittlung <../Usage/COB-calculation.html#erkennung-fehlerhafter-cob-werte>`_
