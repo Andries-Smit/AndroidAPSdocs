@@ -79,7 +79,7 @@ AndroidAPS émettra une alarme si l'heure entre la pompe et le téléphone est t
 5. Si la situation concernant la quantité d'IA/GA n'est pas claire - veuillez désactiver la boucle pour au minimum la DAI ou la durée d'absorpsion max des glucides - (la plus grande des deux).
 
 ### Actions à faire apès le changement d'heure
-Un bon moment pour faire ce changement serait avec des IA faibles. E.g. une heure avant un repas tel que le petit-déjeuner, (tous les bolus récents dans l'histoire de la pompe auront été de petites corrections avec des SMB, votre GA et votre IA devraient tous les deux être proches de zéro). Your COB and IOB should both be close to zero.)
+Un bon moment pour faire ce changement serait avec des IA faibles. E.g. une heure avant un repas tel que le petit-déjeuner, (tous les bolus récents dans l'histoire de la pompe auront été de petites corrections avec des SMB, votre GA et votre IA devraient tous les deux être proches de zéro). votre GA et votre IA devraient tous les deux être proches de zéro).
 
 1. Remettez le fuseau horaire Android de votre lieu actuel et réactivez le fuseau horaire automatique.
 2. AndroidAPS va bientôt vous avertir que l'heure du Combo ne correspond pas. Mettez à jour l’heure de la pompe manuellement via l’écran et les boutons de la pompe.
