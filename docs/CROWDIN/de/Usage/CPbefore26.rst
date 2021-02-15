@@ -38,7 +38,7 @@ CGM & OpenAPS
   :alt: Careportal CGM & OpenAPS
   
 * Das Setzen des CGM-Sensors kannst Du jetzt im Tab / Menü "Aktionen" erfassen.
-* Alle anderen Funktionen aus diesem Abschnitt wurden entfernt. You can use the note field in the dialogue box when performing an action like giving bolus etc. (see screenshot in section `carbs & bolus <#carbs-bolus>`__ on this page).
+* Alle anderen Funktionen aus diesem Abschnitt wurden entfernt. You can use the note field in the dialogue box when performing an action like giving bolus etc. Bolusabgabe durchgeführt wird (siehe Screenshot im Bereich `Kohlenhydrate & Bolus <#kohlenhydrate--bolus>`__ auf dieser Seite).
 
 Pumpe
 ==============================
