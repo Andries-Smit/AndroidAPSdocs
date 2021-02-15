@@ -29,7 +29,7 @@ Dus zorg ervoor dat je de Automation-regels deactiveert indien nodig. Je kunt di
 
 Waar vind je Automatisering
 --------------------------------------------------
-Depending on your `settings in config builder <../Configuration/Config-Builder.html#tab-or-hamburger-menu>`_ you will either find `Automation <../Configuration/Config-Builder.html#automation>`__ in hamburger menu or as a tab.
+Afhankelijk van jouw `instellingen in de configurator <../Configuration/Config-Builder.html#tabblad-of-hamburger-menu>`_ vind je `Automatiisering <../Configuration/Config-Builder.html#automatisering>`_ in het hamburger menu of als een tabblad.
 
 Algemeen
 --------------------------------------------------
@@ -109,10 +109,10 @@ Good practice & caveats
 
   **Extra belangrijk wanneer de actie een profiel wissel is!**
  
-* Probeer tijdelijke streefdoelen te gebruiken in plaats van profiel wissels. Temp Targets do not reset `Autosens <../Usage/Open-APS-features.html#autosens>`__ back to 0.
+* Probeer tijdelijke streefdoelen te gebruiken in plaats van profiel wissels. Tijdelijke streefdoelen resetten `Autosens <../Usage/Open-APS-features.html#autosens>`_ niet.
 * Gebruik profielwissels daarom spaarzaam en zet ze bij voorkeur pas in als laatste redmiddel.
 
-  * Profile switching renders `Autosens <../Usage/Open-APS-features.html#autosens>`__ useless for a min of 6 hours.
+  * Elke profielwissel maakt `Autosens <../Usage/Open-APS-features.html#autosens>`_ nutteloos voor minimaal 6 uur.
 
 * Een profielwissel zal het profiel NIET automatisch terugzetten naar jouw basisprofiel wanneer de condities van jouw regel niet meer van toepassing zijn.
 
@@ -149,7 +149,7 @@ Behoed jezelf voor onjuist gebruik van automatisering. Dit kan leiden tot proble
 * Instellen van profielwissel om voor voedsel te compenseren
 * Instellen van een profielwissel zonder duur
 * Het maken van een regel die maar één kant op gaat (d.w.z. je maakt een regel om iets aan te zetten, zonder ook een regel te hebben om het weer uit te zetten)
-* Creating long term rules
+* Het maken van regels met een hele lange duur
 
 Alternatieven
 ==================================================
