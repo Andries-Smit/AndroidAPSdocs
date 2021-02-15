@@ -22,7 +22,7 @@ Bitte beachte die `wichtigen Hinweise <../Installing-AndroidAPS/Releasenotes.htm
 Wesentliche Änderungen
 ----------------------
 * Verbesserung der Sicherheit @dlvoy
-* more tweaking for Android 8+
+* Weitere Anpassungen für Android 8+
 * Neues App-Icon
 * Watchface Korrekturen
 * Neues NSClient-Layout für Tablets @MilosKozak
@@ -39,7 +39,7 @@ Wichtige Hinweise
 * ACHTUNG: KEINESFALLS deaktivieren, wenn irgendeine andere App Behandlungen zu Nightscout hochlädt (z.B.
 * Die Option kann nur deaktiviert werden, wenn der engineering mode aktiviert ist.
 
-Major changes
+Wesentliche Änderungen
 ----------------------
 * Verbesserungen und Fehlerbehebungen für RileyLink, Omnipod und Medtronic Pumpen
 * forced NS_UPLOAD_ONLY
@@ -73,7 +73,7 @@ Wichtige neue Funktionen
 * Bei Verwendung der nativen Dexcom App werden über mehr als 45 Minuten unveränderte CGM-Werte in SMB weiter berücksichtigt.
 * Neues `Erscheinungsbild für niedrige Bildschirmauflösungen <../Configuration/Preferences.html#erscheinungsbild>`_
 * Neuer Patiententyp `"Schwanger" <../Usage/Open-APS-features.html#ubersicht-der-fest-programmierten-limits>`_ @Brian Quinion
-* New NSClient tablet layout @MilosKozak 
+* Neues NSClient-Layout für Tablets @MilosKozak 
 * NSClient überträgt Insulin, Senstivität und Anzeige-Einstellungen direkt von AAPS @MilosKozak 
 * `Filter für Einstellungen im 3-Punkte-Menü <../Configuration/Preferences.html>`_ @Brian Quinion
 * Neue Pumpensymbole @Rig22 @@teleriddler @osodebailar
@@ -162,7 +162,7 @@ Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder
 Wichtige neue Funktionen
 -----
 * Fehlerbehebung SMS CARBS Kommando in Zusammenhang mit der Combo Pumpe
-* Otherwise is equal to 2.6.1. Wenn Dich der Fehler nicht betrifft, musst Du nicht updaten.
+* Sonst identisch mit 2.6.1. Wenn Dich der Fehler nicht betrifft, musst Du nicht updaten.
 
 Version 2.6.1
 ==============
@@ -172,7 +172,7 @@ Nutze bitte `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ oder
 
 Wichtige neue Funktionen
 -----
-* Allow to enter only ``https://`` in NSClient settings
+* Nur https:// in Nightscout-Client Einstellungen erlaubt
 * Fehlerbehebung `BGI <../Getting-Started/Glossary.html>`_ Anzeige auf der Smartwatch
 * Kleiner Anzeigefehler behoben
 * Korrekturen Insight Treiber
@@ -201,7 +201,7 @@ Wichtige neue Funktionen
   * Profilwechsel können in ein neues lokales Profil geklont werden (Zeitverschiebung und Prozentsatz werden berücksichtigt).
   * Neue Eingabemöglichkeit für Zielwerte
 * Einfaches Profil wurde entfernt.
-* `Extended bolus <../Usage/Extended-Carbs.html#extended-bolus>`_ feature - closed loop will be disabled
+* `Verzögerter Bolus <../Usage/Extended-Carbs.html#id1>`_ - der Closed Loop wird unterbrochen
 * Medtronic Pumpe: Fehler mit doppelten Einträgen behoben
 * Maßeinheiten (mmol / mg/dl) werden nicht mehr im Profil angegeben, sondern als globale Einstellung.
 * Neue Einstellungen zum Einrichtungsassistenten hinzugefügt.
@@ -224,7 +224,7 @@ Version 2.5.1
 ==================================================
 Erscheinungsdatum: 31.10.2019
 
-Please note the `important notes <../Installing-AndroidAPS/Releasenotes.html#important-notes-2-5-0>`_ and `limitations <../Installing-AndroidAPS/Releasenotes.html#is-this-update-for-me-currently-is-not-supported>`_ listed for `version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`__. 
+Bitte beachte die `wichtigen Hinweise <../Installing-AndroidAPS/Releasenotes.html#wichtige-hinweise>`_ und `Beschränkungen <../Installing-AndroidAPS/Releasenotes.html#kann-ich-dieses-update-nutzen-aktuell-werden-noch-nicht-unterstutzt>`_, die bei `Version 2.5.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-5-0>`_ aufgeführt sind. 
 * Es wurde ein Fehler im Netzwerk-Status-Empfänger behoben, der zu einigen Abstürzen geführt hat (nicht kritisch, würde aber viel Energie verbrauchen auf Grund der ständigen Neuberechnungen).
 * Eine neue Versionssteuerung, die es ermöglicht, kleinere Aktualisierungen durchzuführen, ohne die Aktualisierungsbenachrichtigung auszulösen.
 
@@ -272,7 +272,7 @@ Erscheinungsdatum: 25.04.2019
 Wichtige neue Funktionen
 --------------------------------------------------
 * Wichtiger Sicherheitsfix für Insight (wirklich wichtig, wenn Du die Insight nutzt!)
-* Fix History-Browser
+* Verbesserung Historie @MilosKozak
 * Bugfix Delta-Berechnungen
 * Sprach-Updates
 * Überprüfung git und Warnung bei gradle Upgrade
@@ -290,7 +290,7 @@ Wichtige neue Funktionen
 --------------------------------------------------
 * Korrektur Autosens: deaktiviert TT Anstiege / senkt Zielwert
 * Viele neue Übersetzungen
-* Insight driver fixes
+* Korrekturen Insight Treiber
 * Korrektur SMS-Plugin
 
 
@@ -324,12 +324,12 @@ Wichtige neue Funktionen
 
 Misc
 --------------------------------------------------
-* If you are using non default ``smbmaxminutes`` value you have to setup this value again
+* Falls Du ein vom Standard abweichenden smbmaxminutes Wert nutzt, musst Du diesen erneut eingeben.
 
 
 Version 2.0
 ==================================================
-Release date: 03-11-2018
+Erscheinungsdatum: 03.11.2018
 
 Wichtige neue Funktionen
 --------------------------------------------------
@@ -342,7 +342,7 @@ Einstellungen, die bei Umstellung von AMA zu SMB erforderlich sind
 * Objective 10 muss gestartet sein, damit die SMB-Funktion zur Verfügung steht (der SMB-Reiter zeigt dir, welche Beschränkungen bestehen).
 * maxIOB enthält nun das gesamte IOB, nicht nur das hinzugefügte Basalinsulin. Das bedeutet: Wenn du einen Bolus von 8 IE gegeben hast und maxIOB ist 7, dann wird kein SMB ausgelöst, solange das Gesamt-IOB nicht wieder auf unter 7 IE abgefallen ist.
 * Der Standardwert von min_5m_carbimpact erhöht sich von 3 bei AMA auf 8 beim SMB. Wenn du also von AMA auf SMB umstellst, dann musst du den Wert manuell auf 8 erhöhen.
-* Note when building AndroidAPS 2.0 apk: Configuration on demand is not supported by the current version of the Android Gradle plugin! Wenn der Build-Prozess mit einem Fehler zu "on demand configuration" fehlschlägt, dann kannst du folgendes tun:
+* Bitte beachte beim Erstellen einer AndroidAPS 2.0 apk: Configuration on demand wird in der aktuellen Version des Android Gradle Plugins nicht unterstützt! Wenn der Build-Prozess mit einem Fehler zu "on demand configuration" fehlschlägt, dann kannst du folgendes tun:
 
   * Das Einstellungen-Fenster öffnen, indem du auf Datei > Einstellungen (auf dem Mac: Android Studio > Preferences) klickst.
   * Klicke im linken Fensterbereich auf Build, Execution, Deployment > Compiler.
@@ -355,7 +355,7 @@ Overview tab
 * Neue Behandlungs-Schaltfläche: die alte Behandlungs-Schaltfläche ist weiterhin verfügbar, aber standardmäßig deaktiviert. Visibility of buttons can now be configured. Neue Buttons für Insulin und Kohlenhydrate (inkl.
 * `Colored prediction lines <../Getting-Started/Screenshots.html#prediction-lines>`_
 * Option in den Dialogen für Insulin, Kohlenhydrate, Rechner und Füllen/Vorfüllen ein Feld für Bemerkungen, die zu Nightscout hochgeladen werden, anzuzeigen.
-* Updated prime/fill dialog allows priming and creating careportal entries for site change and cartridge change
+* Überarbeiteter Füllen/Vorfüllen-Dialog. Möglichkeit, gleichzeitig Careportal-Einträge für Katheter- und Reservoirwechsel zu erstellen.
 
 Smartwatch
 --------------------------------------------------
@@ -374,8 +374,8 @@ Misc
 --------------------------------------------------
 * Die App verwendet jetzt “drawer”, um alle Plugins zu zeigen.
 * Überarbeitung des Konfigurations-Generators und des Objectives-Reiters.
-* New app icon
-* Lots of improvements and bugfixes
+* Neues App-Icon
+* Verbesserungen an der Benutzerschnittstelle und programmintern.
 * Von Nightscout unabhängige Alarme wenn die Pumpe über längere Zeit nicht erreichbar ist (z.B. schwache Pumpenbatterie) und bei verpassten CGM-Werte (siehe lokale Alarme in den Einstellungen).
 * Option, das Display immer an zu lassen.
 * Option, die Hinweise als Systemmeldungen anzuzeigen.
