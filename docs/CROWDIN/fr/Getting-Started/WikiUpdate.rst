@@ -1,7 +1,7 @@
 Mises à jour et modifications de la documentation
 **************************************************
 
-Janvier 2021
+January 2021
 ==================================================
 * `Onglet Actions <../Getting-Started/Screenshots.html#onglet-actions>`_ - plus de détails dans la page des 'Écrans AndroidAPS'
 * Dexcom G6 avec `Votre propre application Dexcom <../Hardware/DexcomG6.html#si-vous-utilisez-g6-avec-votre-propre-application-dexcom>`_
@@ -9,26 +9,26 @@ Janvier 2021
 * `Objectifs <../Usage/Objectives.html#objectif-3-prouver-ses-connaissances>`_ - nouvelles questions
 * Autres `nouvelles fonctions d'AndroidAPS 2.8.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-8-0>`_
 
-Décembre 2020
+December 2020
 ==================================================
 * `Libre 2 <../Hardware/Libre2.html>`_ - l'application patchée ne fonctionne pas avec les capteurs US
 * `Limites OpenAPS codées en dur <../Usage/Open-APS-features.html#apercu-des-limites-codees-en-dur>`_
 * Sony Smartwatch 3 `Installation manuelle du service Google Play <../Usage/SonySW3.html>`_
 
-Octobre 2020
+October 2020
 ==================================================
 * Accu-Chek Combo - Mise à jour `réglage duchangement d'heure <../Usage/Timezone-traveling.html#changements-d-heure>`_
 * `AccuChek Insight - options d'enregistrement <../Configuration/Accu-Chek-Insight-Pump.html#settings-in-aaps>`_
 * Journaux - plus de détails sur `l'emplacement du dossier <../Usage/Accessing-logfiles.html>`_
-* Omnipod Eros - `mise à jour du statut <../Getting-Started/Future-possible-Pump-Drivers.html#pompes-qui-sont-bouclable>`_
+* Omnipod Eros - status update
 * `Commandes SMS - Synchronisation de l'heure <../Children/SMS-Commands.html>`_
 
-Septembre 2020
+September 2020
 ==================================================
 * Mise à jour majeure pour la nouvelle version AAPS 2.7
-* Pour plus de détails, voir les `notes de version <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`_
+* For details see `release notes <../Installing-AndroidAPS/Releasenotes.html#version-2-7-0>`
 
-Janvier 2020
+June 2020
 ==================================================
 * `Libre 2 <../Hardware/Libre2.html>`_ - plus de détails sur l'application LibreLink patchée & l'utilisation des transmetteurs bluetooth
 * `Changement de fuseau horaire <../Usage/Timezone-traveling.html>`_ avec Libre 2
@@ -46,11 +46,11 @@ Avril 2020
 * `Antidater l'insulin <../Usage/CPbefore26.html#id1>`_ (par ex. injectée avec une seringue)
 * `La prise en charge Android 6 sera interrompue dans la prochaine version majeure <../Module/module.html#telephone>`_
 
-Juin 2020
+March 2020
 ==================================================
 * `Générer l'apk avec Android Studio 3.6.1 <../Installing-AndroidAPS/Building-APK.html>`_
 * `La DanaRS avec le firmware v3 <../Configuration/DanaRS-Insulin-Pump.html>`_ **ne peut actuellement pas être utilisée avec AndroidAPS !**
-* La fonction `Bolus étendus <../Usage/Extended-Carbs.html#bolus-etendu>`_ désactive la boucle fermée
+* `Extended bolus and switch to open loop <../Usage/Extended-Carbs.html#extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only>`_
 * `Mettre à jour l'apk avec Android Studio 3.6.1 <../Installing-AndroidAPS/Update-to-new-version.html>`_
 
 Février 2020
@@ -64,7 +64,7 @@ Février 2020
 * `Version 2.6.0 <../Installing-AndroidAPS/Releasenotes.html#version-2-6-0>`_ - Nouvelles fonctions majeures
 * `Complications pour la montre <../Configuration/Watchfaces.html>`_
 
-Août 2019
+Janvier 2020
 ==================================================
 * `Correction manuelle des glucides <../Getting-Started/Screenshots.html#correction-de-glucides>`_ pour des entrées erronées de glucides
 * `Dimension des images <../make-a-PR.html#taille-des-images>`_ lors de l'édition de la documentation
@@ -86,7 +86,7 @@ Novembre 2019
 * `Écran d'accueil - lignes sur le graphique <../Getting-Started/Screenshots.html#section-f-graphique-principal>`_
 * `Insight - Désactiver les valeurs absolues dans NS Client <../Configuration/Accu-Chek-Insight-Pump.html#parametres-dans-aaps>`_
 * `Pompe Medtronic - doubles entrées possibles <../Configuration/MedtronicPump.html>`_
-* `Nouveau tutoriel Freestyle Libre 2 <../Hardware/Libre2.html>`_
+* `New Freestyle Libre 2 tutorial <../Hardware/Libre2.html>`_
 * `Changement de profil avec pourcentage - example <../Usage/Profiles.html>`_
 * `Mise à jour commandes SMS <../Children/SMS-Commands.html>`_
 * `Dépannage d'Android Studio <../Installing-AndroidAPS/troubleshooting_androidstudio.html>`_
@@ -102,7 +102,7 @@ Octobre 2019
 * `GA - mauvaise detection de la valeur des GA <../Usage/COB-calculation.html#detection-de-ga-errones>`_
 * `Dépannages spécifiques du Dexcom G6 <../Hardware/DexcomG6.html#depannages-specifiques-a-dexcom-g6>`_
 * `Mise à jour des objectifs version 2.5 <../Usage/Objectives.html>`_
-* ` Mise à jour des préférences <../Configuration/Preferences.html>`_
+* `Preferences update <../Configuration/Preferences.html>`_
 * `Inhibiteurs SGLT-2 - ne pas utiliser lors de la boucle <../Module/module.html#ne-pas-utiliser-d-inhibiteurs-sglt-2>`_
 * `Dépannage des commandes SMS <../Children/SMS-Commands.html#depannage>`_
 * `xDrip - Mise à jour du remplacement de l'émetteur G6 <../Configuration/xdrip.html#remplacement-du-transmetteur>`_
@@ -116,7 +116,7 @@ Septembre 2019
 * `Surveillance à distance <../Children/Children.html>`_
 * `Qu'est-ce qu'un système à boucle fermée ? <../Getting-Started/ClosedLoop.html>`_
 
-Mars 2020
+Août 2019
 ==================================================
 * `Application Dexcom G6 patchée par region <../Hardware/DexcomG6.html#si-vous-utilisez-le-g6-avec-l-application-dexcom-patchee>`_
 * `Nouvel émetteur Dexcom G6 <../Configuration/xdrip.html#connecter-l-emetteur-g6-pour-la-premiere-fois>`_ ("firefly" / 8G...)
