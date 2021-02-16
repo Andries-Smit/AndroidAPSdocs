@@ -40,4 +40,4 @@ Voordat je begint met bouwen, heb je nog wat leeswerk te doen om te begrijpen ho
 
 [Tim Omer: gewone mensen nemen het heft in eigen hand "Health Hackers" - We Are Not Waiting! - https://www.youtube.com/watch?v=RjhkRmL1wOI](https://www.youtube.com/watch?v=RjhkRmL1wOI)
 
-[Live interview (Engelstalig) met Dana Lewis, heeft als eerste een doe-het-zelf Pancreas Systeem gebouwd - https://www.youtube.com/watch?v=uvjrPrH0Hrw](https://www.youtube.com/watch?v=uvjrPrH0Hrw)
+[http://www.healthline.com/diabetesmine/dana-rs-insulin-pump-embraces-wearenotwaiting](https://www.youtube.com/watch?v=uvjrPrH0Hrw)
