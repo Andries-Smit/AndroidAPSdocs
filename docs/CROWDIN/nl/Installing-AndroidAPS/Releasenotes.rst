@@ -13,18 +13,18 @@ Als je daarna nog eens 30 dagen wacht met bijwerken (dus 90 dagen vanaf de datum
 
 Please understand that this change is not intended to bug you but is due to safety reasons. Nieuwe versies van AndroidAPS bevatten niet alleen nieuwe handige functies, maar ook belangrijke veiligheidsupdates. Daarom is het noodzakelijk dat elke gebruiker zijn app bijwerkt zodra een nieuwe versie beschikbaar komt. Helaas zijn er nog steeds signalen dat sommige gebruikers een hele oude versie van hun app gebruiken, dus dit is een poging om de veiligheid voor individuele gebruikers en de hele doe-het-zelf loop-gemeenschap te verbeteren. Thanks for your understanding.
 
-Versie 2.2.2
+Version 2.8.2
 ================
-Release datum: 25-04-2019
+Release date: 23-01-2021
 
-**Make sure to check and adjust settings after updating to 2.7 as described** `here <../Installing-AndroidAPS/update2_7.html>`_.
+* Please see also `important hints for version 2.8.1.1 <../Installing-AndroidAPS/Releasenotes.html#important-hints>`_ below.
 
 Changes
 ----------------------
-* Taal-updates
+* stability improvements
 * more tweaking for Android 8+
-* Nieuw app icoon
-* Wear Update voor smartwatches
+* improved icons
+* watch improvements
 * NSClient fixes
 * Bolus advisor now works with Pumpcontrol and NSClient
 
@@ -138,7 +138,7 @@ Release date: 03-05-2020
 Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
 Belangrijkste nieuwe functies
------
+-----------------------------
 * Insight: Disable vibration on bolus for firmware version 3
 * Otherwise is equal to 2.6.1.2. Update is optional. 
 
@@ -149,7 +149,7 @@ Release date: 19-04-2020
 Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
 Belangrijkste nieuwe functies
------
+-----------------------------
 * Fix crashing in Insight service
 * Otherwise is equal to 2.6.1.1. If you are not affected by this bug you don't need to upgrade.
 
@@ -160,7 +160,7 @@ Release date: 06-04-2020
 Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
 Belangrijkste nieuwe functies
------
+-----------------------------
 * Resolves SMS CARBS command issue while using Combo pump
 * Otherwise is equal to 2.6.1. If you are not affected by this bug you don't need to upgrade.
 
@@ -171,7 +171,7 @@ Release date: 21-03-2020
 Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
 Belangrijkste nieuwe functies
------
+-----------------------------
 * Allow to enter only https:// in NSClient settings
 * Fixed `BGI <../Getting-Started/Glossary.html>`_ displaying bug on watches
 * Fixed small UI bugs
@@ -190,9 +190,9 @@ Release date: 29-02-2020
 Please use `Android Studio 3.6.1 <https://developer.android.com/studio/>`_ or newer to build the apk.
 
 Belangrijkste nieuwe functies
------
+-----------------------------
 * Small design changes (startpage...)
-* Careportal tab / menu removed - more details `here <../Usage/CPbefore26.html>`_
+* Careportal tab / menu removed - more details `here <../Usage/CPbefore26.html>`__
 * New `Local Profile plugin <../Configuration/Config-Builder.html#local-profile-recommended>`_
 
   * Local profile can hold more than 1 profile
@@ -267,14 +267,14 @@ Belangrijkste nieuwe functies
 
 Versie 2.3
 ==================================================
-Release datum: 07-04-2019
+Release datum: 25-04-2019
 
 Belangrijkste nieuwe functies
 --------------------------------------------------
 * Important safety fix for Insight (really important if you use Insight!)
 * Historiek-venster werkt weer
 * Bugfix voor delta-berekeningen
-* Nieuwe vertalingen
+* Taal-updates
 * GIT-check ingebouwd + waarschuwing voor gradle upgrade toegevoegd
 * Meer automatische tests
 * Potentiële crash in alarm Sound Service gerepareerd (met dank aan @lee-b !)
@@ -282,9 +282,9 @@ Belangrijkste nieuwe functies
 * Versie Checker geïntroduceerd
 
 
-Versie 2.2
+Versie 2.2.2
 ==================================================
-Release datum: 03-03-2019
+Release datum: 07-04-2019
 
 Belangrijkste nieuwe functies
 --------------------------------------------------
@@ -294,22 +294,22 @@ Belangrijkste nieuwe functies
 * SMS plugin fix
 
 
-Versie 2.1
+Versie 2.2
 ==================================================
 Release datum: 29-03-2019
 
 Belangrijkste nieuwe functies
 --------------------------------------------------
 * `DST fix <../Usage/Timezone-traveling.html#time-adjustment-daylight-savings-time-dst>`_
-* Veel verbeteringen en bugfixes
+* Wear Update voor smartwatches
 * `SMS plugin <../Children/SMS-Commands.html>`_ update
 * Optie om terug te gaan in leerdoelen.
 * Onderbreek loop als telefoon-opslagruimte vol is
 
 
-Versie 2.0
+Versie 2.1
 ==================================================
-Release datum: 03-11-2018
+Release datum: 03-03-2019
 
 Belangrijkste nieuwe functies
 --------------------------------------------------
