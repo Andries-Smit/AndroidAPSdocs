@@ -16,7 +16,7 @@ Activiteit & feedback
 * Profiel wissel is verplaatst naar Acties.
 * BG controle is verplaatst naar Acties.
 * Ouderdom van sensor/canule etc is verplaatst naar Acties.
-* Sport is niet langer beschikbaar, maar je kunt het notitie-veld gebruiken dat naar voren komt wanneer je een actie invoert, bijv. (zie screenshot in sectie `Koolhydraten & bolus <#id1>`_ op deze pagina).
+* Sport is niet langer beschikbaar, maar je kunt het notitie-veld gebruiken dat naar voren komt wanneer je een actie invoert, bijv. (see screenshot in section `carbs & bolus <#carbs-bolus>`__ on this page).
 
 Koolhydraten & bolus
 ==============================
