@@ -5,7 +5,7 @@ Wat is automatisering
 ==================================================
 Voor bepaalde veelvoorkomende gebeurtenissen moet je wellicht altijd dezelfde instellingen wijzigen. Om extra werk te voorkomen, kun je proberen om dit te automatiseren, en het dus automatisch voor je te laten doen. 
 
------ wanneer jouw BG te laag is, kun je besluiten om automatisch een hoger tijdelijk streefdoel in te stellen. Of als je in het sportcentrum bent, wordt er automatisch een tijdelijk streefdoel voor je ingesteld. 
+--------------------------------- wanneer jouw BG te laag is, kun je besluiten om automatisch een hoger tijdelijk streefdoel in te stellen. Of als je in het sportcentrum bent, wordt er automatisch een tijdelijk streefdoel voor je ingesteld. 
 
 Voordat je automatisering gebruikt, moet je ruime ervaring hebben met de handmatige `tijdelijke streefdoelen <./temptarget.html>`_ of handmatige profiel wissels die je toepast. 
 
@@ -88,7 +88,7 @@ Na het toevoegen van jouw actie, **vergeet niet om de standaardwaarden** te vera
   :alt: Automatisering standaard vs. ingestelde waardes
 
 Automatiseringsregels sorteren
------
+------------------------------
 Om jouw automatiseringsregels te sorteren, houd je de vier-streepjes-knop aan de rechterkant van het scherm ingedrukt en sleep je de regel omhoog of omlaag.
 
 .. image:: ../images/Automation_Sort.png
