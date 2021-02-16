@@ -143,7 +143,7 @@ Klik op de kleine driehoek naast Appearance & Behaviour (1.) in next screenshot)
 
 * Klik niet op "Background" terwijl de code wordt gekloond!
 
-   ![Geen achtergrondactie](../images/AndroidStudio_NoBackground.png)
+   ![Geen achtergrondactie](../images/AndroidStudio361_15.png)
 
 * Nadat de code is gedownload, open je jouw lokale kopie door te klikken op "Ja".
 
