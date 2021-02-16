@@ -10,5 +10,5 @@ Meer details vind je hier:
    :glob:
    
    Lijst van geteste smartwatches <../Getting-Started/Phones.md>
-   Pebble <../Configuration/Watchfaces.md#pebble>
-   Problemen oplossen voor Sony Smartwatch SW 3 <../Usage/SonySW3.rst>
+   Smartwatch instellingen <../Configuration/Watchfaces.md>
+   Problemen oplossen voor Sony Smartwatch SW 3 <..Usage/SonySW3.rst>
