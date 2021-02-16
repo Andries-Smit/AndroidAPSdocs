@@ -132,7 +132,7 @@ Activating a Pod
 
 Before you can activate a pod please ensure you have properly configured and connected your RileyLink connection in the Omnipod settings
 
-*REMINDER: Pod communication occurs at limited ranges for pod activation pairing due to security safety measures. Before pairing the Pod's radio signal is weaker, however after it has been paired it will operate at full signal power. During these procedures, make sure that your pod is* `within close proximity <#optimal-omnipod-and-rileylink-positioning>`__ (~30 cm away or less) but not on top of or right next to the RileyLink.
+*REMINDER: Pod communication occurs at limited ranges for pod activation pairing due to security safety measures. Before pairing the Pod's radio signal is weaker, however after it has been paired it will operate at full signal power. During these procedures, make sure that your pod is* `within close proximity <#optimal-omnipod-and-rileylink-positioning>`__ (~30 cm away or less) but not on top of or right next to the RileyLink.*
 
 1. Navigate to the **Omnipod (POD)** tab and click on the **POD MGMT (1)** button, and then click on **Activate Pod (2)**.
 
@@ -461,11 +461,11 @@ Icons
 	* Button is displayed only when pod time is past expiration warning time
 	* Upon successful dismissal, this icon will no longer appear.			 
     |suspend|  		 **SUSPEND:**	 
-      ====================  ===========================================
+      ==================
    
 	When pressed this will update the time on the pod with the current time on your phone.
     |discard_pod|	      **Discard pod**  		 
-      ====================  ===========================================
+      --------------------------------------
    
 	Suspends the active pod
     |deactivate_pod|	      **Deactivate Pod**	 
@@ -499,7 +499,7 @@ Below is an explanation of the layout and meaning of the icons on the **Pod Mana
       - **Play test beep**
  
  	Plays a single test beep on the pod when pressed.
-    =========================  ===========================================
+    ====================  ===========================================
       - **Discard pod**
 
 	Deactivates and discards the pod state of an unresponsive pod when pressed.
@@ -706,7 +706,7 @@ Battery level reporting is a setting that can be enabled to return the current b
 
 
 Problemen oplossen
-===============
+=========================  ===========================================
 
 Pod Failures
 ------------
@@ -724,7 +724,7 @@ Pump Unreachable Alerts
 It is recommended that pump unreachable alerts be configured to **120 minutes** by going to the top right-hand side three-dot menu, selecting **Preferences**\ ➜\ **Local Alerts**\ ➜\ **Pump unreachable threshold [min]** and setting this to **120**.
 
 Importeer instellingen van vorige AAPS
-----------------------------------
+=========================  ===========================================
 
 Please note that importing settings has the possibility to import an outdated Pod status. As a result, you may lose an active Pod. It is therefore strongly recommended that you **do not import settings while on an active Pod session**.
 
@@ -750,7 +750,7 @@ Pod suspended
 Informational alert that Pod has been suspended.
 
 Setting basal profile failed. Delivery might be suspended! Please manually refresh the Pod status from the Omnipod tab and resume delivery if needed..
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Informational alert that the Pod basal profile setting has failed, and you will need to hit *Refresh* on the Omnipod tab.
 
