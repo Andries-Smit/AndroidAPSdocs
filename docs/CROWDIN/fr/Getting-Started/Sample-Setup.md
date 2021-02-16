@@ -92,7 +92,7 @@ Pour ce faire, effectuez les étapes suivantes sur votre smartphone :
 
 ![Paramètres G5](../images/SampleSetupG5Settings.png)
 
-* Alternatives : voir la liste des sources [contrôles glycémique possibles](../Configuration/BG-Source.rst)
+* NS Client activated (see [NS Client](../Configuration/Config-Builder#ns-profile) and [Nightscout setup](../Installing-AndroidAPS/Nightscout.md))
 
 ## Installer xDrip+
 xDrip+ est une autre application open source très aboutie qui offre d'innombrables possibilités. Dans cette configuration, contrairement à l'utilisation première prévue par les développeurs, xDrip+ n'est pas utilisée pour collecter des données de glycémie à partir du Dexcom G6, mais seulement pour utiliser des alarmes et afficher la valeur de glycémie actuelle, y compris la courbe sur l'écran d'accueil Android dans le widget. Avec xDrip+ les alarmes peuvent être réglées beaucoup plus précisément qu'avec le logiciel Dexcom, AAPS ou Nightscout (sans limitation dans la sélection des sons, différentes alarmes selon le jour/nuit etc.).
@@ -122,13 +122,13 @@ Si le mode "Ne pas déranger" est activé dans le Samsung Galaxy S7 (Menu > Para
 Sur votre Samsung Galaxy S7 allez dans Menu > Paramètres > Maintenance de l'appareil > Batterie > Applications non surveillées > + Ajouter des applications : Sélectionnez les applications AndroidAPS, Dexcom G6 Mobile, xDrip+ et Android Wear (si la montre connectée est utilisée) l'une après l'autre
 
 ## Optionnel : Configurer la Sony Smartwatch 3 (SWR50)
-Avec une montre Android Wear, vivre avec son diabète peut être encore plus discrèt. La montre peut être utilisée pour afficher le niveau de glycémie actuel, l'état de la boucle, etc sur le poignet.  La montre peut même être utilisée pour contrôler AndroidAPS (par ex. pour lancer discrètement un bolus de repas). Pour ce faire, appuyez deux fois sur la valeur MGC du cadran d'AAPSv2. Le SWR50 fonctionne généralement pour une journée complète jusqu'à ce que la batterie ait besoin d'être rechargée (même chargeur que le Samsung Galaxy S7 : microUSB).
+Avec une montre Android Wear, vivre avec son diabète peut être encore plus discrèt. The watch can be used to display the current glucose level, the status of the loop etc. sur le poignet.  La montre peut même être utilisée pour contrôler AndroidAPS (par ex. pour lancer discrètement un bolus de repas). Pour ce faire, appuyez deux fois sur la valeur MGC du cadran d'AAPSv2. Le SWR50 fonctionne généralement pour une journée complète jusqu'à ce que la batterie ait besoin d'être rechargée (même chargeur que le Samsung Galaxy S7 : microUSB).
 
 ![Montres connectées](../images/SampleSetupSmartwatch.png)
 
-Pour plus d'informations sur les informations affichées sur le cadran, voir [ici](../Configuration/Watchfaces.md).
+Details about the information displayed on the watchface can be found [here](../Configuration/Watchfaces.md).
 
-* Alternatives : Toutes les [montres avec Google Wear OS](https://wearos.google.com/intl/de_de/#find-your-watch) devraient fonctionner correctement, pour plus de détails, voir la [liste des téléphones et montres testés](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit#gid=698881435) pour AndroidAPS (l'OS doit être Android Wear ou Wear OS)
+* Install the app "Android Wear" on your smartphone via the Google Play Store and connect the smartwatch according to the instructions there.
 * Dans AAPS, choisissez le menu hamburger (coin supérieur gauche) > Générateur de configuration > Général (en bas de la liste) > Wear > Activez sur le côté gauche, cliquez sur la roue crantée > Paramètres de Wear et activez `Commandes depuis la montre`
 * Sur votre montre: faites un appui long sur l'afficheur pour changer de cadran et sélectionnez `AAPSv2`
 * Si nécessaire redémarrer les deux appareils une fois.
