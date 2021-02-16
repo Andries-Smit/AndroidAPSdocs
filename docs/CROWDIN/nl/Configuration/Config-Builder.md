@@ -157,7 +157,7 @@ Voor dana pompen, gebruik **Geavanceerde instellingen ** om BT watchdog te activ
 [Wachtwoord voor Dana RS pomp](../Configuration/DanaRS-Insulin-Pump.md) moet correct zijn ingevoerd. In oudere versies werd het wachtwoord niet gebruikt, nu wel!
 
 ## Gevoeligheid detectie
-Selecteer het type gevoeligheid detectie (ook wel bekend als Auto-Sensitivity / Autosens in het Engels). Over de verschillende opties kun je [hier](../Configuration/Sensitivity-detection-and-COB.md) meer lezen. Hiermee houdt het algoritme jouw gegevens van de afgelopen tijd in de gaten, en past zijn gedrag aan wanneer hij merkt dat je gevoeliger (of, juist ongevoeliger) bent voor insuline dan normaal.  More details about the Sensitivity algorithm can be read in the [OpenAPS docs](https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html).
+Selecteer het type gevoeligheid detectie (ook wel bekend als Auto-Sensitivity / Autosens in het Engels). Over de verschillende opties kun je [hier](../Configuration/Sensitivity-detection-and-COB.md) meer lezen. Hiermee houdt het algoritme jouw gegevens van de afgelopen tijd in de gaten, en past zijn gedrag aan wanneer hij merkt dat je gevoeliger (of, juist ongevoeliger) bent voor insuline dan normaal.  Zie ook de [OpenAPS documenten](http://openaps.readthedocs.io/en/latest/docs/walkthrough/phase-4/advanced-features.html#auto-sensitivity-mode).
 
 Je kunt je gevoeligheid op het Overzicht-scherm laten weergeven door Gevoeligheid te selecteren en te kijken naar de witte lijn.  Let op, je moet minimaal [Doel 8](../Usage/Objectives#objective-8-adjust-basals-and-ratios-if-needed-and-then-enable-autosens) bereikt hebben om gevoeligheid detectie/[Autosens](../Usage/Open-APS-features#autosens) jouw insulinetoediening automatisch te laten aanpassen. Als je dit doel nog niet hebt bereikt, dan wordt de Autosens percentage lijn in de grafiek alleen weergegeven ter info.
 
@@ -167,8 +167,7 @@ Als je Oref1 met SMB gebruikt moet je **min_5m_carbimpact** op 8 instellen. The 
 ## APS
 Selecteer het gewenste APS (Artificial Pancreas System, kunstmatig alvleesklier systeem) algoritme. Je kunt de actuele details van jouw gekozen algoritme laten weergeven op het tabblad OpenAPS(OAPS).
 - OpenAPS AMA (geavanceerde maaltijdhulp, onderdeel van het algoritme in 2017) Meer details over OpenAPS AMA kun je vinden in de [OpenAPS documenten](http://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autosens.html#advanced-meal-assist-or-ama). Voordeel van AMA tov zijn voorganger is dat het systeem sneller een hogere tijdelijke basaalstand af kan geven als je jezelf net een maaltijdbolus hebt gegeven (let op: dit geldt wanneer je je koolhydraten nauwkeurig invoert).
-- [OpenAPS SMB](../Usage/Open-APS-features.md) (Super Micro Bolus). Dit is het meest recente algoritme, bedoeld voor gevorderde gebruikers.   
-  Je moet minimaal in [Doel 10](../Usage/Objectives#objective-10-enabling-additional-oref1-features-for-daytime-use-such-as-super-micro-bolus-smb) zijn om OpenAPS SMB te gebruiken, en vergeet niet om je min_5m_carbimpact op 8 in te stellen via Configurator > gevoeligheid detectie > gevoeligheid Oref1 instellingen.
+- [OpenAPS SMB](../Usage/Open-APS-features.md) (Super Micro Bolus). Dit is het meest recente algoritme, bedoeld voor gevorderde gebruikers. Je moet minimaal in [Doel 10](../Usage/Objectives#doel-10-activeren-van-extra-functies-overdag-zoals-smb-super-micro-bolus) zijn om OpenAPS SMB te gebruiken, en vergeet niet om je min_5m_carbimpact op 8 in te stellen via Configurator > gevoeligheid detectie > gevoeligheid Oref1 instellingen.
 
 ## Loop
 
