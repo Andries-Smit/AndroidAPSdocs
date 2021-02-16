@@ -17,7 +17,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Dépannage
+   :caption: Change language
 
    Changer de langue <changelanguage.rst>
 
@@ -96,7 +96,7 @@ Pour plus de détails, lisez la suite ici.
    Glucides étendus <./Usage/Extended-Carbs.rst>
    Automatisation <./Usage/Automation.rst>
    Careportal (supprimé) <./Usage/CPbefore26.rst>
-   Téléversement Open Humans <./Configuration/OpenHumans.rst>
+   Open Humans Uploader <./Configuration/OpenHumans.rst>
    Automatisation avec des applications tierces <./Usage/automationwithapp.md>
    Android auto <./Usage/Android-auto.md>  
 
@@ -123,7 +123,7 @@ Pour plus de détails, lisez la suite ici.
 .. toctree::
    :maxdepth: 1
    :glob:
-   :caption: Comment aider
+   :caption: Troubleshooting
 
    Dépannage <./Usage/troubleshooting.rst>
    Nightscout client <./Usage/Troubleshooting-NSClient.md>
