@@ -13,7 +13,7 @@ Ziel 1: Einrichten der Darstellung und Überwachung sowie analysieren der Basalr
 * Wähle die richtige Pumpe im Konfigurations-Generator (wähle virtuelle Pumpe, wenn du ein Pumpenmodell benutzt, für das es keinen AndroidAPS-Treiber gibt) um sicherzustellen, dass die Pumpe ihren Status mit AndroidAPS teilen kann.  
 * Wenn du eine DanaR Pumpe verwendest, dann stelle sicher, dass Du die `DanaR Insulinpumpen-Anleitung <../Configuration/DanaR-Insulin-Pump.html>`_ befolgt hast, damit eine gute Verbindung zwischen der Pumpe und AndroidAPS gewährleistet ist.
 * Befolge die  `Nightscout-Anleitung <../Installing-AndroidAPS/Nightscout.html>`_, um zu gewährleisten, dass Nightscout diese Daten empfangen und anzeigen kann.
-* Note that URL in NSClient must be **WITHOUT /api/v1/** at the end - see `NSClient settings in Preferences <../Configuration/Preferences.html#nsclient>`_.
+Die URL im NSClient muss **OHNE /api/v1/** am Ende eingegeben werden - siehe `NSClient Einstellungen <../Configuration/Preferences.html#nightscout-client>`__.
 
 *Es kann sein, dass du auf das Auslesen des nächsten Zuckerwertes warten musst, bevor AndroidAPS es erkennt.*
 
@@ -42,7 +42,7 @@ Ziel 3: Belege Dein Wissen
 Ziel 4: Starte den Open Loop
 ==================================================
 * Wähle Open Loop entweder in den Einstellungen oder indem du lange auf den Loop Button in der linken oberen Ecke des Hauptbildschirms drückst.
-* Arbeite Dich durch die  `Einstellungen <../Configuration/Preferences.html>`_, um AndroidAPS an Deine Anforderungen anzupassen.
+* Arbeite Dich durch die  `Einstellungen <../Configuration/Preferences.html>`__, um AndroidAPS an Deine Anforderungen anzupassen.
 * Bestätige in einem Zeitraum von 7 Tagen mindestens 20 der temporären Basalratenanpassungen; gib sie jeweils von Hand in der Pumpe ein und bestätige in AndroidAPS, dass du sie akzeptiert hast.  Überprüfe, ob diese Daten in AndroidAPS und Nightscout angezeigt werden.
 * Aktiviere falls notwendig `temporäre Ziele <../Usage/temptarget.html>`_. Nutze das Hypo Temp Target um zu verhindern, dass AAPS aufgrund des Blutzuckeranstiegs nach einer Hypo zu stark korrigiert. 
 
@@ -59,7 +59,7 @@ kannst Du nachts auch das obere Limit höher setzen oder den Open Loop ganz paus
 
 Ziel 5: Open Loop inklusive der temporären Basalratenvorschläge verstehen
 ====================================================================================================
-* Start to understand the thinking behind the temp basal recommendations by looking at the `determine basal logic <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html>`_ and both the `forecast line in AndroidAPS homescreen <../Getting-Started/Screenshots.html#prediction-lines>`_/Nightscout and the summary of outputs from the calculations in your OpenAPS tab.
+* Lerne das Konzept hinter den Basalratenvorschlägen kennen, indem Du Dir  `Basalraten verstehen <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/Understand-determine-basal.html>`_ durchliest sowie die `Vorhersagelinie auf dem AndroidAPS Hauptbildschirm <../Getting-Started/Screenshots.html#vorhersage-kurven>`_ und die Zusammenfassung der Ausgaben von den Berechnungen in deinem OpenAPS Tab anschaust.
  
 Es ist möglicherweise sinnvoll, wenn du das Ziel höher als üblich ansetzt, bis du den Berechnungen und Einstellungen vertraust.  Das System erlaubt:
 
@@ -71,7 +71,7 @@ Der Zielwert ist der Wert, auf dem die Berechnungen basieren und nicht der gleic
 
 20 mg/dl oder weniger) und beobachten, wie sich das Verhalten des Systems daraufhin ändert.  
 
-Vielleicht möchtest Du mit der Anpassung der Werte für einen engeren Zielbereich experimentieren (z.B. 1 mmol/l bzw. Auf dem Startbildschirm wird Dein Zielbereich mit grünen Linien im Diagramm dargestellt. Diesen kannst Du in den `Einstellungen <../Configuration/Preferences.html>`_ > unter 'Zielbereich für die Grafikanzeige' (scrolle weit nach unten) einstellen.
+Vielleicht möchtest Du mit der Anpassung der Werte für einen engeren Zielbereich experimentieren (z.B. 1 mmol/l bzw. Auf dem Startbildschirm wird Dein Zielbereich mit grünen Linien im Diagramm dargestellt. Diesen kannst Du in den `Einstellungen <../Configuration/Preferences.html>`__ > unter 'Zielbereich für die Grafikanzeige' (scrolle weit nach unten) einstellen.
  
 .. image:: ../images/sign_stop.png
   :alt: Stoppzeichen
@@ -89,7 +89,7 @@ Ziel 6: Closed Loop mit Abschaltung bei niedrigen Glukose-Werten
   
 Der Closed Loop korrigiert im Objective 6 keine hohen BZ-Werte, da nur low glucose suspend zum Einsatz kommt. Hohe BZ-Werte müssen daher von Dir manuell korrigiert werden!
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-* Wähle Closed Loop entweder in den `Einstellungen <../Configuration/Preferences.html>`_ oder indem du lange auf den Loop Button in der linken oberen Ecke des Hauptbildschirms drückst.
+* Wähle Closed Loop entweder in den `Einstellungen <../Configuration/Preferences.html>`__ oder indem du lange auf den Loop Button in der linken oberen Ecke des Hauptbildschirms drückst.
 * Stelle deinen Zielbereich etwas höher ein, als du es normalerweise tun würdest, um auf der sicheren Seite zu sein.
 * Die Aktivität der temporären Basalraten kannst du anhand des blauen Textes auf dem Hauptbildschirm oder des blauen Bereichs in der Grafik beobachten.
 * Stelle sicher, dass deine Einstellungen für AndroidAPS korrekt sind.  Wenn du nach wie vor häufige oder schwere Unterzuckerungen hast, dann solltest du DIA, Basalraten, ISF oder Kohlenhydrat-Faktoren anpassen.
@@ -119,7 +119,7 @@ Ziel 8: Passe, falls notwendig, Basalraten und Faktoren an und aktiviere dann di
 * Du kannst  `Autotune <https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autotune.html>`_ verwenden, um dafür zu sorgen, dass Deine Basalraten korrekt bleiben oder einen traditionellen Basalratentest durchführen.
 * Schalte `Autosens <../Usage/Open-APS-features.html>`_ für einen Zeitraum von 7 Tagen ein und beobachte die weiße Linie auf der Grafik auf dem Hauptbildschirm, die anzeigt, dass deine Sensibilität gegenüber Insulin auf Grund von Aktivitäten oder Hormonen steigt oder fällt. Schaue auf dem OpenAPS-Tab nach, wie AndroidAPS die Basalraten und/oder Zielwerte entsprechend anpasst.
 
-Gib AndroidAPS als Art deiner DIY Loop-Software an.*
+*Don’t forget to record your looping in* `this form <https://bit.ly/nowlooping>`_ *logging AndroidAPS as your type of DIY loop software, if you have not already done so.*
 
 
 Ziel 9: Teste zusätzliche Funktionen für den Alltagsgebrauch und gewinne Vertrauen in Dein Closed Loop System
@@ -138,7 +138,7 @@ Ziel 10: Aktiviere zusätzliche oref1 Funktionen zum täglichen Gebrauch, wie z.
 Ziel 11: Automatisierung
 ====================================================================================================
 * Du musst Ziel 11 starten, um `Automatisierungen <../Usage/Automation.html>`_ nutzen zu können.
-* Make sure you have completed all objectives including exam `<../Usage/Objectives.html#objective-3-prove-your-knowledge>`_.
+des `Wissenstest  <../Usage/Objectives.html#ziel-3-belege-dein-wissen>`_ abgeschlossen hast.
 * Der Abschluss vorangegangenen Ziele (objectives) beeinflusst nicht die Ziele, die Du bereits abgeschlossen hast. Du behälst alle Objectives, die Du bereits abgeschlossen hast!
 
 
