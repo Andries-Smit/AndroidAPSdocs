@@ -1,5 +1,5 @@
 Notwendige Überprüfungen nach einem Update von AndroidAPS 2.6
-***********************************************************
+*************************************************************
 
 * Der Programmcode wurde bei der Umstellung auf AAPS 2.7 deutlich verändert. 
 * Daher ist es wichtig, dass Du einige Änderungen vornimmst oder Einstellungen nach der Aktualisierung überprüfst.
