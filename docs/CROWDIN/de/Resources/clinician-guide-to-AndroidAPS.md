@@ -2,20 +2,20 @@
 
 Diese Seite richtet sich an Klinikpersonal, das Interesse an der Open-Source-Technologie der künstlichen Bauchspeicheldrüse wie AndroidAPS haben und an Patienten, die diese Informationen mit ihren Ärzten und Diabetesberatern teilen möchten.
 
-Dieser Leitfaden enthält einige wichtige Informationen über DIY Closed Looping und speziell über die Funktionsweise von AndroidAPS. Für weitere Details zu all diesen Themen lesen Sie bitte die ausführliche AndroidAPS-Dokumentation online Bei Fragen wenden Sie sich bitte an Ihren Patienten bezüglich weiterer Details oder zögern Sie nicht, die Community zu kontaktieren. (Wenn Sie nicht auf Social Media (z.B. Twitter [You can also find some of the latest studies & outcomes related data here](https://openaps.org/outcomes/).
+Dieser Leitfaden enthält einige wichtige Informationen über DIY Closed Looping und speziell über die Funktionsweise von AndroidAPS. Für weitere Details zu all diesen Themen lesen Sie bitte die [ausführliche AndroidAPS-Dokumentation online](../index.rst). Bei Fragen wenden Sie sich bitte an Ihren Patienten bezüglich weiterer Details oder zögern Sie nicht, die Community zu kontaktieren. (Wenn Sie nicht auf Social Media (z.B. Twitter [You can also find some of the latest studies & outcomes related data here](https://openaps.org/outcomes/).
 
 ### Die Schritte zum Aufbau eines DIY Closed Loop
 
 Um AndroidAPS nutzen zu können, müssen die folgenden Schritte unternommen werden:
 * Organisieren Sie sich eine [kompatible Insulinpumpe](../Hardware/pumps.rst), ein [kompatibles Android-Gerät](https://docs.google.com/spreadsheets/d/1gZAsN6f0gv6tkgy9EBsYl0BQNhna0RDqA9QGycAqCQc/edit?usp=sharing) und eine [kompatible CGM Quelle](../index.rst#getting-started).
-* [AndroidAPS Quellcode herunterladen und die Software "erstellen"](https://androidaps.readthedocs.io/en/latest/EN/Installing-AndroidAPS/Building-APK.html).
-* [Konfigurieren Sie die Software so, dass sie mit Ihren Diabetes-Geräten kommuniziert, richten Sie sie ein und nehmen Sie Sicherheitseinstellungen vor](https://androidaps.readthedocs.io/en/latest/EN/index.html#configuration).
+* [AndroidAPS Quellcode herunterladen und die Software "erstellen"](../Installing-AndroidAPS/Building-APK.md).
+* [Konfigurieren Sie die Software so, dass sie mit Ihren Diabetes-Geräten kommuniziert, richten Sie sie ein und nehmen Sie Sicherheitseinstellungen vor](../index.rst#configuration).
 
 ### Wie ein DIY Closed Loop funktioniert
 
 Ohne ein Closed Loop System sammelt der Patient mit Diabetes Daten von seiner Pumpe und seinem CGM, entscheidet, was zu tun ist, und ergreift entsprechende Maßnahmen.
 
-Es sammelt zudem alle Informationen über Boli, Kohlenhydrataufnahme und temporäre Änderungen des Zielwerts/-bereichs von der Pumpe oder von Nightscout, um sie in die Berechnung der Insulinabgabe einzubeziehen.
+Bei der automatisierten Insulinverabreichung macht das System das Gleiche: Es sammelt Daten von der Pumpe, dem CGM und andere Informationen, die protokolliert werden (z.B. über Nightscout). Diese Informationen verwendet es als Basis seiner Berechnungen und entscheidet, wie viel mehr oder weniger Insulin benötigt wird (über oder unter der zugrunde liegenden Basalrate).
 
 Wenn das Gerät, auf dem AndroidAPS läuft, kaputt geht oder die Bluetooth-Verbindung zur Pumpe verliert, fällt die Insulinpumpe nach dem Ende der letzten temporären Basalrate wieder auf das Standardprogramm zurück, bei dem die vorprogrammierte Basalrate läuft.
 
