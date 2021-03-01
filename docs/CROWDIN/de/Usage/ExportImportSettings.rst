@@ -7,7 +7,7 @@ Sei bereit für das Unvorhergesehene. Vielleicht änderst Du versehentlich wicht
 
 Die Empfehlung ist, den Export nach einer Änderung der Einstellungen oder dem Abschluss eines Ziels (Objective) durchzuführen. 
 
-Die exportierten Einstellungen sollten in einen Cloud-Speicher oder auf Deinen Computer kopiert werden. Dann ist Du für den Verlust oder die Beschädigung Deines AAPS-Smartphones vorbereitet und musst nicht wieder bei Null anfangen.
+Exported settings should be copied to a cloud storage or your computer, better two different locations. Dann ist Du für den Verlust oder die Beschädigung Deines AAPS-Smartphones vorbereitet und musst nicht wieder bei Null anfangen.
 
 Auf einem Windows 10 PC sieht es in etwa so aus:
   
@@ -21,8 +21,8 @@ Neben anderen werden folgende Einstellungen exportiert:
 * `Automation <../Usage/Automation.html>`_ Regeln
 * Einstellungen des `Konfigurations-Generators <../Configuration/Config-Builder.html>`_
 * Einstellungen der `lokalen Profile <../Configuration/Config-Builder.html#lokales-profil-empfohlen>`_
-* Status der `Ziele (Objectives) <../Usage/Objectives.html>`_ inkl. `exam results <../Usage/Objectives.html#objective-3-prove-your-knowledge>`_
-* `Einstellungen im 3-Punkte-Menü <../Configuration/Preferences.html>`_ inkl. `NS Client settings <../Configuration/Preferences.html#nsclient>`_
+* Status der `Ziele (Objectives) <../Usage/Objectives.html>`_ inkl. `Ergebnisse der Multiple-Choice-Fragen <../Usage/Objectives.html#ziel-3-belege-dein-wissen>`_
+* `Einstellungen im 3-Punkte-Menü <../Configuration/Preferences.html>`_ inkl. `NS Client Einstellungen <../Configuration/Preferences.html#nightscout-client>`_
 
 Verschlüsseltes Backup-Format
 ==================================================
@@ -48,7 +48,7 @@ Exportiere die Einstellungen
   
 Importiere die Einstellungen
 ==================================================
-**Do not import settings while on an active Pod session** - see `Omnipod page for details <../Configuration/OmnipodEros.html#import-settings-from-previous-aaps>`_.
+**Während einer aktiven Pod-Sitzung keine Einstellungen importieren** - weitere Details findest Du auf der `Seite zum Omnipod <../Configuration/OmnipodEros.html#import-settings-from-previous-aaps>`_.
 
 * Hamburger Menü (drei Striche oben links am Bildschirm)
 * Wartung
