@@ -30,12 +30,12 @@ AAPS warnt Dich, wenn Du mit aktiven Kohlenhydraten von einer vorherigen Mahlzei
 Warum erkennt der Algorithmus COB nicht richtig? 
 --------------------------------------------------
 
-Normalerweise erkennt AAPS die Kohlenhydrat-Resorption auf Basis der Entwicklung der BZ-Werte. Für den Fall, dass Du Kohlenhydrate eingegeben hast, aber AAPS deren erwartete Absorption nicht durch BZ-Veränderungen erkennen kann, wird die Methode ` min_5m_carbimpact <../Configuration/Config-Builder.html?highlight=min_5m_carbimpact#resorptions-einstellungen>`_ verwendet, um die Absorption zu berechnen (so genanntes 'Fallback '). Da diese Methode nur die minimale Kohlenhydrat-Resorption ohne Berücksichtigung von BZ-Änderungen berechnet, kann dies zu falschen COB-Werten führen.
+Normalerweise erkennt AAPS die Kohlenhydrat-Resorption auf Basis der Entwicklung der BZ-Werte. Für den Fall, dass Du Kohlenhydrate eingegeben hast, aber AAPS deren erwartete Absorption nicht durch BZ-Veränderungen erkennen kann, wird die Methode ` min_5m_carbimpact <../Configuration/Config-Builder.html?highlight=min_5m_carbimpact#resorptions-einstellungen> ` _ verwendet, um die Absorption zu berechnen (so genanntes 'Fallback '). Da diese Methode nur die minimale Kohlenhydrat-Resorption ohne Berücksichtigung von BZ-Änderungen berechnet, kann dies zu falschen COB-Werten führen.
 
 .. image:: ../images/Calculator_SlowCarbAbsorbtion.png
   :alt: Hinweis fehlerhafte COB Werte
 
-In der Abbildung oben wurde 41% der 1Kohlenhydrat-Resorption durch min_5m_carbimpact statt des Wertes, der bei Abweichungen festgestellt wurde, mathematisch berechnet.  weniger Kohlenhydrate noch im Körper aktiv sind als der Algorithmus berechnet hat. 
+In the screenshot above, 41% of time the carb absorption was mathematically calculated by the min_5m_carbimpact instead of the value  detected from deviations.  weniger Kohlenhydrate noch im Körper aktiv sind als der Algorithmus berechnet hat. 
 
 Wie kann man mit dieser Warnung umgehen? 
 --------------------------------------------------
