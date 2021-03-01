@@ -16,7 +16,7 @@ Aktivität & Feedback
 * Der Profilwechsel wurde auf den Tab / in das Menü "Aktionen" verschoben.
 * Der Batteriewechsel wurde ebenfalls auf den Tab / in das Menü "Aktionen" verschoben.
 Das temporäres Ziel wurde auf den Tab / in das Menü "Aktionen" verschoben.
-Nutze das Notizfeld in der Dialogbox, die erscheint wenn eine Aktion wie z.B. Bolusabgabe durchgeführt wird (siehe Screenshot im Abschnitt `Kohlenhydrate & Bolus <#id1>`_ auf dieser Seite).
+Nutze das Notizfeld in der Dialogbox, die erscheint wenn eine Aktion wie z.B. (siehe Screenshot im Bereich `Kohlenhydrate & Bolus <#kohlenhydrate--bolus>`__ auf dieser Seite).
 
 Kohlenhydrate & Bolus
 ==============================
