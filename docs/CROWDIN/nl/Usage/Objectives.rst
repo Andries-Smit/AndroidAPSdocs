@@ -119,7 +119,7 @@ Doel 8: Pas basaalstanden en de ratio's aan indien nodig, activeer hierna de Aut
 * Je kunt `Autotune <https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/autotune.html>`_ gebruiken om eenmalig te laten berekenen of jouw basaalstanden goed zijn ingesteld, of een traditionele basaaltest doen.
 * Schakel `Autosens <../Usage/Open-APS-features.html>`_ in gedurende een periode van 7 dagen en bekijk de witte lijn in de grafiek op het Overzichts-scherm. en houd op de OpenAPS tab in de gaten hoe AndroidAPS de basaalstanden en/of streefdoelen dienovereenkomstig aanpast.
 
-*Vergeet niet om jezelf als nieuwe looper aan te melden via 'dit formulier <http://bit.ly/nowlooping>'_ en AndroidAPS als jouw type loop-software te kiezen, als je dat nog niet gedaan hebt.*
+*Don’t forget to record your looping in* `this form <https://bit.ly/nowlooping>`_ *logging AndroidAPS as your type of DIY loop software, if you have not already done so.*
 
 
 Doel 9: Probeer extra functies voor gebruik overdag en krijg vertrouwen in jouw closed loop systeem
