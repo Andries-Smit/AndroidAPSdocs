@@ -93,7 +93,7 @@ Für andere CGM/FGM wie das Freestyle Libre ist die SMB-always-Option deaktivier
 ### Aktiviere SMB nach Mahlzeiten
 Der SMB arbeitet bis zu 6 Stunden nach Mahlzeiten, auch wenn COB vorher bei 0 ist. Zur Sicherheit ist diese Option nur möglich, wenn die BZ-Quelle gut gefilterte (nicht rauschende) Werte ausgibt. Derzeit ist das nur möglich mit dem Dexcom G5, wenn es mit der gepatchten Dexcom App oder mit xDrip+ im “native Modus” ausgelesen wird. Falls ein gemessener Wert zu weit abweicht, gibt der G5 einfach gar keinen Wert ab und wartet die nächste Messung in 5 Minuten ab.
 
-Für andere CGM/FGM wie das Freestyle Libre ist die SMB-always-Option deaktiviert, bis xDrip+ ein Glättungs-Plugin beinhaltet, das verrauschte Werte filtert. Weitere Informationen dazu findest du [hier](../Usage/Smoothing-Blood-Glucose-Data-in-xDrip.md).
+For other CGM/FGM like Freestyle Libre, 'Enable SMB after carbs' is deactivated until xDrip+ has a better noise smoothing plugin. Weitere Informationen dazu findest du [hier](../Usage/Smoothing-Blood-Glucose-Data-in-xDrip.md).
 
 ### SMB-Basal-Limit in Minuten
 Dies ist eine wichtige Sicherheitseinstellung. Dieser Wert legt fest, wie viel SMB in einer bestimmten Zeit auf der Basis der Menge an Basalinsulin angegeben werden kann, wenn es von COBs abgedeckt wird.
