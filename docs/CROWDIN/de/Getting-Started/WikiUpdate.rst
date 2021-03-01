@@ -13,14 +13,14 @@ Dezember 2020
 ==================================================
 * `Libre 2 <../Hardware/Libre2.html>`_ - gepatche App funktioniert nicht mit US-Sensoren
 * `OpenAPS Übersicht der fest programmierten Limits <../Usage/Open-APS-features.html#ubersicht-der-fest-programmierten-limits>`_
-* Sony Smartwatch 3 ` Manuelle Installation des Google Play Service <../Usage/SonySW3.html>`_
+* Sony Smartwatch 3 ` Manuelle Installation des Google Play Service <../Usage/SonySW3.html> ` _
 
 Oktober 2020
 ==================================================
 * Accu-Chek Combo - Update `Zeitumstellung (Sommer-/Winterzeit) <../Usage/Timezone-traveling.html#zeitumstellung-sommer-winterzeit>`_
 * Accu-Chek Insight - Option `Verwende absolute statt prozentuale Basalwerte beim Upload zu Nightscout <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_
 * Logs - weitere Details zum `Speicherort <../Usage/Accessing-logfiles.html>`_
-* Omnipod Eros - `status update <../Getting-Started/Future-possible-Pump-Drivers.html#pumps-that-are-loopable>`_
+* Omnipod Eros - Statusupdate
 * `SMS Kommandos - Zeitsynchronisation aller Smartphones <../Children/SMS-Commands.html>`_
 
 September 2020
@@ -35,9 +35,9 @@ Juni 2020
 
 Mai 2020
 ==================================================
-* `Extended bolus only for Dana + Insight pumps <../Usage/Extended-Carbs.html#extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only>`_
+* `Verzögerter Bolus nur für Dana + Insight Pumpen <../Usage/Extended-Carbs.html#verzogerter-bolus-und-wechsel-zum-open-loop-nur-fur-dana-und-insight-pumpe>`_
 * `Insight Vibration deaktivieren <../Configuration/Accu-Chek-Insight-Pump.html#vibration>`_ (nur Firmware 3.x)
-* `Minimal request rate <../Configuration/Preferences.html#minimal-request-change>`_ to reduce number of notifications in open loop mode
+* `Minimaler Wert zur Anfrage einer Änderung <../Configuration/Preferences.html#minimaler-wert-zur -anfrage-einer-anderung>`_ zur Reduktion der Zahl der Benachrichtigungen im Open Loop
 * `Patched Libre Link App <../Hardware/Libre2.html#schritt-1-erstelle-deine-eigene-gepatchte-librelink-app>`_ - Prüfen, ob die gepatchte App korrekt erstellt wurde
 * `Vorhersagelinien <../Getting-Started/Screenshots.html#vorhersage-kurven>`_ - zusätzliche Details
 
@@ -50,14 +50,14 @@ März 2020
 ==================================================
 * `AndroidAPS mit Android Studio 3.6.1 erstellen <../Installing-AndroidAPS/Building-APK.html>`_
 * `DanaRS mit Firmware v3 <../Configuration/DanaRS-Insulin-Pump.html>`_ **kann momentan nicht mit AndroidAPS genutzt werden!**
-* `Extended bolus and switch to open loop <../Usage/Extended-Carbs.html#extended-bolus-and-switch-to-open-loop-dana-and-insight-pump-only>`_
+* `Verzögerter Bolus <../Usage/Extended-Carbs.html#id1>`_ - der Closed Loop wird unterbrochen
 * `Update mit Android Studio 3.6.1 <../Installing-AndroidAPS/Update-to-new-version.html>`_
 
 Februar 2020
 ==================================================
-* `Automation caveats <../Usage/Automation.html#good-practice-caveats>`_
+* `Automation Vorbehalte <../Usage/Automation.html#empfehlungen-und-vorbehalte>`_
 * `Autosens <../Usage/Open-APS-features.html#autosens>`_ - kurze Erklärung
-* ` Careportal Alternativen <../Usage/CPbefore26.html>`_
+* ` Careportal Alternativen <../Usage/CPbefore26.html> ` _
 * `Verzögerter Bolus <../Usage/Extended-Carbs.html#id1>`_ - der Closed Loop wird unterbrochen
 * Neues `Plugin Lokales Profil <../Configuration/Config-Builder.html#lokales-profil-empfohlen>`_
 * `Konfigurationsbeispiel <../Getting-Started/Sample-Setup.html>`_ - Update Dexcom G6
@@ -83,7 +83,7 @@ November 2019
 * `Dexcom G6 Update zum Transmitter-Wechsel <../Configuration/xdrip.html#transmitter-ersetzen>`_
 * `Warum ein verzögerter Bolus beim Loopen nicht funktioniert <../Usage/Extended-Carbs.html#id1>`_
 * `FAQ - Sport <../Getting-Started/FAQ.html#sport>`_
-* `Homescreen - lines on graph <../Getting-Started/Screenshots.html#section-f-main-graph>`_
+* `Startbildschirm - Linien im Diagramm <../Getting-Started/Screenshots.html#abschnitt-f-hauptgrafik>`_
 * `Insight - Absolute Werte im NS Client deaktivieren <../Configuration/Accu-Chek-Insight-Pump.html#einstellungen-in-androidaps>`_
 * `Medtronic Pumpe - mögliche Doppeleinträge <../Configuration/MedtronicPump.html>`_
 * `Neue Anleitung zum Freestyle Libre 2 <../Hardware/Libre2.html>`_
@@ -92,7 +92,7 @@ November 2019
 * `Fehlerbehebung Android Studio <../Installing-AndroidAPS/troubleshooting_androidstudio.html>`_
 * `Fehlerbehebungen - Linksammlung <../Usage/troubleshooting.html>`_
 * `Update AAPS - Kurzanleitung für erfahrene Anwender <../Installing-AndroidAPS/Update-to-new-version.html#kurzanleitung-fur-erfahrene-anwender>`_
-* Docs - update `edit <../make-a-PR.html#code-syntax>`_ and `translation <../translations.html#translate-docs-pages>`_.
+* Docs - Update `Mitschreiben <../make-a-PR.html#code-syntax>`_ und `Übersetzen <../translations.html>`_.
 
 Oktober 2019
 ==================================================
@@ -110,9 +110,9 @@ Oktober 2019
 September 2019
 ==================================================
 * `Automate <../Usage/Automation.html>`_
-* `Bolus calculator <../Getting-Started/Screenshots.html#wrong-cob-detection>`_ - slow carb absorbtion
+* `Bolus-Rechner <../Getting-Started/Screenshots.html#langsamer-kohlenhydrat-abbau>`_ - Langsamer Kohlenhydrat-Abbau
 * `Nightscout Sicherheit <../Installing-AndroidAPS/Nightscout.html#sicherheitsuberlegungen>`_
-* `Profile timeshift <../Usage/Profiles.html#time-shift>`_ (more details)
+* `Profile Zeitverschiebung <../Usage/Profiles.html#zeitverschiebung>`_ (detailliertere Erklärung)
 * `Kontrolle aus der Ferne <../Children/Children.html>`_
 * `Was ist ein Closed Loop System? <../Getting-Started/ClosedLoop.html>`_
 
