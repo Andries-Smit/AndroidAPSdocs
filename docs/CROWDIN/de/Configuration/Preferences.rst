@@ -49,7 +49,7 @@ Schutz
 Master-Passwort
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Die `exportierten Einstellungen <../Usage/ExportImportSettings.html>`_ sind ab Version 2.7 verschlüsselt.
-  **Biometrischer Schutz funktioniert nicht auf OnePlus-Smartphones. Dies ist ein bekanntes Problem von OnePlus.**
+  ** Biometrischer Schutz funktioniert nicht auf OnePlus-Smartphones. Dies ist ein bekanntes Problem von OnePlus.**
 
 * Öffne die Einstellungen (Drei-Punkte-Menü oben rechts)
 * Klicke das Dreieck neben "Allgemein".
@@ -61,9 +61,9 @@ Master-Passwort
   
 Schutz der Einstellungen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* Schütze deine Einstellungen mit einem Passwort oder einer biometrischen Authentifizierung (d. `AAPS-Nutzung durch Kinder <../Children/Children.html>`_).
+* Schütze deine Einstellungen mit einem Passwort oder einer biometrischen Authentifizierung (d. ` AAPS-Nutzung durch Kinder <../Children/Children.html> ` _).
 * Das 'Benutzerdefinierte Passwort' sollte verwendet werden, wenn Du das Master-Passwort nur für die Sicherung der `exportierten Einstellungen <../Usage/ExportImportSettings.html>`_ verwenden möchtest.
-* Wenn du ein 'Benutzerdefiniertes Kennwort' verwendest, klicke auf Zeile 'Passwort für Einstellungen', um das `Kennwort wie oben beschrieben festzulegen <../Configuration/Preferences.html#master-passwort>`_.
+* Wenn du ein 'Benutzerdefiniertes Kennwort' verwendest, klicke auf Zeile 'Passwort für Einstellungen', um das Kennwort wie `oben beschrieben <../Configuration/Preferences.html#master-passwort>`__ festzulegen.
 
   .. image:: ../images/Pref2020_Protection.png
     :alt: Schutz
@@ -94,12 +94,12 @@ Skin
 Portrait orientation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 * **Ursprüngliches Erscheinungsbild** und **Schaltflächen werden immer am unteren Rand des Bildschirms angezeigt** sind identisch.
-* **Großer Bildschirm** zeigt alle Diagramme größer an.
+* ** Großer Bildschirm * * zeigt alle Diagramme größer an.
 
 Landscape orientation
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 * Bei Verwendung von **Ursprüngliches Erscheinungsbild** und **Großer Bildschirm**, musst Du nach unten scrollen, um Schaltflächen am unteren Rand des Bildschirms zu sehen
-* **Großer Bildschirm** zeigt alle Diagramme größer an.
+* ** Großer Bildschirm * * zeigt alle Diagramme größer an.
 
   .. image:: ../images/Screenshots_Skins.png
     :alt: Darstellungsart abhängig von der Ausrichtung des Smartphones
@@ -176,7 +176,7 @@ Statusanzeige
 * Status Anzeigen geben eine optische Warnung für 
 
   * Sensoralter
-  * Sensor battery level for certain smart readers (see `screenshots page <../Getting-Started/Screenshots.html#sensor-level-battery>`_ for details).
+  * Batteriestand des Sensor-Smart-Readers für bestimmte Geräte (weitere Details auf der Seite `AndroidAPS Bildschirme <../Getting-Started/Screenshots.html#sensor-level-batterie>`_).
   * Insulinalter (Tage Reservoirverwendung)
   * Reservoirstand (Einheiten)
   * Kanülenalter
@@ -215,7 +215,7 @@ Bolus-Berater
 Superbolus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Option zur Aktivierung des Superbolus im Bolus-Rechner.
-* `Superbolus <https://www.diabetesnet.com/diabetes-technology/blue-skying/super-bolus/>`_ ist ein Konzept, um in den nächsten zwei Stunden etwas Insulin aus der Basalrate "vorzuziehen", um Spitzen zu verhindern.
+* ` Superbolus <https://www.diabetesnet.com/diabetes-technology/blue-skying/super-bolus/>` _ ist ein Konzept, um in den nächsten zwei Stunden etwas Insulin aus der Basalrate "vorzuziehen", um Spitzen zu verhindern.
 
 Sicherheitseinstellungen der Behandlungen
 ===========================================================
@@ -256,7 +256,7 @@ Minimaler Wert zur Anfrage einer Änderung [%]
 
 Advanced Meal Assist (AMA) oder Super Micro Bolus (SMB)
 ===========================================================
-Abhängig von Deinen Einstellungen im `Konfigurations-Generator <../Configuration/Config-Builder.html>`_ kannst Du zwischen zwei Algorithmen wählen:
+Abhängig von Deinen Einstellungen im `Konfigurations-Generator <../Configuration/Config-Builder.html>`__ kannst Du zwischen zwei Algorithmen wählen:
 
 * `Advanced meal assist (OpenAPS AMA) <../Usage/Open-APS-features.html#erweiterter-mahlzeit-assistent-ama>`_ - Stand des Algorithmus in 2017
 * `Super Micro Bolus (OpenAPS SMB) <../Usage/Open-APS-features.html#super-micro-bolus-smb>`_ - Der aktuellste Algorithmus für erfahrene Nutzer
@@ -303,13 +303,13 @@ Autosens
 Erweiterte Einstellungen (OpenAPS AMA)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Normalerweise musst Du die Einstellungen in diesem Dialog nicht ändern!
-* Falls Du sie doch ändern willst, lies in jedem Fall vorher die Details dazu in den `OpenAPS Docs <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/preferences-and-safety-settings.html#>`_ und stelle sicher, dass Du weißt, was Du tust.
+* Falls Du sie doch ändern willst, lies in jedem Fall vorher die Details dazu in den `OpenAPS Docs <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/preferences-and-safety-settings.html#>`__ und stelle sicher, dass Du weißt, was Du tust.
 
 OpenAPS SMB-Einstellungen
 -----------------------------------------------------------
 * Im Gegensatz zu AMA verwendet `SMB < ../Usage/Open-APS-features.html#super-micro-bolus-smb>`_ keine temporären Basalraten, um den Blutzuckerspiegel zu steuern, sondern hauptsächlich kleine Supermicroboli.
 * Du musst `Ziel (objective) 10 <../Usage/Objectives.html#ziel-10-aktiviere-zusatzliche-oref1-funktionen-zum-taglichen-gebrauch-wie-z-b-den-super-micro-bolus-smb>`_ gestartet haben, um SMB nutzen zu können.
-* The first three settings are explained `above <../Configuration/Preferences.html#max-u-h-a-temp-basal-can-be-set-to>`_.
+* Die ersten drei Einstellungen sind `oben beschrieben.
 * Details zu den verschiedenen Optionen sind auf der Seite `OpenAPS-Funktionen <../Usage/Open-APS-features.html#aktiviere-smb>`_ beschrieben.
 * *Wie häufig SMB abgegeben werden (in Min.)* ist eine Einschränkung für SMB, die standardmäßig nur alle vier Minuten abgegeben werden. Dieser Wert verhindert, dass das System SMB zu häufig abgibt (z. Sie sollten diese Einstellung nicht ändern, außer Du weißt genau über die Folgen Bescheid. 
 * Wenn 'Empfindlichkeit erhöht den Zielwert' oder 'Resistenz senkt den Zielwert' aktiviert ist, passt `Autosens <../Usage/Open-APS-features.html#autosens>`_ Deinen BZ-Zielwert entsprechend der BZ-Abweichungen an.
@@ -333,7 +333,7 @@ Carb required notification
 Erweiterte Einstellungen (OpenAPS SMB)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * Normalerweise musst Du die Einstellungen in diesem Dialog nicht ändern!
-* Falls Du sie doch ändern willst, lies in jedem Fall vorher die Details dazu in den `OpenAPS Docs <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/preferences-and-safety-settings.html#>`_ und stelle sicher, dass Du weißt, was Du tust.
+* Falls Du sie doch ändern willst, lies in jedem Fall vorher die Details dazu in den `OpenAPS Docs <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/preferences-and-safety-settings.html#>`__ und stelle sicher, dass Du weißt, was Du tust.
 
 Resorptions-Einstellungen
 ===========================================================
@@ -348,7 +348,7 @@ min_5m_carbimpact
 * So lange der Kohlenhydratabbau nicht dynamisch aus den Veränderungen des BZ ermittelt werden kann, wird ein Standardwert für den Abbau angesetzt. Basically, it is a failsafe.
 * Einfach gesagt: Der Algorithmus "weiß", wie sich Deine BZ-Werte unter Berücksichtigung der aktuellen Insulindosis etc. 
 * Wenn eine positive Abweichung vom erwarteten Verhalten registriert wird, werden einige Kohlenhydrate absorbiert/aufgenommen. Große Abweichung = viele Kohlenhydrate etc. 
-* Das min_5m_carbimpact definiert die Standard-Kohlenhydrat-Resorptionswirkung pro 5 Minuten. Für weitere Details siehe `OpenAPS Docs <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/preferences-and-safety-settings.html?highlight=carbimpact#min-5m-carbimpact>`_.
+* Das min_5m_carbimpact definiert die Standard-Kohlenhydrat-Resorptionswirkung pro 5 Minuten. Für weitere Details siehe `OpenAPS Docs <https://openaps.readthedocs.io/en/latest/docs/While%20You%20Wait%20For%20Gear/preferences-and-safety-settings.html?highlight=carbimpact#min-5m-carbimpact>`__.
 * Der Standardwert für AMA ist 5, für SMB ist es 8.
 * Im COB-Diagramm auf dem Startbildschirm werden Zeiten, in denen min_5m_impact verwendet wird, mit einem orangenen Punkt auf der Diagrammlinie markiert.
 
@@ -366,7 +366,7 @@ Erweiterte Einstellungen - Autosens-Faktoren
 
 Pumpen-Einstellungen
 ===========================================================
-Die Einstellungen hier sind je nach Pumpenmodell, das Du im `Konfigurations-Generator <../Configuration/Config-Builder.html#pump>`_ gewählt hast, unterschiedlich.  Verbinde Deine Pumpe und richte sie entsprechend der pumpenspezifischen Beschreibung ein:
+Die Einstellungen hier sind je nach Pumpenmodell, das Du im `Konfigurations-Generator <../Configuration/Config-Builder.html#pump>`__ gewählt hast, unterschiedlich.  Verbinde Deine Pumpe und richte sie entsprechend der pumpenspezifischen Beschreibung ein:
 
 * `DanaR Insulinpumpe <../Configuration/DanaR-Insulin-Pump.html>`_ 
 * `DanaRS Insulinpumpe <../Configuration/DanaRS-Insulin-Pump.html>`_
@@ -423,7 +423,7 @@ Erweiterte Einstellungen (Nightscout-Client)
 
 SMS Kommunikator
 ===========================================================
-* Einstellmöglichkeiten werden nur angezeigt, wenn Du zuvor den SMS Kommunikator im `Konfigurations-Generator <../Configuration/Config-Builder.html#sms-kommunikator>`_ aktiviert hast.
+* Einstellmöglichkeiten werden nur angezeigt, wenn Du zuvor den SMS Kommunikator im `Konfigurations-Generator <../Configuration/Config-Builder.html#sms-kommunikator>`__ aktiviert hast.
 * Diese Einstellung erlaubt eine Fernsteuerung der App, indem Anweisungen an das Smartphone des Patienten gesendet werden, die die App ausführt (z.B.  
 * Weitere Information findest Du auf der Seite `SMS-Befehle <../Children/SMS-Commands.html>`_.
 * Zusätzliche Sicherheit wird durch die Verwendung einer Authentifikator-App und einer zusätzlichen PIN am Tokenende erreicht.
