@@ -5,7 +5,7 @@ Was ist Automatisierung
 ==================================================
 Für gleichbleibende, mehrfach auftretende Ereignisse, kann es sein, dass man immer dieselben Einstellungen ändern muss. Um zusätzliche Arbeit zu vermeiden, kann man versuchen das Ganze zu automatisieren (sofern man es genau genug spezifizieren kann). 
 
-B.: Dies wurde von jemandem erstellt, der bei niedrigen Glukosewerten automatisch ein Hypo-Temp-Target setzen will. Oder wenn man sich in seinem Sportstudio befindet, könnte automatisch ein temporäres Ziel aktiviert werden. 
+------------------------- Dies wurde von jemandem erstellt, der bei niedrigen Glukosewerten automatisch ein Hypo-Temp-Target setzen will. Oder wenn man sich in seinem Sportstudio befindet, könnte automatisch ein temporäres Ziel aktiviert werden. 
 
 Bevor Du Automatisierung nutzt, solltest Du Dich mit `Temporären Zielen <./temptarget.html>`_ und/oder `Profil Wechsel <./Profiles.html>`_ auseinander gesetzt haben. 
 
@@ -88,7 +88,7 @@ Nachdem du deine Aktionen hinzugefügt hast, **vergesse nicht die Standard-Werte
   :alt: Automation Standard-Werte vs. eigene Werte
 
 Automation-Regeln sortieren
------
+---------------------------
 Zum Sortieren von Automation-Regeln klicke und halte die Schaltfläche mit den vier Linien auf der rechten Seite des Bildschirms und bewege sie nach oben oder unten.
 
 .. image:: ../images/Automation_Sort.png
